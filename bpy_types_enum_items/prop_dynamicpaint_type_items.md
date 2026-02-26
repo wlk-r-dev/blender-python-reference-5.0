@@ -1,0 +1,11 @@
+# Prop Dynamicpaint Type Items
+
+CANVAS:
+    
+
+Canvas.
+
+BRUSH:
+    
+
+Brush.

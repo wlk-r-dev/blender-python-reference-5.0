@@ -1,0 +1,16 @@
+# Node Geometry Mesh Circle Fill Type Items
+
+NONE:
+    
+
+None.
+
+NGON:
+    
+
+N-Gon.
+
+TRIANGLE_FAN:
+    
+
+Triangles.

@@ -1,0 +1,16 @@
+# Space Sequencer View Type Items
+
+SEQUENCER:
+    
+
+Sequencer.
+
+PREVIEW:
+    
+
+Preview.
+
+SEQUENCER_PREVIEW:
+    
+
+Sequencer & Preview.

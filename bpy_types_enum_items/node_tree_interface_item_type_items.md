@@ -1,0 +1,11 @@
+# Node Tree Interface Item Type Items
+
+SOCKET:
+    
+
+Socket.
+
+PANEL:
+    
+
+Panel.

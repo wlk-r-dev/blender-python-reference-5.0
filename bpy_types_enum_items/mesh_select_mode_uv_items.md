@@ -1,0 +1,22 @@
+# Mesh Select Mode Uv Items
+
+VERTEX:
+    
+
+Vertex.
+
+Vertex selection mode.
+
+EDGE:
+    
+
+Edge.
+
+Edge selection mode.
+
+FACE:
+    
+
+Face.
+
+Face selection mode.

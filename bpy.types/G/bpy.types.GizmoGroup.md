@@ -1,0 +1,232 @@
+# GizmoGroup(bpy_struct)
+
+base class — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")
+
+_class _bpy.types.GizmoGroup(_bpy_struct_)
+    
+
+Storage of an operator being executed, or registered after execution
+
+bl_idname
+    
+
+Type:
+    
+
+string, default “”, (never None)
+
+bl_label
+    
+
+Type:
+    
+
+string, default “”, (never None)
+
+bl_options
+    
+
+Options for this operator type
+
+  * `3D` 3D – Use in 3D viewport.
+
+  * `SCALE` Scale – Scale to respect zoom (otherwise zoom independent display size).
+
+  * `DEPTH_3D` Depth 3D – Supports culled depth by other objects in the view.
+
+  * `SELECT` Select – Supports selection.
+
+  * `PERSISTENT` Persistent.
+
+  * `SHOW_MODAL_ALL` Show Modal All – Show all while interacting, as well as this group when another is being interacted with.
+
+  * `EXCLUDE_MODAL` Exclude Modal – Show all except this group while interacting.
+
+  * `TOOL_INIT` Tool Init – Postpone running until tool operator run (when used with a tool).
+
+  * `TOOL_FALLBACK_KEYMAP` Use fallback tools keymap – Add fallback tools keymap to this gizmo type.
+
+  * `VR_REDRAWS` VR Redraws – The gizmos are made for use with virtual reality sessions and require special redraw management.
+
+
+Type:
+    
+
+enum set in {`'3D'`, `'SCALE'`, `'DEPTH_3D'`, `'SELECT'`, `'PERSISTENT'`, `'SHOW_MODAL_ALL'`, `'EXCLUDE_MODAL'`, `'TOOL_INIT'`, `'TOOL_FALLBACK_KEYMAP'`, `'VR_REDRAWS'`}, default set()
+
+bl_owner_id
+    
+
+Type:
+    
+
+string, default “”, (never None)
+
+bl_region_type
+    
+
+The region where the panel is going to be used in
+
+Type:
+    
+
+enum in [Region Type Items](../../bpy_types_enum_items/region_type_items.md#rna-enum-region-type-items), default `'WINDOW'`
+
+bl_space_type
+    
+
+The space where the panel is going to be used in
+
+Type:
+    
+
+enum in [Space Type Items](../../bpy_types_enum_items/space_type_items.md#rna-enum-space-type-items), default `'EMPTY'`
+
+gizmos
+    
+
+List of gizmos in the Gizmo Map
+
+Type:
+    
+
+[`Gizmos`](bpy.types.Gizmos.md#bpy.types.Gizmos "bpy.types.Gizmos") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`Gizmo`](bpy.types.Gizmo.md#bpy.types.Gizmo "bpy.types.Gizmo"), (readonly)
+
+name
+    
+
+Type:
+    
+
+string, default “”, (readonly, never None)
+
+_classmethod _poll(_context_)
+    
+
+Test if the gizmo group can be called or not
+
+Return type:
+    
+
+boolean
+
+_classmethod _setup_keymap(_keyconfig_)
+    
+
+Initialize keymaps for this gizmo group, use fallback keymap when not present
+
+Return type:
+    
+
+[`KeyMap`](../K/bpy.types.KeyMap.md#bpy.types.KeyMap "bpy.types.KeyMap"), (never None)
+
+setup(_context_)
+    
+
+Create gizmos function for the gizmo group
+
+refresh(_context_)
+    
+
+Refresh data (called on common state changes such as selection)
+
+draw_prepare(_context_)
+    
+
+Run before each redraw
+
+invoke_prepare(_context_ , _gizmo_)
+    
+
+Run before invoke
+
+_classmethod _bl_rna_get_subclass(_id_ , _default =None_, _/_)
+    
+
+Parameters:
+    
+
+**id** (_str_) – The RNA type identifier.
+
+Returns:
+    
+
+The RNA type or default when not found.
+
+Return type:
+    
+
+[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+
+_classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
+    
+
+Parameters:
+    
+
+**id** (_str_) – The RNA type identifier.
+
+Returns:
+    
+
+The class or default when not found.
+
+Return type:
+    
+
+type
+
+## Inherited Properties
+
+  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+
+| 
+
+
+  
+---|---  
+  
+## Inherited Functions
+
+  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
+  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
+  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
+  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
+  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
+  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
+  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
+  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
+  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
+  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
+  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
+  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+
+| 
+
+  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
+  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
+  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
+  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
+  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
+  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
+  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
+  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
+  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
+  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
+  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
+  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+
+  
+---|---  
+  
+## References
+
+  * [`Context.gizmo_group`](../C/bpy.types.Context.md#bpy.types.Context.gizmo_group "bpy.types.Context.gizmo_group")
+
+| 
+
+  * [`Gizmo.group`](bpy.types.Gizmo.md#bpy.types.Gizmo.group "bpy.types.Gizmo.group")
+
+  
+---|---
+  *[/]: Positional-only parameter separator (PEP 570)

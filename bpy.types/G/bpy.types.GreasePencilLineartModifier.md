@@ -1,0 +1,752 @@
+# GreasePencilLineartModifier(Modifier)
+
+base classes — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`Modifier`](../M/bpy.types.Modifier.md#bpy.types.Modifier "bpy.types.Modifier")
+
+_class _bpy.types.GreasePencilLineartModifier(_Modifier_)
+    
+
+Generate Line Art strokes from selected source
+
+chaining_image_threshold
+    
+
+Segments with an image distance smaller than this will be chained together
+
+Type:
+    
+
+float in [0, 0.3], default 0.001
+
+crease_threshold
+    
+
+Angles smaller than this will be treated as creases. Crease angle priority: object Line Art crease override > mesh auto smooth angle > Line Art default crease.
+
+Type:
+    
+
+float in [0, 3.14159], default 2.44346
+
+invert_source_vertex_group
+    
+
+Invert source vertex group values
+
+Type:
+    
+
+boolean, default False
+
+is_baked
+    
+
+This modifier has baked data
+
+Type:
+    
+
+boolean, default False
+
+level_end
+    
+
+Maximum number of occlusions for the generated strokes
+
+Type:
+    
+
+int in [0, 128], default 0
+
+level_start
+    
+
+Minimum number of occlusions for the generated strokes
+
+Type:
+    
+
+int in [0, 128], default 0
+
+light_contour_object
+    
+
+Use this light object to generate light contour
+
+Type:
+    
+
+[`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")
+
+opacity
+    
+
+The strength value for the generate strokes
+
+Type:
+    
+
+float in [0, 1], default 1.0
+
+overscan
+    
+
+A margin to prevent strokes from ending abruptly at the edge of the image
+
+Type:
+    
+
+float in [0, 0.5], default 0.1
+
+radius
+    
+
+The radius for the generated strokes
+
+Type:
+    
+
+float in [0, 1], default 0.0025
+
+shadow_camera_far
+    
+
+Far clipping distance of shadow camera
+
+Type:
+    
+
+float in [0, 10000], default 200.0
+
+shadow_camera_near
+    
+
+Near clipping distance of shadow camera
+
+Type:
+    
+
+float in [0, 10000], default 0.1
+
+shadow_camera_size
+    
+
+Represents the “Orthographic Scale” of an orthographic camera. If the camera is positioned at the light’s location with this scale, it will represent the coverage of the shadow “camera”.
+
+Type:
+    
+
+float in [0, 10000], default 200.0
+
+shadow_region_filtering
+    
+
+Select feature lines that comes from lit or shaded regions. Will not affect cast shadow and light contour since they are at the border.
+
+  * `NONE` None – Not filtering any lines based on illumination region.
+
+  * `ILLUMINATED` Illuminated – Only selecting lines from illuminated regions.
+
+  * `SHADED` Shaded – Only selecting lines from shaded regions.
+
+  * `ILLUMINATED_ENCLOSED` Illuminated (Enclosed Shapes) – Selecting lines from lit regions, and make the combination of contour, light contour and shadow lines into enclosed shapes.
+
+
+Type:
+    
+
+enum in [`'NONE'`, `'ILLUMINATED'`, `'SHADED'`, `'ILLUMINATED_ENCLOSED'`], default `'NONE'`
+
+silhouette_filtering
+    
+
+Select contour or silhouette
+
+Type:
+    
+
+enum in [`'NONE'`, `'GROUP'`, `'INDIVIDUAL'`], default `'NONE'`
+
+smooth_tolerance
+    
+
+Strength of smoothing applied on jagged chains
+
+Type:
+    
+
+float in [0, 30], default 0.0
+
+source_camera
+    
+
+Use specified camera object for generating Line Art strokes
+
+Type:
+    
+
+[`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")
+
+source_collection
+    
+
+Generate strokes from the objects in this collection
+
+Type:
+    
+
+[`Collection`](../C/bpy.types.Collection.md#bpy.types.Collection "bpy.types.Collection")
+
+source_object
+    
+
+Generate strokes from this object
+
+Type:
+    
+
+[`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")
+
+source_type
+    
+
+Line Art stroke source type
+
+Type:
+    
+
+enum in [`'COLLECTION'`, `'OBJECT'`, `'SCENE'`], default `'COLLECTION'`
+
+source_vertex_group
+    
+
+Match the beginning of vertex group names from mesh objects, match all when left empty
+
+Type:
+    
+
+string, default “”, (never None)
+
+split_angle
+    
+
+Angle in screen space below which a stroke is split in two
+
+Type:
+    
+
+float in [0, 3.14159], default 0.0
+
+stroke_depth_offset
+    
+
+Move strokes slightly towards the camera to avoid clipping while preserve depth for the viewport
+
+Type:
+    
+
+float in [-0.1, inf], default 0.05
+
+target_layer
+    
+
+Grease Pencil layer to which assign the generated strokes
+
+Type:
+    
+
+string, default “”, (never None)
+
+target_material
+    
+
+Grease Pencil material assigned to the generated strokes
+
+Type:
+    
+
+[`Material`](../M/bpy.types.Material.md#bpy.types.Material "bpy.types.Material")
+
+use_back_face_culling
+    
+
+Remove all back faces to speed up calculation, this will create edges in different occlusion levels than when disabled
+
+Type:
+    
+
+boolean, default False
+
+use_cache
+    
+
+Use cached scene data from the first Line Art modifier in the stack. Certain settings will be unavailable.
+
+Type:
+    
+
+boolean, default False
+
+use_clip_plane_boundaries
+    
+
+Allow lines generated by the near/far clipping plane to be shown
+
+Type:
+    
+
+boolean, default True
+
+use_contour
+    
+
+Generate strokes from contours lines
+
+Type:
+    
+
+boolean, default False
+
+use_crease
+    
+
+Generate strokes from creased edges
+
+Type:
+    
+
+boolean, default False
+
+use_crease_on_sharp
+    
+
+Allow crease to show on sharp edges
+
+Type:
+    
+
+boolean, default True
+
+use_crease_on_smooth
+    
+
+Allow crease edges to show inside smooth surfaces
+
+Type:
+    
+
+boolean, default False
+
+use_custom_camera
+    
+
+Use custom camera instead of the active camera
+
+Type:
+    
+
+boolean, default False
+
+use_detail_preserve
+    
+
+Keep the zig-zag “noise” in initial chaining
+
+Type:
+    
+
+boolean, default False
+
+use_edge_mark
+    
+
+Generate strokes from Freestyle marked edges
+
+Type:
+    
+
+boolean, default False
+
+use_edge_overlap
+    
+
+Allow edges in the same location (i.e. from edge split) to show properly. May run slower.
+
+Type:
+    
+
+boolean, default False
+
+use_face_mark
+    
+
+Filter feature lines using Freestyle face marks
+
+Type:
+    
+
+boolean, default False
+
+use_face_mark_boundaries
+    
+
+Filter feature lines based on face mark boundaries
+
+Type:
+    
+
+boolean, default False
+
+use_face_mark_invert
+    
+
+Invert face mark filtering
+
+Type:
+    
+
+boolean, default False
+
+use_face_mark_keep_contour
+    
+
+Preserve contour lines while filtering
+
+Type:
+    
+
+boolean, default True
+
+use_fuzzy_all
+    
+
+Treat all lines as the same line type so they can be chained together
+
+Type:
+    
+
+boolean, default False
+
+use_fuzzy_intersections
+    
+
+Treat intersection and contour lines as if they were the same type so they can be chained together
+
+Type:
+    
+
+boolean, default False
+
+use_geometry_space_chain
+    
+
+Use geometry distance for chaining instead of image space
+
+Type:
+    
+
+boolean, default False
+
+use_image_boundary_trimming
+    
+
+Trim all edges right at the boundary of image (including overscan region)
+
+Type:
+    
+
+boolean, default False
+
+use_intersection
+    
+
+Generate strokes from intersections
+
+Type:
+    
+
+boolean, default False
+
+use_intersection_mask
+    
+
+Mask bits to match from Collection Line Art settings
+
+Type:
+    
+
+boolean array of 8 items, default (False, False, False, False, False, False, False, False)
+
+use_intersection_match
+    
+
+Require matching all intersection masks instead of just one
+
+Type:
+    
+
+boolean, default False
+
+use_invert_collection
+    
+
+Select everything except lines from specified collection
+
+Type:
+    
+
+boolean, default False
+
+use_invert_silhouette
+    
+
+Select anti-silhouette lines
+
+Type:
+    
+
+boolean, default False
+
+use_light_contour
+    
+
+Generate light/shadow separation lines from a reference light object
+
+Type:
+    
+
+boolean, default False
+
+use_loose
+    
+
+Generate strokes from loose edges
+
+Type:
+    
+
+boolean, default False
+
+use_loose_as_contour
+    
+
+Loose edges will have contour type
+
+Type:
+    
+
+boolean, default False
+
+use_loose_edge_chain
+    
+
+Allow loose edges to be chained together
+
+Type:
+    
+
+boolean, default False
+
+use_material
+    
+
+Generate strokes from borders between materials
+
+Type:
+    
+
+boolean, default False
+
+use_material_mask
+    
+
+Use material masks to filter out occluded strokes
+
+Type:
+    
+
+boolean, default False
+
+use_material_mask_bits
+    
+
+Mask bits to match from Material Line Art settings
+
+Type:
+    
+
+boolean array of 8 items, default (False, False, False, False, False, False, False, False)
+
+use_material_mask_match
+    
+
+Require matching all material masks instead of just one
+
+Type:
+    
+
+boolean, default False
+
+use_multiple_levels
+    
+
+Generate strokes from a range of occlusion levels
+
+Type:
+    
+
+boolean, default False
+
+use_object_instances
+    
+
+Allow particle objects and face/vertex instances to show in Line Art
+
+Type:
+    
+
+boolean, default True
+
+use_offset_towards_custom_camera
+    
+
+Offset strokes towards selected camera instead of the active camera
+
+Type:
+    
+
+boolean, default False
+
+use_output_vertex_group_match_by_name
+    
+
+Match output vertex group based on name
+
+Type:
+    
+
+boolean, default True
+
+use_overlap_edge_type_support
+    
+
+Allow an edge to have multiple overlapping types. This will create a separate stroke for each overlapping type.
+
+Type:
+    
+
+boolean, default False
+
+use_shadow
+    
+
+Project contour lines using a light source object
+
+Type:
+    
+
+boolean, default False
+
+vertex_group
+    
+
+Vertex group name for selected strokes
+
+Type:
+    
+
+string, default “”, (never None)
+
+_classmethod _bl_rna_get_subclass(_id_ , _default =None_, _/_)
+    
+
+Parameters:
+    
+
+**id** (_str_) – The RNA type identifier.
+
+Returns:
+    
+
+The RNA type or default when not found.
+
+Return type:
+    
+
+[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+
+_classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
+    
+
+Parameters:
+    
+
+**id** (_str_) – The RNA type identifier.
+
+Returns:
+    
+
+The class or default when not found.
+
+Return type:
+    
+
+type
+
+## Inherited Properties
+
+  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [`Modifier.name`](../M/bpy.types.Modifier.md#bpy.types.Modifier.name "bpy.types.Modifier.name")
+  * [`Modifier.type`](../M/bpy.types.Modifier.md#bpy.types.Modifier.type "bpy.types.Modifier.type")
+  * [`Modifier.show_viewport`](../M/bpy.types.Modifier.md#bpy.types.Modifier.show_viewport "bpy.types.Modifier.show_viewport")
+  * [`Modifier.show_render`](../M/bpy.types.Modifier.md#bpy.types.Modifier.show_render "bpy.types.Modifier.show_render")
+  * [`Modifier.show_in_editmode`](../M/bpy.types.Modifier.md#bpy.types.Modifier.show_in_editmode "bpy.types.Modifier.show_in_editmode")
+  * [`Modifier.show_on_cage`](../M/bpy.types.Modifier.md#bpy.types.Modifier.show_on_cage "bpy.types.Modifier.show_on_cage")
+
+| 
+
+  * [`Modifier.show_expanded`](../M/bpy.types.Modifier.md#bpy.types.Modifier.show_expanded "bpy.types.Modifier.show_expanded")
+  * [`Modifier.is_active`](../M/bpy.types.Modifier.md#bpy.types.Modifier.is_active "bpy.types.Modifier.is_active")
+  * [`Modifier.use_pin_to_last`](../M/bpy.types.Modifier.md#bpy.types.Modifier.use_pin_to_last "bpy.types.Modifier.use_pin_to_last")
+  * [`Modifier.is_override_data`](../M/bpy.types.Modifier.md#bpy.types.Modifier.is_override_data "bpy.types.Modifier.is_override_data")
+  * [`Modifier.use_apply_on_spline`](../M/bpy.types.Modifier.md#bpy.types.Modifier.use_apply_on_spline "bpy.types.Modifier.use_apply_on_spline")
+  * [`Modifier.execution_time`](../M/bpy.types.Modifier.md#bpy.types.Modifier.execution_time "bpy.types.Modifier.execution_time")
+  * [`Modifier.persistent_uid`](../M/bpy.types.Modifier.md#bpy.types.Modifier.persistent_uid "bpy.types.Modifier.persistent_uid")
+
+  
+---|---  
+  
+## Inherited Functions
+
+  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
+  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
+  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
+  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
+  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
+  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
+  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
+  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
+  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
+  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
+  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
+  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
+
+| 
+
+  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
+  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
+  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
+  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
+  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
+  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
+  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
+  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
+  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
+  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
+  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [`Modifier.bl_rna_get_subclass`](../M/bpy.types.Modifier.md#bpy.types.Modifier.bl_rna_get_subclass "bpy.types.Modifier.bl_rna_get_subclass")
+  * [`Modifier.bl_rna_get_subclass_py`](../M/bpy.types.Modifier.md#bpy.types.Modifier.bl_rna_get_subclass_py "bpy.types.Modifier.bl_rna_get_subclass_py")
+
+  
+---|---
+  *[/]: Positional-only parameter separator (PEP 570)

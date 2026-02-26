@@ -1,0 +1,16 @@
+# Node Warning Type Items
+
+ERROR:
+    
+
+Error.
+
+WARNING:
+    
+
+Warning.
+
+INFO:
+    
+
+Info.

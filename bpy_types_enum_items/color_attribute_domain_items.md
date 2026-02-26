@@ -1,0 +1,11 @@
+# Color Attribute Domain Items
+
+POINT:
+    
+
+Vertex.
+
+CORNER:
+    
+
+Face Corner.

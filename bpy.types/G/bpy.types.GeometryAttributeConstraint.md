@@ -1,0 +1,223 @@
+# GeometryAttributeConstraint(Constraint)
+
+base classes — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`Constraint`](../C/bpy.types.Constraint.md#bpy.types.Constraint "bpy.types.Constraint")
+
+_class _bpy.types.GeometryAttributeConstraint(_Constraint_)
+    
+
+Create a constraint-based relationship with an attribute from geometry
+
+apply_target_transform
+    
+
+Apply the target object’s world transform on top of the attribute’s transform
+
+Type:
+    
+
+boolean, default False
+
+attribute_name
+    
+
+Name of the attribute to retrieve the transform from
+
+Type:
+    
+
+string, default “”, (never None)
+
+data_type
+    
+
+Select data type of attribute
+
+  * `VECTOR` Vector – Vector data type, affects position.
+
+  * `QUATERNION` Quaternion – Quaternion data type, affects rotation.
+
+  * `FLOAT4X4` 4x4 Matrix – 4x4 Matrix data type, affects transform.
+
+
+Type:
+    
+
+enum in [`'VECTOR'`, `'QUATERNION'`, `'FLOAT4X4'`], default `'VECTOR'`
+
+domain
+    
+
+Attribute domain
+
+Type:
+    
+
+enum in [`'POINT'`, `'EDGE'`, `'FACE'`, `'FACE_CORNER'`, `'CURVE'`, `'INSTANCE'`], default `'POINT'`
+
+mix_loc
+    
+
+Mix Location
+
+Type:
+    
+
+boolean, default False
+
+mix_mode
+    
+
+Specify how the copied and existing transformations are combined
+
+  * `REPLACE` Replace – Replace the original transformation with the transform from the attribute.
+
+  * `BEFORE_FULL` Before Original (Full) – Apply copied transformation before original, using simple matrix multiplication as if the constraint target is a parent in Full Inherit Scale mode. Will create shear when combining rotation and non-uniform scale..
+
+  * `BEFORE_SPLIT` Before Original (Split Channels) – Apply copied transformation before original, handling location, rotation and scale separately, similar to a sequence of three Copy constraints.
+
+  * `AFTER_FULL` After Original (Full) – Apply copied transformation after original, using simple matrix multiplication as if the constraint target is a child in Full Inherit Scale mode. Will create shear when combining rotation and non-uniform scale..
+
+  * `AFTER_SPLIT` After Original (Split Channels) – Apply copied transformation after original, handling location, rotation and scale separately, similar to a sequence of three Copy constraints.
+
+
+Type:
+    
+
+enum in [`'REPLACE'`, `'BEFORE_FULL'`, `'BEFORE_SPLIT'`, `'AFTER_FULL'`, `'AFTER_SPLIT'`], default `'REPLACE'`
+
+mix_rot
+    
+
+Mix Rotation
+
+Type:
+    
+
+boolean, default False
+
+mix_scl
+    
+
+Mix Scale
+
+Type:
+    
+
+boolean, default False
+
+sample_index
+    
+
+Sample Index
+
+Type:
+    
+
+int in [0, inf], default 0
+
+target
+    
+
+Target geometry object
+
+Type:
+    
+
+[`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")
+
+_classmethod _bl_rna_get_subclass(_id_ , _default =None_, _/_)
+    
+
+Parameters:
+    
+
+**id** (_str_) – The RNA type identifier.
+
+Returns:
+    
+
+The RNA type or default when not found.
+
+Return type:
+    
+
+[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+
+_classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
+    
+
+Parameters:
+    
+
+**id** (_str_) – The RNA type identifier.
+
+Returns:
+    
+
+The class or default when not found.
+
+Return type:
+    
+
+type
+
+## Inherited Properties
+
+  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [`Constraint.name`](../C/bpy.types.Constraint.md#bpy.types.Constraint.name "bpy.types.Constraint.name")
+  * [`Constraint.type`](../C/bpy.types.Constraint.md#bpy.types.Constraint.type "bpy.types.Constraint.type")
+  * [`Constraint.is_override_data`](../C/bpy.types.Constraint.md#bpy.types.Constraint.is_override_data "bpy.types.Constraint.is_override_data")
+  * [`Constraint.owner_space`](../C/bpy.types.Constraint.md#bpy.types.Constraint.owner_space "bpy.types.Constraint.owner_space")
+  * [`Constraint.target_space`](../C/bpy.types.Constraint.md#bpy.types.Constraint.target_space "bpy.types.Constraint.target_space")
+  * [`Constraint.space_object`](../C/bpy.types.Constraint.md#bpy.types.Constraint.space_object "bpy.types.Constraint.space_object")
+  * [`Constraint.space_subtarget`](../C/bpy.types.Constraint.md#bpy.types.Constraint.space_subtarget "bpy.types.Constraint.space_subtarget")
+
+| 
+
+  * [`Constraint.mute`](../C/bpy.types.Constraint.md#bpy.types.Constraint.mute "bpy.types.Constraint.mute")
+  * [`Constraint.enabled`](../C/bpy.types.Constraint.md#bpy.types.Constraint.enabled "bpy.types.Constraint.enabled")
+  * [`Constraint.show_expanded`](../C/bpy.types.Constraint.md#bpy.types.Constraint.show_expanded "bpy.types.Constraint.show_expanded")
+  * [`Constraint.is_valid`](../C/bpy.types.Constraint.md#bpy.types.Constraint.is_valid "bpy.types.Constraint.is_valid")
+  * [`Constraint.active`](../C/bpy.types.Constraint.md#bpy.types.Constraint.active "bpy.types.Constraint.active")
+  * [`Constraint.influence`](../C/bpy.types.Constraint.md#bpy.types.Constraint.influence "bpy.types.Constraint.influence")
+  * [`Constraint.error_location`](../C/bpy.types.Constraint.md#bpy.types.Constraint.error_location "bpy.types.Constraint.error_location")
+  * [`Constraint.error_rotation`](../C/bpy.types.Constraint.md#bpy.types.Constraint.error_rotation "bpy.types.Constraint.error_rotation")
+
+  
+---|---  
+  
+## Inherited Functions
+
+  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
+  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
+  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
+  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
+  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
+  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
+  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
+  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
+  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
+  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
+  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
+  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
+
+| 
+
+  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
+  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
+  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
+  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
+  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
+  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
+  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
+  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
+  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
+  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
+  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [`Constraint.bl_rna_get_subclass`](../C/bpy.types.Constraint.md#bpy.types.Constraint.bl_rna_get_subclass "bpy.types.Constraint.bl_rna_get_subclass")
+  * [`Constraint.bl_rna_get_subclass_py`](../C/bpy.types.Constraint.md#bpy.types.Constraint.bl_rna_get_subclass_py "bpy.types.Constraint.bl_rna_get_subclass_py")
+
+  
+---|---
+  *[/]: Positional-only parameter separator (PEP 570)

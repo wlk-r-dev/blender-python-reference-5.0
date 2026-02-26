@@ -1,0 +1,21 @@
+# Brush Weight Brush Type Items
+
+DRAW:
+    
+
+Draw.
+
+BLUR:
+    
+
+Blur.
+
+AVERAGE:
+    
+
+Average.
+
+SMEAR:
+    
+
+Smear.

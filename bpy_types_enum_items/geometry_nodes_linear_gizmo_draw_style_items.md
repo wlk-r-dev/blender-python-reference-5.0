@@ -1,0 +1,16 @@
+# Geometry Nodes Linear Gizmo Draw Style Items
+
+ARROW:
+    
+
+Arrow.
+
+CROSS:
+    
+
+Cross.
+
+BOX:
+    
+
+Box.

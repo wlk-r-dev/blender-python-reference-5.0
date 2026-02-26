@@ -1,0 +1,16 @@
+# Lightprobes Type Items
+
+SPHERE:
+    
+
+Sphere.
+
+PLANE:
+    
+
+Plane.
+
+VOLUME:
+    
+
+Volume.

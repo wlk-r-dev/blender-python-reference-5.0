@@ -1,0 +1,16 @@
+# Object Type Curve Items
+
+CURVE:
+    
+
+Curve.
+
+SURFACE:
+    
+
+Surface.
+
+FONT:
+    
+
+Text.

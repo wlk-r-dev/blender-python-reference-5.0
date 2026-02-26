@@ -1,0 +1,11 @@
+# Attribute Curves Domain Items
+
+POINT:
+    
+
+Control Point.
+
+CURVE:
+    
+
+Curve.
