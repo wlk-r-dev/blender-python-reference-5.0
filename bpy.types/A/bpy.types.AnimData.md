@@ -1,6 +1,6 @@
 # AnimData(bpy_struct)
 
-base class — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")
+base class — [[bpy_struct]]
 
 _class _bpy.types.AnimData(_bpy_struct_)
     
@@ -15,7 +15,7 @@ Active Action for this data-block
 Type:
     
 
-[`Action`](bpy.types.Action.md#bpy.types.Action "bpy.types.Action")
+[[Action]]
 
 action_blend_type
     
@@ -73,7 +73,7 @@ The slot identifies which sub-set of the Action is considered to be for this dat
 Type:
     
 
-[`ActionSlot`](bpy.types.ActionSlot.md#bpy.types.ActionSlot "bpy.types.ActionSlot")
+[[ActionSlot]]
 
 action_slot_handle
     
@@ -103,7 +103,7 @@ The list of slots in this animation data-block
 Type:
     
 
-[`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`ActionSlot`](bpy.types.ActionSlot.md#bpy.types.ActionSlot "bpy.types.ActionSlot"), (readonly)
+[[bpy_prop_collection]] of [[ActionSlot]], (readonly)
 
 action_tweak_storage
     
@@ -113,7 +113,7 @@ Storage to temporarily hold the main action while in tweak mode
 Type:
     
 
-[`Action`](bpy.types.Action.md#bpy.types.Action "bpy.types.Action")
+[[Action]]
 
 drivers
     
@@ -123,7 +123,7 @@ The Drivers/Expressions for this data-block
 Type:
     
 
-[`AnimDataDrivers`](bpy.types.AnimDataDrivers.md#bpy.types.AnimDataDrivers "bpy.types.AnimDataDrivers") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`FCurve`](../F/bpy.types.FCurve.md#bpy.types.FCurve "bpy.types.FCurve"), (readonly)
+[[AnimDataDrivers]] [[bpy_prop_collection]] of [[FCurve]], (readonly)
 
 last_slot_identifier
     
@@ -143,7 +143,7 @@ NLA Tracks (i.e. Animation Layers)
 Type:
     
 
-[`NlaTracks`](../N/bpy.types.NlaTracks.md#bpy.types.NlaTracks "bpy.types.NlaTracks") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`NlaTrack`](../N/bpy.types.NlaTrack.md#bpy.types.NlaTrack "bpy.types.NlaTrack"), (readonly)
+[[NlaTracks]] [[bpy_prop_collection]] of [[NlaTrack]], (readonly)
 
 use_nla
     
@@ -227,7 +227,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -249,7 +249,7 @@ type
 
 ## Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [[bpy_struct.id_data]]
 
 | 
 
@@ -259,69 +259,69 @@ type
   
 ## Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
 
 | 
 
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
 
   
 ---|---  
   
 ## References
 
-  * [`Annotation.animation_data`](bpy.types.Annotation.md#bpy.types.Annotation.animation_data "bpy.types.Annotation.animation_data")
-  * [`Armature.animation_data`](bpy.types.Armature.md#bpy.types.Armature.animation_data "bpy.types.Armature.animation_data")
-  * [`CacheFile.animation_data`](../C/bpy.types.CacheFile.md#bpy.types.CacheFile.animation_data "bpy.types.CacheFile.animation_data")
-  * [`Camera.animation_data`](../C/bpy.types.Camera.md#bpy.types.Camera.animation_data "bpy.types.Camera.animation_data")
-  * [`Curve.animation_data`](../C/bpy.types.Curve.md#bpy.types.Curve.animation_data "bpy.types.Curve.animation_data")
-  * [`Curves.animation_data`](../C/bpy.types.Curves.md#bpy.types.Curves.animation_data "bpy.types.Curves.animation_data")
-  * [`FreestyleLineStyle.animation_data`](../F/bpy.types.FreestyleLineStyle.md#bpy.types.FreestyleLineStyle.animation_data "bpy.types.FreestyleLineStyle.animation_data")
-  * [`GreasePencil.animation_data`](../G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.animation_data "bpy.types.GreasePencil.animation_data")
-  * [`ID.animation_data_create`](../I/bpy.types.ID.md#bpy.types.ID.animation_data_create "bpy.types.ID.animation_data_create")
-  * [`Key.animation_data`](../K/bpy.types.Key.md#bpy.types.Key.animation_data "bpy.types.Key.animation_data")
-  * [`Lattice.animation_data`](../L/bpy.types.Lattice.md#bpy.types.Lattice.animation_data "bpy.types.Lattice.animation_data")
-  * [`Light.animation_data`](../L/bpy.types.Light.md#bpy.types.Light.animation_data "bpy.types.Light.animation_data")
-  * [`LightProbe.animation_data`](../L/bpy.types.LightProbe.md#bpy.types.LightProbe.animation_data "bpy.types.LightProbe.animation_data")
-  * [`Mask.animation_data`](../M/bpy.types.Mask.md#bpy.types.Mask.animation_data "bpy.types.Mask.animation_data")
+  * [[Annotation.animation_data]]
+  * [[Armature.animation_data]]
+  * [[CacheFile.animation_data]]
+  * [[Camera.animation_data]]
+  * [[Curve.animation_data]]
+  * [[Curves.animation_data]]
+  * [[FreestyleLineStyle.animation_data]]
+  * [[GreasePencil.animation_data]]
+  * [[ID.animation_data_create]]
+  * [[Key.animation_data]]
+  * [[Lattice.animation_data]]
+  * [[Light.animation_data]]
+  * [[LightProbe.animation_data]]
+  * [[Mask.animation_data]]
 
 | 
 
-  * [`Material.animation_data`](../M/bpy.types.Material.md#bpy.types.Material.animation_data "bpy.types.Material.animation_data")
-  * [`Mesh.animation_data`](../M/bpy.types.Mesh.md#bpy.types.Mesh.animation_data "bpy.types.Mesh.animation_data")
-  * [`MetaBall.animation_data`](../M/bpy.types.MetaBall.md#bpy.types.MetaBall.animation_data "bpy.types.MetaBall.animation_data")
-  * [`MovieClip.animation_data`](../M/bpy.types.MovieClip.md#bpy.types.MovieClip.animation_data "bpy.types.MovieClip.animation_data")
-  * [`NodeTree.animation_data`](../N/bpy.types.NodeTree.md#bpy.types.NodeTree.animation_data "bpy.types.NodeTree.animation_data")
-  * [`Object.animation_data`](../O/bpy.types.Object.md#bpy.types.Object.animation_data "bpy.types.Object.animation_data")
-  * [`ParticleSettings.animation_data`](../P/bpy.types.ParticleSettings.md#bpy.types.ParticleSettings.animation_data "bpy.types.ParticleSettings.animation_data")
-  * [`PointCloud.animation_data`](../P/bpy.types.PointCloud.md#bpy.types.PointCloud.animation_data "bpy.types.PointCloud.animation_data")
-  * [`Scene.animation_data`](../S/bpy.types.Scene.md#bpy.types.Scene.animation_data "bpy.types.Scene.animation_data")
-  * [`Speaker.animation_data`](../S/bpy.types.Speaker.md#bpy.types.Speaker.animation_data "bpy.types.Speaker.animation_data")
-  * [`Texture.animation_data`](../T/bpy.types.Texture.md#bpy.types.Texture.animation_data "bpy.types.Texture.animation_data")
-  * [`Volume.animation_data`](../V/bpy.types.Volume.md#bpy.types.Volume.animation_data "bpy.types.Volume.animation_data")
-  * [`World.animation_data`](../W/bpy.types.World.md#bpy.types.World.animation_data "bpy.types.World.animation_data")
+  * [[Material.animation_data]]
+  * [[Mesh.animation_data]]
+  * [[MetaBall.animation_data]]
+  * [[MovieClip.animation_data]]
+  * [[NodeTree.animation_data]]
+  * [[Object.animation_data]]
+  * [[ParticleSettings.animation_data]]
+  * [[PointCloud.animation_data]]
+  * [[Scene.animation_data]]
+  * [[Speaker.animation_data]]
+  * [[Texture.animation_data]]
+  * [[Volume.animation_data]]
+  * [[World.animation_data]]
 
   
 ---|---

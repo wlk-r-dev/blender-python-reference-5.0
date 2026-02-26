@@ -38,7 +38,7 @@ For this the `bpy.app.handlers.persistent` decorator needs to be used.
 
 ## Note on Altering Data
 
-Altering data from handlers should be done carefully. While rendering the `frame_change_pre` and `frame_change_post` handlers are called from one thread and the viewport updates from a different thread. If the handler changes data that is accessed by the viewport, this can cause a crash of Blender. In such cases, lock the interface (Render → Lock Interface or [`bpy.types.RenderSettings.use_lock_interface`](../bpy.types/R/bpy.types.RenderSettings.md#bpy.types.RenderSettings.use_lock_interface "bpy.types.RenderSettings.use_lock_interface")) before starting a render.
+Altering data from handlers should be done carefully. While rendering the `frame_change_pre` and `frame_change_post` handlers are called from one thread and the viewport updates from a different thread. If the handler changes data that is accessed by the viewport, this can cause a crash of Blender. In such cases, lock the interface (Render → Lock Interface or [[bpy.types.RenderSettings.use_lock_interface]]) before starting a render.
 
 Below is an example of a mesh that is altered from a handler:
     

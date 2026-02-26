@@ -37,7 +37,7 @@ The inlined node tree.
 Type:
     
 
-[`bpy.types.NodeTree`](../N/bpy.types.NodeTree.md#bpy.types.NodeTree "bpy.types.NodeTree")
+[[bpy.types.NodeTree]]
 
 _static _from_light(_light_)
     

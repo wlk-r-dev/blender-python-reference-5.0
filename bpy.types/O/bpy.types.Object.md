@@ -27,7 +27,7 @@ This script demonstrates basic operations on object like creating new object, pl
     view_layer.objects.active = light_object
     
 
-base classes — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`ID`](../I/bpy.types.ID.md#bpy.types.ID "bpy.types.ID")
+base classes — [[bpy_struct]], [[ID]]
 
 _class _bpy.types.Object(_ID_)
     
@@ -42,7 +42,7 @@ Active material being displayed
 Type:
     
 
-[`Material`](../M/bpy.types.Material.md#bpy.types.Material "bpy.types.Material")
+[[Material]]
 
 active_material_index
     
@@ -72,7 +72,7 @@ Current shape key
 Type:
     
 
-[`ShapeKey`](../S/bpy.types.ShapeKey.md#bpy.types.ShapeKey "bpy.types.ShapeKey"), (readonly)
+[[ShapeKey]], (readonly)
 
 active_shape_key_index
     
@@ -102,7 +102,7 @@ Animation data for this data-block
 Type:
     
 
-[`AnimData`](../A/bpy.types.AnimData.md#bpy.types.AnimData "bpy.types.AnimData"), (readonly)
+[[AnimData]], (readonly)
 
 animation_visualization
     
@@ -112,7 +112,7 @@ Animation data for this data-block
 Type:
     
 
-[`AnimViz`](../A/bpy.types.AnimViz.md#bpy.types.AnimViz "bpy.types.AnimViz"), (readonly, never None)
+[[AnimViz]], (readonly, never None)
 
 bound_box
     
@@ -132,7 +132,7 @@ Settings for using the object as a collider in physics simulation
 Type:
     
 
-[`CollisionSettings`](../C/bpy.types.CollisionSettings.md#bpy.types.CollisionSettings "bpy.types.CollisionSettings"), (readonly)
+[[CollisionSettings]], (readonly)
 
 color
     
@@ -152,7 +152,7 @@ Constraints affecting the transformation of the object
 Type:
     
 
-[`ObjectConstraints`](bpy.types.ObjectConstraints.md#bpy.types.ObjectConstraints "bpy.types.ObjectConstraints") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`Constraint`](../C/bpy.types.Constraint.md#bpy.types.Constraint "bpy.types.Constraint"), (readonly)
+[[ObjectConstraints]] [[bpy_prop_collection]] of [[Constraint]], (readonly)
 
 cycles
     
@@ -172,7 +172,7 @@ Object data
 Type:
     
 
-[`ID`](../I/bpy.types.ID.md#bpy.types.ID "bpy.types.ID")
+[[ID]]
 
 delta_location
     
@@ -182,7 +182,7 @@ Extra translation added to the location of the object
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
 
 delta_rotation_euler
     
@@ -192,7 +192,7 @@ Extra rotation added to the rotation of the object (when using Euler rotations)
 Type:
     
 
-[`mathutils.Euler`](mathutils.md#mathutils.Euler "mathutils.Euler") rotation of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
+[[mathutils.Euler]] rotation of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
 
 delta_rotation_quaternion
     
@@ -202,7 +202,7 @@ Extra rotation added to the rotation of the object (when using Quaternion rotati
 Type:
     
 
-[`mathutils.Quaternion`](mathutils.md#mathutils.Quaternion "mathutils.Quaternion") rotation of 4 items in [-inf, inf], default (1.0, 0.0, 0.0, 0.0)
+[[mathutils.Quaternion]] rotation of 4 items in [-inf, inf], default (1.0, 0.0, 0.0, 0.0)
 
 delta_scale
     
@@ -212,7 +212,7 @@ Extra scaling added to the scale of the object
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (1.0, 1.0, 1.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (1.0, 1.0, 1.0)
 
 dimensions
     
@@ -222,7 +222,7 @@ Absolute bounding box dimensions of the object. Warning: Assigning to it or its 
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
 
 display
     
@@ -232,7 +232,7 @@ Object display settings for 3D viewport
 Type:
     
 
-[`ObjectDisplay`](bpy.types.ObjectDisplay.md#bpy.types.ObjectDisplay "bpy.types.ObjectDisplay"), (readonly, never None)
+[[ObjectDisplay]], (readonly, never None)
 
 display_bounds_type
     
@@ -332,7 +332,7 @@ Settings for using the object as a field in physics simulation
 Type:
     
 
-[`FieldSettings`](../F/bpy.types.FieldSettings.md#bpy.types.FieldSettings "bpy.types.FieldSettings"), (readonly)
+[[FieldSettings]], (readonly)
 
 hide_probe_plane
     
@@ -412,7 +412,7 @@ Parameters defining which layer, pass and frame of the image is displayed
 Type:
     
 
-[`ImageUser`](../I/bpy.types.ImageUser.md#bpy.types.ImageUser "bpy.types.ImageUser"), (readonly, never None)
+[[ImageUser]], (readonly, never None)
 
 instance_collection
     
@@ -422,7 +422,7 @@ Instance an existing collection
 Type:
     
 
-[`Collection`](../C/bpy.types.Collection.md#bpy.types.Collection "bpy.types.Collection")
+[[Collection]]
 
 instance_faces_scale
     
@@ -509,7 +509,7 @@ Light linking settings
 Type:
     
 
-[`ObjectLightLinking`](bpy.types.ObjectLightLinking.md#bpy.types.ObjectLightLinking "bpy.types.ObjectLightLinking"), (readonly, never None)
+[[ObjectLightLinking]], (readonly, never None)
 
 lightgroup
     
@@ -529,7 +529,7 @@ Line Art settings for the object
 Type:
     
 
-[`ObjectLineArt`](bpy.types.ObjectLineArt.md#bpy.types.ObjectLineArt "bpy.types.ObjectLineArt"), (readonly)
+[[ObjectLineArt]], (readonly)
 
 location
     
@@ -539,7 +539,7 @@ Location of the object
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
 
 lock_location
     
@@ -599,7 +599,7 @@ Material slots in the object
 Type:
     
 
-[`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`MaterialSlot`](../M/bpy.types.MaterialSlot.md#bpy.types.MaterialSlot "bpy.types.MaterialSlot"), (readonly)
+[[bpy_prop_collection]] of [[MaterialSlot]], (readonly)
 
 matrix_basis
     
@@ -609,7 +609,7 @@ Matrix access to location, rotation and scale (including deltas), before constra
 Type:
     
 
-[`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 4 * 4 items in [-inf, inf], default ((0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0))
+[[mathutils.Matrix]] of 4 * 4 items in [-inf, inf], default ((0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0))
 
 matrix_local
     
@@ -619,7 +619,7 @@ Parent relative transformation matrix. Warning: Only takes into account object p
 Type:
     
 
-[`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 4 * 4 items in [-inf, inf], default ((0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0))
+[[mathutils.Matrix]] of 4 * 4 items in [-inf, inf], default ((0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0))
 
 matrix_parent_inverse
     
@@ -629,7 +629,7 @@ Inverse of object’s parent matrix at time of parenting
 Type:
     
 
-[`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 4 * 4 items in [-inf, inf], default ((1.0, 0.0, 0.0, 0.0), (0.0, 1.0, 0.0, 0.0), (0.0, 0.0, 1.0, 0.0), (0.0, 0.0, 0.0, 1.0))
+[[mathutils.Matrix]] of 4 * 4 items in [-inf, inf], default ((1.0, 0.0, 0.0, 0.0), (0.0, 1.0, 0.0, 0.0), (0.0, 0.0, 1.0, 0.0), (0.0, 0.0, 0.0, 1.0))
 
 matrix_world
     
@@ -639,7 +639,7 @@ Worldspace transformation matrix
 Type:
     
 
-[`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 4 * 4 items in [-inf, inf], default ((0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0))
+[[mathutils.Matrix]] of 4 * 4 items in [-inf, inf], default ((0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0))
 
 mode
     
@@ -659,7 +659,7 @@ Modifiers affecting the geometric data of the object
 Type:
     
 
-[`ObjectModifiers`](bpy.types.ObjectModifiers.md#bpy.types.ObjectModifiers "bpy.types.ObjectModifiers") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`Modifier`](../M/bpy.types.Modifier.md#bpy.types.Modifier "bpy.types.Modifier"), (readonly)
+[[ObjectModifiers]] [[bpy_prop_collection]] of [[Modifier]], (readonly)
 
 motion_path
     
@@ -669,7 +669,7 @@ Motion Path for this element
 Type:
     
 
-[`MotionPath`](../M/bpy.types.MotionPath.md#bpy.types.MotionPath "bpy.types.MotionPath"), (readonly)
+[[MotionPath]], (readonly)
 
 parent
     
@@ -732,7 +732,7 @@ Particle systems emitted from the object
 Type:
     
 
-[`ParticleSystems`](../P/bpy.types.ParticleSystems.md#bpy.types.ParticleSystems "bpy.types.ParticleSystems") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`ParticleSystem`](../P/bpy.types.ParticleSystem.md#bpy.types.ParticleSystem "bpy.types.ParticleSystem"), (readonly)
+[[ParticleSystems]] [[bpy_prop_collection]] of [[ParticleSystem]], (readonly)
 
 pass_index
     
@@ -752,7 +752,7 @@ Current pose for armatures
 Type:
     
 
-[`Pose`](../P/bpy.types.Pose.md#bpy.types.Pose "bpy.types.Pose"), (readonly)
+[[Pose]], (readonly)
 
 rigid_body
     
@@ -762,7 +762,7 @@ Settings for rigid body simulation
 Type:
     
 
-[`RigidBodyObject`](../R/bpy.types.RigidBodyObject.md#bpy.types.RigidBodyObject "bpy.types.RigidBodyObject"), (readonly)
+[[RigidBodyObject]], (readonly)
 
 rigid_body_constraint
     
@@ -772,7 +772,7 @@ Constraint constraining rigid bodies
 Type:
     
 
-[`RigidBodyConstraint`](../R/bpy.types.RigidBodyConstraint.md#bpy.types.RigidBodyConstraint "bpy.types.RigidBodyConstraint"), (readonly)
+[[RigidBodyConstraint]], (readonly)
 
 rotation_axis_angle
     
@@ -792,7 +792,7 @@ Rotation in Eulers
 Type:
     
 
-[`mathutils.Euler`](mathutils.md#mathutils.Euler "mathutils.Euler") rotation of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
+[[mathutils.Euler]] rotation of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
 
 rotation_mode
     
@@ -812,7 +812,7 @@ Rotation in Quaternions
 Type:
     
 
-[`mathutils.Quaternion`](mathutils.md#mathutils.Quaternion "mathutils.Quaternion") rotation of 4 items in [-inf, inf], default (1.0, 0.0, 0.0, 0.0)
+[[mathutils.Quaternion]] rotation of 4 items in [-inf, inf], default (1.0, 0.0, 0.0, 0.0)
 
 scale
     
@@ -822,7 +822,7 @@ Scaling of the object
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (1.0, 1.0, 1.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (1.0, 1.0, 1.0)
 
 selection_sets
     
@@ -832,7 +832,7 @@ List of groups of bones for easy selection
 Type:
     
 
-[`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of `SelectionSet`, (readonly)
+[[bpy_prop_collection]] of `SelectionSet`, (readonly)
 
 shader_effects
     
@@ -842,7 +842,7 @@ Effects affecting display of object
 Type:
     
 
-[`ObjectShaderFx`](bpy.types.ObjectShaderFx.md#bpy.types.ObjectShaderFx "bpy.types.ObjectShaderFx") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`ShaderFx`](../S/bpy.types.ShaderFx.md#bpy.types.ShaderFx "bpy.types.ShaderFx"), (readonly)
+[[ObjectShaderFx]] [[bpy_prop_collection]] of [[ShaderFx]], (readonly)
 
 shadow_terminator_geometry_offset
     
@@ -1022,7 +1022,7 @@ Settings for soft body simulation
 Type:
     
 
-[`SoftBodySettings`](../S/bpy.types.SoftBodySettings.md#bpy.types.SoftBodySettings "bpy.types.SoftBodySettings"), (readonly)
+[[SoftBodySettings]], (readonly)
 
 track_axis
     
@@ -1180,7 +1180,7 @@ Vertex groups of the object
 Type:
     
 
-[`VertexGroups`](../V/bpy.types.VertexGroups.md#bpy.types.VertexGroups "bpy.types.VertexGroups") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`VertexGroup`](../V/bpy.types.VertexGroup.md#bpy.types.VertexGroup "bpy.types.VertexGroup"), (readonly)
+[[VertexGroups]] [[bpy_prop_collection]] of [[VertexGroup]], (readonly)
 
 visible_camera
     
@@ -1282,7 +1282,7 @@ The collections this object is in.
 Type:
     
 
-tuple of [`Collection`](../C/bpy.types.Collection.md#bpy.types.Collection "bpy.types.Collection")
+tuple of [[Collection]]
 
 Note
 
@@ -1298,7 +1298,7 @@ The scenes this object is in.
 Type:
     
 
-tuple of [`Scene`](../S/bpy.types.Scene.md#bpy.types.Scene "bpy.types.Scene")
+tuple of [[Scene]]
 
 Note
 
@@ -1314,7 +1314,7 @@ Test if the object is selected. The selection state is per view layer.
 Parameters:
     
 
-**view_layer** ([`ViewLayer`](../V/bpy.types.ViewLayer.md#bpy.types.ViewLayer "bpy.types.ViewLayer"), (optional)) – Use this instead of the active view layer
+**view_layer** ([[ViewLayer]], (optional)) – Use this instead of the active view layer
 
 Returns:
     
@@ -1336,7 +1336,7 @@ Parameters:
 
   * **state** (_boolean_) – Selection state to define
 
-  * **view_layer** ([`ViewLayer`](../V/bpy.types.ViewLayer.md#bpy.types.ViewLayer "bpy.types.ViewLayer"), (optional)) – Use this instead of the active view layer
+  * **view_layer** ([[ViewLayer]], (optional)) – Use this instead of the active view layer
 
 
 hide_get(_*_ , _view_layer =None_)
@@ -1347,7 +1347,7 @@ Test if the object is hidden for viewport editing. This hiding state is per view
 Parameters:
     
 
-**view_layer** ([`ViewLayer`](../V/bpy.types.ViewLayer.md#bpy.types.ViewLayer "bpy.types.ViewLayer"), (optional)) – Use this instead of the active view layer
+**view_layer** ([[ViewLayer]], (optional)) – Use this instead of the active view layer
 
 Returns:
     
@@ -1369,7 +1369,7 @@ Parameters:
 
   * **state** (_boolean_) – Hide state to define
 
-  * **view_layer** ([`ViewLayer`](../V/bpy.types.ViewLayer.md#bpy.types.ViewLayer "bpy.types.ViewLayer"), (optional)) – Use this instead of the active view layer
+  * **view_layer** ([[ViewLayer]], (optional)) – Use this instead of the active view layer
 
 
 visible_get(_*_ , _view_layer =None_, _viewport =None_)
@@ -1380,9 +1380,9 @@ Test if the object is visible in the 3D viewport, taking into account all visibi
 Parameters:
     
 
-  * **view_layer** ([`ViewLayer`](../V/bpy.types.ViewLayer.md#bpy.types.ViewLayer "bpy.types.ViewLayer"), (optional)) – Use this instead of the active view layer
+  * **view_layer** ([[ViewLayer]], (optional)) – Use this instead of the active view layer
 
-  * **viewport** ([`SpaceView3D`](../S/bpy.types.SpaceView3D.md#bpy.types.SpaceView3D "bpy.types.SpaceView3D"), (optional)) – Use this instead of the active 3D viewport
+  * **viewport** ([[SpaceView3D]], (optional)) – Use this instead of the active 3D viewport
 
 
 Returns:
@@ -1403,7 +1403,7 @@ Test if object is masked in the view layer
 Parameters:
     
 
-**view_layer** ([`ViewLayer`](../V/bpy.types.ViewLayer.md#bpy.types.ViewLayer "bpy.types.ViewLayer"), (optional)) – Use this instead of the active view layer
+**view_layer** ([[ViewLayer]], (optional)) – Use this instead of the active view layer
 
 Returns:
     
@@ -1423,7 +1423,7 @@ Test if object is set to contribute only indirectly (through shadows and reflect
 Parameters:
     
 
-**view_layer** ([`ViewLayer`](../V/bpy.types.ViewLayer.md#bpy.types.ViewLayer "bpy.types.ViewLayer"), (optional)) – Use this instead of the active view layer
+**view_layer** ([[ViewLayer]], (optional)) – Use this instead of the active view layer
 
 Returns:
     
@@ -1443,7 +1443,7 @@ Get the local view state for this object
 Parameters:
     
 
-**viewport** ([`SpaceView3D`](../S/bpy.types.SpaceView3D.md#bpy.types.SpaceView3D "bpy.types.SpaceView3D"), (never None)) – Viewport in local view
+**viewport** ([[SpaceView3D]], (never None)) – Viewport in local view
 
 Returns:
     
@@ -1463,7 +1463,7 @@ Set the local view state for this object
 Parameters:
     
 
-  * **viewport** ([`SpaceView3D`](../S/bpy.types.SpaceView3D.md#bpy.types.SpaceView3D "bpy.types.SpaceView3D"), (never None)) – Viewport in local view
+  * **viewport** ([[SpaceView3D]], (never None)) – Viewport in local view
 
   * **state** (_boolean_) – Local view state to define
 
@@ -1476,7 +1476,7 @@ Check for local view and local collections for this viewport and object
 Parameters:
     
 
-**viewport** ([`SpaceView3D`](../S/bpy.types.SpaceView3D.md#bpy.types.SpaceView3D "bpy.types.SpaceView3D"), (never None)) – Viewport in local collections
+**viewport** ([[SpaceView3D]], (never None)) – Viewport in local collections
 
 Returns:
     
@@ -1496,9 +1496,9 @@ Convert (transform) the given matrix from one space to another
 Parameters:
     
 
-  * **pose_bone** ([`PoseBone`](../P/bpy.types.PoseBone.md#bpy.types.PoseBone "bpy.types.PoseBone"), (optional)) – Bone to use to define spaces (may be None, in which case only the two ‘WORLD’ and ‘LOCAL’ spaces are usable)
+  * **pose_bone** ([[PoseBone]], (optional)) – Bone to use to define spaces (may be None, in which case only the two ‘WORLD’ and ‘LOCAL’ spaces are usable)
 
-  * **matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 4 * 4 items in [-inf, inf], (optional)) – The matrix to transform
+  * **matrix** ([[mathutils.Matrix]] of 4 * 4 items in [-inf, inf], (optional)) – The matrix to transform
 
   * **from_space** (enum in [`'WORLD'`, `'POSE'`, `'LOCAL_WITH_PARENT'`, `'LOCAL'`], (optional)) – 
 
@@ -1533,7 +1533,7 @@ The transformed matrix
 Return type:
     
 
-[`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 4 * 4 items in [-inf, inf]
+[[mathutils.Matrix]] of 4 * 4 items in [-inf, inf]
 
 calc_matrix_camera(_depsgraph_ , _*_ , _x =1_, _y =1_, _scale_x =1.0_, _scale_y =1.0_)
     
@@ -1543,7 +1543,7 @@ Generate the camera projection matrix of this object (mostly useful for Camera a
 Parameters:
     
 
-  * **depsgraph** ([`Depsgraph`](../D/bpy.types.Depsgraph.md#bpy.types.Depsgraph "bpy.types.Depsgraph")) – Depsgraph to get evaluated data from
+  * **depsgraph** ([[Depsgraph]]) – Depsgraph to get evaluated data from
 
   * **x** (_int in_ _[__0_ _,__inf_ _]__,__(__optional_ _)_) – Width of the render area
 
@@ -1562,7 +1562,7 @@ The camera projection matrix
 Return type:
     
 
-[`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 4 * 4 items in [-inf, inf]
+[[mathutils.Matrix]] of 4 * 4 items in [-inf, inf]
 
 camera_fit_coords(_depsgraph_ , _coordinates_)
     
@@ -1572,7 +1572,7 @@ Compute the coordinate (and scale for ortho cameras) given object should be to �
 Parameters:
     
 
-  * **depsgraph** ([`Depsgraph`](../D/bpy.types.Depsgraph.md#bpy.types.Depsgraph "bpy.types.Depsgraph")) – Depsgraph to get evaluated data from
+  * **depsgraph** ([[Depsgraph]]) – Depsgraph to get evaluated data from
 
   * **coordinates** (_float array_ _of_ _1 items in_ _[__-inf_ _,__inf_ _]__,__(__never None_ _)_) – Coordinates to fit in
 
@@ -1580,14 +1580,14 @@ Parameters:
 Returns:
     
 
-`co_return`, The location to aim to be able to see all given points, [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]
+`co_return`, The location to aim to be able to see all given points, [[mathutils.Vector]] of 3 items in [-inf, inf]
 
 `scale_return`, The ortho scale to aim to be able to see all given points (if relevant), float in [-inf, inf]
 
 Return type:
     
 
-([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], float in [-inf, inf])
+([[mathutils.Vector]] of 3 items in [-inf, inf], float in [-inf, inf])
 
 crazyspace_eval(_depsgraph_ , _scene_)
     
@@ -1597,9 +1597,9 @@ Compute orientation mapping between vertices of an original object and object wi
 Parameters:
     
 
-  * **depsgraph** ([`Depsgraph`](../D/bpy.types.Depsgraph.md#bpy.types.Depsgraph "bpy.types.Depsgraph")) – Dependency Graph, Evaluated dependency graph
+  * **depsgraph** ([[Depsgraph]]) – Dependency Graph, Evaluated dependency graph
 
-  * **scene** ([`Scene`](../S/bpy.types.Scene.md#bpy.types.Scene "bpy.types.Scene")) – Scene, Scene of the object
+  * **scene** ([[Scene]]) – Scene, Scene of the object
 
 
 crazyspace_displacement_to_deformed(_*_ , _vertex_index =0_, _displacement =(0.0, 0.0, 0.0)_)
@@ -1612,7 +1612,7 @@ Parameters:
 
   * **vertex_index** (_int in_ _[__-inf_ _,__inf_ _]__,__(__optional_ _)_) – vertex_index
 
-  * **displacement** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – displacement
+  * **displacement** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – displacement
 
 
 Returns:
@@ -1623,7 +1623,7 @@ displacement_deformed
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]
+[[mathutils.Vector]] of 3 items in [-inf, inf]
 
 crazyspace_displacement_to_original(_*_ , _vertex_index =0_, _displacement =(0.0, 0.0, 0.0)_)
     
@@ -1635,7 +1635,7 @@ Parameters:
 
   * **vertex_index** (_int in_ _[__-inf_ _,__inf_ _]__,__(__optional_ _)_) – vertex_index
 
-  * **displacement** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – displacement
+  * **displacement** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – displacement
 
 
 Returns:
@@ -1646,7 +1646,7 @@ displacement_original
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]
+[[mathutils.Vector]] of 3 items in [-inf, inf]
 
 crazyspace_eval_clear()
     
@@ -1663,7 +1663,7 @@ Parameters:
 
   * **preserve_all_data_layers** (_boolean_ _,__(__optional_ _)_) – Preserve all data layers in the mesh, like UV maps and vertex groups. By default Blender only computes the subset of data layers needed for viewport display and rendering, for better performance.
 
-  * **depsgraph** ([`Depsgraph`](../D/bpy.types.Depsgraph.md#bpy.types.Depsgraph "bpy.types.Depsgraph"), (optional)) – Dependency Graph, Evaluated dependency graph which is required when preserve_all_data_layers is true
+  * **depsgraph** ([[Depsgraph]], (optional)) – Dependency Graph, Evaluated dependency graph which is required when preserve_all_data_layers is true
 
 
 Returns:
@@ -1674,7 +1674,7 @@ Mesh created from object
 Return type:
     
 
-[`Mesh`](../M/bpy.types.Mesh.md#bpy.types.Mesh "bpy.types.Mesh")
+[[Mesh]]
 
 to_mesh_clear()
     
@@ -1689,7 +1689,7 @@ Create a Curve data-block from the current state of the object. This only works 
 Parameters:
     
 
-  * **depsgraph** ([`Depsgraph`](../D/bpy.types.Depsgraph.md#bpy.types.Depsgraph "bpy.types.Depsgraph")) – Dependency Graph, Evaluated dependency graph
+  * **depsgraph** ([[Depsgraph]]) – Dependency Graph, Evaluated dependency graph
 
   * **apply_modifiers** (_boolean_ _,__(__optional_ _)_) – Apply the deform modifiers on the control points of the curve. This is only supported for curve objects.
 
@@ -1702,7 +1702,7 @@ Curve created from object
 Return type:
     
 
-[`Curve`](../C/bpy.types.Curve.md#bpy.types.Curve "bpy.types.Curve")
+[[Curve]]
 
 to_curve_clear()
     
@@ -1745,7 +1745,7 @@ New shape key-block
 Return type:
     
 
-[`ShapeKey`](../S/bpy.types.ShapeKey.md#bpy.types.ShapeKey "bpy.types.ShapeKey")
+[[ShapeKey]]
 
 shape_key_remove(_key_)
     
@@ -1755,7 +1755,7 @@ Remove a Shape Key from this object
 Parameters:
     
 
-**key** ([`ShapeKey`](../S/bpy.types.ShapeKey.md#bpy.types.ShapeKey "bpy.types.ShapeKey"), (never None)) – Key-block to be removed
+**key** ([[ShapeKey]], (never None)) – Key-block to be removed
 
 shape_key_clear()
     
@@ -1770,13 +1770,13 @@ Cast a ray onto evaluated geometry, in object space (using context’s or provid
 Parameters:
     
 
-  * **origin** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]) – Origin of the ray, in object space
+  * **origin** ([[mathutils.Vector]] of 3 items in [-inf, inf]) – Origin of the ray, in object space
 
-  * **direction** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]) – Direction of the ray, in object space
+  * **direction** ([[mathutils.Vector]] of 3 items in [-inf, inf]) – Direction of the ray, in object space
 
   * **distance** (_float in_ _[__0_ _,__inf_ _]__,__(__optional_ _)_) – Maximum distance
 
-  * **depsgraph** ([`Depsgraph`](../D/bpy.types.Depsgraph.md#bpy.types.Depsgraph "bpy.types.Depsgraph"), (optional)) – Depsgraph to use to get evaluated data, when called from original object (only needed if current Context’s depsgraph is not suitable)
+  * **depsgraph** ([[Depsgraph]], (optional)) – Depsgraph to use to get evaluated data, when called from original object (only needed if current Context’s depsgraph is not suitable)
 
 
 Returns:
@@ -1784,16 +1784,16 @@ Returns:
 
 `result`, Whether the ray successfully hit the geometry, boolean
 
-`location`, The hit location of this ray cast, [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]
+`location`, The hit location of this ray cast, [[mathutils.Vector]] of 3 items in [-inf, inf]
 
-`normal`, The face normal at the ray cast hit location, [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]
+`normal`, The face normal at the ray cast hit location, [[mathutils.Vector]] of 3 items in [-inf, inf]
 
 `index`, The face index, -1 when original data isn’t available, int in [-inf, inf]
 
 Return type:
     
 
-(boolean, [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], int in [-inf, inf])
+(boolean, [[mathutils.Vector]] of 3 items in [-inf, inf], [[mathutils.Vector]] of 3 items in [-inf, inf], int in [-inf, inf])
 
 closest_point_on_mesh(_origin_ , _*_ , _distance =1.84467e+19_, _depsgraph =None_)
     
@@ -1803,11 +1803,11 @@ Find the nearest point on evaluated geometry, in object space (using context’s
 Parameters:
     
 
-  * **origin** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]) – Point to find closest geometry from (in object space)
+  * **origin** ([[mathutils.Vector]] of 3 items in [-inf, inf]) – Point to find closest geometry from (in object space)
 
   * **distance** (_float in_ _[__0_ _,__inf_ _]__,__(__optional_ _)_) – Maximum distance
 
-  * **depsgraph** ([`Depsgraph`](../D/bpy.types.Depsgraph.md#bpy.types.Depsgraph "bpy.types.Depsgraph"), (optional)) – Depsgraph to use to get evaluated data, when called from original object (only needed if current Context’s depsgraph is not suitable)
+  * **depsgraph** ([[Depsgraph]], (optional)) – Depsgraph to use to get evaluated data, when called from original object (only needed if current Context’s depsgraph is not suitable)
 
 
 Returns:
@@ -1815,16 +1815,16 @@ Returns:
 
 `result`, Whether closest point on geometry was found, boolean
 
-`location`, The location on the object closest to the point, [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]
+`location`, The location on the object closest to the point, [[mathutils.Vector]] of 3 items in [-inf, inf]
 
-`normal`, The face normal at the closest point, [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]
+`normal`, The face normal at the closest point, [[mathutils.Vector]] of 3 items in [-inf, inf]
 
 `index`, The face index, -1 when original data isn’t available, int in [-inf, inf]
 
 Return type:
     
 
-(boolean, [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], int in [-inf, inf])
+(boolean, [[mathutils.Vector]] of 3 items in [-inf, inf], [[mathutils.Vector]] of 3 items in [-inf, inf], int in [-inf, inf])
 
 is_modified(_scene_ , _settings_)
     
@@ -1834,7 +1834,7 @@ Determine if this object is modified from the base mesh data
 Parameters:
     
 
-  * **scene** ([`Scene`](../S/bpy.types.Scene.md#bpy.types.Scene "bpy.types.Scene"), (never None)) – Scene in which to check the object
+  * **scene** ([[Scene]], (never None)) – Scene in which to check the object
 
   * **settings** (enum in [`'PREVIEW'`, `'RENDER'`]) – 
 
@@ -1863,7 +1863,7 @@ Determine if this object is modified by a deformation from the base mesh data
 Parameters:
     
 
-  * **scene** ([`Scene`](../S/bpy.types.Scene.md#bpy.types.Scene "bpy.types.Scene"), (never None)) – Scene in which to check the object
+  * **scene** ([[Scene]], (never None)) – Scene in which to check the object
 
   * **settings** (enum in [`'PREVIEW'`, `'RENDER'`]) – 
 
@@ -1917,7 +1917,7 @@ The evaluated geometry.
 Return type:
     
 
-[`bpy.types.GeometrySet`](../G/bpy.types.GeometrySet.md#bpy.types.GeometrySet "bpy.types.GeometrySet")
+[[bpy.types.GeometrySet]]
 
 _classmethod _bl_rna_get_subclass(_id_ , _default =None_, _/_)
     
@@ -1935,7 +1935,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -1957,260 +1957,260 @@ type
 
 ### Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
-  * [`ID.name`](../I/bpy.types.ID.md#bpy.types.ID.name "bpy.types.ID.name")
-  * [`ID.name_full`](../I/bpy.types.ID.md#bpy.types.ID.name_full "bpy.types.ID.name_full")
-  * [`ID.id_type`](../I/bpy.types.ID.md#bpy.types.ID.id_type "bpy.types.ID.id_type")
-  * [`ID.session_uid`](../I/bpy.types.ID.md#bpy.types.ID.session_uid "bpy.types.ID.session_uid")
-  * [`ID.is_evaluated`](../I/bpy.types.ID.md#bpy.types.ID.is_evaluated "bpy.types.ID.is_evaluated")
-  * [`ID.original`](../I/bpy.types.ID.md#bpy.types.ID.original "bpy.types.ID.original")
-  * [`ID.users`](../I/bpy.types.ID.md#bpy.types.ID.users "bpy.types.ID.users")
-  * [`ID.use_fake_user`](../I/bpy.types.ID.md#bpy.types.ID.use_fake_user "bpy.types.ID.use_fake_user")
-  * [`ID.use_extra_user`](../I/bpy.types.ID.md#bpy.types.ID.use_extra_user "bpy.types.ID.use_extra_user")
-  * [`ID.is_embedded_data`](../I/bpy.types.ID.md#bpy.types.ID.is_embedded_data "bpy.types.ID.is_embedded_data")
+  * [[bpy_struct.id_data]]
+  * [[ID.name]]
+  * [[ID.name_full]]
+  * [[ID.id_type]]
+  * [[ID.session_uid]]
+  * [[ID.is_evaluated]]
+  * [[ID.original]]
+  * [[ID.users]]
+  * [[ID.use_fake_user]]
+  * [[ID.use_extra_user]]
+  * [[ID.is_embedded_data]]
 
 | 
 
-  * [`ID.is_linked_packed`](../I/bpy.types.ID.md#bpy.types.ID.is_linked_packed "bpy.types.ID.is_linked_packed")
-  * [`ID.is_missing`](../I/bpy.types.ID.md#bpy.types.ID.is_missing "bpy.types.ID.is_missing")
-  * [`ID.is_runtime_data`](../I/bpy.types.ID.md#bpy.types.ID.is_runtime_data "bpy.types.ID.is_runtime_data")
-  * [`ID.is_editable`](../I/bpy.types.ID.md#bpy.types.ID.is_editable "bpy.types.ID.is_editable")
-  * [`ID.tag`](../I/bpy.types.ID.md#bpy.types.ID.tag "bpy.types.ID.tag")
-  * [`ID.is_library_indirect`](../I/bpy.types.ID.md#bpy.types.ID.is_library_indirect "bpy.types.ID.is_library_indirect")
-  * [`ID.library`](../I/bpy.types.ID.md#bpy.types.ID.library "bpy.types.ID.library")
-  * [`ID.library_weak_reference`](../I/bpy.types.ID.md#bpy.types.ID.library_weak_reference "bpy.types.ID.library_weak_reference")
-  * [`ID.asset_data`](../I/bpy.types.ID.md#bpy.types.ID.asset_data "bpy.types.ID.asset_data")
-  * [`ID.override_library`](../I/bpy.types.ID.md#bpy.types.ID.override_library "bpy.types.ID.override_library")
-  * [`ID.preview`](../I/bpy.types.ID.md#bpy.types.ID.preview "bpy.types.ID.preview")
+  * [[ID.is_linked_packed]]
+  * [[ID.is_missing]]
+  * [[ID.is_runtime_data]]
+  * [[ID.is_editable]]
+  * [[ID.tag]]
+  * [[ID.is_library_indirect]]
+  * [[ID.library]]
+  * [[ID.library_weak_reference]]
+  * [[ID.asset_data]]
+  * [[ID.override_library]]
+  * [[ID.preview]]
 
   
 ---|---  
   
 ### Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
 
 | 
 
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
-  * [`ID.bl_system_properties_get`](../I/bpy.types.ID.md#bpy.types.ID.bl_system_properties_get "bpy.types.ID.bl_system_properties_get")
-  * [`ID.rename`](../I/bpy.types.ID.md#bpy.types.ID.rename "bpy.types.ID.rename")
-  * [`ID.evaluated_get`](../I/bpy.types.ID.md#bpy.types.ID.evaluated_get "bpy.types.ID.evaluated_get")
-  * [`ID.copy`](../I/bpy.types.ID.md#bpy.types.ID.copy "bpy.types.ID.copy")
-  * [`ID.asset_mark`](../I/bpy.types.ID.md#bpy.types.ID.asset_mark "bpy.types.ID.asset_mark")
-  * [`ID.asset_clear`](../I/bpy.types.ID.md#bpy.types.ID.asset_clear "bpy.types.ID.asset_clear")
-  * [`ID.asset_generate_preview`](../I/bpy.types.ID.md#bpy.types.ID.asset_generate_preview "bpy.types.ID.asset_generate_preview")
-  * [`ID.override_create`](../I/bpy.types.ID.md#bpy.types.ID.override_create "bpy.types.ID.override_create")
-  * [`ID.override_hierarchy_create`](../I/bpy.types.ID.md#bpy.types.ID.override_hierarchy_create "bpy.types.ID.override_hierarchy_create")
-  * [`ID.user_clear`](../I/bpy.types.ID.md#bpy.types.ID.user_clear "bpy.types.ID.user_clear")
-  * [`ID.user_remap`](../I/bpy.types.ID.md#bpy.types.ID.user_remap "bpy.types.ID.user_remap")
-  * [`ID.make_local`](../I/bpy.types.ID.md#bpy.types.ID.make_local "bpy.types.ID.make_local")
-  * [`ID.user_of_id`](../I/bpy.types.ID.md#bpy.types.ID.user_of_id "bpy.types.ID.user_of_id")
-  * [`ID.animation_data_create`](../I/bpy.types.ID.md#bpy.types.ID.animation_data_create "bpy.types.ID.animation_data_create")
-  * [`ID.animation_data_clear`](../I/bpy.types.ID.md#bpy.types.ID.animation_data_clear "bpy.types.ID.animation_data_clear")
-  * [`ID.update_tag`](../I/bpy.types.ID.md#bpy.types.ID.update_tag "bpy.types.ID.update_tag")
-  * [`ID.preview_ensure`](../I/bpy.types.ID.md#bpy.types.ID.preview_ensure "bpy.types.ID.preview_ensure")
-  * [`ID.bl_rna_get_subclass`](../I/bpy.types.ID.md#bpy.types.ID.bl_rna_get_subclass "bpy.types.ID.bl_rna_get_subclass")
-  * [`ID.bl_rna_get_subclass_py`](../I/bpy.types.ID.md#bpy.types.ID.bl_rna_get_subclass_py "bpy.types.ID.bl_rna_get_subclass_py")
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
+  * [[ID.bl_system_properties_get]]
+  * [[ID.rename]]
+  * [[ID.evaluated_get]]
+  * [[ID.copy]]
+  * [[ID.asset_mark]]
+  * [[ID.asset_clear]]
+  * [[ID.asset_generate_preview]]
+  * [[ID.override_create]]
+  * [[ID.override_hierarchy_create]]
+  * [[ID.user_clear]]
+  * [[ID.user_remap]]
+  * [[ID.make_local]]
+  * [[ID.user_of_id]]
+  * [[ID.animation_data_create]]
+  * [[ID.animation_data_clear]]
+  * [[ID.update_tag]]
+  * [[ID.preview_ensure]]
+  * [[ID.bl_rna_get_subclass]]
+  * [[ID.bl_rna_get_subclass_py]]
 
   
 ---|---  
   
 ### References
 
-  * [`bpy.context.active_object`](../../bpy.context.md#bpy.context.active_object "bpy.context.active_object")
-  * [`bpy.context.edit_object`](../../bpy.context.md#bpy.context.edit_object "bpy.context.edit_object")
-  * [`bpy.context.editable_objects`](../../bpy.context.md#bpy.context.editable_objects "bpy.context.editable_objects")
-  * [`bpy.context.image_paint_object`](../../bpy.context.md#bpy.context.image_paint_object "bpy.context.image_paint_object")
-  * [`bpy.context.object`](../../bpy.context.md#bpy.context.object "bpy.context.object")
-  * [`bpy.context.objects_in_mode`](../../bpy.context.md#bpy.context.objects_in_mode "bpy.context.objects_in_mode")
-  * [`bpy.context.objects_in_mode_unique_data`](../../bpy.context.md#bpy.context.objects_in_mode_unique_data "bpy.context.objects_in_mode_unique_data")
-  * [`bpy.context.particle_edit_object`](../../bpy.context.md#bpy.context.particle_edit_object "bpy.context.particle_edit_object")
-  * [`bpy.context.pose_object`](../../bpy.context.md#bpy.context.pose_object "bpy.context.pose_object")
-  * [`bpy.context.sculpt_object`](../../bpy.context.md#bpy.context.sculpt_object "bpy.context.sculpt_object")
-  * [`bpy.context.selectable_objects`](../../bpy.context.md#bpy.context.selectable_objects "bpy.context.selectable_objects")
-  * [`bpy.context.selected_editable_objects`](../../bpy.context.md#bpy.context.selected_editable_objects "bpy.context.selected_editable_objects")
-  * [`bpy.context.selected_objects`](../../bpy.context.md#bpy.context.selected_objects "bpy.context.selected_objects")
-  * [`bpy.context.vertex_paint_object`](../../bpy.context.md#bpy.context.vertex_paint_object "bpy.context.vertex_paint_object")
-  * [`bpy.context.visible_objects`](../../bpy.context.md#bpy.context.visible_objects "bpy.context.visible_objects")
-  * [`bpy.context.weight_paint_object`](../../bpy.context.md#bpy.context.weight_paint_object "bpy.context.weight_paint_object")
-  * [`Action.flip_with_pose`](../A/bpy.types.Action.md#bpy.types.Action.flip_with_pose "bpy.types.Action.flip_with_pose")
-  * [`ActionConstraint.target`](../A/bpy.types.ActionConstraint.md#bpy.types.ActionConstraint.target "bpy.types.ActionConstraint.target")
-  * [`ArmatureModifier.object`](../A/bpy.types.ArmatureModifier.md#bpy.types.ArmatureModifier.object "bpy.types.ArmatureModifier.object")
-  * [`ArrayModifier.curve`](../A/bpy.types.ArrayModifier.md#bpy.types.ArrayModifier.curve "bpy.types.ArrayModifier.curve")
-  * [`ArrayModifier.end_cap`](../A/bpy.types.ArrayModifier.md#bpy.types.ArrayModifier.end_cap "bpy.types.ArrayModifier.end_cap")
-  * [`ArrayModifier.offset_object`](../A/bpy.types.ArrayModifier.md#bpy.types.ArrayModifier.offset_object "bpy.types.ArrayModifier.offset_object")
-  * [`ArrayModifier.start_cap`](../A/bpy.types.ArrayModifier.md#bpy.types.ArrayModifier.start_cap "bpy.types.ArrayModifier.start_cap")
-  * [`BlendData.objects`](../B/bpy.types.BlendData.md#bpy.types.BlendData.objects "bpy.types.BlendData.objects")
-  * [`BlendDataMeshes.new_from_object`](../B/bpy.types.BlendDataMeshes.md#bpy.types.BlendDataMeshes.new_from_object "bpy.types.BlendDataMeshes.new_from_object")
-  * [`BlendDataObjects.new`](../B/bpy.types.BlendDataObjects.md#bpy.types.BlendDataObjects.new "bpy.types.BlendDataObjects.new")
-  * [`BlendDataObjects.remove`](../B/bpy.types.BlendDataObjects.md#bpy.types.BlendDataObjects.remove "bpy.types.BlendDataObjects.remove")
-  * [`BoidRuleAvoid.object`](../B/bpy.types.BoidRuleAvoid.md#bpy.types.BoidRuleAvoid.object "bpy.types.BoidRuleAvoid.object")
-  * [`BoidRuleFollowLeader.object`](../B/bpy.types.BoidRuleFollowLeader.md#bpy.types.BoidRuleFollowLeader.object "bpy.types.BoidRuleFollowLeader.object")
-  * [`BoidRuleGoal.object`](../B/bpy.types.BoidRuleGoal.md#bpy.types.BoidRuleGoal.object "bpy.types.BoidRuleGoal.object")
-  * [`BooleanModifier.object`](../B/bpy.types.BooleanModifier.md#bpy.types.BooleanModifier.object "bpy.types.BooleanModifier.object")
-  * [`CameraDOFSettings.focus_object`](../C/bpy.types.CameraDOFSettings.md#bpy.types.CameraDOFSettings.focus_object "bpy.types.CameraDOFSettings.focus_object")
-  * [`CastModifier.object`](../C/bpy.types.CastModifier.md#bpy.types.CastModifier.object "bpy.types.CastModifier.object")
-  * [`ChildOfConstraint.target`](../C/bpy.types.ChildOfConstraint.md#bpy.types.ChildOfConstraint.target "bpy.types.ChildOfConstraint.target")
-  * [`ClampToConstraint.target`](../C/bpy.types.ClampToConstraint.md#bpy.types.ClampToConstraint.target "bpy.types.ClampToConstraint.target")
-  * [`Collection.all_objects`](../C/bpy.types.Collection.md#bpy.types.Collection.all_objects "bpy.types.Collection.all_objects")
-  * [`Collection.objects`](../C/bpy.types.Collection.md#bpy.types.Collection.objects "bpy.types.Collection.objects")
-  * [`CollectionObjects.link`](../C/bpy.types.CollectionObjects.md#bpy.types.CollectionObjects.link "bpy.types.CollectionObjects.link")
-  * [`CollectionObjects.unlink`](../C/bpy.types.CollectionObjects.md#bpy.types.CollectionObjects.unlink "bpy.types.CollectionObjects.unlink")
-  * [`Constraint.space_object`](../C/bpy.types.Constraint.md#bpy.types.Constraint.space_object "bpy.types.Constraint.space_object")
-  * [`ConstraintTarget.target`](../C/bpy.types.ConstraintTarget.md#bpy.types.ConstraintTarget.target "bpy.types.ConstraintTarget.target")
-  * [`ConstraintTargetBone.target`](../C/bpy.types.ConstraintTargetBone.md#bpy.types.ConstraintTargetBone.target "bpy.types.ConstraintTargetBone.target")
-  * [`CopyLocationConstraint.target`](../C/bpy.types.CopyLocationConstraint.md#bpy.types.CopyLocationConstraint.target "bpy.types.CopyLocationConstraint.target")
-  * [`CopyRotationConstraint.target`](../C/bpy.types.CopyRotationConstraint.md#bpy.types.CopyRotationConstraint.target "bpy.types.CopyRotationConstraint.target")
-  * [`CopyScaleConstraint.target`](../C/bpy.types.CopyScaleConstraint.md#bpy.types.CopyScaleConstraint.target "bpy.types.CopyScaleConstraint.target")
-  * [`CopyTransformsConstraint.target`](../C/bpy.types.CopyTransformsConstraint.md#bpy.types.CopyTransformsConstraint.target "bpy.types.CopyTransformsConstraint.target")
-  * [`Curve.bevel_object`](../C/bpy.types.Curve.md#bpy.types.Curve.bevel_object "bpy.types.Curve.bevel_object")
-  * [`Curve.taper_object`](../C/bpy.types.Curve.md#bpy.types.Curve.taper_object "bpy.types.Curve.taper_object")
-  * [`CurveModifier.object`](../C/bpy.types.CurveModifier.md#bpy.types.CurveModifier.object "bpy.types.CurveModifier.object")
-  * [`Curves.surface`](../C/bpy.types.Curves.md#bpy.types.Curves.surface "bpy.types.Curves.surface")
+  * [[bpy.context.active_object]]
+  * [[bpy.context.edit_object]]
+  * [[bpy.context.editable_objects]]
+  * [[bpy.context.image_paint_object]]
+  * [[bpy.context.object]]
+  * [[bpy.context.objects_in_mode]]
+  * [[bpy.context.objects_in_mode_unique_data]]
+  * [[bpy.context.particle_edit_object]]
+  * [[bpy.context.pose_object]]
+  * [[bpy.context.sculpt_object]]
+  * [[bpy.context.selectable_objects]]
+  * [[bpy.context.selected_editable_objects]]
+  * [[bpy.context.selected_objects]]
+  * [[bpy.context.vertex_paint_object]]
+  * [[bpy.context.visible_objects]]
+  * [[bpy.context.weight_paint_object]]
+  * [[Action.flip_with_pose]]
+  * [[ActionConstraint.target]]
+  * [[ArmatureModifier.object]]
+  * [[ArrayModifier.curve]]
+  * [[ArrayModifier.end_cap]]
+  * [[ArrayModifier.offset_object]]
+  * [[ArrayModifier.start_cap]]
+  * [[BlendData.objects]]
+  * [[BlendDataMeshes.new_from_object]]
+  * [[BlendDataObjects.new]]
+  * [[BlendDataObjects.remove]]
+  * [[BoidRuleAvoid.object]]
+  * [[BoidRuleFollowLeader.object]]
+  * [[BoidRuleGoal.object]]
+  * [[BooleanModifier.object]]
+  * [[CameraDOFSettings.focus_object]]
+  * [[CastModifier.object]]
+  * [[ChildOfConstraint.target]]
+  * [[ClampToConstraint.target]]
+  * [[Collection.all_objects]]
+  * [[Collection.objects]]
+  * [[CollectionObjects.link]]
+  * [[CollectionObjects.unlink]]
+  * [[Constraint.space_object]]
+  * [[ConstraintTarget.target]]
+  * [[ConstraintTargetBone.target]]
+  * [[CopyLocationConstraint.target]]
+  * [[CopyRotationConstraint.target]]
+  * [[CopyScaleConstraint.target]]
+  * [[CopyTransformsConstraint.target]]
+  * [[Curve.bevel_object]]
+  * [[Curve.taper_object]]
+  * [[CurveModifier.object]]
+  * [[Curves.surface]]
   * `CyclesRenderSettings.dicing_camera`
-  * [`DampedTrackConstraint.target`](../D/bpy.types.DampedTrackConstraint.md#bpy.types.DampedTrackConstraint.target "bpy.types.DampedTrackConstraint.target")
-  * [`DataTransferModifier.object`](../D/bpy.types.DataTransferModifier.md#bpy.types.DataTransferModifier.object "bpy.types.DataTransferModifier.object")
-  * [`Depsgraph.objects`](../D/bpy.types.Depsgraph.md#bpy.types.Depsgraph.objects "bpy.types.Depsgraph.objects")
-  * [`DepsgraphObjectInstance.instance_object`](../D/bpy.types.DepsgraphObjectInstance.md#bpy.types.DepsgraphObjectInstance.instance_object "bpy.types.DepsgraphObjectInstance.instance_object")
-  * [`DepsgraphObjectInstance.object`](../D/bpy.types.DepsgraphObjectInstance.md#bpy.types.DepsgraphObjectInstance.object "bpy.types.DepsgraphObjectInstance.object")
-  * [`DepsgraphObjectInstance.parent`](../D/bpy.types.DepsgraphObjectInstance.md#bpy.types.DepsgraphObjectInstance.parent "bpy.types.DepsgraphObjectInstance.parent")
-  * [`DisplaceModifier.texture_coords_object`](../D/bpy.types.DisplaceModifier.md#bpy.types.DisplaceModifier.texture_coords_object "bpy.types.DisplaceModifier.texture_coords_object")
-  * [`DynamicPaintSurface.output_exists`](../D/bpy.types.DynamicPaintSurface.md#bpy.types.DynamicPaintSurface.output_exists "bpy.types.DynamicPaintSurface.output_exists")
-  * [`FieldSettings.source_object`](../F/bpy.types.FieldSettings.md#bpy.types.FieldSettings.source_object "bpy.types.FieldSettings.source_object")
-  * [`FloorConstraint.target`](../F/bpy.types.FloorConstraint.md#bpy.types.FloorConstraint.target "bpy.types.FloorConstraint.target")
-  * [`FluidDomainSettings.guide_parent`](../F/bpy.types.FluidDomainSettings.md#bpy.types.FluidDomainSettings.guide_parent "bpy.types.FluidDomainSettings.guide_parent")
-  * [`FollowPathConstraint.target`](../F/bpy.types.FollowPathConstraint.md#bpy.types.FollowPathConstraint.target "bpy.types.FollowPathConstraint.target")
-  * [`FollowTrackConstraint.camera`](../F/bpy.types.FollowTrackConstraint.md#bpy.types.FollowTrackConstraint.camera "bpy.types.FollowTrackConstraint.camera")
-  * [`FollowTrackConstraint.depth_object`](../F/bpy.types.FollowTrackConstraint.md#bpy.types.FollowTrackConstraint.depth_object "bpy.types.FollowTrackConstraint.depth_object")
-  * [`GPencilSculptGuide.reference_object`](../G/bpy.types.GPencilSculptGuide.md#bpy.types.GPencilSculptGuide.reference_object "bpy.types.GPencilSculptGuide.reference_object")
-  * [`GeometryAttributeConstraint.target`](../G/bpy.types.GeometryAttributeConstraint.md#bpy.types.GeometryAttributeConstraint.target "bpy.types.GeometryAttributeConstraint.target")
-  * [`GeometryNodeInputObject.object`](../G/bpy.types.GeometryNodeInputObject.md#bpy.types.GeometryNodeInputObject.object "bpy.types.GeometryNodeInputObject.object")
-  * [`GreasePencilArmatureModifier.object`](../G/bpy.types.GreasePencilArmatureModifier.md#bpy.types.GreasePencilArmatureModifier.object "bpy.types.GreasePencilArmatureModifier.object")
-  * [`GreasePencilArrayModifier.offset_object`](../G/bpy.types.GreasePencilArrayModifier.md#bpy.types.GreasePencilArrayModifier.offset_object "bpy.types.GreasePencilArrayModifier.offset_object")
-  * [`GreasePencilBuildModifier.object`](../G/bpy.types.GreasePencilBuildModifier.md#bpy.types.GreasePencilBuildModifier.object "bpy.types.GreasePencilBuildModifier.object")
-  * [`GreasePencilHookModifier.object`](../G/bpy.types.GreasePencilHookModifier.md#bpy.types.GreasePencilHookModifier.object "bpy.types.GreasePencilHookModifier.object")
-  * [`GreasePencilLatticeModifier.object`](../G/bpy.types.GreasePencilLatticeModifier.md#bpy.types.GreasePencilLatticeModifier.object "bpy.types.GreasePencilLatticeModifier.object")
-  * [`GreasePencilLayer.parent`](../G/bpy.types.GreasePencilLayer.md#bpy.types.GreasePencilLayer.parent "bpy.types.GreasePencilLayer.parent")
-  * [`GreasePencilLineartModifier.light_contour_object`](../G/bpy.types.GreasePencilLineartModifier.md#bpy.types.GreasePencilLineartModifier.light_contour_object "bpy.types.GreasePencilLineartModifier.light_contour_object")
-  * [`GreasePencilLineartModifier.source_camera`](../G/bpy.types.GreasePencilLineartModifier.md#bpy.types.GreasePencilLineartModifier.source_camera "bpy.types.GreasePencilLineartModifier.source_camera")
-  * [`GreasePencilLineartModifier.source_object`](../G/bpy.types.GreasePencilLineartModifier.md#bpy.types.GreasePencilLineartModifier.source_object "bpy.types.GreasePencilLineartModifier.source_object")
-  * [`GreasePencilMirrorModifier.object`](../G/bpy.types.GreasePencilMirrorModifier.md#bpy.types.GreasePencilMirrorModifier.object "bpy.types.GreasePencilMirrorModifier.object")
-  * [`GreasePencilOutlineModifier.object`](../G/bpy.types.GreasePencilOutlineModifier.md#bpy.types.GreasePencilOutlineModifier.object "bpy.types.GreasePencilOutlineModifier.object")
-  * [`GreasePencilShrinkwrapModifier.auxiliary_target`](../G/bpy.types.GreasePencilShrinkwrapModifier.md#bpy.types.GreasePencilShrinkwrapModifier.auxiliary_target "bpy.types.GreasePencilShrinkwrapModifier.auxiliary_target")
-  * [`GreasePencilShrinkwrapModifier.target`](../G/bpy.types.GreasePencilShrinkwrapModifier.md#bpy.types.GreasePencilShrinkwrapModifier.target "bpy.types.GreasePencilShrinkwrapModifier.target")
-  * [`GreasePencilTintModifier.object`](../G/bpy.types.GreasePencilTintModifier.md#bpy.types.GreasePencilTintModifier.object "bpy.types.GreasePencilTintModifier.object")
-  * [`GreasePencilWeightProximityModifier.object`](../G/bpy.types.GreasePencilWeightProximityModifier.md#bpy.types.GreasePencilWeightProximityModifier.object "bpy.types.GreasePencilWeightProximityModifier.object")
-  * [`HookModifier.object`](../H/bpy.types.HookModifier.md#bpy.types.HookModifier.object "bpy.types.HookModifier.object")
+  * [[DampedTrackConstraint.target]]
+  * [[DataTransferModifier.object]]
+  * [[Depsgraph.objects]]
+  * [[DepsgraphObjectInstance.instance_object]]
+  * [[DepsgraphObjectInstance.object]]
+  * [[DepsgraphObjectInstance.parent]]
+  * [[DisplaceModifier.texture_coords_object]]
+  * [[DynamicPaintSurface.output_exists]]
+  * [[FieldSettings.source_object]]
+  * [[FloorConstraint.target]]
+  * [[FluidDomainSettings.guide_parent]]
+  * [[FollowPathConstraint.target]]
+  * [[FollowTrackConstraint.camera]]
+  * [[FollowTrackConstraint.depth_object]]
+  * [[GPencilSculptGuide.reference_object]]
+  * [[GeometryAttributeConstraint.target]]
+  * [[GeometryNodeInputObject.object]]
+  * [[GreasePencilArmatureModifier.object]]
+  * [[GreasePencilArrayModifier.offset_object]]
+  * [[GreasePencilBuildModifier.object]]
+  * [[GreasePencilHookModifier.object]]
+  * [[GreasePencilLatticeModifier.object]]
+  * [[GreasePencilLayer.parent]]
+  * [[GreasePencilLineartModifier.light_contour_object]]
+  * [[GreasePencilLineartModifier.source_camera]]
+  * [[GreasePencilLineartModifier.source_object]]
+  * [[GreasePencilMirrorModifier.object]]
+  * [[GreasePencilOutlineModifier.object]]
+  * [[GreasePencilShrinkwrapModifier.auxiliary_target]]
+  * [[GreasePencilShrinkwrapModifier.target]]
+  * [[GreasePencilTintModifier.object]]
+  * [[GreasePencilWeightProximityModifier.object]]
+  * [[HookModifier.object]]
 
 | 
 
-  * [`KinematicConstraint.pole_target`](../K/bpy.types.KinematicConstraint.md#bpy.types.KinematicConstraint.pole_target "bpy.types.KinematicConstraint.pole_target")
-  * [`KinematicConstraint.target`](../K/bpy.types.KinematicConstraint.md#bpy.types.KinematicConstraint.target "bpy.types.KinematicConstraint.target")
-  * [`LatticeModifier.object`](../L/bpy.types.LatticeModifier.md#bpy.types.LatticeModifier.object "bpy.types.LatticeModifier.object")
-  * [`LayerObjects.active`](../L/bpy.types.LayerObjects.md#bpy.types.LayerObjects.active "bpy.types.LayerObjects.active")
-  * [`LayerObjects.selected`](../L/bpy.types.LayerObjects.md#bpy.types.LayerObjects.selected "bpy.types.LayerObjects.selected")
-  * [`LimitDistanceConstraint.target`](../L/bpy.types.LimitDistanceConstraint.md#bpy.types.LimitDistanceConstraint.target "bpy.types.LimitDistanceConstraint.target")
-  * [`LineStyleAlphaModifier_DistanceFromObject.target`](../L/bpy.types.LineStyleAlphaModifier_DistanceFromObject.md#bpy.types.LineStyleAlphaModifier_DistanceFromObject.target "bpy.types.LineStyleAlphaModifier_DistanceFromObject.target")
-  * [`LineStyleColorModifier_DistanceFromObject.target`](../L/bpy.types.LineStyleColorModifier_DistanceFromObject.md#bpy.types.LineStyleColorModifier_DistanceFromObject.target "bpy.types.LineStyleColorModifier_DistanceFromObject.target")
-  * [`LineStyleThicknessModifier_DistanceFromObject.target`](../L/bpy.types.LineStyleThicknessModifier_DistanceFromObject.md#bpy.types.LineStyleThicknessModifier_DistanceFromObject.target "bpy.types.LineStyleThicknessModifier_DistanceFromObject.target")
-  * [`LockedTrackConstraint.target`](../L/bpy.types.LockedTrackConstraint.md#bpy.types.LockedTrackConstraint.target "bpy.types.LockedTrackConstraint.target")
-  * [`MaskModifier.armature`](../M/bpy.types.MaskModifier.md#bpy.types.MaskModifier.armature "bpy.types.MaskModifier.armature")
-  * [`MeshDeformModifier.object`](../M/bpy.types.MeshDeformModifier.md#bpy.types.MeshDeformModifier.object "bpy.types.MeshDeformModifier.object")
-  * [`MeshToVolumeModifier.object`](../M/bpy.types.MeshToVolumeModifier.md#bpy.types.MeshToVolumeModifier.object "bpy.types.MeshToVolumeModifier.object")
-  * [`MirrorModifier.mirror_object`](../M/bpy.types.MirrorModifier.md#bpy.types.MirrorModifier.mirror_object "bpy.types.MirrorModifier.mirror_object")
-  * [`NodeSocketObject.default_value`](../N/bpy.types.NodeSocketObject.md#bpy.types.NodeSocketObject.default_value "bpy.types.NodeSocketObject.default_value")
-  * [`NodeTreeInterfaceSocketObject.default_value`](../N/bpy.types.NodeTreeInterfaceSocketObject.md#bpy.types.NodeTreeInterfaceSocketObject.default_value "bpy.types.NodeTreeInterfaceSocketObject.default_value")
-  * [`NormalEditModifier.target`](../N/bpy.types.NormalEditModifier.md#bpy.types.NormalEditModifier.target "bpy.types.NormalEditModifier.target")
+  * [[KinematicConstraint.pole_target]]
+  * [[KinematicConstraint.target]]
+  * [[LatticeModifier.object]]
+  * [[LayerObjects.active]]
+  * [[LayerObjects.selected]]
+  * [[LimitDistanceConstraint.target]]
+  * [[LineStyleAlphaModifier_DistanceFromObject.target]]
+  * [[LineStyleColorModifier_DistanceFromObject.target]]
+  * [[LineStyleThicknessModifier_DistanceFromObject.target]]
+  * [[LockedTrackConstraint.target]]
+  * [[MaskModifier.armature]]
+  * [[MeshDeformModifier.object]]
+  * [[MeshToVolumeModifier.object]]
+  * [[MirrorModifier.mirror_object]]
+  * [[NodeSocketObject.default_value]]
+  * [[NodeTreeInterfaceSocketObject.default_value]]
+  * [[NormalEditModifier.target]]
   * `Object.find_armature`
   * `Object.parent`
-  * [`ObjectBase.object`](bpy.types.ObjectBase.md#bpy.types.ObjectBase.object "bpy.types.ObjectBase.object")
-  * [`ObjectSolverConstraint.camera`](bpy.types.ObjectSolverConstraint.md#bpy.types.ObjectSolverConstraint.camera "bpy.types.ObjectSolverConstraint.camera")
-  * [`ParticleEdit.object`](../P/bpy.types.ParticleEdit.md#bpy.types.ParticleEdit.object "bpy.types.ParticleEdit.object")
-  * [`ParticleEdit.shape_object`](../P/bpy.types.ParticleEdit.md#bpy.types.ParticleEdit.shape_object "bpy.types.ParticleEdit.shape_object")
-  * [`ParticleHairKey.co_object`](../P/bpy.types.ParticleHairKey.md#bpy.types.ParticleHairKey.co_object "bpy.types.ParticleHairKey.co_object")
-  * [`ParticleHairKey.co_object_set`](../P/bpy.types.ParticleHairKey.md#bpy.types.ParticleHairKey.co_object_set "bpy.types.ParticleHairKey.co_object_set")
-  * [`ParticleInstanceModifier.object`](../P/bpy.types.ParticleInstanceModifier.md#bpy.types.ParticleInstanceModifier.object "bpy.types.ParticleInstanceModifier.object")
-  * [`ParticleSettings.instance_object`](../P/bpy.types.ParticleSettings.md#bpy.types.ParticleSettings.instance_object "bpy.types.ParticleSettings.instance_object")
-  * [`ParticleSettingsTextureSlot.object`](../P/bpy.types.ParticleSettingsTextureSlot.md#bpy.types.ParticleSettingsTextureSlot.object "bpy.types.ParticleSettingsTextureSlot.object")
-  * [`ParticleSystem.co_hair`](../P/bpy.types.ParticleSystem.md#bpy.types.ParticleSystem.co_hair "bpy.types.ParticleSystem.co_hair")
-  * [`ParticleSystem.parent`](../P/bpy.types.ParticleSystem.md#bpy.types.ParticleSystem.parent "bpy.types.ParticleSystem.parent")
-  * [`ParticleSystem.reactor_target_object`](../P/bpy.types.ParticleSystem.md#bpy.types.ParticleSystem.reactor_target_object "bpy.types.ParticleSystem.reactor_target_object")
-  * [`ParticleTarget.object`](../P/bpy.types.ParticleTarget.md#bpy.types.ParticleTarget.object "bpy.types.ParticleTarget.object")
-  * [`PivotConstraint.target`](../P/bpy.types.PivotConstraint.md#bpy.types.PivotConstraint.target "bpy.types.PivotConstraint.target")
-  * [`PoseBone.custom_shape`](../P/bpy.types.PoseBone.md#bpy.types.PoseBone.custom_shape "bpy.types.PoseBone.custom_shape")
-  * [`RenderEngine.bake`](../R/bpy.types.RenderEngine.md#bpy.types.RenderEngine.bake "bpy.types.RenderEngine.bake")
-  * [`RenderEngine.camera_model_matrix`](../R/bpy.types.RenderEngine.md#bpy.types.RenderEngine.camera_model_matrix "bpy.types.RenderEngine.camera_model_matrix")
-  * [`RenderEngine.camera_override`](../R/bpy.types.RenderEngine.md#bpy.types.RenderEngine.camera_override "bpy.types.RenderEngine.camera_override")
-  * [`RenderEngine.camera_shift_x`](../R/bpy.types.RenderEngine.md#bpy.types.RenderEngine.camera_shift_x "bpy.types.RenderEngine.camera_shift_x")
-  * [`RenderEngine.use_spherical_stereo`](../R/bpy.types.RenderEngine.md#bpy.types.RenderEngine.use_spherical_stereo "bpy.types.RenderEngine.use_spherical_stereo")
-  * [`RigidBodyConstraint.object1`](../R/bpy.types.RigidBodyConstraint.md#bpy.types.RigidBodyConstraint.object1 "bpy.types.RigidBodyConstraint.object1")
-  * [`RigidBodyConstraint.object2`](../R/bpy.types.RigidBodyConstraint.md#bpy.types.RigidBodyConstraint.object2 "bpy.types.RigidBodyConstraint.object2")
-  * [`RigidBodyWorld.convex_sweep_test`](../R/bpy.types.RigidBodyWorld.md#bpy.types.RigidBodyWorld.convex_sweep_test "bpy.types.RigidBodyWorld.convex_sweep_test")
-  * [`BakeSettings.cage_object`](../B/bpy.types.BakeSettings.md#bpy.types.BakeSettings.cage_object "bpy.types.BakeSettings.cage_object")
-  * [`Scene.camera`](../S/bpy.types.Scene.md#bpy.types.Scene.camera "bpy.types.Scene.camera")
-  * [`Scene.objects`](../S/bpy.types.Scene.md#bpy.types.Scene.objects "bpy.types.Scene.objects")
-  * [`Scene.ray_cast`](../S/bpy.types.Scene.md#bpy.types.Scene.ray_cast "bpy.types.Scene.ray_cast")
-  * [`Scene.uvedit_aspect`](../S/bpy.types.Scene.md#bpy.types.Scene.uvedit_aspect "bpy.types.Scene.uvedit_aspect")
-  * [`SceneStrip.scene_camera`](../S/bpy.types.SceneStrip.md#bpy.types.SceneStrip.scene_camera "bpy.types.SceneStrip.scene_camera")
-  * [`ScrewModifier.object`](../S/bpy.types.ScrewModifier.md#bpy.types.ScrewModifier.object "bpy.types.ScrewModifier.object")
-  * [`Sculpt.gravity_object`](../S/bpy.types.Sculpt.md#bpy.types.Sculpt.gravity_object "bpy.types.Sculpt.gravity_object")
-  * [`ShaderFxShadow.object`](../S/bpy.types.ShaderFxShadow.md#bpy.types.ShaderFxShadow.object "bpy.types.ShaderFxShadow.object")
-  * [`ShaderFxSwirl.object`](../S/bpy.types.ShaderFxSwirl.md#bpy.types.ShaderFxSwirl.object "bpy.types.ShaderFxSwirl.object")
-  * [`ShaderNodeTexCoord.object`](../S/bpy.types.ShaderNodeTexCoord.md#bpy.types.ShaderNodeTexCoord.object "bpy.types.ShaderNodeTexCoord.object")
-  * [`ShrinkwrapConstraint.target`](../S/bpy.types.ShrinkwrapConstraint.md#bpy.types.ShrinkwrapConstraint.target "bpy.types.ShrinkwrapConstraint.target")
-  * [`ShrinkwrapModifier.auxiliary_target`](../S/bpy.types.ShrinkwrapModifier.md#bpy.types.ShrinkwrapModifier.auxiliary_target "bpy.types.ShrinkwrapModifier.auxiliary_target")
-  * [`ShrinkwrapModifier.target`](../S/bpy.types.ShrinkwrapModifier.md#bpy.types.ShrinkwrapModifier.target "bpy.types.ShrinkwrapModifier.target")
-  * [`SimpleDeformModifier.origin`](../S/bpy.types.SimpleDeformModifier.md#bpy.types.SimpleDeformModifier.origin "bpy.types.SimpleDeformModifier.origin")
-  * [`SpaceView3D.camera`](../S/bpy.types.SpaceView3D.md#bpy.types.SpaceView3D.camera "bpy.types.SpaceView3D.camera")
-  * [`SpaceView3D.lock_object`](../S/bpy.types.SpaceView3D.md#bpy.types.SpaceView3D.lock_object "bpy.types.SpaceView3D.lock_object")
-  * [`SplineIKConstraint.target`](../S/bpy.types.SplineIKConstraint.md#bpy.types.SplineIKConstraint.target "bpy.types.SplineIKConstraint.target")
-  * [`StretchToConstraint.target`](../S/bpy.types.StretchToConstraint.md#bpy.types.StretchToConstraint.target "bpy.types.StretchToConstraint.target")
-  * [`SurfaceDeformModifier.target`](../S/bpy.types.SurfaceDeformModifier.md#bpy.types.SurfaceDeformModifier.target "bpy.types.SurfaceDeformModifier.target")
-  * [`TextCurve.follow_curve`](../T/bpy.types.TextCurve.md#bpy.types.TextCurve.follow_curve "bpy.types.TextCurve.follow_curve")
-  * [`TimelineMarker.camera`](../T/bpy.types.TimelineMarker.md#bpy.types.TimelineMarker.camera "bpy.types.TimelineMarker.camera")
-  * [`ToolSettings.anim_mirror_object`](../T/bpy.types.ToolSettings.md#bpy.types.ToolSettings.anim_mirror_object "bpy.types.ToolSettings.anim_mirror_object")
-  * [`ToolSettings.anim_relative_object`](../T/bpy.types.ToolSettings.md#bpy.types.ToolSettings.anim_relative_object "bpy.types.ToolSettings.anim_relative_object")
-  * [`TrackToConstraint.target`](../T/bpy.types.TrackToConstraint.md#bpy.types.TrackToConstraint.target "bpy.types.TrackToConstraint.target")
-  * [`TransformConstraint.target`](../T/bpy.types.TransformConstraint.md#bpy.types.TransformConstraint.target "bpy.types.TransformConstraint.target")
-  * [`UVProjector.object`](../U/bpy.types.UVProjector.md#bpy.types.UVProjector.object "bpy.types.UVProjector.object")
-  * [`UVWarpModifier.object_from`](../U/bpy.types.UVWarpModifier.md#bpy.types.UVWarpModifier.object_from "bpy.types.UVWarpModifier.object_from")
-  * [`UVWarpModifier.object_to`](../U/bpy.types.UVWarpModifier.md#bpy.types.UVWarpModifier.object_to "bpy.types.UVWarpModifier.object_to")
-  * [`VertexWeightEditModifier.mask_tex_map_object`](../V/bpy.types.VertexWeightEditModifier.md#bpy.types.VertexWeightEditModifier.mask_tex_map_object "bpy.types.VertexWeightEditModifier.mask_tex_map_object")
-  * [`VertexWeightMixModifier.mask_tex_map_object`](../V/bpy.types.VertexWeightMixModifier.md#bpy.types.VertexWeightMixModifier.mask_tex_map_object "bpy.types.VertexWeightMixModifier.mask_tex_map_object")
-  * [`VertexWeightProximityModifier.mask_tex_map_object`](../V/bpy.types.VertexWeightProximityModifier.md#bpy.types.VertexWeightProximityModifier.mask_tex_map_object "bpy.types.VertexWeightProximityModifier.mask_tex_map_object")
-  * [`VertexWeightProximityModifier.target`](../V/bpy.types.VertexWeightProximityModifier.md#bpy.types.VertexWeightProximityModifier.target "bpy.types.VertexWeightProximityModifier.target")
-  * [`ViewLayer.objects`](../V/bpy.types.ViewLayer.md#bpy.types.ViewLayer.objects "bpy.types.ViewLayer.objects")
-  * [`VolumeDisplaceModifier.texture_map_object`](../V/bpy.types.VolumeDisplaceModifier.md#bpy.types.VolumeDisplaceModifier.texture_map_object "bpy.types.VolumeDisplaceModifier.texture_map_object")
-  * [`VolumeToMeshModifier.object`](../V/bpy.types.VolumeToMeshModifier.md#bpy.types.VolumeToMeshModifier.object "bpy.types.VolumeToMeshModifier.object")
-  * [`WarpModifier.object_from`](../W/bpy.types.WarpModifier.md#bpy.types.WarpModifier.object_from "bpy.types.WarpModifier.object_from")
-  * [`WarpModifier.object_to`](../W/bpy.types.WarpModifier.md#bpy.types.WarpModifier.object_to "bpy.types.WarpModifier.object_to")
-  * [`WarpModifier.texture_coords_object`](../W/bpy.types.WarpModifier.md#bpy.types.WarpModifier.texture_coords_object "bpy.types.WarpModifier.texture_coords_object")
-  * [`WaveModifier.start_position_object`](../W/bpy.types.WaveModifier.md#bpy.types.WaveModifier.start_position_object "bpy.types.WaveModifier.start_position_object")
-  * [`WaveModifier.texture_coords_object`](../W/bpy.types.WaveModifier.md#bpy.types.WaveModifier.texture_coords_object "bpy.types.WaveModifier.texture_coords_object")
-  * [`XrSessionSettings.base_pose_object`](../X/bpy.types.XrSessionSettings.md#bpy.types.XrSessionSettings.base_pose_object "bpy.types.XrSessionSettings.base_pose_object")
+  * [[ObjectBase.object]]
+  * [[ObjectSolverConstraint.camera]]
+  * [[ParticleEdit.object]]
+  * [[ParticleEdit.shape_object]]
+  * [[ParticleHairKey.co_object]]
+  * [[ParticleHairKey.co_object_set]]
+  * [[ParticleInstanceModifier.object]]
+  * [[ParticleSettings.instance_object]]
+  * [[ParticleSettingsTextureSlot.object]]
+  * [[ParticleSystem.co_hair]]
+  * [[ParticleSystem.parent]]
+  * [[ParticleSystem.reactor_target_object]]
+  * [[ParticleTarget.object]]
+  * [[PivotConstraint.target]]
+  * [[PoseBone.custom_shape]]
+  * [[RenderEngine.bake]]
+  * [[RenderEngine.camera_model_matrix]]
+  * [[RenderEngine.camera_override]]
+  * [[RenderEngine.camera_shift_x]]
+  * [[RenderEngine.use_spherical_stereo]]
+  * [[RigidBodyConstraint.object1]]
+  * [[RigidBodyConstraint.object2]]
+  * [[RigidBodyWorld.convex_sweep_test]]
+  * [[BakeSettings.cage_object]]
+  * [[Scene.camera]]
+  * [[Scene.objects]]
+  * [[Scene.ray_cast]]
+  * [[Scene.uvedit_aspect]]
+  * [[SceneStrip.scene_camera]]
+  * [[ScrewModifier.object]]
+  * [[Sculpt.gravity_object]]
+  * [[ShaderFxShadow.object]]
+  * [[ShaderFxSwirl.object]]
+  * [[ShaderNodeTexCoord.object]]
+  * [[ShrinkwrapConstraint.target]]
+  * [[ShrinkwrapModifier.auxiliary_target]]
+  * [[ShrinkwrapModifier.target]]
+  * [[SimpleDeformModifier.origin]]
+  * [[SpaceView3D.camera]]
+  * [[SpaceView3D.lock_object]]
+  * [[SplineIKConstraint.target]]
+  * [[StretchToConstraint.target]]
+  * [[SurfaceDeformModifier.target]]
+  * [[TextCurve.follow_curve]]
+  * [[TimelineMarker.camera]]
+  * [[ToolSettings.anim_mirror_object]]
+  * [[ToolSettings.anim_relative_object]]
+  * [[TrackToConstraint.target]]
+  * [[TransformConstraint.target]]
+  * [[UVProjector.object]]
+  * [[UVWarpModifier.object_from]]
+  * [[UVWarpModifier.object_to]]
+  * [[VertexWeightEditModifier.mask_tex_map_object]]
+  * [[VertexWeightMixModifier.mask_tex_map_object]]
+  * [[VertexWeightProximityModifier.mask_tex_map_object]]
+  * [[VertexWeightProximityModifier.target]]
+  * [[ViewLayer.objects]]
+  * [[VolumeDisplaceModifier.texture_map_object]]
+  * [[VolumeToMeshModifier.object]]
+  * [[WarpModifier.object_from]]
+  * [[WarpModifier.object_to]]
+  * [[WarpModifier.texture_coords_object]]
+  * [[WaveModifier.start_position_object]]
+  * [[WaveModifier.texture_coords_object]]
+  * [[XrSessionSettings.base_pose_object]]
 
   
 ---|---

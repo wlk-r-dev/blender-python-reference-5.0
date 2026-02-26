@@ -47,7 +47,7 @@ Each of these arguments is optional, but must be given in the order above.
 
 It is possible to override context members that the operator sees, so that they act on specified rather than the selected or active data, or to execute an operator in the different part of the user interface.
 
-The context overrides are passed in as keyword arguments, with keywords matching the context member names in `bpy.context`. For example to override `bpy.context.active_object`, you would pass `active_object=object` to [`bpy.types.Context.temp_override`](../bpy.types/C/bpy.types.Context.md#bpy.types.Context.temp_override "bpy.types.Context.temp_override").
+The context overrides are passed in as keyword arguments, with keywords matching the context member names in `bpy.context`. For example to override `bpy.context.active_object`, you would pass `active_object=object` to [[bpy.types.Context.temp_override]].
 
 Note
 

@@ -3790,9 +3790,9 @@ Mode, Fly mode
 
   * **fly_speed_factor** (_float in_ _[__0_ _,__1_ _]__,__(__optional_ _)_) – Fly Speed Factor, Ratio between the min and max fly speed
 
-  * **speed_interpolation0** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [0, 1], (optional)) – Speed Interpolation 0, First cubic spline control point between min/max speeds
+  * **speed_interpolation0** ([[mathutils.Vector]] of 2 items in [0, 1], (optional)) – Speed Interpolation 0, First cubic spline control point between min/max speeds
 
-  * **speed_interpolation1** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [0, 1], (optional)) – Speed Interpolation 1, Second cubic spline control point between min/max speeds
+  * **speed_interpolation1** ([[mathutils.Vector]] of 2 items in [0, 1], (optional)) – Speed Interpolation 1, Second cubic spline control point between min/max speeds
 
   * **alt_mode** (enum in [`'FORWARD'`, `'BACK'`, `'LEFT'`, `'RIGHT'`, `'UP'`, `'DOWN'`, `'TURNLEFT'`, `'TURNRIGHT'`, `'VIEWER_FORWARD'`, `'VIEWER_BACK'`, `'VIEWER_LEFT'`, `'VIEWER_RIGHT'`, `'CONTROLLER_FORWARD'`], (optional)) – 
 
@@ -3896,7 +3896,7 @@ Parameters:
 
   * **from_viewer** (_boolean_ _,__(__optional_ _)_) – From Viewer, Use viewer pose as raycast origin
 
-  * **axis** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-1, 1], (optional)) – Axis, Raycast axis in controller/viewer space
+  * **axis** ([[mathutils.Vector]] of 3 items in [-1, 1], (optional)) – Axis, Raycast axis in controller/viewer space
 
   * **hit_color** (_float array_ _of_ _4 items in_ _[__0_ _,__1_ _]__,__(__optional_ _)_) – Hit Color, Color of raycast when it succeeds
 

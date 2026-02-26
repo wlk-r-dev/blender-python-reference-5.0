@@ -22,11 +22,11 @@ Align, The alignment of the new object
 
     * `CURSOR` 3D Cursor – Use the 3D cursor orientation for the new object.
 
-  * **location** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Location, Location for the newly added object
+  * **location** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Location, Location for the newly added object
 
-  * **rotation** ([`mathutils.Euler`](mathutils.md#mathutils.Euler "mathutils.Euler") rotation of 3 items in [-inf, inf], (optional)) – Rotation, Rotation for the newly added object
+  * **rotation** ([[mathutils.Euler]] rotation of 3 items in [-inf, inf], (optional)) – Rotation, Rotation for the newly added object
 
-  * **scale** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Scale, Scale for the newly added object
+  * **scale** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Scale, Scale for the newly added object
 
 
 bpy.ops.curves.add_circle(_*_ , _radius =1.0_, _enter_editmode =False_, _align ='WORLD'_, _location =(0.0, 0.0, 0.0)_, _rotation =(0.0, 0.0, 0.0)_, _scale =(0.0, 0.0, 0.0)_)
@@ -51,11 +51,11 @@ Align, The alignment of the new object
 
     * `CURSOR` 3D Cursor – Use the 3D cursor orientation for the new object.
 
-  * **location** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Location, Location for the newly added object
+  * **location** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Location, Location for the newly added object
 
-  * **rotation** ([`mathutils.Euler`](mathutils.md#mathutils.Euler "mathutils.Euler") rotation of 3 items in [-inf, inf], (optional)) – Rotation, Rotation for the newly added object
+  * **rotation** ([[mathutils.Euler]] rotation of 3 items in [-inf, inf], (optional)) – Rotation, Rotation for the newly added object
 
-  * **scale** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Scale, Scale for the newly added object
+  * **scale** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Scale, Scale for the newly added object
 
 
 bpy.ops.curves.attribute_set(_*_ , _value_float =0.0_, _value_float_vector_2d =(0.0, 0.0)_, _value_float_vector_3d =(0.0, 0.0, 0.0)_, _value_int =0_, _value_int_vector_2d =(0, 0)_, _value_color =(1.0, 1.0, 1.0, 1.0)_, _value_bool =False_)

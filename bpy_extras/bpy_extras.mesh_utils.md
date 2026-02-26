@@ -8,7 +8,7 @@ Returns lists of polygon indices connected by UV islands.
 Parameters:
     
 
-**mesh** ([`bpy.types.Mesh`](../bpy.types/M/bpy.types.Mesh.md#bpy.types.Mesh "bpy.types.Mesh")) – the mesh used to group with.
+**mesh** ([[bpy.types.Mesh]]) – the mesh used to group with.
 
 Returns:
     
@@ -28,7 +28,7 @@ Splits the mesh into connected triangles, use this for separating cubes from oth
 Parameters:
     
 
-**mesh** ([`bpy.types.Mesh`](../bpy.types/M/bpy.types.Mesh.md#bpy.types.Mesh "bpy.types.Mesh")) – the mesh used to group with.
+**mesh** ([[bpy.types.Mesh]]) – the mesh used to group with.
 
 Returns:
     
@@ -38,7 +38,7 @@ Lists of lists containing triangles.
 Return type:
     
 
-list[list[[`bpy.types.MeshLoopTriangle`](../bpy.types/M/bpy.types.MeshLoopTriangle.md#bpy.types.MeshLoopTriangle "bpy.types.MeshLoopTriangle")]]
+list[list[[[bpy.types.MeshLoopTriangle]]]]
 
 bpy_extras.mesh_utils.edge_face_count_dict(_mesh_)
     
@@ -85,7 +85,7 @@ Takes a poly-line of indices (ngon) and returns a list of face index lists. Desi
 Parameters:
     
 
-  * **from_data** ([`bpy.types.Mesh`](../bpy.types/M/bpy.types.Mesh.md#bpy.types.Mesh "bpy.types.Mesh") | list[Sequence[float]] | tuple[Sequence[float]]) – Either a mesh, or a list/tuple of 3D vectors.
+  * **from_data** ([[bpy.types.Mesh]] | list[Sequence[float]] | tuple[Sequence[float]]) – Either a mesh, or a list/tuple of 3D vectors.
 
   * **indices** (_list_ _[__int_ _]_) – a list of indices to use this list is the ordered closed poly-line to fill, and can be a subset of the data given.
 
@@ -102,7 +102,7 @@ Parameters:
 
   * **num_points** (_int_) – The number of random points to generate on each triangle.
 
-  * **loop_triangles** (Sequence[[`bpy.types.MeshLoopTriangle`](../bpy.types/M/bpy.types.MeshLoopTriangle.md#bpy.types.MeshLoopTriangle "bpy.types.MeshLoopTriangle")]) – Sequence of the triangles to generate points on.
+  * **loop_triangles** (Sequence[[[bpy.types.MeshLoopTriangle]]]) – Sequence of the triangles to generate points on.
 
 
 Returns:
@@ -113,4 +113,4 @@ List of random points over all triangles.
 Return type:
     
 
-list[[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")]
+list[[[mathutils.Vector]]]

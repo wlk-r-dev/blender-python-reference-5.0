@@ -10,7 +10,7 @@ Get GPUTexture corresponding to an Image data-block. The GPUTexture memory is sh
 Parameters:
     
 
-**image** ([`bpy.types.Image`](../bpy.types/I/bpy.types.Image.md#bpy.types.Image "bpy.types.Image")) – The Image data-block.
+**image** ([[bpy.types.Image]]) – The Image data-block.
 
 Returns:
     
@@ -20,4 +20,4 @@ The GPUTexture used by the image.
 Return type:
     
 
-[`gpu.types.GPUTexture`](gpu.types.md#gpu.types.GPUTexture "gpu.types.GPUTexture")
+[[gpu.types.GPUTexture]]

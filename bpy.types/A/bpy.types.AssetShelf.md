@@ -1,8 +1,8 @@
 # AssetShelf(bpy_struct)
 
-base class — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")
+base class — [[bpy_struct]]
 
-subclasses — [`IMAGE_AST_brush_paint`](../I/bpy.types.IMAGE_AST_brush_paint.md#bpy.types.IMAGE_AST_brush_paint "bpy.types.IMAGE_AST_brush_paint"), [`NODE_AST_compositor`](../N/bpy.types.NODE_AST_compositor.md#bpy.types.NODE_AST_compositor "bpy.types.NODE_AST_compositor"), [`VIEW3D_AST_brush_gpencil_paint`](../V/bpy.types.VIEW3D_AST_brush_gpencil_paint.md#bpy.types.VIEW3D_AST_brush_gpencil_paint "bpy.types.VIEW3D_AST_brush_gpencil_paint"), [`VIEW3D_AST_brush_gpencil_sculpt`](../V/bpy.types.VIEW3D_AST_brush_gpencil_sculpt.md#bpy.types.VIEW3D_AST_brush_gpencil_sculpt "bpy.types.VIEW3D_AST_brush_gpencil_sculpt"), [`VIEW3D_AST_brush_gpencil_vertex`](../V/bpy.types.VIEW3D_AST_brush_gpencil_vertex.md#bpy.types.VIEW3D_AST_brush_gpencil_vertex "bpy.types.VIEW3D_AST_brush_gpencil_vertex"), [`VIEW3D_AST_brush_gpencil_weight`](../V/bpy.types.VIEW3D_AST_brush_gpencil_weight.md#bpy.types.VIEW3D_AST_brush_gpencil_weight "bpy.types.VIEW3D_AST_brush_gpencil_weight"), [`VIEW3D_AST_brush_sculpt`](../V/bpy.types.VIEW3D_AST_brush_sculpt.md#bpy.types.VIEW3D_AST_brush_sculpt "bpy.types.VIEW3D_AST_brush_sculpt"), [`VIEW3D_AST_brush_sculpt_curves`](../V/bpy.types.VIEW3D_AST_brush_sculpt_curves.md#bpy.types.VIEW3D_AST_brush_sculpt_curves "bpy.types.VIEW3D_AST_brush_sculpt_curves"), [`VIEW3D_AST_brush_texture_paint`](../V/bpy.types.VIEW3D_AST_brush_texture_paint.md#bpy.types.VIEW3D_AST_brush_texture_paint "bpy.types.VIEW3D_AST_brush_texture_paint"), [`VIEW3D_AST_brush_vertex_paint`](../V/bpy.types.VIEW3D_AST_brush_vertex_paint.md#bpy.types.VIEW3D_AST_brush_vertex_paint "bpy.types.VIEW3D_AST_brush_vertex_paint"), [`VIEW3D_AST_brush_weight_paint`](../V/bpy.types.VIEW3D_AST_brush_weight_paint.md#bpy.types.VIEW3D_AST_brush_weight_paint "bpy.types.VIEW3D_AST_brush_weight_paint"), [`VIEW3D_AST_pose_library`](../V/bpy.types.VIEW3D_AST_pose_library.md#bpy.types.VIEW3D_AST_pose_library "bpy.types.VIEW3D_AST_pose_library")
+subclasses — [[IMAGE_AST_brush_paint]], [[NODE_AST_compositor]], [[VIEW3D_AST_brush_gpencil_paint]], [[VIEW3D_AST_brush_gpencil_sculpt]], [[VIEW3D_AST_brush_gpencil_vertex]], [[VIEW3D_AST_brush_gpencil_weight]], [[VIEW3D_AST_brush_sculpt]], [[VIEW3D_AST_brush_sculpt_curves]], [[VIEW3D_AST_brush_texture_paint]], [[VIEW3D_AST_brush_vertex_paint]], [[VIEW3D_AST_brush_weight_paint]], [[VIEW3D_AST_pose_library]]
 
 _class _bpy.types.AssetShelf(_bpy_struct_)
     
@@ -510,7 +510,7 @@ The weak reference to the asset to be highlighted as active, or None
 Return type:
     
 
-[`AssetWeakReference`](bpy.types.AssetWeakReference.md#bpy.types.AssetWeakReference "bpy.types.AssetWeakReference")
+[[AssetWeakReference]]
 
 _classmethod _draw_context_menu(_context_ , _asset_ , _layout_)
     
@@ -533,7 +533,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -555,7 +555,7 @@ type
 
 ## Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [[bpy_struct.id_data]]
 
 | 
 
@@ -565,33 +565,33 @@ type
   
 ## Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
 
 | 
 
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
 
   
 ---|---

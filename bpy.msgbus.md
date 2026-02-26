@@ -72,7 +72,7 @@ bpy.msgbus.publish_rna(_key_)
 Parameters:
     
 
-**key** ([`bpy.types.Property`](bpy.types/P/bpy.types.Property.md#bpy.types.Property "bpy.types.Property") | [`bpy.types.Struct`](bpy.types/S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") | tuple[[`bpy.types.Struct`](bpy.types/S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct"), str]) – 
+**key** ([[bpy.types.Property]] | [[bpy.types.Struct]] | tuple[[[bpy.types.Struct]], str]) – 
 
 Represents the type of data being subscribed to
 
@@ -88,7 +88,7 @@ Register a message bus subscription. It will be cleared when another blend file 
 Parameters:
     
 
-  * **key** ([`bpy.types.Property`](bpy.types/P/bpy.types.Property.md#bpy.types.Property "bpy.types.Property") | [`bpy.types.Struct`](bpy.types/S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") | tuple[[`bpy.types.Struct`](bpy.types/S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct"), str]) – 
+  * **key** ([[bpy.types.Property]] | [[bpy.types.Struct]] | tuple[[[bpy.types.Struct]], str]) – 
 
 Represents the type of data being subscribed to
 
@@ -105,5 +105,5 @@ Change the behavior of the subscriber.
 
 Note
 
-All subscribers will be cleared on file-load. Subscribers can be re-registered on load, see [`bpy.app.handlers.load_post`](bpy.app/bpy.app.handlers.md#bpy.app.handlers.load_post "bpy.app.handlers.load_post").
+All subscribers will be cleared on file-load. Subscribers can be re-registered on load, see [[bpy.app.handlers.load_post]].
   *[*]: Keyword-only parameters separator (PEP 3102)

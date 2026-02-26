@@ -10,7 +10,7 @@ Parameters:
 
   * **position** (_Sequence_ _[__float_ _]_) – 2D position where the circle will be drawn.
 
-  * **color** (_Sequence_ _[__float_ _]_) – Color of the circle (RGBA). To use transparency blend must be set to `ALPHA`, see: [`gpu.state.blend_set()`](../gpu/gpu.state.md#gpu.state.blend_set "gpu.state.blend_set").
+  * **color** (_Sequence_ _[__float_ _]_) – Color of the circle (RGBA). To use transparency blend must be set to `ALPHA`, see: [[gpu.state.blend_set()]].
 
   * **radius** (_float_) – Radius of the circle.
 
@@ -25,7 +25,7 @@ Draw a 2d texture.
 Parameters:
     
 
-  * **texture** ([`gpu.types.GPUTexture`](../gpu/gpu.types.md#gpu.types.GPUTexture "gpu.types.GPUTexture")) – GPUTexture to draw (e.g. gpu.texture.from_image(image) for [`bpy.types.Image`](../bpy.types/I/bpy.types.Image.md#bpy.types.Image "bpy.types.Image")).
+  * **texture** ([[gpu.types.GPUTexture]]) – GPUTexture to draw (e.g. gpu.texture.from_image(image) for [[bpy.types.Image]]).
 
   * **position** (_2D Vector_) – Position of the lower left corner.
 
@@ -33,7 +33,7 @@ Parameters:
 
   * **height** (_float_) – Height of the image when drawn.
 
-  * **is_scene_linear_with_rec709_srgb_target** (_bool_) – True if the texture is stored in scene linear color space and the destination framebuffer uses the Rec.709 sRGB color space (which is true when drawing textures acquired from [`bpy.types.Image`](../bpy.types/I/bpy.types.Image.md#bpy.types.Image "bpy.types.Image") inside a ‘PRE_VIEW’, ‘POST_VIEW’ or ‘POST_PIXEL’ draw handler). Otherwise the color space is assumed to match the one of the framebuffer. (default=False)
+  * **is_scene_linear_with_rec709_srgb_target** (_bool_) – True if the texture is stored in scene linear color space and the destination framebuffer uses the Rec.709 sRGB color space (which is true when drawing textures acquired from [[bpy.types.Image]] inside a ‘PRE_VIEW’, ‘POST_VIEW’ or ‘POST_PIXEL’ draw handler). Otherwise the color space is assumed to match the one of the framebuffer. (default=False)
 
 
   *[*]: Keyword-only parameters separator (PEP 3102)

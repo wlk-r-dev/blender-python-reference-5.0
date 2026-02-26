@@ -1,6 +1,6 @@
 # FluidDomainSettings(bpy_struct)
 
-base class — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")
+base class — [[bpy_struct]]
 
 _class _bpy.types.FluidDomainSettings(_bpy_struct_)
     
@@ -250,7 +250,7 @@ Cell Size
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (0.0, 0.0, 0.0), (readonly)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (0.0, 0.0, 0.0), (readonly)
 
 cfl_condition
     
@@ -288,7 +288,7 @@ color_ramp
 Type:
     
 
-[`ColorRamp`](../C/bpy.types.ColorRamp.md#bpy.types.ColorRamp "bpy.types.ColorRamp"), (readonly)
+[[ColorRamp]], (readonly)
 
 color_ramp_field
     
@@ -400,7 +400,7 @@ Limit effectors to this collection
 Type:
     
 
-[`Collection`](../C/bpy.types.Collection.md#bpy.types.Collection "bpy.types.Collection")
+[[Collection]]
 
 effector_weights
     
@@ -408,7 +408,7 @@ effector_weights
 Type:
     
 
-[`EffectorWeights`](../E/bpy.types.EffectorWeights.md#bpy.types.EffectorWeights "bpy.types.EffectorWeights"), (readonly)
+[[EffectorWeights]], (readonly)
 
 export_manta_script
     
@@ -468,7 +468,7 @@ Color of smoke emitted from burning fuel
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, inf], default (0.7, 0.7, 0.7)
+[[mathutils.Color]] of 3 items in [0, inf], default (0.7, 0.7, 0.7)
 
 flame_vorticity
     
@@ -498,7 +498,7 @@ Limit fluid objects to this collection
 Type:
     
 
-[`Collection`](../C/bpy.types.Collection.md#bpy.types.Collection "bpy.types.Collection")
+[[Collection]]
 
 force_collection
     
@@ -508,7 +508,7 @@ Limit forces to this collection
 Type:
     
 
-[`Collection`](../C/bpy.types.Collection.md#bpy.types.Collection "bpy.types.Collection")
+[[Collection]]
 
 fractions_distance
     
@@ -538,7 +538,7 @@ Gravity in X, Y and Z direction
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-1000.1, 1000.1], default (0.0, 0.0, -9.81)
+[[mathutils.Vector]] of 3 items in [-1000.1, 1000.1], default (0.0, 0.0, -9.81)
 
 gridlines_cell_filter
     
@@ -638,7 +638,7 @@ Use velocities from this object for the guiding effect (object needs to have flu
 Type:
     
 
-[`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")
+[[Object]]
 
 guide_source
     
@@ -1257,7 +1257,7 @@ Start point
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (0.0, 0.0, 0.0), (readonly)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (0.0, 0.0, 0.0), (readonly)
 
 surface_tension
     
@@ -1717,7 +1717,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -1739,7 +1739,7 @@ type
 
 ## Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [[bpy_struct.id_data]]
 
 | 
 
@@ -1749,40 +1749,40 @@ type
   
 ## Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
 
 | 
 
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
 
   
 ---|---  
   
 ## References
 
-  * [`FluidModifier.domain_settings`](bpy.types.FluidModifier.md#bpy.types.FluidModifier.domain_settings "bpy.types.FluidModifier.domain_settings")
+  * [[FluidModifier.domain_settings]]
 
 | 
 

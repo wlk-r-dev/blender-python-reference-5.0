@@ -397,9 +397,9 @@ Parameters:
 
   * **subtype** (_str_) – Enumerator in [Property Subtype Number Items](bpy_types_enum_items/property_subtype_number_items.md#rna-enum-property-subtype-number-items).
 
-  * **update** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`bpy.types.Context`](bpy.types/C/bpy.types.Context.md#bpy.types.Context "bpy.types.Context")], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
+  * **update** (Callable[[[[bpy.types.bpy_struct]], [[bpy.types.Context]]], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
 
-  * **get** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")], bool]) – 
+  * **get** (Callable[[[[bpy.types.bpy_struct]]], bool]) – 
 
 Function to be called when this value is ‘read’, and the default, system-defined storage is not used for this property. This function must take 1 value (self) and return the value of the property.
 
@@ -407,7 +407,7 @@ Note
 
 Defining this callback without a matching `set` one will make the property read-only (even if `READ_ONLY` option is not set).
 
-  * **set** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), bool], None]) – 
+  * **set** (Callable[[[[bpy.types.bpy_struct]], bool], None]) – 
 
 Function to be called when this value is ‘written’, and the default, system-defined storage is not used for this property. This function must take 2 values (self, value) and return None.
 
@@ -415,7 +415,7 @@ Note
 
 Defining this callback without a matching `get` one is invalid.
 
-  * **get_transform** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), bool, bool], bool]) – 
+  * **get_transform** (Callable[[[[bpy.types.bpy_struct]], bool, bool], bool]) – 
 
 Function to be called when this value is ‘read’, if some additional processing must be performed on the stored value. This function must take three arguments (self, the stored value, and a boolean indicating if the property is currently set), and return the final, transformed value of the property.
 
@@ -423,7 +423,7 @@ Note
 
 The callback is responsible to ensure that value limits of the property (min/max, length…) are respected. Otherwise a ValueError exception is raised.
 
-  * **set_transform** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), bool, bool, bool], bool]) – 
+  * **set_transform** (Callable[[[[bpy.types.bpy_struct]], bool, bool, bool], bool]) – 
 
 Function to be called when this value is ‘written’, if some additional processing must be performed on the given value before storing it. This function must take four arguments (self, the given value to store, the currently stored value (‘raw’ value, without any `get_transform` applied to it), and a boolean indicating if the property is currently set), and return the final, transformed value of the property.
 
@@ -458,9 +458,9 @@ Parameters:
 
   * **size** (_int_ _|__Sequence_ _[__int_ _]_) – Vector dimensions in [1, 32]. An int sequence can be used to define multi-dimension arrays.
 
-  * **update** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`bpy.types.Context`](bpy.types/C/bpy.types.Context.md#bpy.types.Context "bpy.types.Context")], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
+  * **update** (Callable[[[[bpy.types.bpy_struct]], [[bpy.types.Context]]], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
 
-  * **get** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")], Sequence[bool]]) – 
+  * **get** (Callable[[[[bpy.types.bpy_struct]]], Sequence[bool]]) – 
 
 Function to be called when this value is ‘read’, and the default, system-defined storage is not used for this property. This function must take 1 value (self) and return the value of the property.
 
@@ -468,7 +468,7 @@ Note
 
 Defining this callback without a matching `set` one will make the property read-only (even if `READ_ONLY` option is not set).
 
-  * **set** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), tuple[bool, …]], None]) – 
+  * **set** (Callable[[[[bpy.types.bpy_struct]], tuple[bool, …]], None]) – 
 
 Function to be called when this value is ‘written’, and the default, system-defined storage is not used for this property. This function must take 2 values (self, value) and return None.
 
@@ -476,7 +476,7 @@ Note
 
 Defining this callback without a matching `get` one is invalid.
 
-  * **get_transform** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), Sequence[bool], bool], Sequence[bool]]) – 
+  * **get_transform** (Callable[[[[bpy.types.bpy_struct]], Sequence[bool], bool], Sequence[bool]]) – 
 
 Function to be called when this value is ‘read’, if some additional processing must be performed on the stored value. This function must take three arguments (self, the stored value, and a boolean indicating if the property is currently set), and return the final, transformed value of the property.
 
@@ -484,7 +484,7 @@ Note
 
 The callback is responsible to ensure that value limits of the property (min/max, length…) are respected. Otherwise a ValueError exception is raised.
 
-  * **set_transform** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), Sequence[bool], Sequence[bool], bool], Sequence[bool]]) – 
+  * **set_transform** (Callable[[[[bpy.types.bpy_struct]], Sequence[bool], Sequence[bool], bool], Sequence[bool]]) – 
 
 Function to be called when this value is ‘written’, if some additional processing must be performed on the given value before storing it. This function must take four arguments (self, the given value to store, the currently stored value (‘raw’ value, without any `get_transform` applied to it), and a boolean indicating if the property is currently set), and return the final, transformed value of the property.
 
@@ -501,7 +501,7 @@ Returns a new collection property definition.
 Parameters:
     
 
-  * **type** (type[[`bpy.types.PropertyGroup`](bpy.types/P/bpy.types.PropertyGroup.md#bpy.types.PropertyGroup "bpy.types.PropertyGroup")]) – A subclass of a property group.
+  * **type** (type[[[bpy.types.PropertyGroup]]]) – A subclass of a property group.
 
   * **name** (_str_) – Name used in the user interface.
 
@@ -524,7 +524,7 @@ Returns a new enumerator property definition.
 Parameters:
     
 
-  * **items** (Iterable[tuple[str, str, str] | tuple[str, str, str, int] | tuple[str, str, str, int, int] | None] | Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`bpy.types.Context`](bpy.types/C/bpy.types.Context.md#bpy.types.Context "bpy.types.Context") | None], Iterable[tuple[str, str, str] | tuple[str, str, str, int] | tuple[str, str, str, int, int] | None]]) – 
+  * **items** (Iterable[tuple[str, str, str] | tuple[str, str, str, int] | tuple[str, str, str, int, int] | None] | Callable[[[[bpy.types.bpy_struct]], [[bpy.types.Context]] | None], Iterable[tuple[str, str, str] | tuple[str, str, str, int] | tuple[str, str, str, int, int] | None]]) – 
 
 sequence of enum items formatted: `[(identifier, name, description, icon, number), ...]`.
 
@@ -548,7 +548,7 @@ Used for documentation and tooltips.
 icon:
     
 
-An icon string identifier or integer icon value (e.g. returned by [`bpy.types.UILayout.icon`](bpy.types/U/bpy.types.UILayout.md#bpy.types.UILayout.icon "bpy.types.UILayout.icon"))
+An icon string identifier or integer icon value (e.g. returned by [[bpy.types.UILayout.icon]])
 
 number:
     
@@ -577,9 +577,9 @@ There is a known bug with using a callback, Python must keep a reference to the 
 
   * **tags** (_set_ _[__str_ _]_) – Enumerator of tags that are defined by parent class.
 
-  * **update** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`bpy.types.Context`](bpy.types/C/bpy.types.Context.md#bpy.types.Context "bpy.types.Context")], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
+  * **update** (Callable[[[[bpy.types.bpy_struct]], [[bpy.types.Context]]], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
 
-  * **get** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")], int]) – 
+  * **get** (Callable[[[[bpy.types.bpy_struct]]], int]) – 
 
 Function to be called when this value is ‘read’, and the default, system-defined storage is not used for this property. This function must take 1 value (self) and return the value of the property.
 
@@ -587,7 +587,7 @@ Note
 
 Defining this callback without a matching `set` one will make the property read-only (even if `READ_ONLY` option is not set).
 
-  * **set** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), int], None]) – 
+  * **set** (Callable[[[[bpy.types.bpy_struct]], int], None]) – 
 
 Function to be called when this value is ‘written’, and the default, system-defined storage is not used for this property. This function must take 2 values (self, value) and return None.
 
@@ -595,7 +595,7 @@ Note
 
 Defining this callback without a matching `get` one is invalid.
 
-  * **get_transform** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), int, bool], int]) – 
+  * **get_transform** (Callable[[[[bpy.types.bpy_struct]], int, bool], int]) – 
 
 Function to be called when this value is ‘read’, if some additional processing must be performed on the stored value. This function must take three arguments (self, the stored value, and a boolean indicating if the property is currently set), and return the final, transformed value of the property.
 
@@ -603,7 +603,7 @@ Note
 
 The callback is responsible to ensure that value limits of the property (min/max, length…) are respected. Otherwise a ValueError exception is raised.
 
-  * **set_transform** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), int, int, bool], int]) – 
+  * **set_transform** (Callable[[[[bpy.types.bpy_struct]], int, int, bool], int]) – 
 
 Function to be called when this value is ‘written’, if some additional processing must be performed on the given value before storing it. This function must take four arguments (self, the given value to store, the currently stored value (‘raw’ value, without any `get_transform` applied to it), and a boolean indicating if the property is currently set), and return the final, transformed value of the property.
 
@@ -648,9 +648,9 @@ Parameters:
 
   * **unit** (_str_) – Enumerator in [Property Unit Items](bpy_types_enum_items/property_unit_items.md#rna-enum-property-unit-items).
 
-  * **update** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`bpy.types.Context`](bpy.types/C/bpy.types.Context.md#bpy.types.Context "bpy.types.Context")], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
+  * **update** (Callable[[[[bpy.types.bpy_struct]], [[bpy.types.Context]]], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
 
-  * **get** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")], float]) – 
+  * **get** (Callable[[[[bpy.types.bpy_struct]]], float]) – 
 
 Function to be called when this value is ‘read’, and the default, system-defined storage is not used for this property. This function must take 1 value (self) and return the value of the property.
 
@@ -658,7 +658,7 @@ Note
 
 Defining this callback without a matching `set` one will make the property read-only (even if `READ_ONLY` option is not set).
 
-  * **set** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), float], None]) – 
+  * **set** (Callable[[[[bpy.types.bpy_struct]], float], None]) – 
 
 Function to be called when this value is ‘written’, and the default, system-defined storage is not used for this property. This function must take 2 values (self, value) and return None.
 
@@ -666,7 +666,7 @@ Note
 
 Defining this callback without a matching `get` one is invalid.
 
-  * **get_transform** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), float, bool], float]) – 
+  * **get_transform** (Callable[[[[bpy.types.bpy_struct]], float, bool], float]) – 
 
 Function to be called when this value is ‘read’, if some additional processing must be performed on the stored value. This function must take three arguments (self, the stored value, and a boolean indicating if the property is currently set), and return the final, transformed value of the property.
 
@@ -674,7 +674,7 @@ Note
 
 The callback is responsible to ensure that value limits of the property (min/max, length…) are respected. Otherwise a ValueError exception is raised.
 
-  * **set_transform** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), float, float, bool], float]) – 
+  * **set_transform** (Callable[[[[bpy.types.bpy_struct]], float, float, bool], float]) – 
 
 Function to be called when this value is ‘written’, if some additional processing must be performed on the given value before storing it. This function must take four arguments (self, the given value to store, the currently stored value (‘raw’ value, without any `get_transform` applied to it), and a boolean indicating if the property is currently set), and return the final, transformed value of the property.
 
@@ -723,9 +723,9 @@ Parameters:
 
   * **size** (_int_ _|__Sequence_ _[__int_ _]_) – Vector dimensions in [1, 32]. An int sequence can be used to define multi-dimension arrays.
 
-  * **update** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`bpy.types.Context`](bpy.types/C/bpy.types.Context.md#bpy.types.Context "bpy.types.Context")], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
+  * **update** (Callable[[[[bpy.types.bpy_struct]], [[bpy.types.Context]]], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
 
-  * **get** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")], Sequence[float]]) – 
+  * **get** (Callable[[[[bpy.types.bpy_struct]]], Sequence[float]]) – 
 
 Function to be called when this value is ‘read’, and the default, system-defined storage is not used for this property. This function must take 1 value (self) and return the value of the property.
 
@@ -733,7 +733,7 @@ Note
 
 Defining this callback without a matching `set` one will make the property read-only (even if `READ_ONLY` option is not set).
 
-  * **set** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), tuple[float, …]], None]) – 
+  * **set** (Callable[[[[bpy.types.bpy_struct]], tuple[float, …]], None]) – 
 
 Function to be called when this value is ‘written’, and the default, system-defined storage is not used for this property. This function must take 2 values (self, value) and return None.
 
@@ -741,7 +741,7 @@ Note
 
 Defining this callback without a matching `get` one is invalid.
 
-  * **get_transform** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), Sequence[float], bool], Sequence[float]]) – 
+  * **get_transform** (Callable[[[[bpy.types.bpy_struct]], Sequence[float], bool], Sequence[float]]) – 
 
 Function to be called when this value is ‘read’, if some additional processing must be performed on the stored value. This function must take three arguments (self, the stored value, and a boolean indicating if the property is currently set), and return the final, transformed value of the property.
 
@@ -749,7 +749,7 @@ Note
 
 The callback is responsible to ensure that value limits of the property (min/max, length…) are respected. Otherwise a ValueError exception is raised.
 
-  * **set_transform** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), Sequence[float], Sequence[float], bool], Sequence[float]]) – 
+  * **set_transform** (Callable[[[[bpy.types.bpy_struct]], Sequence[float], Sequence[float], bool], Sequence[float]]) – 
 
 Function to be called when this value is ‘written’, if some additional processing must be performed on the given value before storing it. This function must take four arguments (self, the given value to store, the currently stored value (‘raw’ value, without any `get_transform` applied to it), and a boolean indicating if the property is currently set), and return the final, transformed value of the property.
 
@@ -790,9 +790,9 @@ Parameters:
 
   * **subtype** (_str_) – Enumerator in [Property Subtype Number Items](bpy_types_enum_items/property_subtype_number_items.md#rna-enum-property-subtype-number-items).
 
-  * **update** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`bpy.types.Context`](bpy.types/C/bpy.types.Context.md#bpy.types.Context "bpy.types.Context")], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
+  * **update** (Callable[[[[bpy.types.bpy_struct]], [[bpy.types.Context]]], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
 
-  * **get** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")], int]) – 
+  * **get** (Callable[[[[bpy.types.bpy_struct]]], int]) – 
 
 Function to be called when this value is ‘read’, and the default, system-defined storage is not used for this property. This function must take 1 value (self) and return the value of the property.
 
@@ -800,7 +800,7 @@ Note
 
 Defining this callback without a matching `set` one will make the property read-only (even if `READ_ONLY` option is not set).
 
-  * **set** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), int], None]) – 
+  * **set** (Callable[[[[bpy.types.bpy_struct]], int], None]) – 
 
 Function to be called when this value is ‘written’, and the default, system-defined storage is not used for this property. This function must take 2 values (self, value) and return None.
 
@@ -808,7 +808,7 @@ Note
 
 Defining this callback without a matching `get` one is invalid.
 
-  * **get_transform** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), int, bool], int]) – 
+  * **get_transform** (Callable[[[[bpy.types.bpy_struct]], int, bool], int]) – 
 
 Function to be called when this value is ‘read’, if some additional processing must be performed on the stored value. This function must take three arguments (self, the stored value, and a boolean indicating if the property is currently set), and return the final, transformed value of the property.
 
@@ -816,7 +816,7 @@ Note
 
 The callback is responsible to ensure that value limits of the property (min/max, length…) are respected. Otherwise a ValueError exception is raised.
 
-  * **set_transform** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), int, int, bool], int]) – 
+  * **set_transform** (Callable[[[[bpy.types.bpy_struct]], int, int, bool], int]) – 
 
 Function to be called when this value is ‘written’, if some additional processing must be performed on the given value before storing it. This function must take four arguments (self, the given value to store, the currently stored value (‘raw’ value, without any `get_transform` applied to it), and a boolean indicating if the property is currently set), and return the final, transformed value of the property.
 
@@ -861,9 +861,9 @@ Parameters:
 
   * **size** (_int_ _|__Sequence_ _[__int_ _]_) – Vector dimensions in [1, 32]. An int sequence can be used to define multi-dimension arrays.
 
-  * **update** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`bpy.types.Context`](bpy.types/C/bpy.types.Context.md#bpy.types.Context "bpy.types.Context")], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
+  * **update** (Callable[[[[bpy.types.bpy_struct]], [[bpy.types.Context]]], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
 
-  * **get** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")], Sequence[int]]) – 
+  * **get** (Callable[[[[bpy.types.bpy_struct]]], Sequence[int]]) – 
 
 Function to be called when this value is ‘read’, and the default, system-defined storage is not used for this property. This function must take 1 value (self) and return the value of the property.
 
@@ -871,7 +871,7 @@ Note
 
 Defining this callback without a matching `set` one will make the property read-only (even if `READ_ONLY` option is not set).
 
-  * **set** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), tuple[int, …]], None]) – 
+  * **set** (Callable[[[[bpy.types.bpy_struct]], tuple[int, …]], None]) – 
 
 Function to be called when this value is ‘written’, and the default, system-defined storage is not used for this property. This function must take 2 values (self, value) and return None.
 
@@ -879,7 +879,7 @@ Note
 
 Defining this callback without a matching `get` one is invalid.
 
-  * **get_transform** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), Sequence[int], bool], Sequence[int]]) – 
+  * **get_transform** (Callable[[[[bpy.types.bpy_struct]], Sequence[int], bool], Sequence[int]]) – 
 
 Function to be called when this value is ‘read’, if some additional processing must be performed on the stored value. This function must take three arguments (self, the stored value, and a boolean indicating if the property is currently set), and return the final, transformed value of the property.
 
@@ -887,7 +887,7 @@ Note
 
 The callback is responsible to ensure that value limits of the property (min/max, length…) are respected. Otherwise a ValueError exception is raised.
 
-  * **set_transform** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), Sequence[int], Sequence[int], bool], Sequence[int]]) – 
+  * **set_transform** (Callable[[[[bpy.types.bpy_struct]], Sequence[int], Sequence[int], bool], Sequence[int]]) – 
 
 Function to be called when this value is ‘written’, if some additional processing must be performed on the given value before storing it. This function must take four arguments (self, the given value to store, the currently stored value (‘raw’ value, without any `get_transform` applied to it), and a boolean indicating if the property is currently set), and return the final, transformed value of the property.
 
@@ -904,7 +904,7 @@ Returns a new pointer property definition.
 Parameters:
     
 
-  * **type** (type[[`bpy.types.PropertyGroup`](bpy.types/P/bpy.types.PropertyGroup.md#bpy.types.PropertyGroup "bpy.types.PropertyGroup") | [`bpy.types.ID`](bpy.types/I/bpy.types.ID.md#bpy.types.ID "bpy.types.ID")]) – A subclass of a property group or ID types.
+  * **type** (type[[[bpy.types.PropertyGroup]] | [[bpy.types.ID]]]) – A subclass of a property group or ID types.
 
   * **name** (_str_) – Name used in the user interface.
 
@@ -918,7 +918,7 @@ Parameters:
 
   * **tags** (_set_ _[__str_ _]_) – Enumerator of tags that are defined by parent class.
 
-  * **poll** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`bpy.types.ID`](bpy.types/I/bpy.types.ID.md#bpy.types.ID "bpy.types.ID")], bool]) – 
+  * **poll** (Callable[[[[bpy.types.bpy_struct]], [[bpy.types.ID]]], bool]) – 
 
 Function that determines whether an item is valid for this property. The function must take 2 values (self, object) and return a boolean.
 
@@ -926,12 +926,12 @@ Note
 
 The return value will be checked only when assigning an item from the UI, but it is still possible to assign an “invalid” item to the property directly.
 
-  * **update** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`bpy.types.Context`](bpy.types/C/bpy.types.Context.md#bpy.types.Context "bpy.types.Context")], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
+  * **update** (Callable[[[[bpy.types.bpy_struct]], [[bpy.types.Context]]], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
 
 
 Note
 
-Pointer properties do not support storing references to embedded IDs (e.g. [`bpy.types.Scene.collection`](bpy.types/S/bpy.types.Scene.md#bpy.types.Scene.collection "bpy.types.Scene.collection"), [`bpy.types.Material.node_tree`](bpy.types/M/bpy.types.Material.md#bpy.types.Material.node_tree "bpy.types.Material.node_tree")). These should exclusively be referenced and accessed through their owner ID (e.g. the scene or material).
+Pointer properties do not support storing references to embedded IDs (e.g. [[bpy.types.Scene.collection]], [[bpy.types.Material.node_tree]]). These should exclusively be referenced and accessed through their owner ID (e.g. the scene or material).
 
 bpy.props.RemoveProperty(_cls_ , _attr_)
     
@@ -976,9 +976,9 @@ Parameters:
 
   * **subtype** (_str_) – Enumerator in [Property Subtype String Items](bpy_types_enum_items/property_subtype_string_items.md#rna-enum-property-subtype-string-items).
 
-  * **update** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`bpy.types.Context`](bpy.types/C/bpy.types.Context.md#bpy.types.Context "bpy.types.Context")], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
+  * **update** (Callable[[[[bpy.types.bpy_struct]], [[bpy.types.Context]]], None]) – Function to be called when this value is modified, This function must take 2 values (self, context) and return None. _Warning_ there are no safety checks to avoid infinite recursion.
 
-  * **get** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")], str]) – 
+  * **get** (Callable[[[[bpy.types.bpy_struct]]], str]) – 
 
 Function to be called when this value is ‘read’, and the default, system-defined storage is not used for this property. This function must take 1 value (self) and return the value of the property.
 
@@ -986,7 +986,7 @@ Note
 
 Defining this callback without a matching `set` one will make the property read-only (even if `READ_ONLY` option is not set).
 
-  * **set** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), str], None]) – 
+  * **set** (Callable[[[[bpy.types.bpy_struct]], str], None]) – 
 
 Function to be called when this value is ‘written’, and the default, system-defined storage is not used for this property. This function must take 2 values (self, value) and return None.
 
@@ -994,7 +994,7 @@ Note
 
 Defining this callback without a matching `get` one is invalid.
 
-  * **get_transform** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), str, bool], str]) – 
+  * **get_transform** (Callable[[[[bpy.types.bpy_struct]], str, bool], str]) – 
 
 Function to be called when this value is ‘read’, if some additional processing must be performed on the stored value. This function must take three arguments (self, the stored value, and a boolean indicating if the property is currently set), and return the final, transformed value of the property.
 
@@ -1002,7 +1002,7 @@ Note
 
 The callback is responsible to ensure that value limits of the property (min/max, length…) are respected. Otherwise a ValueError exception is raised.
 
-  * **set_transform** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), str, str, bool], str]) – 
+  * **set_transform** (Callable[[[[bpy.types.bpy_struct]], str, str, bool], str]) – 
 
 Function to be called when this value is ‘written’, if some additional processing must be performed on the given value before storing it. This function must take four arguments (self, the given value to store, the currently stored value (‘raw’ value, without any `get_transform` applied to it), and a boolean indicating if the property is currently set), and return the final, transformed value of the property.
 
@@ -1010,7 +1010,7 @@ Note
 
 The callback is responsible to ensure that value limits (min/max, length…) are respected. Otherwise a ValueError exception is raised.
 
-  * **search** (Callable[[[`bpy.types.bpy_struct`](bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`bpy.types.Context`](bpy.types/C/bpy.types.Context.md#bpy.types.Context "bpy.types.Context"), str], Iterable[str | tuple[str, str]]]) – 
+  * **search** (Callable[[[[bpy.types.bpy_struct]], [[bpy.types.Context]], str], Iterable[str | tuple[str, str]]]) – 
 
 Function to be called to show candidates for this string (shown in the UI). This function must take 3 values (self, context, edit_text) and return a sequence, iterator or generator where each item must be:
 

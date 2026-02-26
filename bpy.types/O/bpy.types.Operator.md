@@ -54,7 +54,7 @@ Note
 
 In some complex cases, the automatic undo step created on operator exit may not be enough. For example, if the operator does mode switching, or calls other operators that should create an extra undo step, etc.
 
-Such manual undo push is possible using the [`bpy.ops.ed.undo_push`](../../bpy.ops/bpy.ops.ed.md#bpy.ops.ed.undo_push "bpy.ops.ed.undo_push") function. Be careful though, this is considered an advanced feature and requires some understanding of the actual undo system in Blender code.
+Such manual undo push is possible using the [[bpy.ops.ed.undo_push]] function. Be careful though, this is considered an advanced feature and requires some understanding of the actual undo system in Blender code.
     
     
     import bpy
@@ -89,7 +89,7 @@ Such manual undo push is possible using the [`bpy.ops.ed.undo_push`](../../bpy.o
 
 `Operator.invoke` is used to initialize the operator from the context at the moment the operator is called. invoke() is typically used to assign properties which are then used by execute(). Some operators don’t have an execute() function, removing the ability to be repeated from a script or macro.
 
-When an operator is called via [`bpy.ops`](bpy.ops.md#module-bpy.ops "bpy.ops"), the execution context depends on the argument provided to [`bpy.ops`](bpy.ops.md#module-bpy.ops "bpy.ops"). By default, it uses execute(). When an operator is activated from a button or menu item, it follows the setting in [`UILayout.operator_context`](../U/bpy.types.UILayout.md#bpy.types.UILayout.operator_context "bpy.types.UILayout.operator_context"). In most cases, invoke() is used. Running an operator via a key shortcut always uses invoke(), and this behavior cannot be changed.
+When an operator is called via [[bpy.ops]], the execution context depends on the argument provided to [[bpy.ops]]. By default, it uses execute(). When an operator is activated from a button or menu item, it follows the setting in [[UILayout.operator_context]]. In most cases, invoke() is used. Running an operator via a key shortcut always uses invoke(), and this behavior cannot be changed.
 
 This example shows how to define an operator which gets mouse input to execute a function and that this operator can be invoked or executed from the Python API.
 
@@ -234,7 +234,7 @@ This operator uses its `Operator.invoke` function to call a popup.
 
 By default operator properties use an automatic user interface layout. If you need more control you can create your own layout with a `Operator.draw` function.
 
-This works like the [`Panel`](../P/bpy.types.Panel.md#bpy.types.Panel "bpy.types.Panel") and [`Menu`](../M/bpy.types.Menu.md#bpy.types.Menu "bpy.types.Menu") draw functions, its used for dialogs and file selectors.
+This works like the [[Panel]] and [[Menu]] draw functions, its used for dialogs and file selectors.
     
     
     import bpy
@@ -394,7 +394,7 @@ You may want to have an operator prompt the user to select an item from a search
     bpy.ops.object.search_enum_operator('INVOKE_DEFAULT')
     
 
-base class — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")
+base class — [[bpy_struct]]
 
 _class _bpy.types.Operator(_bpy_struct_)
     
@@ -477,7 +477,7 @@ layout
 Type:
     
 
-[`UILayout`](../U/bpy.types.UILayout.md#bpy.types.UILayout "bpy.types.UILayout"), (readonly)
+[[UILayout]], (readonly)
 
 macros
     
@@ -485,7 +485,7 @@ macros
 Type:
     
 
-[`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`Macro`](../M/bpy.types.Macro.md#bpy.types.Macro "bpy.types.Macro"), (readonly)
+[[bpy_prop_collection]] of [[Macro]], (readonly)
 
 name
     
@@ -503,7 +503,7 @@ Runtime options
 Type:
     
 
-[`OperatorOptions`](bpy.types.OperatorOptions.md#bpy.types.OperatorOptions "bpy.types.OperatorOptions"), (readonly, never None)
+[[OperatorOptions]], (readonly, never None)
 
 properties
     
@@ -511,7 +511,7 @@ properties
 Type:
     
 
-[`OperatorProperties`](bpy.types.OperatorProperties.md#bpy.types.OperatorProperties "bpy.types.OperatorProperties"), (readonly, never None)
+[[OperatorProperties]], (readonly, never None)
 
 bl_property
     
@@ -667,7 +667,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -704,7 +704,7 @@ Parameters:
 
 ### Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [[bpy_struct.id_data]]
 
 | 
 
@@ -714,54 +714,54 @@ Parameters:
   
 ### Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
 
 | 
 
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
 
   
 ---|---  
   
 ### References
 
-  * [`bpy.context.active_operator`](../../bpy.context.md#bpy.context.active_operator "bpy.context.active_operator")
-  * [`SpaceFileBrowser.active_operator`](../S/bpy.types.SpaceFileBrowser.md#bpy.types.SpaceFileBrowser.active_operator "bpy.types.SpaceFileBrowser.active_operator")
-  * [`SpaceFileBrowser.operator`](../S/bpy.types.SpaceFileBrowser.md#bpy.types.SpaceFileBrowser.operator "bpy.types.SpaceFileBrowser.operator")
-  * [`Window.modal_operators`](../W/bpy.types.Window.md#bpy.types.Window.modal_operators "bpy.types.Window.modal_operators")
-  * [`WindowManager.fileselect_add`](../W/bpy.types.WindowManager.md#bpy.types.WindowManager.fileselect_add "bpy.types.WindowManager.fileselect_add")
-  * [`WindowManager.invoke_confirm`](../W/bpy.types.WindowManager.md#bpy.types.WindowManager.invoke_confirm "bpy.types.WindowManager.invoke_confirm")
+  * [[bpy.context.active_operator]]
+  * [[SpaceFileBrowser.active_operator]]
+  * [[SpaceFileBrowser.operator]]
+  * [[Window.modal_operators]]
+  * [[WindowManager.fileselect_add]]
+  * [[WindowManager.invoke_confirm]]
 
 | 
 
-  * [`WindowManager.invoke_popup`](../W/bpy.types.WindowManager.md#bpy.types.WindowManager.invoke_popup "bpy.types.WindowManager.invoke_popup")
-  * [`WindowManager.invoke_props_dialog`](../W/bpy.types.WindowManager.md#bpy.types.WindowManager.invoke_props_dialog "bpy.types.WindowManager.invoke_props_dialog")
-  * [`WindowManager.invoke_props_popup`](../W/bpy.types.WindowManager.md#bpy.types.WindowManager.invoke_props_popup "bpy.types.WindowManager.invoke_props_popup")
-  * [`WindowManager.invoke_search_popup`](../W/bpy.types.WindowManager.md#bpy.types.WindowManager.invoke_search_popup "bpy.types.WindowManager.invoke_search_popup")
-  * [`WindowManager.modal_handler_add`](../W/bpy.types.WindowManager.md#bpy.types.WindowManager.modal_handler_add "bpy.types.WindowManager.modal_handler_add")
-  * [`WindowManager.operators`](../W/bpy.types.WindowManager.md#bpy.types.WindowManager.operators "bpy.types.WindowManager.operators")
+  * [[WindowManager.invoke_popup]]
+  * [[WindowManager.invoke_props_dialog]]
+  * [[WindowManager.invoke_props_popup]]
+  * [[WindowManager.invoke_search_popup]]
+  * [[WindowManager.modal_handler_add]]
+  * [[WindowManager.operators]]
 
   
 ---|---

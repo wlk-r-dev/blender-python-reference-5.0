@@ -37,7 +37,7 @@ For the most part using Blender as a Python module is equivalent to running a sc
 Blender’s Executable Access
     
 
-The attribute [`bpy.app.binary_path`](bpy.app.md#bpy.app.binary_path "bpy.app.binary_path") defaults to an empty string.
+The attribute [[bpy.app.binary_path]] defaults to an empty string.
 
 If you wish to point this to the location of a known executable you may set the value.
 
@@ -58,7 +58,7 @@ This example searches for the binary, setting it when found:
 Blender’s Internal Modules
     
 
-There are many modules included with Blender such as [`gpu`](gpu.md#module-gpu "gpu") and `mathuils`. It’s important that these are imported after `bpy` or they will not be found.
+There are many modules included with Blender such as [[gpu]] and `mathuils`. It’s important that these are imported after `bpy` or they will not be found.
 
 Command Line Arguments Unsupported
     
@@ -121,8 +121,8 @@ As with the application it’s possible to start multiple instances, each with t
 
 In some cases the library API may be an alternative to starting separate processes, although this API operates on reading and writing ID data-blocks and isn’t a complete substitute for loading `.blend` files, see:
 
-  * [`bpy.types.BlendDataLibraries.load()`](../bpy.types/B/bpy.types.BlendDataLibraries.md#bpy.types.BlendDataLibraries.load "bpy.types.BlendDataLibraries.load")
+  * [[bpy.types.BlendDataLibraries.load()]]
 
-  * [`bpy.types.BlendDataLibraries.write()`](../bpy.types/B/bpy.types.BlendDataLibraries.md#bpy.types.BlendDataLibraries.write "bpy.types.BlendDataLibraries.write")
+  * [[bpy.types.BlendDataLibraries.write()]]
 
-  * [`bpy.types.BlendData.temp_data()`](../bpy.types/B/bpy.types.BlendData.md#bpy.types.BlendData.temp_data "bpy.types.BlendData.temp_data") supports a temporary data-context to avoid manipulating the current `.blend` file.
+  * [[bpy.types.BlendData.temp_data()]] supports a temporary data-context to avoid manipulating the current `.blend` file.

@@ -12,7 +12,7 @@ Parameters:
 
   * **start** (_str_ _|__bytes_) – Relative to this path, when not set the current filename is used.
 
-  * **library** ([`bpy.types.Library`](bpy.types/L/bpy.types.Library.md#bpy.types.Library "bpy.types.Library")) – The library this path is from. This is only included for convenience, when the library is not None its path replaces _start_.
+  * **library** ([[bpy.types.Library]]) – The library this path is from. This is only included for convenience, when the library is not None its path replaces _start_.
 
 
 Returns:

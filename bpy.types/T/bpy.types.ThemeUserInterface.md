@@ -1,6 +1,6 @@
 # ThemeUserInterface(bpy_struct)
 
-base class — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")
+base class — [[bpy_struct]]
 
 _class _bpy.types.ThemeUserInterface(_bpy_struct_)
     
@@ -15,7 +15,7 @@ W-axis for quaternion and axis-angle rotations
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 axis_x
     
@@ -23,7 +23,7 @@ axis_x
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 axis_y
     
@@ -31,7 +31,7 @@ axis_y
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 axis_z
     
@@ -39,7 +39,7 @@ axis_z
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 editor_border
     
@@ -49,7 +49,7 @@ Color of the border between editors
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 editor_outline
     
@@ -77,7 +77,7 @@ gizmo_a
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 gizmo_b
     
@@ -85,7 +85,7 @@ gizmo_b
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 gizmo_hi
     
@@ -93,7 +93,7 @@ gizmo_hi
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 gizmo_primary
     
@@ -101,7 +101,7 @@ gizmo_primary
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 gizmo_secondary
     
@@ -109,7 +109,7 @@ gizmo_secondary
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 gizmo_view_align
     
@@ -117,7 +117,7 @@ gizmo_view_align
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 icon_alpha
     
@@ -297,7 +297,7 @@ panel_text
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 panel_title
     
@@ -305,7 +305,7 @@ panel_title
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 transparent_checker_primary
     
@@ -315,7 +315,7 @@ Primary color of checkerboard pattern indicating transparent areas
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 transparent_checker_secondary
     
@@ -325,7 +325,7 @@ Secondary color of checkerboard pattern indicating transparent areas
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 transparent_checker_size
     
@@ -343,7 +343,7 @@ wcol_box
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_curve
     
@@ -351,7 +351,7 @@ wcol_curve
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_list_item
     
@@ -359,7 +359,7 @@ wcol_list_item
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_menu
     
@@ -367,7 +367,7 @@ wcol_menu
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_menu_back
     
@@ -375,7 +375,7 @@ wcol_menu_back
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_menu_item
     
@@ -383,7 +383,7 @@ wcol_menu_item
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_num
     
@@ -391,7 +391,7 @@ wcol_num
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_numslider
     
@@ -399,7 +399,7 @@ wcol_numslider
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_option
     
@@ -407,7 +407,7 @@ wcol_option
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_pie_menu
     
@@ -415,7 +415,7 @@ wcol_pie_menu
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_progress
     
@@ -423,7 +423,7 @@ wcol_progress
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_pulldown
     
@@ -431,7 +431,7 @@ wcol_pulldown
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_radio
     
@@ -439,7 +439,7 @@ wcol_radio
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_regular
     
@@ -447,7 +447,7 @@ wcol_regular
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_scroll
     
@@ -455,7 +455,7 @@ wcol_scroll
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_state
     
@@ -463,7 +463,7 @@ wcol_state
 Type:
     
 
-[`ThemeWidgetStateColors`](bpy.types.ThemeWidgetStateColors.md#bpy.types.ThemeWidgetStateColors "bpy.types.ThemeWidgetStateColors"), (readonly, never None)
+[[ThemeWidgetStateColors]], (readonly, never None)
 
 wcol_tab
     
@@ -471,7 +471,7 @@ wcol_tab
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_text
     
@@ -479,7 +479,7 @@ wcol_text
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_toggle
     
@@ -487,7 +487,7 @@ wcol_toggle
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_tool
     
@@ -495,7 +495,7 @@ wcol_tool
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_toolbar_item
     
@@ -503,7 +503,7 @@ wcol_toolbar_item
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 wcol_tooltip
     
@@ -511,7 +511,7 @@ wcol_tooltip
 Type:
     
 
-[`ThemeWidgetColors`](bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors "bpy.types.ThemeWidgetColors"), (readonly, never None)
+[[ThemeWidgetColors]], (readonly, never None)
 
 widget_emboss
     
@@ -531,7 +531,7 @@ Color of the text insertion cursor (caret)
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 _classmethod _bl_rna_get_subclass(_id_ , _default =None_, _/_)
     
@@ -549,7 +549,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -571,7 +571,7 @@ type
 
 ## Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [[bpy_struct.id_data]]
 
 | 
 
@@ -581,40 +581,40 @@ type
   
 ## Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
 
 | 
 
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
 
   
 ---|---  
   
 ## References
 
-  * [`Theme.user_interface`](bpy.types.Theme.md#bpy.types.Theme.user_interface "bpy.types.Theme.user_interface")
+  * [[Theme.user_interface]]
 
 | 
 

@@ -1,6 +1,6 @@
 # SceneStrip(Strip)
 
-base classes — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`Strip`](bpy.types.Strip.md#bpy.types.Strip "bpy.types.Strip")
+base classes — [[bpy_struct]], [[Strip]]
 
 _class _bpy.types.SceneStrip(_Strip_)
     
@@ -66,7 +66,7 @@ crop
 Type:
     
 
-[`StripCrop`](bpy.types.StripCrop.md#bpy.types.StripCrop "bpy.types.StripCrop"), (readonly)
+[[StripCrop]], (readonly)
 
 fps
     
@@ -94,7 +94,7 @@ proxy
 Type:
     
 
-[`StripProxy`](bpy.types.StripProxy.md#bpy.types.StripProxy "bpy.types.StripProxy"), (readonly)
+[[StripProxy]], (readonly)
 
 retiming_keys
     
@@ -102,7 +102,7 @@ retiming_keys
 Type:
     
 
-[`RetimingKeys`](../R/bpy.types.RetimingKeys.md#bpy.types.RetimingKeys "bpy.types.RetimingKeys") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`RetimingKey`](../R/bpy.types.RetimingKey.md#bpy.types.RetimingKey "bpy.types.RetimingKey"), (readonly)
+[[RetimingKeys]] [[bpy_prop_collection]] of [[RetimingKey]], (readonly)
 
 scene
     
@@ -112,7 +112,7 @@ Scene that this strip uses
 Type:
     
 
-[`Scene`](bpy.types.Scene.md#bpy.types.Scene "bpy.types.Scene")
+[[Scene]]
 
 scene_camera
     
@@ -122,7 +122,7 @@ Override the scene’s active camera
 Type:
     
 
-[`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")
+[[Object]]
 
 scene_input
     
@@ -155,7 +155,7 @@ transform
 Type:
     
 
-[`StripTransform`](bpy.types.StripTransform.md#bpy.types.StripTransform "bpy.types.StripTransform"), (readonly)
+[[StripTransform]], (readonly)
 
 use_annotations
     
@@ -253,7 +253,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -275,75 +275,75 @@ type
 
 ## Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
-  * [`Strip.name`](bpy.types.Strip.md#bpy.types.Strip.name "bpy.types.Strip.name")
-  * [`Strip.type`](bpy.types.Strip.md#bpy.types.Strip.type "bpy.types.Strip.type")
-  * [`Strip.select`](bpy.types.Strip.md#bpy.types.Strip.select "bpy.types.Strip.select")
-  * [`Strip.select_left_handle`](bpy.types.Strip.md#bpy.types.Strip.select_left_handle "bpy.types.Strip.select_left_handle")
-  * [`Strip.select_right_handle`](bpy.types.Strip.md#bpy.types.Strip.select_right_handle "bpy.types.Strip.select_right_handle")
-  * [`Strip.mute`](bpy.types.Strip.md#bpy.types.Strip.mute "bpy.types.Strip.mute")
-  * [`Strip.lock`](bpy.types.Strip.md#bpy.types.Strip.lock "bpy.types.Strip.lock")
-  * [`Strip.frame_final_duration`](bpy.types.Strip.md#bpy.types.Strip.frame_final_duration "bpy.types.Strip.frame_final_duration")
-  * [`Strip.frame_duration`](bpy.types.Strip.md#bpy.types.Strip.frame_duration "bpy.types.Strip.frame_duration")
-  * [`Strip.frame_start`](bpy.types.Strip.md#bpy.types.Strip.frame_start "bpy.types.Strip.frame_start")
-  * [`Strip.frame_final_start`](bpy.types.Strip.md#bpy.types.Strip.frame_final_start "bpy.types.Strip.frame_final_start")
+  * [[bpy_struct.id_data]]
+  * [[Strip.name]]
+  * [[Strip.type]]
+  * [[Strip.select]]
+  * [[Strip.select_left_handle]]
+  * [[Strip.select_right_handle]]
+  * [[Strip.mute]]
+  * [[Strip.lock]]
+  * [[Strip.frame_final_duration]]
+  * [[Strip.frame_duration]]
+  * [[Strip.frame_start]]
+  * [[Strip.frame_final_start]]
 
 | 
 
-  * [`Strip.frame_final_end`](bpy.types.Strip.md#bpy.types.Strip.frame_final_end "bpy.types.Strip.frame_final_end")
-  * [`Strip.frame_offset_start`](bpy.types.Strip.md#bpy.types.Strip.frame_offset_start "bpy.types.Strip.frame_offset_start")
-  * [`Strip.frame_offset_end`](bpy.types.Strip.md#bpy.types.Strip.frame_offset_end "bpy.types.Strip.frame_offset_end")
-  * [`Strip.channel`](bpy.types.Strip.md#bpy.types.Strip.channel "bpy.types.Strip.channel")
-  * [`Strip.use_linear_modifiers`](bpy.types.Strip.md#bpy.types.Strip.use_linear_modifiers "bpy.types.Strip.use_linear_modifiers")
-  * [`Strip.blend_type`](bpy.types.Strip.md#bpy.types.Strip.blend_type "bpy.types.Strip.blend_type")
-  * [`Strip.blend_alpha`](bpy.types.Strip.md#bpy.types.Strip.blend_alpha "bpy.types.Strip.blend_alpha")
-  * [`Strip.effect_fader`](bpy.types.Strip.md#bpy.types.Strip.effect_fader "bpy.types.Strip.effect_fader")
-  * [`Strip.use_default_fade`](bpy.types.Strip.md#bpy.types.Strip.use_default_fade "bpy.types.Strip.use_default_fade")
-  * [`Strip.color_tag`](bpy.types.Strip.md#bpy.types.Strip.color_tag "bpy.types.Strip.color_tag")
-  * [`Strip.modifiers`](bpy.types.Strip.md#bpy.types.Strip.modifiers "bpy.types.Strip.modifiers")
-  * [`Strip.show_retiming_keys`](bpy.types.Strip.md#bpy.types.Strip.show_retiming_keys "bpy.types.Strip.show_retiming_keys")
+  * [[Strip.frame_final_end]]
+  * [[Strip.frame_offset_start]]
+  * [[Strip.frame_offset_end]]
+  * [[Strip.channel]]
+  * [[Strip.use_linear_modifiers]]
+  * [[Strip.blend_type]]
+  * [[Strip.blend_alpha]]
+  * [[Strip.effect_fader]]
+  * [[Strip.use_default_fade]]
+  * [[Strip.color_tag]]
+  * [[Strip.modifiers]]
+  * [[Strip.show_retiming_keys]]
 
   
 ---|---  
   
 ## Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
 
 | 
 
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
-  * [`Strip.bl_system_properties_get`](bpy.types.Strip.md#bpy.types.Strip.bl_system_properties_get "bpy.types.Strip.bl_system_properties_get")
-  * [`Strip.strip_elem_from_frame`](bpy.types.Strip.md#bpy.types.Strip.strip_elem_from_frame "bpy.types.Strip.strip_elem_from_frame")
-  * [`Strip.swap`](bpy.types.Strip.md#bpy.types.Strip.swap "bpy.types.Strip.swap")
-  * [`Strip.move_to_meta`](bpy.types.Strip.md#bpy.types.Strip.move_to_meta "bpy.types.Strip.move_to_meta")
-  * [`Strip.parent_meta`](bpy.types.Strip.md#bpy.types.Strip.parent_meta "bpy.types.Strip.parent_meta")
-  * [`Strip.invalidate_cache`](bpy.types.Strip.md#bpy.types.Strip.invalidate_cache "bpy.types.Strip.invalidate_cache")
-  * [`Strip.split`](bpy.types.Strip.md#bpy.types.Strip.split "bpy.types.Strip.split")
-  * [`Strip.bl_rna_get_subclass`](bpy.types.Strip.md#bpy.types.Strip.bl_rna_get_subclass "bpy.types.Strip.bl_rna_get_subclass")
-  * [`Strip.bl_rna_get_subclass_py`](bpy.types.Strip.md#bpy.types.Strip.bl_rna_get_subclass_py "bpy.types.Strip.bl_rna_get_subclass_py")
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
+  * [[Strip.bl_system_properties_get]]
+  * [[Strip.strip_elem_from_frame]]
+  * [[Strip.swap]]
+  * [[Strip.move_to_meta]]
+  * [[Strip.parent_meta]]
+  * [[Strip.invalidate_cache]]
+  * [[Strip.split]]
+  * [[Strip.bl_rna_get_subclass]]
+  * [[Strip.bl_rna_get_subclass_py]]
 
   
 ---|---

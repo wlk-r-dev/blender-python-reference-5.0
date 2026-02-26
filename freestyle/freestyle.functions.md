@@ -1254,7 +1254,7 @@ The 2D normal of the 1D element evaluated at the pointed Interface0D.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 _class _freestyle.functions.Normal2DF1D
     
@@ -1289,7 +1289,7 @@ The 2D normal for the Interface1D.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 _class _freestyle.functions.Orientation2DF1D
     
@@ -1324,7 +1324,7 @@ The 2D orientation of the Interface1D.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 _class _freestyle.functions.Orientation3DF1D
     
@@ -1359,7 +1359,7 @@ The 3D orientation of the Interface1D.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 _class _freestyle.functions.QuantitativeInvisibilityF0D
     
@@ -1615,7 +1615,7 @@ The 2D oriented tangent to the 1D element evaluated at the pointed Interface0D.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 _class _freestyle.functions.VertexOrientation3DF0D
     
@@ -1645,7 +1645,7 @@ The 3D oriented tangent to the 1D element evaluated at the pointed Interface0D.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 _class _freestyle.functions.ZDiscontinuityF0D
     

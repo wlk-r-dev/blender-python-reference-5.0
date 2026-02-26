@@ -2,7 +2,7 @@
 
 This module provides access to Blender’s image manipulation API.
 
-It provides access to image buffers outside of Blender’s [`bpy.types.Image`](../bpy.types/I/bpy.types.Image.md#bpy.types.Image "bpy.types.Image") data-block context.
+It provides access to image buffers outside of Blender’s [[bpy.types.Image]] data-block context.
 
 Submodules
 

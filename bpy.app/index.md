@@ -238,7 +238,7 @@ Using The `--python` command line argument to populate name-space often fails to
 
 Populating the driver name-space before the blend-file loads also doesn’t work since opening a file clears the name-space.
 
-It is possible to run a script via the `--python` command line argument, before the blend file. This can register a load-post handler ([`bpy.app.handlers.load_post`](bpy.app.handlers.md#bpy.app.handlers.load_post "bpy.app.handlers.load_post")) that initialized the name-space. While this works for background tasks it has the downside that opening the file from the file selector won’t setup the name-space.
+It is possible to run a script via the `--python` command line argument, before the blend file. This can register a load-post handler ([[bpy.app.handlers.load_post]]) that initialized the name-space. While this works for background tasks it has the downside that opening the file from the file selector won’t setup the name-space.
 
 bpy.app.online_access
     

@@ -1,6 +1,6 @@
 # Collection(ID)
 
-base classes — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`ID`](../I/bpy.types.ID.md#bpy.types.ID "bpy.types.ID")
+base classes — [[bpy_struct]], [[ID]]
 
 _class _bpy.types.Collection(_ID_)
     
@@ -25,7 +25,7 @@ Objects that are in this collection and its child collections
 Type:
     
 
-[`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object"), (readonly)
+[[bpy_prop_collection]] of [[Object]], (readonly)
 
 children
     
@@ -35,7 +35,7 @@ Collections that are immediate children of this collection
 Type:
     
 
-[`CollectionChildren`](bpy.types.CollectionChildren.md#bpy.types.CollectionChildren "bpy.types.CollectionChildren") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of `Collection`, (readonly)
+[[CollectionChildren]] [[bpy_prop_collection]] of `Collection`, (readonly)
 
 collection_children
     
@@ -45,7 +45,7 @@ Children collections with their parent-collection-specific settings
 Type:
     
 
-[`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`CollectionChild`](bpy.types.CollectionChild.md#bpy.types.CollectionChild "bpy.types.CollectionChild"), (readonly)
+[[bpy_prop_collection]] of [[CollectionChild]], (readonly)
 
 collection_objects
     
@@ -55,7 +55,7 @@ Objects of the collection with their parent-collection-specific settings
 Type:
     
 
-[`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`CollectionObject`](bpy.types.CollectionObject.md#bpy.types.CollectionObject "bpy.types.CollectionObject"), (readonly)
+[[bpy_prop_collection]] of [[CollectionObject]], (readonly)
 
 color_tag
     
@@ -75,7 +75,7 @@ Export Handlers configured for the collection
 Type:
     
 
-[`CollectionExports`](bpy.types.CollectionExports.md#bpy.types.CollectionExports "bpy.types.CollectionExports") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`CollectionExport`](bpy.types.CollectionExport.md#bpy.types.CollectionExport "bpy.types.CollectionExport"), (readonly)
+[[CollectionExports]] [[bpy_prop_collection]] of [[CollectionExport]], (readonly)
 
 hide_render
     
@@ -115,7 +115,7 @@ Offset from the origin to use when instancing
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
 
 lineart_intersection_mask
     
@@ -178,7 +178,7 @@ Objects that are directly in this collection
 Type:
     
 
-[`CollectionObjects`](bpy.types.CollectionObjects.md#bpy.types.CollectionObjects "bpy.types.CollectionObjects") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object"), (readonly)
+[[CollectionObjects]] [[bpy_prop_collection]] of [[Object]], (readonly)
 
 use_lineart_intersection_priority
     
@@ -214,7 +214,7 @@ The collection instance objects this collection is used in
 Type:
     
 
-tuple of [`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")
+tuple of [[Object]]
 
 Note
 
@@ -238,7 +238,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -260,124 +260,124 @@ type
 
 ## Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
-  * [`ID.name`](../I/bpy.types.ID.md#bpy.types.ID.name "bpy.types.ID.name")
-  * [`ID.name_full`](../I/bpy.types.ID.md#bpy.types.ID.name_full "bpy.types.ID.name_full")
-  * [`ID.id_type`](../I/bpy.types.ID.md#bpy.types.ID.id_type "bpy.types.ID.id_type")
-  * [`ID.session_uid`](../I/bpy.types.ID.md#bpy.types.ID.session_uid "bpy.types.ID.session_uid")
-  * [`ID.is_evaluated`](../I/bpy.types.ID.md#bpy.types.ID.is_evaluated "bpy.types.ID.is_evaluated")
-  * [`ID.original`](../I/bpy.types.ID.md#bpy.types.ID.original "bpy.types.ID.original")
-  * [`ID.users`](../I/bpy.types.ID.md#bpy.types.ID.users "bpy.types.ID.users")
-  * [`ID.use_fake_user`](../I/bpy.types.ID.md#bpy.types.ID.use_fake_user "bpy.types.ID.use_fake_user")
-  * [`ID.use_extra_user`](../I/bpy.types.ID.md#bpy.types.ID.use_extra_user "bpy.types.ID.use_extra_user")
-  * [`ID.is_embedded_data`](../I/bpy.types.ID.md#bpy.types.ID.is_embedded_data "bpy.types.ID.is_embedded_data")
+  * [[bpy_struct.id_data]]
+  * [[ID.name]]
+  * [[ID.name_full]]
+  * [[ID.id_type]]
+  * [[ID.session_uid]]
+  * [[ID.is_evaluated]]
+  * [[ID.original]]
+  * [[ID.users]]
+  * [[ID.use_fake_user]]
+  * [[ID.use_extra_user]]
+  * [[ID.is_embedded_data]]
 
 | 
 
-  * [`ID.is_linked_packed`](../I/bpy.types.ID.md#bpy.types.ID.is_linked_packed "bpy.types.ID.is_linked_packed")
-  * [`ID.is_missing`](../I/bpy.types.ID.md#bpy.types.ID.is_missing "bpy.types.ID.is_missing")
-  * [`ID.is_runtime_data`](../I/bpy.types.ID.md#bpy.types.ID.is_runtime_data "bpy.types.ID.is_runtime_data")
-  * [`ID.is_editable`](../I/bpy.types.ID.md#bpy.types.ID.is_editable "bpy.types.ID.is_editable")
-  * [`ID.tag`](../I/bpy.types.ID.md#bpy.types.ID.tag "bpy.types.ID.tag")
-  * [`ID.is_library_indirect`](../I/bpy.types.ID.md#bpy.types.ID.is_library_indirect "bpy.types.ID.is_library_indirect")
-  * [`ID.library`](../I/bpy.types.ID.md#bpy.types.ID.library "bpy.types.ID.library")
-  * [`ID.library_weak_reference`](../I/bpy.types.ID.md#bpy.types.ID.library_weak_reference "bpy.types.ID.library_weak_reference")
-  * [`ID.asset_data`](../I/bpy.types.ID.md#bpy.types.ID.asset_data "bpy.types.ID.asset_data")
-  * [`ID.override_library`](../I/bpy.types.ID.md#bpy.types.ID.override_library "bpy.types.ID.override_library")
-  * [`ID.preview`](../I/bpy.types.ID.md#bpy.types.ID.preview "bpy.types.ID.preview")
+  * [[ID.is_linked_packed]]
+  * [[ID.is_missing]]
+  * [[ID.is_runtime_data]]
+  * [[ID.is_editable]]
+  * [[ID.tag]]
+  * [[ID.is_library_indirect]]
+  * [[ID.library]]
+  * [[ID.library_weak_reference]]
+  * [[ID.asset_data]]
+  * [[ID.override_library]]
+  * [[ID.preview]]
 
   
 ---|---  
   
 ## Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
 
 | 
 
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
-  * [`ID.bl_system_properties_get`](../I/bpy.types.ID.md#bpy.types.ID.bl_system_properties_get "bpy.types.ID.bl_system_properties_get")
-  * [`ID.rename`](../I/bpy.types.ID.md#bpy.types.ID.rename "bpy.types.ID.rename")
-  * [`ID.evaluated_get`](../I/bpy.types.ID.md#bpy.types.ID.evaluated_get "bpy.types.ID.evaluated_get")
-  * [`ID.copy`](../I/bpy.types.ID.md#bpy.types.ID.copy "bpy.types.ID.copy")
-  * [`ID.asset_mark`](../I/bpy.types.ID.md#bpy.types.ID.asset_mark "bpy.types.ID.asset_mark")
-  * [`ID.asset_clear`](../I/bpy.types.ID.md#bpy.types.ID.asset_clear "bpy.types.ID.asset_clear")
-  * [`ID.asset_generate_preview`](../I/bpy.types.ID.md#bpy.types.ID.asset_generate_preview "bpy.types.ID.asset_generate_preview")
-  * [`ID.override_create`](../I/bpy.types.ID.md#bpy.types.ID.override_create "bpy.types.ID.override_create")
-  * [`ID.override_hierarchy_create`](../I/bpy.types.ID.md#bpy.types.ID.override_hierarchy_create "bpy.types.ID.override_hierarchy_create")
-  * [`ID.user_clear`](../I/bpy.types.ID.md#bpy.types.ID.user_clear "bpy.types.ID.user_clear")
-  * [`ID.user_remap`](../I/bpy.types.ID.md#bpy.types.ID.user_remap "bpy.types.ID.user_remap")
-  * [`ID.make_local`](../I/bpy.types.ID.md#bpy.types.ID.make_local "bpy.types.ID.make_local")
-  * [`ID.user_of_id`](../I/bpy.types.ID.md#bpy.types.ID.user_of_id "bpy.types.ID.user_of_id")
-  * [`ID.animation_data_create`](../I/bpy.types.ID.md#bpy.types.ID.animation_data_create "bpy.types.ID.animation_data_create")
-  * [`ID.animation_data_clear`](../I/bpy.types.ID.md#bpy.types.ID.animation_data_clear "bpy.types.ID.animation_data_clear")
-  * [`ID.update_tag`](../I/bpy.types.ID.md#bpy.types.ID.update_tag "bpy.types.ID.update_tag")
-  * [`ID.preview_ensure`](../I/bpy.types.ID.md#bpy.types.ID.preview_ensure "bpy.types.ID.preview_ensure")
-  * [`ID.bl_rna_get_subclass`](../I/bpy.types.ID.md#bpy.types.ID.bl_rna_get_subclass "bpy.types.ID.bl_rna_get_subclass")
-  * [`ID.bl_rna_get_subclass_py`](../I/bpy.types.ID.md#bpy.types.ID.bl_rna_get_subclass_py "bpy.types.ID.bl_rna_get_subclass_py")
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
+  * [[ID.bl_system_properties_get]]
+  * [[ID.rename]]
+  * [[ID.evaluated_get]]
+  * [[ID.copy]]
+  * [[ID.asset_mark]]
+  * [[ID.asset_clear]]
+  * [[ID.asset_generate_preview]]
+  * [[ID.override_create]]
+  * [[ID.override_hierarchy_create]]
+  * [[ID.user_clear]]
+  * [[ID.user_remap]]
+  * [[ID.make_local]]
+  * [[ID.user_of_id]]
+  * [[ID.animation_data_create]]
+  * [[ID.animation_data_clear]]
+  * [[ID.update_tag]]
+  * [[ID.preview_ensure]]
+  * [[ID.bl_rna_get_subclass]]
+  * [[ID.bl_rna_get_subclass_py]]
 
   
 ---|---  
   
 ## References
 
-  * [`BlendData.collections`](../B/bpy.types.BlendData.md#bpy.types.BlendData.collections "bpy.types.BlendData.collections")
-  * [`BlendDataCollections.new`](../B/bpy.types.BlendDataCollections.md#bpy.types.BlendDataCollections.new "bpy.types.BlendDataCollections.new")
-  * [`BlendDataCollections.remove`](../B/bpy.types.BlendDataCollections.md#bpy.types.BlendDataCollections.remove "bpy.types.BlendDataCollections.remove")
-  * [`BooleanModifier.collection`](../B/bpy.types.BooleanModifier.md#bpy.types.BooleanModifier.collection "bpy.types.BooleanModifier.collection")
-  * [`ClothCollisionSettings.collection`](bpy.types.ClothCollisionSettings.md#bpy.types.ClothCollisionSettings.collection "bpy.types.ClothCollisionSettings.collection")
+  * [[BlendData.collections]]
+  * [[BlendDataCollections.new]]
+  * [[BlendDataCollections.remove]]
+  * [[BooleanModifier.collection]]
+  * [[ClothCollisionSettings.collection]]
   * `Collection.children`
-  * [`CollectionChildren.link`](bpy.types.CollectionChildren.md#bpy.types.CollectionChildren.link "bpy.types.CollectionChildren.link")
-  * [`CollectionChildren.unlink`](bpy.types.CollectionChildren.md#bpy.types.CollectionChildren.unlink "bpy.types.CollectionChildren.unlink")
-  * [`Context.collection`](bpy.types.Context.md#bpy.types.Context.collection "bpy.types.Context.collection")
-  * [`DopeSheet.filter_collection`](../D/bpy.types.DopeSheet.md#bpy.types.DopeSheet.filter_collection "bpy.types.DopeSheet.filter_collection")
-  * [`DynamicPaintSurface.brush_collection`](../D/bpy.types.DynamicPaintSurface.md#bpy.types.DynamicPaintSurface.brush_collection "bpy.types.DynamicPaintSurface.brush_collection")
-  * [`EffectorWeights.collection`](../E/bpy.types.EffectorWeights.md#bpy.types.EffectorWeights.collection "bpy.types.EffectorWeights.collection")
-  * [`FluidDomainSettings.effector_group`](../F/bpy.types.FluidDomainSettings.md#bpy.types.FluidDomainSettings.effector_group "bpy.types.FluidDomainSettings.effector_group")
-  * [`FluidDomainSettings.fluid_group`](../F/bpy.types.FluidDomainSettings.md#bpy.types.FluidDomainSettings.fluid_group "bpy.types.FluidDomainSettings.fluid_group")
-  * [`FluidDomainSettings.force_collection`](../F/bpy.types.FluidDomainSettings.md#bpy.types.FluidDomainSettings.force_collection "bpy.types.FluidDomainSettings.force_collection")
-  * [`FreestyleLineSet.collection`](../F/bpy.types.FreestyleLineSet.md#bpy.types.FreestyleLineSet.collection "bpy.types.FreestyleLineSet.collection")
+  * [[CollectionChildren.link]]
+  * [[CollectionChildren.unlink]]
+  * [[Context.collection]]
+  * [[DopeSheet.filter_collection]]
+  * [[DynamicPaintSurface.brush_collection]]
+  * [[EffectorWeights.collection]]
+  * [[FluidDomainSettings.effector_group]]
+  * [[FluidDomainSettings.fluid_group]]
+  * [[FluidDomainSettings.force_collection]]
+  * [[FreestyleLineSet.collection]]
 
 | 
 
-  * [`GeometryNodeInputCollection.collection`](../G/bpy.types.GeometryNodeInputCollection.md#bpy.types.GeometryNodeInputCollection.collection "bpy.types.GeometryNodeInputCollection.collection")
-  * [`GreasePencilLineartModifier.source_collection`](../G/bpy.types.GreasePencilLineartModifier.md#bpy.types.GreasePencilLineartModifier.source_collection "bpy.types.GreasePencilLineartModifier.source_collection")
-  * [`IDOverrideLibrary.resync`](../I/bpy.types.IDOverrideLibrary.md#bpy.types.IDOverrideLibrary.resync "bpy.types.IDOverrideLibrary.resync")
-  * [`LayerCollection.collection`](../L/bpy.types.LayerCollection.md#bpy.types.LayerCollection.collection "bpy.types.LayerCollection.collection")
-  * [`LightProbe.visibility_collection`](../L/bpy.types.LightProbe.md#bpy.types.LightProbe.visibility_collection "bpy.types.LightProbe.visibility_collection")
-  * [`NodeSocketCollection.default_value`](../N/bpy.types.NodeSocketCollection.md#bpy.types.NodeSocketCollection.default_value "bpy.types.NodeSocketCollection.default_value")
-  * [`NodeTreeInterfaceSocketCollection.default_value`](../N/bpy.types.NodeTreeInterfaceSocketCollection.md#bpy.types.NodeTreeInterfaceSocketCollection.default_value "bpy.types.NodeTreeInterfaceSocketCollection.default_value")
-  * [`ObjectLightLinking.blocker_collection`](../O/bpy.types.ObjectLightLinking.md#bpy.types.ObjectLightLinking.blocker_collection "bpy.types.ObjectLightLinking.blocker_collection")
-  * [`ObjectLightLinking.receiver_collection`](../O/bpy.types.ObjectLightLinking.md#bpy.types.ObjectLightLinking.receiver_collection "bpy.types.ObjectLightLinking.receiver_collection")
-  * [`Object.instance_collection`](../O/bpy.types.Object.md#bpy.types.Object.instance_collection "bpy.types.Object.instance_collection")
-  * [`ParticleSettings.collision_collection`](../P/bpy.types.ParticleSettings.md#bpy.types.ParticleSettings.collision_collection "bpy.types.ParticleSettings.collision_collection")
-  * [`ParticleSettings.instance_collection`](../P/bpy.types.ParticleSettings.md#bpy.types.ParticleSettings.instance_collection "bpy.types.ParticleSettings.instance_collection")
-  * [`RigidBodyWorld.collection`](../R/bpy.types.RigidBodyWorld.md#bpy.types.RigidBodyWorld.collection "bpy.types.RigidBodyWorld.collection")
-  * [`RigidBodyWorld.constraints`](../R/bpy.types.RigidBodyWorld.md#bpy.types.RigidBodyWorld.constraints "bpy.types.RigidBodyWorld.constraints")
-  * [`Scene.collection`](../S/bpy.types.Scene.md#bpy.types.Scene.collection "bpy.types.Scene.collection")
-  * [`SoftBodySettings.collision_collection`](../S/bpy.types.SoftBodySettings.md#bpy.types.SoftBodySettings.collision_collection "bpy.types.SoftBodySettings.collision_collection")
+  * [[GeometryNodeInputCollection.collection]]
+  * [[GreasePencilLineartModifier.source_collection]]
+  * [[IDOverrideLibrary.resync]]
+  * [[LayerCollection.collection]]
+  * [[LightProbe.visibility_collection]]
+  * [[NodeSocketCollection.default_value]]
+  * [[NodeTreeInterfaceSocketCollection.default_value]]
+  * [[ObjectLightLinking.blocker_collection]]
+  * [[ObjectLightLinking.receiver_collection]]
+  * [[Object.instance_collection]]
+  * [[ParticleSettings.collision_collection]]
+  * [[ParticleSettings.instance_collection]]
+  * [[RigidBodyWorld.collection]]
+  * [[RigidBodyWorld.constraints]]
+  * [[Scene.collection]]
+  * [[SoftBodySettings.collision_collection]]
 
   
 ---|---

@@ -88,7 +88,7 @@ Operators which support being executed with multiple files from drag-and-drop re
 
 These `directory` and `files` properties will be set with the necessary data from the drag-and-drop operation.
 
-Additionally, if the operator provides operator properties that need to be accessible to the user, the `ImportHelper.invoke_popup` method can be used to show a dialog leveraging the standard [`Operator.draw`](../O/bpy.types.Operator.md#bpy.types.Operator.draw "bpy.types.Operator.draw") method for layout and display.
+Additionally, if the operator provides operator properties that need to be accessible to the user, the `ImportHelper.invoke_popup` method can be used to show a dialog leveraging the standard [[Operator.draw]] method for layout and display.
     
     
     import bpy
@@ -181,9 +181,9 @@ Additionally, if the operator provides operator properties that need to be acces
     bpy.utils.register_class(SHADER_FH_script_import)
     
 
-base class — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")
+base class — [[bpy_struct]]
 
-subclasses — [`IMAGE_FH_drop_handler`](../I/bpy.types.IMAGE_FH_drop_handler.md#bpy.types.IMAGE_FH_drop_handler "bpy.types.IMAGE_FH_drop_handler"), [`IO_FH_gltf2`](../I/bpy.types.IO_FH_gltf2.md#bpy.types.IO_FH_gltf2 "bpy.types.IO_FH_gltf2"), [`IO_FH_svg_as_curves`](../I/bpy.types.IO_FH_svg_as_curves.md#bpy.types.IO_FH_svg_as_curves "bpy.types.IO_FH_svg_as_curves"), [`NODE_FH_image_node`](../N/bpy.types.NODE_FH_image_node.md#bpy.types.NODE_FH_image_node "bpy.types.NODE_FH_image_node"), [`SEQUENCER_FH_image_strip`](../S/bpy.types.SEQUENCER_FH_image_strip.md#bpy.types.SEQUENCER_FH_image_strip "bpy.types.SEQUENCER_FH_image_strip"), [`SEQUENCER_FH_movie_strip`](../S/bpy.types.SEQUENCER_FH_movie_strip.md#bpy.types.SEQUENCER_FH_movie_strip "bpy.types.SEQUENCER_FH_movie_strip"), [`SEQUENCER_FH_sound_strip`](../S/bpy.types.SEQUENCER_FH_sound_strip.md#bpy.types.SEQUENCER_FH_sound_strip "bpy.types.SEQUENCER_FH_sound_strip"), [`VIEW3D_FH_camera_background_image`](../V/bpy.types.VIEW3D_FH_camera_background_image.md#bpy.types.VIEW3D_FH_camera_background_image "bpy.types.VIEW3D_FH_camera_background_image"), [`VIEW3D_FH_empty_image`](../V/bpy.types.VIEW3D_FH_empty_image.md#bpy.types.VIEW3D_FH_empty_image "bpy.types.VIEW3D_FH_empty_image"), [`VIEW3D_FH_vdb_volume`](../V/bpy.types.VIEW3D_FH_vdb_volume.md#bpy.types.VIEW3D_FH_vdb_volume "bpy.types.VIEW3D_FH_vdb_volume")
+subclasses — [[IMAGE_FH_drop_handler]], [[IO_FH_gltf2]], [[IO_FH_svg_as_curves]], [[NODE_FH_image_node]], [[SEQUENCER_FH_image_strip]], [[SEQUENCER_FH_movie_strip]], [[SEQUENCER_FH_sound_strip]], [[VIEW3D_FH_camera_background_image]], [[VIEW3D_FH_empty_image]], [[VIEW3D_FH_vdb_volume]]
 
 _class _bpy.types.FileHandler(_bpy_struct_)
     
@@ -266,7 +266,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -288,7 +288,7 @@ type
 
 ## Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [[bpy_struct.id_data]]
 
 | 
 
@@ -298,33 +298,33 @@ type
   
 ## Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
 
 | 
 
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
 
   
 ---|---

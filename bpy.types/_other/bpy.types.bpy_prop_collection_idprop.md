@@ -1,6 +1,6 @@
 # bpy_prop_collection_idprop
 
-base classes — [`bpy_prop_collection`](bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection")
+base classes — [[bpy_prop_collection]]
 
 _class _bpy.types.bpy_prop_collection_idprop
     

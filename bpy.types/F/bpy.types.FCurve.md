@@ -1,6 +1,6 @@
 # FCurve(bpy_struct)
 
-base class — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")
+base class — [[bpy_struct]]
 
 _class _bpy.types.FCurve(_bpy_struct_)
     
@@ -35,7 +35,7 @@ Color of the F-Curve in the Graph Editor
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 color_mode
     
@@ -74,7 +74,7 @@ Channel Driver (only set for Driver F-Curves)
 Type:
     
 
-[`Driver`](../D/bpy.types.Driver.md#bpy.types.Driver "bpy.types.Driver"), (readonly)
+[[Driver]], (readonly)
 
 extrapolation
     
@@ -99,7 +99,7 @@ Action Group that this F-Curve belongs to
 Type:
     
 
-[`ActionGroup`](../A/bpy.types.ActionGroup.md#bpy.types.ActionGroup "bpy.types.ActionGroup")
+[[ActionGroup]]
 
 hide
     
@@ -139,7 +139,7 @@ User-editable keyframes
 Type:
     
 
-[`FCurveKeyframePoints`](bpy.types.FCurveKeyframePoints.md#bpy.types.FCurveKeyframePoints "bpy.types.FCurveKeyframePoints") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`Keyframe`](../K/bpy.types.Keyframe.md#bpy.types.Keyframe "bpy.types.Keyframe"), (readonly)
+[[FCurveKeyframePoints]] [[bpy_prop_collection]] of [[Keyframe]], (readonly)
 
 lock
     
@@ -159,7 +159,7 @@ Modifiers affecting the shape of the F-Curve
 Type:
     
 
-[`FCurveModifiers`](bpy.types.FCurveModifiers.md#bpy.types.FCurveModifiers "bpy.types.FCurveModifiers") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`FModifier`](bpy.types.FModifier.md#bpy.types.FModifier "bpy.types.FModifier"), (readonly)
+[[FCurveModifiers]] [[bpy_prop_collection]] of [[FModifier]], (readonly)
 
 mute
     
@@ -179,7 +179,7 @@ Sampled animation data
 Type:
     
 
-[`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`FCurveSample`](bpy.types.FCurveSample.md#bpy.types.FCurveSample "bpy.types.FCurveSample"), (readonly)
+[[bpy_prop_collection]] of [[FCurveSample]], (readonly)
 
 select
     
@@ -229,7 +229,7 @@ Range, Min/Max values
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf]
+[[mathutils.Vector]] of 2 items in [-inf, inf]
 
 update_autoflags(_data_)
     
@@ -239,7 +239,7 @@ Update FCurve flags set automatically from affected property (currently, integer
 Parameters:
     
 
-**data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data, Data containing the property controlled by given FCurve
+**data** ([[AnyType]], (never None)) – Data, Data containing the property controlled by given FCurve
 
 convert_to_samples(_start_ , _end_)
     
@@ -310,7 +310,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -332,7 +332,7 @@ type
 
 ## Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [[bpy_struct.id_data]]
 
 | 
 
@@ -342,64 +342,64 @@ type
   
 ## Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
 
 | 
 
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
 
   
 ---|---  
   
 ## References
 
-  * [`bpy.context.active_editable_fcurve`](../../bpy.context.md#bpy.context.active_editable_fcurve "bpy.context.active_editable_fcurve")
-  * [`bpy.context.editable_fcurves`](../../bpy.context.md#bpy.context.editable_fcurves "bpy.context.editable_fcurves")
-  * [`bpy.context.selected_editable_fcurves`](../../bpy.context.md#bpy.context.selected_editable_fcurves "bpy.context.selected_editable_fcurves")
-  * [`bpy.context.selected_visible_fcurves`](../../bpy.context.md#bpy.context.selected_visible_fcurves "bpy.context.selected_visible_fcurves")
-  * [`bpy.context.visible_fcurves`](../../bpy.context.md#bpy.context.visible_fcurves "bpy.context.visible_fcurves")
-  * [`Action.fcurve_ensure_for_datablock`](../A/bpy.types.Action.md#bpy.types.Action.fcurve_ensure_for_datablock "bpy.types.Action.fcurve_ensure_for_datablock")
-  * [`ActionChannelbag.fcurves`](../A/bpy.types.ActionChannelbag.md#bpy.types.ActionChannelbag.fcurves "bpy.types.ActionChannelbag.fcurves")
-  * [`ActionChannelbagFCurves.ensure`](../A/bpy.types.ActionChannelbagFCurves.md#bpy.types.ActionChannelbagFCurves.ensure "bpy.types.ActionChannelbagFCurves.ensure")
-  * [`ActionChannelbagFCurves.find`](../A/bpy.types.ActionChannelbagFCurves.md#bpy.types.ActionChannelbagFCurves.find "bpy.types.ActionChannelbagFCurves.find")
-  * [`ActionChannelbagFCurves.new`](../A/bpy.types.ActionChannelbagFCurves.md#bpy.types.ActionChannelbagFCurves.new "bpy.types.ActionChannelbagFCurves.new")
-  * [`ActionChannelbagFCurves.new_from_fcurve`](../A/bpy.types.ActionChannelbagFCurves.md#bpy.types.ActionChannelbagFCurves.new_from_fcurve "bpy.types.ActionChannelbagFCurves.new_from_fcurve")
+  * [[bpy.context.active_editable_fcurve]]
+  * [[bpy.context.editable_fcurves]]
+  * [[bpy.context.selected_editable_fcurves]]
+  * [[bpy.context.selected_visible_fcurves]]
+  * [[bpy.context.visible_fcurves]]
+  * [[Action.fcurve_ensure_for_datablock]]
+  * [[ActionChannelbag.fcurves]]
+  * [[ActionChannelbagFCurves.ensure]]
+  * [[ActionChannelbagFCurves.find]]
+  * [[ActionChannelbagFCurves.new]]
+  * [[ActionChannelbagFCurves.new_from_fcurve]]
 
 | 
 
-  * [`ActionChannelbagFCurves.new_from_fcurve`](../A/bpy.types.ActionChannelbagFCurves.md#bpy.types.ActionChannelbagFCurves.new_from_fcurve "bpy.types.ActionChannelbagFCurves.new_from_fcurve")
-  * [`ActionChannelbagFCurves.remove`](../A/bpy.types.ActionChannelbagFCurves.md#bpy.types.ActionChannelbagFCurves.remove "bpy.types.ActionChannelbagFCurves.remove")
-  * [`ActionGroup.channels`](../A/bpy.types.ActionGroup.md#bpy.types.ActionGroup.channels "bpy.types.ActionGroup.channels")
-  * [`AnimData.drivers`](../A/bpy.types.AnimData.md#bpy.types.AnimData.drivers "bpy.types.AnimData.drivers")
-  * [`AnimDataDrivers.find`](../A/bpy.types.AnimDataDrivers.md#bpy.types.AnimDataDrivers.find "bpy.types.AnimDataDrivers.find")
-  * [`AnimDataDrivers.from_existing`](../A/bpy.types.AnimDataDrivers.md#bpy.types.AnimDataDrivers.from_existing "bpy.types.AnimDataDrivers.from_existing")
-  * [`AnimDataDrivers.from_existing`](../A/bpy.types.AnimDataDrivers.md#bpy.types.AnimDataDrivers.from_existing "bpy.types.AnimDataDrivers.from_existing")
-  * [`AnimDataDrivers.new`](../A/bpy.types.AnimDataDrivers.md#bpy.types.AnimDataDrivers.new "bpy.types.AnimDataDrivers.new")
-  * [`AnimDataDrivers.remove`](../A/bpy.types.AnimDataDrivers.md#bpy.types.AnimDataDrivers.remove "bpy.types.AnimDataDrivers.remove")
-  * [`NlaStrip.fcurves`](../N/bpy.types.NlaStrip.md#bpy.types.NlaStrip.fcurves "bpy.types.NlaStrip.fcurves")
-  * [`NlaStripFCurves.find`](../N/bpy.types.NlaStripFCurves.md#bpy.types.NlaStripFCurves.find "bpy.types.NlaStripFCurves.find")
+  * [[ActionChannelbagFCurves.new_from_fcurve]]
+  * [[ActionChannelbagFCurves.remove]]
+  * [[ActionGroup.channels]]
+  * [[AnimData.drivers]]
+  * [[AnimDataDrivers.find]]
+  * [[AnimDataDrivers.from_existing]]
+  * [[AnimDataDrivers.from_existing]]
+  * [[AnimDataDrivers.new]]
+  * [[AnimDataDrivers.remove]]
+  * [[NlaStrip.fcurves]]
+  * [[NlaStripFCurves.find]]
 
   
 ---|---

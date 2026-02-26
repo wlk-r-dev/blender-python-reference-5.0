@@ -128,7 +128,7 @@ Filter Type
 
     * `BLUE` Blue – Change blue channel.
 
-  * **fill_color** ([`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, inf], (optional)) – Fill Color
+  * **fill_color** ([[mathutils.Color]] of 3 items in [0, inf], (optional)) – Fill Color
 
 
 bpy.ops.sculpt.detail_flood_fill()

@@ -35,4 +35,4 @@ an image or None
 Return type:
     
 
-[`bpy.types.Image`](../bpy.types/I/bpy.types.Image.md#bpy.types.Image "bpy.types.Image") | None
+[[bpy.types.Image]] | None

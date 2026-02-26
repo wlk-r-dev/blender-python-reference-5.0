@@ -73,7 +73,7 @@ Builds a BlenderTextureShader object.
 Parameters:
     
 
-**texture** ([`bpy.types.LineStyleTextureSlot`](../bpy.types/L/bpy.types.LineStyleTextureSlot.md#bpy.types.LineStyleTextureSlot "bpy.types.LineStyleTextureSlot") | [`bpy.types.ShaderNodeTree`](../bpy.types/S/bpy.types.ShaderNodeTree.md#bpy.types.ShaderNodeTree "bpy.types.ShaderNodeTree")) – A line style texture slot or a shader node tree to define a set of textures.
+**texture** ([[bpy.types.LineStyleTextureSlot]] | [[bpy.types.ShaderNodeTree]]) – A line style texture slot or a shader node tree to define a set of textures.
 
 shade(_stroke_)
     
@@ -104,7 +104,7 @@ Parameters:
 
   * **thickness_max** (_float_) – The maximum thickness in the main direction.
 
-  * **orientation** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")) – The 2D vector giving the main direction.
+  * **orientation** ([[mathutils.Vector]]) – The 2D vector giving the main direction.
 
   * **clamp** (_bool_) – If true, the strokes are drawn in black when the stroke direction is between -90 and 90 degrees with respect to the main direction and drawn in white otherwise. If false, the strokes are always drawn in black.
 

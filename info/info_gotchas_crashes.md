@@ -74,7 +74,7 @@ Do:
 
 ### Undo/Redo
 
-For safety, you should assume that undo and redo always invalidates all [`bpy.types.ID`](../bpy.types/I/bpy.types.ID.md#bpy.types.ID "bpy.types.ID") instances (Object, Scene, Mesh, Light, etc.), as well obviously as all of their sub-data.
+For safety, you should assume that undo and redo always invalidates all [[bpy.types.ID]] instances (Object, Scene, Mesh, Light, etc.), as well obviously as all of their sub-data.
 
 This example shows how you can tell undo changes the memory locations:
     

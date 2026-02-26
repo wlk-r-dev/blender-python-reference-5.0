@@ -779,7 +779,7 @@ The normal to the face lying on the left of the FEdge.
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 normal_right
     
@@ -789,7 +789,7 @@ The normal to the face lying on the right of the FEdge. If this FEdge is a borde
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 _class _freestyle.types.FEdgeSmooth
     
@@ -853,7 +853,7 @@ The normal of the face that this FEdge is running across.
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 _class _freestyle.types.Id
     
@@ -980,7 +980,7 @@ The 2D point of this 0D element.
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 point_3d
     
@@ -990,7 +990,7 @@ The 3D point of this 0D element.
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 projected_x
     
@@ -1280,15 +1280,15 @@ Parameters:
 
   * **brother** (`Material`) – A Material object to be used as a copy constructor.
 
-  * **line** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") | tuple[float, float, float, float] | list[float]) – The line color.
+  * **line** ([[mathutils.Vector]] | tuple[float, float, float, float] | list[float]) – The line color.
 
   * **diffuse** – The diffuse color.
 
-  * **ambient** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") | tuple[float, float, float, float] | list[float]) – The ambient color.
+  * **ambient** ([[mathutils.Vector]] | tuple[float, float, float, float] | list[float]) – The ambient color.
 
-  * **specular** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") | tuple[float, float, float, float] | list[float]) – The specular color.
+  * **specular** ([[mathutils.Vector]] | tuple[float, float, float, float] | list[float]) – The specular color.
 
-  * **emission** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") | tuple[float, float, float, float] | list[float]) – The emissive color.
+  * **emission** ([[mathutils.Vector]] | tuple[float, float, float, float] | list[float]) – The emissive color.
 
   * **shininess** (_float_) – The shininess coefficient.
 
@@ -1303,7 +1303,7 @@ RGBA components of the ambient color of the material.
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color")
+[[mathutils.Color]]
 
 diffuse
     
@@ -1313,7 +1313,7 @@ RGBA components of the diffuse color of the material.
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 emission
     
@@ -1323,7 +1323,7 @@ RGBA components of the emissive color of the material.
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color")
+[[mathutils.Color]]
 
 line
     
@@ -1333,7 +1333,7 @@ RGBA components of the line color of the material.
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 priority
     
@@ -1363,7 +1363,7 @@ RGBA components of the specular color of the material.
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 _class _freestyle.types.MediumType
     
@@ -1467,7 +1467,7 @@ Returns a smooth noise value for a 2D element.
 Parameters:
     
 
-**v** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") | tuple[float, float] | list[float]) – Two-dimensional sample point.
+**v** ([[mathutils.Vector]] | tuple[float, float] | list[float]) – Two-dimensional sample point.
 
 Returns:
     
@@ -1487,7 +1487,7 @@ Returns a smooth noise value for a 3D element.
 Parameters:
     
 
-**v** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") | tuple[float, float, float] | list[float]) – Three-dimensional sample point.
+**v** ([[mathutils.Vector]] | tuple[float, float, float] | list[float]) – Three-dimensional sample point.
 
 Returns:
     
@@ -1534,7 +1534,7 @@ Returns a noise value for a 2D element.
 Parameters:
     
 
-  * **v** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") | tuple[float, float] | list[float]) – Two-dimensional sample point.
+  * **v** ([[mathutils.Vector]] | tuple[float, float] | list[float]) – Two-dimensional sample point.
 
   * **freq** (_float_) – Noise frequency.
 
@@ -1561,7 +1561,7 @@ Returns a noise value for a 3D element.
 Parameters:
     
 
-  * **v** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") | tuple[float, float, float] | list[float]) – Three-dimensional sample point.
+  * **v** ([[mathutils.Vector]] | tuple[float, float, float] | list[float]) – Three-dimensional sample point.
 
   * **freq** (_float_) – Noise frequency.
 
@@ -1945,7 +1945,7 @@ Parameters:
 
   * **brother** (`SVertex`) – A SVertex object.
 
-  * **point_3d** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")) – A three-dimensional vector.
+  * **point_3d** ([[mathutils.Vector]]) – A three-dimensional vector.
 
   * **id** (`Id`) – An Id object.
 
@@ -1968,7 +1968,7 @@ Adds a normal to the SVertex’s set of normals. If the same normal is already i
 Parameters:
     
 
-**normal** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") | tuple[float, float, float] | list[float]) – A three-dimensional vector.
+**normal** ([[mathutils.Vector]] | tuple[float, float, float] | list[float]) – A three-dimensional vector.
 
 curvatures
     
@@ -1998,7 +1998,7 @@ The normals for this Vertex as a list. In a sharp surface, an SVertex has exactl
 Type:
     
 
-list of [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+list of [[mathutils.Vector]]
 
 normals_size
     
@@ -2018,7 +2018,7 @@ The projected 3D coordinates of the SVertex.
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 point_3d
     
@@ -2028,7 +2028,7 @@ The 3D coordinates of the SVertex.
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 viewvertex
     
@@ -2355,7 +2355,7 @@ The attribute value.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 get_attribute_vec3(_name_)
     
@@ -2375,7 +2375,7 @@ The attribute value.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 has_attribute_real(_name_)
     
@@ -2460,7 +2460,7 @@ Parameters:
 
   * **name** (_str_) – The name of the attribute.
 
-  * **value** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") | tuple[float, float, float] | list[float]) – The attribute value.
+  * **value** ([[mathutils.Vector]] | tuple[float, float, float] | list[float]) – The attribute value.
 
 
 set_attribute_vec3(_name_ , _value_)
@@ -2473,7 +2473,7 @@ Parameters:
 
   * **name** (_str_) – The name of the attribute.
 
-  * **value** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") | tuple[float, float, float] | list[float]) – The attribute value as a 3D vector.
+  * **value** ([[mathutils.Vector]] | tuple[float, float, float] | list[float]) – The attribute value as a 3D vector.
 
 
 alpha
@@ -2494,7 +2494,7 @@ RGB components of the stroke color.
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color")
+[[mathutils.Color]]
 
 thickness
     
@@ -2504,7 +2504,7 @@ Right and left components of the stroke thickness. The right (left) component is
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 visible
     
@@ -2619,7 +2619,7 @@ point
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 stroke_length
     

@@ -8,11 +8,11 @@ Scale selected bendy bones display size
 Parameters:
     
 
-  * **value** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Display Size
+  * **value** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Display Size
 
   * **orient_type** (_enum in_ _[__]__,__(__optional_ _)_) – Orientation, Transformation orientation
 
-  * **orient_matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 3 * 3 items in [-inf, inf], (optional)) – Matrix
+  * **orient_matrix** ([[mathutils.Matrix]] of 3 * 3 items in [-inf, inf], (optional)) – Matrix
 
   * **orient_matrix_type** (_enum in_ _[__]__,__(__optional_ _)_) – Matrix Orientation
 
@@ -51,7 +51,7 @@ Parameters:
 
   * **gpencil_strokes** (_boolean_ _,__(__optional_ _)_) – Edit Grease Pencil, Edit selected Grease Pencil strokes
 
-  * **center_override** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Center Override, Force using this center value (when set)
+  * **center_override** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Center Override, Force using this center value (when set)
 
   * **release_confirm** (_boolean_ _,__(__optional_ _)_) – Confirm on Release, Always confirm operation when releasing button
 
@@ -150,7 +150,7 @@ Parameters:
 
   * **use_snap_selectable** (_boolean_ _,__(__optional_ _)_) – Target: Exclude Non-Selectable
 
-  * **snap_point** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Point
+  * **snap_point** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Point
 
   * **correct_uv** (_boolean_ _,__(__optional_ _)_) – Correct UVs, Correct UV coordinates when transforming
 
@@ -174,7 +174,7 @@ Parameters:
 
   * **orient_type** (_enum in_ _[__]__,__(__optional_ _)_) – Orientation, Transformation orientation
 
-  * **orient_matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 3 * 3 items in [-inf, inf], (optional)) – Matrix
+  * **orient_matrix** ([[mathutils.Matrix]] of 3 * 3 items in [-inf, inf], (optional)) – Matrix
 
   * **orient_matrix_type** (_enum in_ _[__]__,__(__optional_ _)_) – Matrix Orientation
 
@@ -182,7 +182,7 @@ Parameters:
 
   * **gpencil_strokes** (_boolean_ _,__(__optional_ _)_) – Edit Grease Pencil, Edit selected Grease Pencil strokes
 
-  * **center_override** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Center Override, Force using this center value (when set)
+  * **center_override** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Center Override, Force using this center value (when set)
 
   * **release_confirm** (_boolean_ _,__(__optional_ _)_) – Confirm on Release, Always confirm operation when releasing button
 
@@ -213,7 +213,7 @@ Parameters:
 
   * **snap** (_boolean_ _,__(__optional_ _)_) – Use Snapping Options
 
-  * **center_override** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Center Override, Force using this center value (when set)
+  * **center_override** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Center Override, Force using this center value (when set)
 
   * **release_confirm** (_boolean_ _,__(__optional_ _)_) – Confirm on Release, Always confirm operation when releasing button
 
@@ -228,13 +228,13 @@ Scale (resize) selected items
 Parameters:
     
 
-  * **value** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Scale
+  * **value** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Scale
 
-  * **mouse_dir_constraint** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Mouse Directional Constraint
+  * **mouse_dir_constraint** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Mouse Directional Constraint
 
   * **orient_type** (_enum in_ _[__]__,__(__optional_ _)_) – Orientation, Transformation orientation
 
-  * **orient_matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 3 * 3 items in [-inf, inf], (optional)) – Matrix
+  * **orient_matrix** ([[mathutils.Matrix]] of 3 * 3 items in [-inf, inf], (optional)) – Matrix
 
   * **orient_matrix_type** (_enum in_ _[__]__,__(__optional_ _)_) – Matrix Orientation
 
@@ -268,7 +268,7 @@ Parameters:
 
   * **use_snap_selectable** (_boolean_ _,__(__optional_ _)_) – Target: Exclude Non-Selectable
 
-  * **snap_point** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Point
+  * **snap_point** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Point
 
   * **gpencil_strokes** (_boolean_ _,__(__optional_ _)_) – Edit Grease Pencil, Edit selected Grease Pencil strokes
 
@@ -278,7 +278,7 @@ Parameters:
 
   * **use_duplicated_keyframes** (_boolean_ _,__(__optional_ _)_) – Duplicated Keyframes, Transform duplicated keyframes
 
-  * **center_override** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Center Override, Force using this center value (when set)
+  * **center_override** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Center Override, Force using this center value (when set)
 
   * **release_confirm** (_boolean_ _,__(__optional_ _)_) – Confirm on Release, Always confirm operation when releasing button
 
@@ -299,7 +299,7 @@ Parameters:
 
   * **orient_type** (_enum in_ _[__]__,__(__optional_ _)_) – Orientation, Transformation orientation
 
-  * **orient_matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 3 * 3 items in [-inf, inf], (optional)) – Matrix
+  * **orient_matrix** ([[mathutils.Matrix]] of 3 * 3 items in [-inf, inf], (optional)) – Matrix
 
   * **orient_matrix_type** (_enum in_ _[__]__,__(__optional_ _)_) – Matrix Orientation
 
@@ -333,11 +333,11 @@ Parameters:
 
   * **use_snap_selectable** (_boolean_ _,__(__optional_ _)_) – Target: Exclude Non-Selectable
 
-  * **snap_point** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Point
+  * **snap_point** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Point
 
   * **gpencil_strokes** (_boolean_ _,__(__optional_ _)_) – Edit Grease Pencil, Edit selected Grease Pencil strokes
 
-  * **center_override** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Center Override, Force using this center value (when set)
+  * **center_override** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Center Override, Force using this center value (when set)
 
   * **release_confirm** (_boolean_ _,__(__optional_ _)_) – Confirm on Release, Always confirm operation when releasing button
 
@@ -358,7 +358,7 @@ Parameters:
 
   * **orient_type** (_enum in_ _[__]__,__(__optional_ _)_) – Orientation, Transformation orientation
 
-  * **orient_matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 3 * 3 items in [-inf, inf], (optional)) – Matrix
+  * **orient_matrix** ([[mathutils.Matrix]] of 3 * 3 items in [-inf, inf], (optional)) – Matrix
 
   * **orient_matrix_type** (_enum in_ _[__]__,__(__optional_ _)_) – Matrix Orientation
 
@@ -389,7 +389,7 @@ Slide a sequence strip in time
 Parameters:
     
 
-  * **value** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], (optional)) – Offset
+  * **value** ([[mathutils.Vector]] of 2 items in [-inf, inf], (optional)) – Offset
 
   * **use_restore_handle_selection** (_boolean_ _,__(__optional_ _)_) – Restore Handle Selection, Restore handle selection after tweaking
 
@@ -424,7 +424,7 @@ Parameters:
 
   * **orient_type** (_enum in_ _[__]__,__(__optional_ _)_) – Orientation, Transformation orientation
 
-  * **orient_matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 3 * 3 items in [-inf, inf], (optional)) – Matrix
+  * **orient_matrix** ([[mathutils.Matrix]] of 3 * 3 items in [-inf, inf], (optional)) – Matrix
 
   * **orient_matrix_type** (_enum in_ _[__]__,__(__optional_ _)_) – Matrix Orientation
 
@@ -488,11 +488,11 @@ Scale selected vertices’ skin radii
 Parameters:
     
 
-  * **value** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Scale
+  * **value** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Scale
 
   * **orient_type** (_enum in_ _[__]__,__(__optional_ _)_) – Orientation, Transformation orientation
 
-  * **orient_matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 3 * 3 items in [-inf, inf], (optional)) – Matrix
+  * **orient_matrix** ([[mathutils.Matrix]] of 3 * 3 items in [-inf, inf], (optional)) – Matrix
 
   * **orient_matrix_type** (_enum in_ _[__]__,__(__optional_ _)_) – Matrix Orientation
 
@@ -526,7 +526,7 @@ Parameters:
 
   * **use_snap_selectable** (_boolean_ _,__(__optional_ _)_) – Target: Exclude Non-Selectable
 
-  * **snap_point** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Point
+  * **snap_point** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Point
 
   * **release_confirm** (_boolean_ _,__(__optional_ _)_) – Confirm on Release, Always confirm operation when releasing button
 
@@ -588,7 +588,7 @@ Parameters:
 
   * **gpencil_strokes** (_boolean_ _,__(__optional_ _)_) – Edit Grease Pencil, Edit selected Grease Pencil strokes
 
-  * **center_override** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Center Override, Force using this center value (when set)
+  * **center_override** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Center Override, Force using this center value (when set)
 
   * **release_confirm** (_boolean_ _,__(__optional_ _)_) – Confirm on Release, Always confirm operation when releasing button
 
@@ -621,7 +621,7 @@ Parameters:
 
   * **gpencil_strokes** (_boolean_ _,__(__optional_ _)_) – Edit Grease Pencil, Edit selected Grease Pencil strokes
 
-  * **center_override** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Center Override, Force using this center value (when set)
+  * **center_override** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Center Override, Force using this center value (when set)
 
   * **release_confirm** (_boolean_ _,__(__optional_ _)_) – Confirm on Release, Always confirm operation when releasing button
 
@@ -638,13 +638,13 @@ Parameters:
 
   * **mode** (enum in [Transform Mode Type Items](../bpy_types_enum_items/transform_mode_type_items.md#rna-enum-transform-mode-type-items), (optional)) – Mode
 
-  * **value** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 4 items in [-inf, inf], (optional)) – Values
+  * **value** ([[mathutils.Vector]] of 4 items in [-inf, inf], (optional)) – Values
 
   * **orient_axis** (enum in [Axis Xyz Items](../bpy_types_enum_items/axis_xyz_items.md#rna-enum-axis-xyz-items), (optional)) – Axis
 
   * **orient_type** (enum in [Transform Orientation Items](../bpy_types_enum_items/transform_orientation_items.md#rna-enum-transform-orientation-items), (optional)) – Orientation, Transformation orientation
 
-  * **orient_matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 3 * 3 items in [-inf, inf], (optional)) – Matrix
+  * **orient_matrix** ([[mathutils.Matrix]] of 3 * 3 items in [-inf, inf], (optional)) – Matrix
 
   * **orient_matrix_type** (enum in [Transform Orientation Items](../bpy_types_enum_items/transform_orientation_items.md#rna-enum-transform-orientation-items), (optional)) – Matrix Orientation
 
@@ -678,11 +678,11 @@ Parameters:
 
   * **use_snap_selectable** (_boolean_ _,__(__optional_ _)_) – Target: Exclude Non-Selectable
 
-  * **snap_point** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Point
+  * **snap_point** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Point
 
   * **snap_align** (_boolean_ _,__(__optional_ _)_) – Align with Point Normal
 
-  * **snap_normal** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Normal
+  * **snap_normal** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Normal
 
   * **gpencil_strokes** (_boolean_ _,__(__optional_ _)_) – Edit Grease Pencil, Edit selected Grease Pencil strokes
 
@@ -692,7 +692,7 @@ Parameters:
 
   * **use_duplicated_keyframes** (_boolean_ _,__(__optional_ _)_) – Duplicated Keyframes, Transform duplicated keyframes
 
-  * **center_override** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Center Override, Force using this center value (when set)
+  * **center_override** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Center Override, Force using this center value (when set)
 
   * **release_confirm** (_boolean_ _,__(__optional_ _)_) – Confirm on Release, Always confirm operation when releasing button
 
@@ -709,11 +709,11 @@ Move selected items
 Parameters:
     
 
-  * **value** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Move
+  * **value** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Move
 
   * **orient_type** (enum in [Transform Orientation Items](../bpy_types_enum_items/transform_orientation_items.md#rna-enum-transform-orientation-items), (optional)) – Orientation, Transformation orientation
 
-  * **orient_matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 3 * 3 items in [-inf, inf], (optional)) – Matrix
+  * **orient_matrix** ([[mathutils.Matrix]] of 3 * 3 items in [-inf, inf], (optional)) – Matrix
 
   * **orient_matrix_type** (enum in [Transform Orientation Items](../bpy_types_enum_items/transform_orientation_items.md#rna-enum-transform-orientation-items), (optional)) – Matrix Orientation
 
@@ -747,11 +747,11 @@ Parameters:
 
   * **use_snap_selectable** (_boolean_ _,__(__optional_ _)_) – Target: Exclude Non-Selectable
 
-  * **snap_point** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Point
+  * **snap_point** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Point
 
   * **snap_align** (_boolean_ _,__(__optional_ _)_) – Align with Point Normal
 
-  * **snap_normal** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Normal
+  * **snap_normal** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Normal
 
   * **gpencil_strokes** (_boolean_ _,__(__optional_ _)_) – Edit Grease Pencil, Edit selected Grease Pencil strokes
 
@@ -825,7 +825,7 @@ Parameters:
 
   * **use_snap_selectable** (_boolean_ _,__(__optional_ _)_) – Target: Exclude Non-Selectable
 
-  * **snap_point** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Point
+  * **snap_point** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Point
 
   * **correct_uv** (_boolean_ _,__(__optional_ _)_) – Correct UVs, Correct UV coordinates when transforming
 
@@ -869,9 +869,9 @@ Parameters:
 
   * **max** (_float in_ _[__-inf_ _,__inf_ _]__,__(__optional_ _)_) – Max
 
-  * **viewmat** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 4 * 4 items in [-inf, inf], (optional)) – Matrix
+  * **viewmat** ([[mathutils.Matrix]] of 4 * 4 items in [-inf, inf], (optional)) – Matrix
 
-  * **center** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], (optional)) – Center
+  * **center** ([[mathutils.Vector]] of 3 items in [-inf, inf], (optional)) – Center
 
 
   *[*]: Keyword-only parameters separator (PEP 3102)

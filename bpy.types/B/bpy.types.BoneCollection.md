@@ -1,6 +1,6 @@
 # BoneCollection(bpy_struct)
 
-base class — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")
+base class — [[bpy_struct]]
 
 _class _bpy.types.BoneCollection(_bpy_struct_)
     
@@ -15,7 +15,7 @@ Bones assigned to this bone collection. In armature edit mode this will always r
 Type:
     
 
-[`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`Bone`](bpy.types.Bone.md#bpy.types.Bone "bpy.types.Bone"), (readonly)
+[[bpy_prop_collection]] of [[Bone]], (readonly)
 
 child_number
     
@@ -33,7 +33,7 @@ children
 Type:
     
 
-[`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of `BoneCollection`, (readonly)
+[[bpy_prop_collection]] of `BoneCollection`, (readonly)
 
 index
     
@@ -160,7 +160,7 @@ The system properties root container, or None if there are no system properties 
 Return type:
     
 
-[`PropertyGroup`](../P/bpy.types.PropertyGroup.md#bpy.types.PropertyGroup "bpy.types.PropertyGroup")
+[[PropertyGroup]]
 
 assign(_bone_)
     
@@ -170,7 +170,7 @@ Assign the given bone to this collection
 Parameters:
     
 
-**bone** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType")) – Bone, PoseBone, or EditBone to assign to this collection
+**bone** ([[AnyType]]) – Bone, PoseBone, or EditBone to assign to this collection
 
 Returns:
     
@@ -190,7 +190,7 @@ Remove the given bone from this collection
 Parameters:
     
 
-**bone** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType")) – Bone, PoseBone, or EditBone to remove from this collection
+**bone** ([[AnyType]]) – Bone, PoseBone, or EditBone to remove from this collection
 
 Returns:
     
@@ -218,7 +218,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -240,7 +240,7 @@ type
 
 ## Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [[bpy_struct.id_data]]
 
 | 
 
@@ -250,52 +250,52 @@ type
   
 ## Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
 
 | 
 
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
 
   
 ---|---  
   
 ## References
 
-  * [`Armature.collections`](../A/bpy.types.Armature.md#bpy.types.Armature.collections "bpy.types.Armature.collections")
-  * [`Armature.collections_all`](../A/bpy.types.Armature.md#bpy.types.Armature.collections_all "bpy.types.Armature.collections_all")
-  * [`Bone.collections`](bpy.types.Bone.md#bpy.types.Bone.collections "bpy.types.Bone.collections")
+  * [[Armature.collections]]
+  * [[Armature.collections_all]]
+  * [[Bone.collections]]
   * `BoneCollection.children`
   * `BoneCollection.parent`
 
 | 
 
-  * [`BoneCollections.active`](bpy.types.BoneCollections.md#bpy.types.BoneCollections.active "bpy.types.BoneCollections.active")
-  * [`BoneCollections.new`](bpy.types.BoneCollections.md#bpy.types.BoneCollections.new "bpy.types.BoneCollections.new")
-  * [`BoneCollections.new`](bpy.types.BoneCollections.md#bpy.types.BoneCollections.new "bpy.types.BoneCollections.new")
-  * [`BoneCollections.remove`](bpy.types.BoneCollections.md#bpy.types.BoneCollections.remove "bpy.types.BoneCollections.remove")
-  * [`EditBone.collections`](../E/bpy.types.EditBone.md#bpy.types.EditBone.collections "bpy.types.EditBone.collections")
+  * [[BoneCollections.active]]
+  * [[BoneCollections.new]]
+  * [[BoneCollections.new]]
+  * [[BoneCollections.remove]]
+  * [[EditBone.collections]]
 
   
 ---|---

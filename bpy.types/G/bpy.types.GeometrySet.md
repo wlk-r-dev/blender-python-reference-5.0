@@ -87,7 +87,7 @@ The curves data-block in the geometry set.
 Type:
     
 
-[`bpy.types.Curves`](../C/bpy.types.Curves.md#bpy.types.Curves "bpy.types.Curves")
+[[bpy.types.Curves]]
 
 grease_pencil
     
@@ -97,7 +97,7 @@ The Grease Pencil data-block in the geometry set.
 Type:
     
 
-[`bpy.types.GreasePencil`](bpy.types.GreasePencil.md#bpy.types.GreasePencil "bpy.types.GreasePencil")
+[[bpy.types.GreasePencil]]
 
 mesh
     
@@ -107,7 +107,7 @@ The mesh data-block in the geometry set.
 Type:
     
 
-[`bpy.types.Mesh`](../M/bpy.types.Mesh.md#bpy.types.Mesh "bpy.types.Mesh")
+[[bpy.types.Mesh]]
 
 mesh_base
     
@@ -117,7 +117,7 @@ The mesh data-block in the geometry set without final subdivision.
 Type:
     
 
-[`bpy.types.Mesh`](../M/bpy.types.Mesh.md#bpy.types.Mesh "bpy.types.Mesh")
+[[bpy.types.Mesh]]
 
 name
     
@@ -137,7 +137,7 @@ The point cloud data-block in the geometry set.
 Type:
     
 
-[`bpy.types.PointCloud`](../P/bpy.types.PointCloud.md#bpy.types.PointCloud "bpy.types.PointCloud")
+[[bpy.types.PointCloud]]
 
 volume
     
@@ -147,12 +147,12 @@ The volume data-block in the geometry set.
 Type:
     
 
-[`bpy.types.Volume`](../V/bpy.types.Volume.md#bpy.types.Volume "bpy.types.Volume")
+[[bpy.types.Volume]]
 
 _static _from_evaluated_object(_evaluated_object_)
     
 
-Create a geometry set from the evaluated geometry of an evaluated object. Typically, it’s more convenient to use [`bpy.types.Object.evaluated_geometry()`](../O/bpy.types.Object.md#bpy.types.Object.evaluated_geometry "bpy.types.Object.evaluated_geometry").
+Create a geometry set from the evaluated geometry of an evaluated object. Typically, it’s more convenient to use [[bpy.types.Object.evaluated_geometry()]].
 
 Parameters:
     

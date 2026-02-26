@@ -55,7 +55,7 @@ If you do need to use name references, it’s best to use a dictionary to mainta
 
 ### Library Collisions
 
-Blender keeps data names unique ([`bpy.types.ID.name`](../bpy.types/I/bpy.types.ID.md#bpy.types.ID.name "bpy.types.ID.name")) so you can’t name two objects, meshes, scenes, etc., the same by accident. However, when linking in library data from another blend-file naming collisions can occur, so it’s best to avoid referencing data by name at all.
+Blender keeps data names unique ([[bpy.types.ID.name]]) so you can’t name two objects, meshes, scenes, etc., the same by accident. However, when linking in library data from another blend-file naming collisions can occur, so it’s best to avoid referencing data by name at all.
 
 This can be tricky at times and not even Blender handles this correctly in some cases (when selecting the modifier object for example, you can’t select between multiple objects with the same name), but it’s still good to try avoiding these problems in this area. If you need to select between local and library data, there is a feature in `bpy.data` members to allow for this.
     
@@ -79,7 +79,7 @@ This can be tricky at times and not even Blender handles this correctly in some 
 
 ### No updates after setting values
 
-Sometimes you want to modify values from Python and immediately access the updated values, e.g: Once changing the objects [`bpy.types.Object.location`](../bpy.types/O/bpy.types.Object.md#bpy.types.Object.location "bpy.types.Object.location") you may want to access its transformation right after from [`bpy.types.Object.matrix_world`](../bpy.types/O/bpy.types.Object.md#bpy.types.Object.matrix_world "bpy.types.Object.matrix_world"), but this doesn’t work as you might expect. There are similar issues with changes to the UI, that are covered in the next section.
+Sometimes you want to modify values from Python and immediately access the updated values, e.g: Once changing the objects [[bpy.types.Object.location]] you may want to access its transformation right after from [[bpy.types.Object.matrix_world]], but this doesn’t work as you might expect. There are similar issues with changes to the UI, that are covered in the next section.
 
 Consider the calculations that might contribute to the object’s final transformation, this includes:
 
@@ -92,7 +92,7 @@ Consider the calculations that might contribute to the object’s final transfor
   * Parent objects and all of their F-Curves, constraints, etc.
 
 
-To avoid expensive recalculations every time a property is modified, Blender defers the evaluation until the results are needed. However, while the script runs you may want to access the updated values. In this case you need to call [`bpy.types.ViewLayer.update`](../bpy.types/V/bpy.types.ViewLayer.md#bpy.types.ViewLayer.update "bpy.types.ViewLayer.update") after modifying values, for example:
+To avoid expensive recalculations every time a property is modified, Blender defers the evaluation until the results are needed. However, while the script runs you may want to access the updated values. In this case you need to call [[bpy.types.ViewLayer.update]] after modifying values, for example:
     
     
     bpy.context.object.location = 1, 2, 3
@@ -103,26 +103,26 @@ Now all dependent data (child objects, modifiers, drivers, etc.) have been recal
 
 ### No updates after changing UI context
 
-Similar to the previous issue, some changes to the UI may also not have an immediate effect. For example, setting [`bpy.types.Window.workspace`](../bpy.types/W/bpy.types.Window.md#bpy.types.Window.workspace "bpy.types.Window.workspace") doesn’t seem to cause an observable effect in the immediately following code ([`bpy.types.Window.workspace`](../bpy.types/W/bpy.types.Window.md#bpy.types.Window.workspace "bpy.types.Window.workspace") is still the same), but the UI will in fact reflect the change. Some of the properties that behave that way are:
+Similar to the previous issue, some changes to the UI may also not have an immediate effect. For example, setting [[bpy.types.Window.workspace]] doesn’t seem to cause an observable effect in the immediately following code ([[bpy.types.Window.workspace]] is still the same), but the UI will in fact reflect the change. Some of the properties that behave that way are:
 
-  * [`bpy.types.Window.workspace`](../bpy.types/W/bpy.types.Window.md#bpy.types.Window.workspace "bpy.types.Window.workspace")
+  * [[bpy.types.Window.workspace]]
 
-  * [`bpy.types.Window.screen`](../bpy.types/W/bpy.types.Window.md#bpy.types.Window.screen "bpy.types.Window.screen")
+  * [[bpy.types.Window.screen]]
 
-  * [`bpy.types.Window.scene`](../bpy.types/W/bpy.types.Window.md#bpy.types.Window.scene "bpy.types.Window.scene")
+  * [[bpy.types.Window.scene]]
 
-  * [`bpy.types.Area.type`](../bpy.types/A/bpy.types.Area.md#bpy.types.Area.type "bpy.types.Area.type")
+  * [[bpy.types.Area.type]]
 
   * `bpy.types.Area.uitype`
 
 
-Such changes impact the UI, and with that the context ([`bpy.context`](../bpy.context.md#module-bpy.context "bpy.context")) quite drastically. This can break Blender’s context management. So Blender delays this change until after operators have run and just before the UI is redrawn, making sure that context can be changed safely.
+Such changes impact the UI, and with that the context ([[bpy.context]]) quite drastically. This can break Blender’s context management. So Blender delays this change until after operators have run and just before the UI is redrawn, making sure that context can be changed safely.
 
 If you rely on executing code with an updated context this can be worked around by executing the code in a delayed fashion as well. Possible options include:
 
 >   * [Modal Operator](../bpy.types/O/bpy.types.Operator.md#modal-operator).
 > 
->   * [`bpy.app.handlers`](../bpy.app/bpy.app.handlers.md#module-bpy.app.handlers "bpy.app.handlers").
+>   * [[bpy.app.handlers]].
 > 
 >   * `bpy.app.timer`.
 > 

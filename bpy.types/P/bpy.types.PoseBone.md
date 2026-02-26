@@ -1,6 +1,6 @@
 # PoseBone(bpy_struct)
 
-base class — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")
+base class — [[bpy_struct]]
 
 _class _bpy.types.PoseBone(_bpy_struct_)
     
@@ -115,7 +115,7 @@ Scale factors for the start of the B-Bone, adjusts thickness (for tapering effec
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (1.0, 1.0, 1.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (1.0, 1.0, 1.0)
 
 bbone_scaleout
     
@@ -125,7 +125,7 @@ Scale factors for the end of the B-Bone, adjusts thickness (for tapering effects
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (1.0, 1.0, 1.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (1.0, 1.0, 1.0)
 
 bone
     
@@ -135,7 +135,7 @@ Bone associated with this PoseBone
 Type:
     
 
-[`Bone`](../B/bpy.types.Bone.md#bpy.types.Bone "bpy.types.Bone"), (readonly, never None)
+[[Bone]], (readonly, never None)
 
 child
     
@@ -153,7 +153,7 @@ color
 Type:
     
 
-[`BoneColor`](../B/bpy.types.BoneColor.md#bpy.types.BoneColor "bpy.types.BoneColor"), (readonly)
+[[BoneColor]], (readonly)
 
 constraints
     
@@ -163,7 +163,7 @@ Constraints that act on this pose channel
 Type:
     
 
-[`PoseBoneConstraints`](bpy.types.PoseBoneConstraints.md#bpy.types.PoseBoneConstraints "bpy.types.PoseBoneConstraints") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`Constraint`](../C/bpy.types.Constraint.md#bpy.types.Constraint "bpy.types.Constraint"), (readonly)
+[[PoseBoneConstraints]] [[bpy_prop_collection]] of [[Constraint]], (readonly)
 
 custom_shape
     
@@ -173,7 +173,7 @@ Object that defines custom display shape for this bone
 Type:
     
 
-[`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")
+[[Object]]
 
 custom_shape_rotation_euler
     
@@ -183,7 +183,7 @@ Adjust the rotation of the custom shape
 Type:
     
 
-[`mathutils.Euler`](mathutils.md#mathutils.Euler "mathutils.Euler") rotation of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
+[[mathutils.Euler]] rotation of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
 
 custom_shape_scale_xyz
     
@@ -193,7 +193,7 @@ Adjust the size of the custom shape
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (1.0, 1.0, 1.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (1.0, 1.0, 1.0)
 
 custom_shape_transform
     
@@ -213,7 +213,7 @@ Adjust the location of the custom shape
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
 
 custom_shape_wire_width
     
@@ -233,7 +233,7 @@ Location of head of the channel’s bone
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (0.0, 0.0, 0.0), (readonly)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (0.0, 0.0, 0.0), (readonly)
 
 hide
     
@@ -391,7 +391,7 @@ location
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
 
 lock_ik_x
     
@@ -481,7 +481,7 @@ Final 4×4 matrix after constraints and drivers are applied, in the armature obj
 Type:
     
 
-[`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 4 * 4 items in [-inf, inf], default ((0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0))
+[[mathutils.Matrix]] of 4 * 4 items in [-inf, inf], default ((0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0))
 
 matrix_basis
     
@@ -491,7 +491,7 @@ Alternative access to location/scale/rotation relative to the parent and own res
 Type:
     
 
-[`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 4 * 4 items in [-inf, inf], default ((0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0))
+[[mathutils.Matrix]] of 4 * 4 items in [-inf, inf], default ((0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0))
 
 matrix_channel
     
@@ -501,7 +501,7 @@ matrix_channel
 Type:
     
 
-[`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 4 * 4 items in [-inf, inf], default ((0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0)), (readonly)
+[[mathutils.Matrix]] of 4 * 4 items in [-inf, inf], default ((0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0)), (readonly)
 
 motion_path
     
@@ -511,7 +511,7 @@ Motion Path for this element
 Type:
     
 
-[`MotionPath`](../M/bpy.types.MotionPath.md#bpy.types.MotionPath "bpy.types.MotionPath"), (readonly)
+[[MotionPath]], (readonly)
 
 name
     
@@ -549,7 +549,7 @@ Rotation in Eulers
 Type:
     
 
-[`mathutils.Euler`](mathutils.md#mathutils.Euler "mathutils.Euler") rotation of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
+[[mathutils.Euler]] rotation of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
 
 rotation_mode
     
@@ -569,7 +569,7 @@ Rotation in Quaternions
 Type:
     
 
-[`mathutils.Quaternion`](mathutils.md#mathutils.Quaternion "mathutils.Quaternion") rotation of 4 items in [-inf, inf], default (1.0, 0.0, 0.0, 0.0)
+[[mathutils.Quaternion]] rotation of 4 items in [-inf, inf], default (1.0, 0.0, 0.0, 0.0)
 
 scale
     
@@ -577,7 +577,7 @@ scale
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (1.0, 1.0, 1.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (1.0, 1.0, 1.0)
 
 select
     
@@ -597,7 +597,7 @@ Location of tail of the channel’s bone
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (0.0, 0.0, 0.0), (readonly)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (0.0, 0.0, 0.0), (readonly)
 
 use_custom_shape_bone_size
     
@@ -773,7 +773,7 @@ The system properties root container, or None if there are no system properties 
 Return type:
     
 
-[`PropertyGroup`](bpy.types.PropertyGroup.md#bpy.types.PropertyGroup "bpy.types.PropertyGroup")
+[[PropertyGroup]]
 
 evaluate_envelope(_point_)
     
@@ -783,7 +783,7 @@ Calculate bone envelope at given point
 Parameters:
     
 
-**point** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]) – Point, Position in 3d space to evaluate
+**point** ([[mathutils.Vector]] of 3 items in [-inf, inf]) – Point, Position in 3d space to evaluate
 
 Returns:
     
@@ -803,7 +803,7 @@ Retrieve the index and blend factor of the B-Bone segments based on vertex posit
 Parameters:
     
 
-**point** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]) – Point, Vertex position in armature pose space
+**point** ([[mathutils.Vector]] of 3 items in [-inf, inf]) – Point, Vertex position in armature pose space
 
 Returns:
     
@@ -838,7 +838,7 @@ The resulting matrix in bone local space
 Return type:
     
 
-[`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 4 * 4 items in [-inf, inf]
+[[mathutils.Matrix]] of 4 * 4 items in [-inf, inf]
 
 This example shows how to use B-Bone segment matrices to emulate deformation produced by the Armature modifier or constraint when assigned to the given bone (without Preserve Volume). The coordinates are processed in armature Pose space:
     
@@ -892,18 +892,18 @@ Parameters:
 Returns:
     
 
-`handle1`, The direction vector of the start handle in bone local space, [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]
+`handle1`, The direction vector of the start handle in bone local space, [[mathutils.Vector]] of 3 items in [-inf, inf]
 
 `roll1`, Roll of the start handle, float in [-inf, inf]
 
-`handle2`, The direction vector of the end handle in bone local space, [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]
+`handle2`, The direction vector of the end handle in bone local space, [[mathutils.Vector]] of 3 items in [-inf, inf]
 
 `roll2`, Roll of the end handle, float in [-inf, inf]
 
 Return type:
     
 
-([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], float in [-inf, inf], [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], float in [-inf, inf])
+([[mathutils.Vector]] of 3 items in [-inf, inf], float in [-inf, inf], [[mathutils.Vector]] of 3 items in [-inf, inf], float in [-inf, inf])
 
 parent_index(_parent_test_)
     
@@ -931,7 +931,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -953,7 +953,7 @@ type
 
 ## Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [[bpy_struct.id_data]]
 
 | 
 
@@ -963,49 +963,49 @@ type
   
 ## Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
 
 | 
 
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
 
   
 ---|---  
   
 ## References
 
-  * [`bpy.context.active_pose_bone`](../../bpy.context.md#bpy.context.active_pose_bone "bpy.context.active_pose_bone")
-  * [`bpy.context.pose_bone`](../../bpy.context.md#bpy.context.pose_bone "bpy.context.pose_bone")
-  * [`bpy.context.selected_pose_bones`](../../bpy.context.md#bpy.context.selected_pose_bones "bpy.context.selected_pose_bones")
-  * [`bpy.context.selected_pose_bones_from_active_object`](../../bpy.context.md#bpy.context.selected_pose_bones_from_active_object "bpy.context.selected_pose_bones_from_active_object")
-  * [`bpy.context.visible_pose_bones`](../../bpy.context.md#bpy.context.visible_pose_bones "bpy.context.visible_pose_bones")
-  * [`Object.convert_space`](../O/bpy.types.Object.md#bpy.types.Object.convert_space "bpy.types.Object.convert_space")
+  * [[bpy.context.active_pose_bone]]
+  * [[bpy.context.pose_bone]]
+  * [[bpy.context.selected_pose_bones]]
+  * [[bpy.context.selected_pose_bones_from_active_object]]
+  * [[bpy.context.visible_pose_bones]]
+  * [[Object.convert_space]]
 
 | 
 
-  * [`Pose.bones`](bpy.types.Pose.md#bpy.types.Pose.bones "bpy.types.Pose.bones")
+  * [[Pose.bones]]
   * `PoseBone.bbone_custom_handle_end`
   * `PoseBone.bbone_custom_handle_start`
   * `PoseBone.child`

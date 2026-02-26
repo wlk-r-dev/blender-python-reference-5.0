@@ -138,7 +138,7 @@ Move the clone source image
 Parameters:
     
 
-**delta** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], (optional)) – Delta, Delta offset of clone image in 0.0 to 1.0 coordinates
+**delta** ([[mathutils.Vector]] of 2 items in [-inf, inf], (optional)) – Delta, Delta offset of clone image in 0.0 to 1.0 coordinates
 
 bpy.ops.paint.hide_show(_*_ , _xmin =0_, _xmax =0_, _ymin =0_, _ymax =0_, _wait_for_input =True_, _action ='HIDE'_, _area ='Inside'_, _use_front_faces_only =False_)
     

@@ -50,11 +50,11 @@ TODO items are…
 
 ### Standalone Module
 
-The BMesh module is written to be standalone except for [`mathutils`](mathutils.md#module-mathutils "mathutils") which is used for vertex locations and normals. The only other exception to this are when converting mesh data to and from [`bpy.types.Mesh`](../bpy.types/M/bpy.types.Mesh.md#bpy.types.Mesh "bpy.types.Mesh").
+The BMesh module is written to be standalone except for [[mathutils]] which is used for vertex locations and normals. The only other exception to this are when converting mesh data to and from [[bpy.types.Mesh]].
 
 ## Mesh Access
 
-There are two ways to access BMesh data, you can create a new BMesh by converting a mesh from [`bpy.types.BlendData.meshes`](../bpy.types/B/bpy.types.BlendData.md#bpy.types.BlendData.meshes "bpy.types.BlendData.meshes") or by accessing the current Edit-Mode mesh. See: `bmesh.types.BMesh.from_mesh` and `bmesh.from_edit_mesh` respectively.
+There are two ways to access BMesh data, you can create a new BMesh by converting a mesh from [[bpy.types.BlendData.meshes]] or by accessing the current Edit-Mode mesh. See: `bmesh.types.BMesh.from_mesh` and `bmesh.from_edit_mesh` respectively.
 
 When explicitly converting from mesh data Python **owns** the data, that means that the mesh only exists while Python holds a reference to it. The script is responsible for putting it back into a mesh data-block when the edits are done.
 
@@ -64,7 +64,7 @@ Take care when dealing with multiple BMesh instances since the mesh data can use
 
 ### Edit-Mode Tessellation
 
-When writing scripts that operate on Edit-Mode data you will normally want to re-calculate the tessellation after running the script, this needs to be called explicitly. The BMesh itself does not store the triangulated faces, instead they are stored in the [`bpy.types.Mesh`](../bpy.types/M/bpy.types.Mesh.md#bpy.types.Mesh "bpy.types.Mesh"), to refresh tessellation triangles call [`bpy.types.Mesh.calc_loop_triangles`](../bpy.types/M/bpy.types.Mesh.md#bpy.types.Mesh.calc_loop_triangles "bpy.types.Mesh.calc_loop_triangles").
+When writing scripts that operate on Edit-Mode data you will normally want to re-calculate the tessellation after running the script, this needs to be called explicitly. The BMesh itself does not store the triangulated faces, instead they are stored in the [[bpy.types.Mesh]], to refresh tessellation triangles call [[bpy.types.Mesh.calc_loop_triangles]].
 
 ## CustomData Access
 
@@ -148,7 +148,7 @@ Return a BMesh from this mesh, currently the mesh must already be in editmode.
 Parameters:
     
 
-**mesh** ([`bpy.types.Mesh`](../bpy.types/M/bpy.types.Mesh.md#bpy.types.Mesh "bpy.types.Mesh")) – The editmode mesh.
+**mesh** ([[bpy.types.Mesh]]) – The editmode mesh.
 
 Returns:
     
@@ -166,7 +166,7 @@ bmesh.new(_*_ , _use_operators =True_)
 Parameters:
     
 
-**use_operators** (_bool_) – Support calling operators in [`bmesh.ops`](bmesh.ops.md#module-bmesh.ops "bmesh.ops") (uses some extra memory per vert/edge/face).
+**use_operators** (_bool_) – Support calling operators in [[bmesh.ops]] (uses some extra memory per vert/edge/face).
 
 Returns:
     
@@ -186,7 +186,7 @@ Update the mesh after changes to the BMesh in editmode, optionally recalculating
 Parameters:
     
 
-  * **mesh** ([`bpy.types.Mesh`](../bpy.types/M/bpy.types.Mesh.md#bpy.types.Mesh "bpy.types.Mesh")) – The editmode mesh.
+  * **mesh** ([[bpy.types.Mesh]]) – The editmode mesh.
 
   * **loop_triangles** (_bool_) – Option to recalculate n-gon tessellation.
 

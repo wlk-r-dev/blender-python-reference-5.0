@@ -37,7 +37,7 @@ The duplicated image still has the same size and colors as the original image at
     print(image_dest.pixels[0:4])
     
 
-base classes — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`ID`](bpy.types.ID.md#bpy.types.ID "bpy.types.ID")
+base classes — [[bpy_struct]], [[ID]]
 
 _class _bpy.types.Image(_ID_)
     
@@ -81,7 +81,7 @@ Input color space settings
 Type:
     
 
-[`ColorManagedInputColorspaceSettings`](../C/bpy.types.ColorManagedInputColorspaceSettings.md#bpy.types.ColorManagedInputColorspaceSettings "bpy.types.ColorManagedInputColorspaceSettings"), (readonly)
+[[ColorManagedInputColorspaceSettings]], (readonly)
 
 depth
     
@@ -101,7 +101,7 @@ Display Aspect for this image, does not affect rendering
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [0.1, inf], default (1.0, 1.0)
+[[mathutils.Vector]] of 2 items in [0.1, inf], default (1.0, 1.0)
 
 file_format
     
@@ -241,7 +241,7 @@ First packed file of the image
 Type:
     
 
-[`PackedFile`](../P/bpy.types.PackedFile.md#bpy.types.PackedFile "bpy.types.PackedFile"), (readonly)
+[[PackedFile]], (readonly)
 
 packed_files
     
@@ -251,7 +251,7 @@ Collection of packed images
 Type:
     
 
-[`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`ImagePackedFile`](bpy.types.ImagePackedFile.md#bpy.types.ImagePackedFile "bpy.types.ImagePackedFile"), (readonly)
+[[bpy_prop_collection]] of [[ImagePackedFile]], (readonly)
 
 pixels
     
@@ -271,7 +271,7 @@ Render slots of the image
 Type:
     
 
-[`RenderSlots`](../R/bpy.types.RenderSlots.md#bpy.types.RenderSlots "bpy.types.RenderSlots") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`RenderSlot`](../R/bpy.types.RenderSlot.md#bpy.types.RenderSlot "bpy.types.RenderSlot"), (readonly)
+[[RenderSlots]] [[bpy_prop_collection]] of [[RenderSlot]], (readonly)
 
 resolution
     
@@ -281,7 +281,7 @@ X/Y pixels per meter, for the image buffer
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], default (0.0, 0.0)
+[[mathutils.Vector]] of 2 items in [-inf, inf], default (0.0, 0.0)
 
 seam_margin
     
@@ -334,7 +334,7 @@ Settings for stereo 3d
 Type:
     
 
-[`Stereo3dFormat`](../S/bpy.types.Stereo3dFormat.md#bpy.types.Stereo3dFormat "bpy.types.Stereo3dFormat"), (readonly, never None)
+[[Stereo3dFormat]], (readonly, never None)
 
 tiles
     
@@ -344,7 +344,7 @@ Tiles of the image
 Type:
     
 
-[`UDIMTiles`](../U/bpy.types.UDIMTiles.md#bpy.types.UDIMTiles "bpy.types.UDIMTiles") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`UDIMTile`](../U/bpy.types.UDIMTile.md#bpy.types.UDIMTile "bpy.types.UDIMTile"), (readonly)
+[[UDIMTiles]] [[bpy_prop_collection]] of [[UDIMTile]], (readonly)
 
 type
     
@@ -426,7 +426,7 @@ Parameters:
 
   * **filepath** (_string_ _,__(__never None_ _)_) – Output path
 
-  * **scene** ([`Scene`](../S/bpy.types.Scene.md#bpy.types.Scene "bpy.types.Scene"), (optional)) – Scene to take image parameters from
+  * **scene** ([[Scene]], (optional)) – Scene to take image parameters from
 
   * **quality** (_int in_ _[__0_ _,__100_ _]__,__(__optional_ _)_) – Quality, Quality for image formats that support lossy compression, uses default quality if not specified
 
@@ -559,7 +559,7 @@ Return the absolute path to the filepath of an image frame specified by the imag
 Parameters:
     
 
-**image_user** ([`ImageUser`](bpy.types.ImageUser.md#bpy.types.ImageUser "bpy.types.ImageUser"), (optional)) – Image user of the image to get filepath for
+**image_user** ([[ImageUser]], (optional)) – Image user of the image to get filepath for
 
 Returns:
     
@@ -592,7 +592,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -614,117 +614,117 @@ type
 
 ### Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
-  * [`ID.name`](bpy.types.ID.md#bpy.types.ID.name "bpy.types.ID.name")
-  * [`ID.name_full`](bpy.types.ID.md#bpy.types.ID.name_full "bpy.types.ID.name_full")
-  * [`ID.id_type`](bpy.types.ID.md#bpy.types.ID.id_type "bpy.types.ID.id_type")
-  * [`ID.session_uid`](bpy.types.ID.md#bpy.types.ID.session_uid "bpy.types.ID.session_uid")
-  * [`ID.is_evaluated`](bpy.types.ID.md#bpy.types.ID.is_evaluated "bpy.types.ID.is_evaluated")
-  * [`ID.original`](bpy.types.ID.md#bpy.types.ID.original "bpy.types.ID.original")
-  * [`ID.users`](bpy.types.ID.md#bpy.types.ID.users "bpy.types.ID.users")
-  * [`ID.use_fake_user`](bpy.types.ID.md#bpy.types.ID.use_fake_user "bpy.types.ID.use_fake_user")
-  * [`ID.use_extra_user`](bpy.types.ID.md#bpy.types.ID.use_extra_user "bpy.types.ID.use_extra_user")
-  * [`ID.is_embedded_data`](bpy.types.ID.md#bpy.types.ID.is_embedded_data "bpy.types.ID.is_embedded_data")
+  * [[bpy_struct.id_data]]
+  * [[ID.name]]
+  * [[ID.name_full]]
+  * [[ID.id_type]]
+  * [[ID.session_uid]]
+  * [[ID.is_evaluated]]
+  * [[ID.original]]
+  * [[ID.users]]
+  * [[ID.use_fake_user]]
+  * [[ID.use_extra_user]]
+  * [[ID.is_embedded_data]]
 
 | 
 
-  * [`ID.is_linked_packed`](bpy.types.ID.md#bpy.types.ID.is_linked_packed "bpy.types.ID.is_linked_packed")
-  * [`ID.is_missing`](bpy.types.ID.md#bpy.types.ID.is_missing "bpy.types.ID.is_missing")
-  * [`ID.is_runtime_data`](bpy.types.ID.md#bpy.types.ID.is_runtime_data "bpy.types.ID.is_runtime_data")
-  * [`ID.is_editable`](bpy.types.ID.md#bpy.types.ID.is_editable "bpy.types.ID.is_editable")
-  * [`ID.tag`](bpy.types.ID.md#bpy.types.ID.tag "bpy.types.ID.tag")
-  * [`ID.is_library_indirect`](bpy.types.ID.md#bpy.types.ID.is_library_indirect "bpy.types.ID.is_library_indirect")
-  * [`ID.library`](bpy.types.ID.md#bpy.types.ID.library "bpy.types.ID.library")
-  * [`ID.library_weak_reference`](bpy.types.ID.md#bpy.types.ID.library_weak_reference "bpy.types.ID.library_weak_reference")
-  * [`ID.asset_data`](bpy.types.ID.md#bpy.types.ID.asset_data "bpy.types.ID.asset_data")
-  * [`ID.override_library`](bpy.types.ID.md#bpy.types.ID.override_library "bpy.types.ID.override_library")
-  * [`ID.preview`](bpy.types.ID.md#bpy.types.ID.preview "bpy.types.ID.preview")
+  * [[ID.is_linked_packed]]
+  * [[ID.is_missing]]
+  * [[ID.is_runtime_data]]
+  * [[ID.is_editable]]
+  * [[ID.tag]]
+  * [[ID.is_library_indirect]]
+  * [[ID.library]]
+  * [[ID.library_weak_reference]]
+  * [[ID.asset_data]]
+  * [[ID.override_library]]
+  * [[ID.preview]]
 
   
 ---|---  
   
 ### Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
 
 | 
 
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
-  * [`ID.bl_system_properties_get`](bpy.types.ID.md#bpy.types.ID.bl_system_properties_get "bpy.types.ID.bl_system_properties_get")
-  * [`ID.rename`](bpy.types.ID.md#bpy.types.ID.rename "bpy.types.ID.rename")
-  * [`ID.evaluated_get`](bpy.types.ID.md#bpy.types.ID.evaluated_get "bpy.types.ID.evaluated_get")
-  * [`ID.copy`](bpy.types.ID.md#bpy.types.ID.copy "bpy.types.ID.copy")
-  * [`ID.asset_mark`](bpy.types.ID.md#bpy.types.ID.asset_mark "bpy.types.ID.asset_mark")
-  * [`ID.asset_clear`](bpy.types.ID.md#bpy.types.ID.asset_clear "bpy.types.ID.asset_clear")
-  * [`ID.asset_generate_preview`](bpy.types.ID.md#bpy.types.ID.asset_generate_preview "bpy.types.ID.asset_generate_preview")
-  * [`ID.override_create`](bpy.types.ID.md#bpy.types.ID.override_create "bpy.types.ID.override_create")
-  * [`ID.override_hierarchy_create`](bpy.types.ID.md#bpy.types.ID.override_hierarchy_create "bpy.types.ID.override_hierarchy_create")
-  * [`ID.user_clear`](bpy.types.ID.md#bpy.types.ID.user_clear "bpy.types.ID.user_clear")
-  * [`ID.user_remap`](bpy.types.ID.md#bpy.types.ID.user_remap "bpy.types.ID.user_remap")
-  * [`ID.make_local`](bpy.types.ID.md#bpy.types.ID.make_local "bpy.types.ID.make_local")
-  * [`ID.user_of_id`](bpy.types.ID.md#bpy.types.ID.user_of_id "bpy.types.ID.user_of_id")
-  * [`ID.animation_data_create`](bpy.types.ID.md#bpy.types.ID.animation_data_create "bpy.types.ID.animation_data_create")
-  * [`ID.animation_data_clear`](bpy.types.ID.md#bpy.types.ID.animation_data_clear "bpy.types.ID.animation_data_clear")
-  * [`ID.update_tag`](bpy.types.ID.md#bpy.types.ID.update_tag "bpy.types.ID.update_tag")
-  * [`ID.preview_ensure`](bpy.types.ID.md#bpy.types.ID.preview_ensure "bpy.types.ID.preview_ensure")
-  * [`ID.bl_rna_get_subclass`](bpy.types.ID.md#bpy.types.ID.bl_rna_get_subclass "bpy.types.ID.bl_rna_get_subclass")
-  * [`ID.bl_rna_get_subclass_py`](bpy.types.ID.md#bpy.types.ID.bl_rna_get_subclass_py "bpy.types.ID.bl_rna_get_subclass_py")
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
+  * [[ID.bl_system_properties_get]]
+  * [[ID.rename]]
+  * [[ID.evaluated_get]]
+  * [[ID.copy]]
+  * [[ID.asset_mark]]
+  * [[ID.asset_clear]]
+  * [[ID.asset_generate_preview]]
+  * [[ID.override_create]]
+  * [[ID.override_hierarchy_create]]
+  * [[ID.user_clear]]
+  * [[ID.user_remap]]
+  * [[ID.make_local]]
+  * [[ID.user_of_id]]
+  * [[ID.animation_data_create]]
+  * [[ID.animation_data_clear]]
+  * [[ID.update_tag]]
+  * [[ID.preview_ensure]]
+  * [[ID.bl_rna_get_subclass]]
+  * [[ID.bl_rna_get_subclass_py]]
 
   
 ---|---  
   
 ### References
 
-  * [`bpy.context.edit_image`](../../bpy.context.md#bpy.context.edit_image "bpy.context.edit_image")
-  * [`BlendData.images`](../B/bpy.types.BlendData.md#bpy.types.BlendData.images "bpy.types.BlendData.images")
-  * [`BlendDataImages.load`](../B/bpy.types.BlendDataImages.md#bpy.types.BlendDataImages.load "bpy.types.BlendDataImages.load")
-  * [`BlendDataImages.new`](../B/bpy.types.BlendDataImages.md#bpy.types.BlendDataImages.new "bpy.types.BlendDataImages.new")
-  * [`BlendDataImages.remove`](../B/bpy.types.BlendDataImages.md#bpy.types.BlendDataImages.remove "bpy.types.BlendDataImages.remove")
-  * [`CameraBackgroundImage.image`](../C/bpy.types.CameraBackgroundImage.md#bpy.types.CameraBackgroundImage.image "bpy.types.CameraBackgroundImage.image")
-  * [`CompositorNodeCryptomatteV2.image`](../C/bpy.types.CompositorNodeCryptomatteV2.md#bpy.types.CompositorNodeCryptomatteV2.image "bpy.types.CompositorNodeCryptomatteV2.image")
-  * [`CompositorNodeImage.image`](../C/bpy.types.CompositorNodeImage.md#bpy.types.CompositorNodeImage.image "bpy.types.CompositorNodeImage.image")
-  * [`GeometryNodeInputImage.image`](../G/bpy.types.GeometryNodeInputImage.md#bpy.types.GeometryNodeInputImage.image "bpy.types.GeometryNodeInputImage.image")
-  * [`ImagePaint.canvas`](bpy.types.ImagePaint.md#bpy.types.ImagePaint.canvas "bpy.types.ImagePaint.canvas")
-  * [`ImagePaint.clone_image`](bpy.types.ImagePaint.md#bpy.types.ImagePaint.clone_image "bpy.types.ImagePaint.clone_image")
-  * [`ImagePaint.stencil_image`](bpy.types.ImagePaint.md#bpy.types.ImagePaint.stencil_image "bpy.types.ImagePaint.stencil_image")
-  * [`ImageTexture.image`](bpy.types.ImageTexture.md#bpy.types.ImageTexture.image "bpy.types.ImageTexture.image")
+  * [[bpy.context.edit_image]]
+  * [[BlendData.images]]
+  * [[BlendDataImages.load]]
+  * [[BlendDataImages.new]]
+  * [[BlendDataImages.remove]]
+  * [[CameraBackgroundImage.image]]
+  * [[CompositorNodeCryptomatteV2.image]]
+  * [[CompositorNodeImage.image]]
+  * [[GeometryNodeInputImage.image]]
+  * [[ImagePaint.canvas]]
+  * [[ImagePaint.clone_image]]
+  * [[ImagePaint.stencil_image]]
+  * [[ImageTexture.image]]
 
 | 
 
-  * [`Material.texture_paint_images`](../M/bpy.types.Material.md#bpy.types.Material.texture_paint_images "bpy.types.Material.texture_paint_images")
-  * [`MaterialGPencilStyle.fill_image`](../M/bpy.types.MaterialGPencilStyle.md#bpy.types.MaterialGPencilStyle.fill_image "bpy.types.MaterialGPencilStyle.fill_image")
-  * [`MaterialGPencilStyle.stroke_image`](../M/bpy.types.MaterialGPencilStyle.md#bpy.types.MaterialGPencilStyle.stroke_image "bpy.types.MaterialGPencilStyle.stroke_image")
-  * [`MovieTrackingPlaneTrack.image`](../M/bpy.types.MovieTrackingPlaneTrack.md#bpy.types.MovieTrackingPlaneTrack.image "bpy.types.MovieTrackingPlaneTrack.image")
-  * [`NodeSocketImage.default_value`](../N/bpy.types.NodeSocketImage.md#bpy.types.NodeSocketImage.default_value "bpy.types.NodeSocketImage.default_value")
-  * [`NodeTreeInterfaceSocketImage.default_value`](../N/bpy.types.NodeTreeInterfaceSocketImage.md#bpy.types.NodeTreeInterfaceSocketImage.default_value "bpy.types.NodeTreeInterfaceSocketImage.default_value")
-  * [`PaintModeSettings.canvas_image`](../P/bpy.types.PaintModeSettings.md#bpy.types.PaintModeSettings.canvas_image "bpy.types.PaintModeSettings.canvas_image")
-  * [`ShaderNodeTexEnvironment.image`](../S/bpy.types.ShaderNodeTexEnvironment.md#bpy.types.ShaderNodeTexEnvironment.image "bpy.types.ShaderNodeTexEnvironment.image")
-  * [`ShaderNodeTexImage.image`](../S/bpy.types.ShaderNodeTexImage.md#bpy.types.ShaderNodeTexImage.image "bpy.types.ShaderNodeTexImage.image")
-  * [`SpaceImageEditor.image`](../S/bpy.types.SpaceImageEditor.md#bpy.types.SpaceImageEditor.image "bpy.types.SpaceImageEditor.image")
-  * [`TextureNodeImage.image`](../T/bpy.types.TextureNodeImage.md#bpy.types.TextureNodeImage.image "bpy.types.TextureNodeImage.image")
-  * [`UILayout.template_image_layers`](../U/bpy.types.UILayout.md#bpy.types.UILayout.template_image_layers "bpy.types.UILayout.template_image_layers")
+  * [[Material.texture_paint_images]]
+  * [[MaterialGPencilStyle.fill_image]]
+  * [[MaterialGPencilStyle.stroke_image]]
+  * [[MovieTrackingPlaneTrack.image]]
+  * [[NodeSocketImage.default_value]]
+  * [[NodeTreeInterfaceSocketImage.default_value]]
+  * [[PaintModeSettings.canvas_image]]
+  * [[ShaderNodeTexEnvironment.image]]
+  * [[ShaderNodeTexImage.image]]
+  * [[SpaceImageEditor.image]]
+  * [[TextureNodeImage.image]]
+  * [[UILayout.template_image_layers]]
 
   
 ---|---

@@ -250,17 +250,17 @@ Draw the 3d viewport in the offscreen object.
 Parameters:
     
 
-  * **scene** ([`bpy.types.Scene`](../bpy.types/S/bpy.types.Scene.md#bpy.types.Scene "bpy.types.Scene")) – Scene to draw.
+  * **scene** ([[bpy.types.Scene]]) – Scene to draw.
 
-  * **view_layer** ([`bpy.types.ViewLayer`](../bpy.types/V/bpy.types.ViewLayer.md#bpy.types.ViewLayer "bpy.types.ViewLayer")) – View layer to draw.
+  * **view_layer** ([[bpy.types.ViewLayer]]) – View layer to draw.
 
-  * **view3d** ([`bpy.types.SpaceView3D`](../bpy.types/S/bpy.types.SpaceView3D.md#bpy.types.SpaceView3D "bpy.types.SpaceView3D")) – 3D View to get the drawing settings from.
+  * **view3d** ([[bpy.types.SpaceView3D]]) – 3D View to get the drawing settings from.
 
-  * **region** ([`bpy.types.Region`](../bpy.types/R/bpy.types.Region.md#bpy.types.Region "bpy.types.Region")) – Region of the 3D View (required as temporary draw target).
+  * **region** ([[bpy.types.Region]]) – Region of the 3D View (required as temporary draw target).
 
-  * **view_matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – View Matrix (e.g. `camera.matrix_world.inverted()`).
+  * **view_matrix** ([[mathutils.Matrix]]) – View Matrix (e.g. `camera.matrix_world.inverted()`).
 
-  * **projection_matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – Projection Matrix (e.g. `camera.calc_matrix_camera(...)`).
+  * **projection_matrix** ([[mathutils.Matrix]]) – Projection Matrix (e.g. `camera.calc_matrix_camera(...)`).
 
   * **do_color_management** (_bool_) – Color manage the output.
 

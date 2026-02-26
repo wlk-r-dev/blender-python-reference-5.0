@@ -10,7 +10,7 @@ A common case where you would run into this problem is when exporting a material
     >>> bpy.path.abspath(image.filepath)
     
 
-When using Blender data from linked libraries there is an unfortunate complication since the path will be relative to the library rather than the open blend-file. When the data block may be from an external blend-file pass the library argument from the [`bpy.types.ID`](../bpy.types/I/bpy.types.ID.md#bpy.types.ID "bpy.types.ID").
+When using Blender data from linked libraries there is an unfortunate complication since the path will be relative to the library rather than the open blend-file. When the data block may be from an external blend-file pass the library argument from the [[bpy.types.ID]].
     
     
     >>> bpy.path.abspath(image.filepath, library=image.library)

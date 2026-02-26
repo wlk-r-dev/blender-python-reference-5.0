@@ -20,7 +20,7 @@ The current scene.
 Return type:
     
 
-[`bpy.types.Scene`](../bpy.types/S/bpy.types.Scene.md#bpy.types.Scene "bpy.types.Scene")
+[[bpy.types.Scene]]
 
 freestyle.utils.integrate(_func_ , _it_ , _it_end_ , _integration_type_)
     

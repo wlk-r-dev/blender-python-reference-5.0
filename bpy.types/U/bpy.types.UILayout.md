@@ -1,6 +1,6 @@
 # UILayout(bpy_struct)
 
-base class — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")
+base class — [[bpy_struct]]
 
 _class _bpy.types.UILayout(_bpy_struct_)
     
@@ -91,7 +91,7 @@ boolean, default False
 operator_context
     
 
-Typically set to ‘INVOKE_REGION_WIN’, except some cases in [`bpy.types.Menu`](../M/bpy.types.Menu.md#bpy.types.Menu "bpy.types.Menu") when it’s set to ‘EXEC_REGION_WIN’.
+Typically set to ‘INVOKE_REGION_WIN’, except some cases in [[bpy.types.Menu]] when it’s set to ‘EXEC_REGION_WIN’.
 
 Type:
     
@@ -241,7 +241,7 @@ Similar to `.panel(...)` but instead of storing whether it is open or closed in 
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take the open-state property
+  * **data** ([[AnyType]], (never None)) – Data from which to take the open-state property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of the boolean property that determines whether the panel is open or closed
 
@@ -371,7 +371,7 @@ Return the custom icon for this data, use it e.g. to get materials or texture ic
 Parameters:
     
 
-**data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take the icon
+**data** ([[AnyType]], (never None)) – Data from which to take the icon
 
 Returns:
     
@@ -391,7 +391,7 @@ Return the UI name for this enum item
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -416,7 +416,7 @@ Return the UI description for this enum item
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -441,7 +441,7 @@ Return the icon for this enum item
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -466,7 +466,7 @@ Item. Exposes an RNA item and places it into the layout.
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -509,7 +509,7 @@ props_enum
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -522,7 +522,7 @@ prop_menu_enum
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -543,7 +543,7 @@ prop_with_popover
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -568,7 +568,7 @@ prop_with_menu
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -593,11 +593,11 @@ prop_tabs_enum
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
-  * **data_highlight** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (optional, never None)) – Data from which to take highlight property
+  * **data_highlight** ([[AnyType]], (optional, never None)) – Data from which to take highlight property
 
   * **property_highlight** (_string_ _,__(__optional_ _,__never None_ _)_) – Identifier of highlight property in data
 
@@ -612,7 +612,7 @@ prop_enum
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -635,11 +635,11 @@ prop_search
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
-  * **search_data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take collection to search in
+  * **search_data** ([[AnyType]], (never None)) – Data from which to take collection to search in
 
   * **search_property** (_string_ _,__(__never None_ _)_) – Identifier of search collection property
 
@@ -664,7 +664,7 @@ prop_decorator
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -706,7 +706,7 @@ Operator properties to fill in
 Return type:
     
 
-[`OperatorProperties`](../O/bpy.types.OperatorProperties.md#bpy.types.OperatorProperties "bpy.types.OperatorProperties")
+[[OperatorProperties]]
 
 operator_menu_hold(_operator_ , _*_ , _text =''_, _text_ctxt =''_, _translate =True_, _icon ='NONE'_, _emboss =True_, _depress =False_, _icon_value =0_, _menu_)
     
@@ -743,7 +743,7 @@ Operator properties to fill in
 Return type:
     
 
-[`OperatorProperties`](../O/bpy.types.OperatorProperties.md#bpy.types.OperatorProperties "bpy.types.OperatorProperties")
+[[OperatorProperties]]
 
 operator_enum(_operator_ , _property_ , _*_ , _icon_only =False_)
     
@@ -789,7 +789,7 @@ Operator properties to fill in
 Return type:
     
 
-[`OperatorProperties`](../O/bpy.types.OperatorProperties.md#bpy.types.OperatorProperties "bpy.types.OperatorProperties")
+[[OperatorProperties]]
 
 label(_*_ , _text =''_, _text_ctxt =''_, _translate =True_, _icon ='NONE'_, _icon_value =0_)
     
@@ -934,7 +934,7 @@ Parameters:
 
   * **name** (_string_ _,__(__never None_ _)_) – Name, Name of entry in the context
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType")) – Pointer to put in context
+  * **data** ([[AnyType]]) – Pointer to put in context
 
 
 context_string_set(_name_ , _value_)
@@ -963,7 +963,7 @@ template_ID
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -992,7 +992,7 @@ template_ID_preview
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1019,7 +1019,7 @@ Insert a readonly Matrix UI. The UI displays the matrix components - translation
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1032,7 +1032,7 @@ template_any_ID
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1053,7 +1053,7 @@ template_ID_tabs
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1072,7 +1072,7 @@ template_action
 Parameters:
     
 
-  * **id** ([`ID`](../I/bpy.types.ID.md#bpy.types.ID "bpy.types.ID"), (never None)) – The data-block for which to select an Action
+  * **id** ([[ID]], (never None)) – The data-block for which to select an Action
 
   * **new** (_string_ _,__(__optional_ _,__never None_ _)_) – Operator identifier to create a new ID block
 
@@ -1093,11 +1093,11 @@ template_search
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
-  * **search_data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take collection to search in
+  * **search_data** ([[AnyType]], (never None)) – Data from which to take collection to search in
 
   * **search_property** (_string_ _,__(__never None_ _)_) – Identifier of search collection property
 
@@ -1120,11 +1120,11 @@ template_search_preview
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
-  * **search_data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take collection to search in
+  * **search_data** ([[AnyType]], (never None)) – Data from which to take collection to search in
 
   * **search_property** (_string_ _,__(__never None_ _)_) – Identifier of search collection property
 
@@ -1151,11 +1151,11 @@ template_path_builder
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
-  * **root** ([`ID`](../I/bpy.types.ID.md#bpy.types.ID "bpy.types.ID")) – ID-block from which path is evaluated from
+  * **root** ([[ID]]) – ID-block from which path is evaluated from
 
   * **text** (_string_ _,__(__optional_ _)_) – Override automatic text of the item
 
@@ -1202,7 +1202,7 @@ template_greasepencil_color
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1223,7 +1223,7 @@ Generates the header for constraint panels
 Parameters:
     
 
-**data** ([`Constraint`](../C/bpy.types.Constraint.md#bpy.types.Constraint "bpy.types.Constraint"), (never None)) – Constraint data
+**data** ([[Constraint]], (never None)) – Constraint data
 
 template_preview(_id_ , _*_ , _show_buttons =True_, _parent =None_, _slot =None_, _preview_id =''_)
     
@@ -1233,13 +1233,13 @@ Item. A preview window for materials, textures, lights or worlds.
 Parameters:
     
 
-  * **id** ([`ID`](../I/bpy.types.ID.md#bpy.types.ID "bpy.types.ID")) – ID data-block
+  * **id** ([[ID]]) – ID data-block
 
   * **show_buttons** (_boolean_ _,__(__optional_ _)_) – Show preview buttons?
 
-  * **parent** ([`ID`](../I/bpy.types.ID.md#bpy.types.ID "bpy.types.ID"), (optional)) – ID data-block
+  * **parent** ([[ID]], (optional)) – ID data-block
 
-  * **slot** ([`TextureSlot`](../T/bpy.types.TextureSlot.md#bpy.types.TextureSlot "bpy.types.TextureSlot"), (optional)) – Texture slot
+  * **slot** ([[TextureSlot]], (optional)) – Texture slot
 
   * **preview_id** (_string_ _,__(__optional_ _,__never None_ _)_) – Identifier of this preview widget, if not set the ID type will be used (i.e. all previews of materials without explicit ID will have the same size…).
 
@@ -1252,7 +1252,7 @@ Item. A curve mapping widget used for e.g falloff curves for lights.
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1277,7 +1277,7 @@ A profile path editor used for custom profiles
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1290,7 +1290,7 @@ Item. A color ramp widget.
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1318,7 +1318,7 @@ Enum. Large widget showing Icon previews.
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1337,7 +1337,7 @@ Item. A histogramm widget to analyze imaga data.
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1350,7 +1350,7 @@ Item. A waveform widget to analyze imaga data.
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1363,7 +1363,7 @@ Item. A vectorscope widget to analyze imaga data.
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1376,11 +1376,11 @@ template_layers
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
-  * **used_layers_data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType")) – Data from which to take property
+  * **used_layers_data** ([[AnyType]]) – Data from which to take property
 
   * **used_layers_property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1395,7 +1395,7 @@ Item. A color wheel widget to pick colors.
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1416,7 +1416,7 @@ Item. A palette used to pick colors.
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1436,7 +1436,7 @@ Item(s). User interface for selecting images and their source paths.
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1473,7 +1473,7 @@ Item(s). User interface for selecting movie clips and their source paths.
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1488,7 +1488,7 @@ Item. A movie-track widget to preview tracking image.
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1501,7 +1501,7 @@ Item. A widget to control single marker settings.
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1516,7 +1516,7 @@ Item. Movie clip information data.
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1533,11 +1533,11 @@ Parameters:
 
   * **list_id** (_string_ _,__(__never None_ _)_) – Identifier of this list widget. Necessary to tell apart different list widgets. Mandatory when using default “UI_UL_list” class. If this not an empty string, the uilist gets a custom ID, otherwise it takes the name of the class used to define the uilist (for example, if the class name is “OBJECT_UL_vgroups”, and list_id is not set by the script, then bl_idname = “OBJECT_UL_vgroups”)
 
-  * **dataptr** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType")) – Data from which to take the Collection property
+  * **dataptr** ([[AnyType]]) – Data from which to take the Collection property
 
   * **propname** (_string_ _,__(__never None_ _)_) – Identifier of the Collection property in data
 
-  * **active_dataptr** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take the integer property, index of the active item
+  * **active_dataptr** ([[AnyType]], (never None)) – Data from which to take the integer property, index of the active item
 
   * **active_propname** (_string_ _,__(__never None_ _)_) – Identifier of the integer property in active_data, index of the active item
 
@@ -1654,7 +1654,7 @@ Item. Display expanded property in a popup menu
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType")) – Data from which to take property
+  * **data** ([[AnyType]]) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1667,7 +1667,7 @@ Item. A widget to control input color space settings.
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1680,7 +1680,7 @@ Item. A widget to control color managed view settings.
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1703,7 +1703,7 @@ Item(s). User interface for selecting cache files and their source paths
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1716,7 +1716,7 @@ Show cache files velocity properties
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1729,7 +1729,7 @@ Show cache files time settings
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1742,7 +1742,7 @@ Show cache files override layers properties
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1780,7 +1780,7 @@ Display keymap item as icons/text
 Parameters:
     
 
-  * **item** ([`KeyMapItem`](../K/bpy.types.KeyMapItem.md#bpy.types.KeyMapItem "bpy.types.KeyMapItem"), (never None)) – Item
+  * **item** ([[KeyMapItem]], (never None)) – Item
 
   * **text** (_string_ _,__(__optional_ _)_) – Override automatic text of the item
 
@@ -1799,7 +1799,7 @@ Parameters:
 
   * **context_layout** (`UILayout`, (never None)) – Layout to set active list element as context properties
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property
+  * **data** ([[AnyType]], (never None)) – Data from which to take property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data
 
@@ -1822,7 +1822,7 @@ Show a node tree interface
 Parameters:
     
 
-**interface** ([`NodeTreeInterface`](../N/bpy.types.NodeTreeInterface.md#bpy.types.NodeTreeInterface "bpy.types.NodeTreeInterface"), (never None)) – Node Tree Interface, Interface of a node tree to display
+**interface** ([[NodeTreeInterface]], (never None)) – Node Tree Interface, Interface of a node tree to display
 
 template_node_inputs(_node_)
     
@@ -1832,7 +1832,7 @@ Show a node settings and input socket values
 Parameters:
     
 
-**node** ([`Node`](../N/bpy.types.Node.md#bpy.types.Node "bpy.types.Node"), (never None)) – Node, Display inputs of this node
+**node** ([[Node]], (never None)) – Node, Display inputs of this node
 
 template_asset_shelf_popover(_asset_shelf_ , _*_ , _name =''_, _icon ='NONE'_, _icon_value =0_)
     
@@ -1882,7 +1882,7 @@ Operator properties to fill in
 Return type:
     
 
-[`OperatorProperties`](../O/bpy.types.OperatorProperties.md#bpy.types.OperatorProperties "bpy.types.OperatorProperties")
+[[OperatorProperties]]
 
 template_shape_key_tree()
     
@@ -1905,7 +1905,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -1937,7 +1937,7 @@ list[dict[str, Any]]
 
 ## Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [[bpy_struct.id_data]]
 
 | 
 
@@ -1947,112 +1947,112 @@ list[dict[str, Any]]
   
 ## Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
 
 | 
 
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
 
   
 ---|---  
   
 ## References
 
-  * [`AssetShelf.draw_context_menu`](../A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.draw_context_menu "bpy.types.AssetShelf.draw_context_menu")
-  * [`Header.layout`](../H/bpy.types.Header.md#bpy.types.Header.layout "bpy.types.Header.layout")
-  * [`Menu.layout`](../M/bpy.types.Menu.md#bpy.types.Menu.layout "bpy.types.Menu.layout")
-  * [`Node.draw_buttons`](../N/bpy.types.Node.md#bpy.types.Node.draw_buttons "bpy.types.Node.draw_buttons")
-  * [`Node.draw_buttons_ext`](../N/bpy.types.Node.md#bpy.types.Node.draw_buttons_ext "bpy.types.Node.draw_buttons_ext")
-  * [`NodeInternal.draw_buttons`](../N/bpy.types.NodeInternal.md#bpy.types.NodeInternal.draw_buttons "bpy.types.NodeInternal.draw_buttons")
-  * [`NodeInternal.draw_buttons_ext`](../N/bpy.types.NodeInternal.md#bpy.types.NodeInternal.draw_buttons_ext "bpy.types.NodeInternal.draw_buttons_ext")
-  * [`NodeSocket.draw`](../N/bpy.types.NodeSocket.md#bpy.types.NodeSocket.draw "bpy.types.NodeSocket.draw")
-  * [`NodeSocketStandard.draw`](../N/bpy.types.NodeSocketStandard.md#bpy.types.NodeSocketStandard.draw "bpy.types.NodeSocketStandard.draw")
-  * [`NodeTreeInterfaceSocket.draw`](../N/bpy.types.NodeTreeInterfaceSocket.md#bpy.types.NodeTreeInterfaceSocket.draw "bpy.types.NodeTreeInterfaceSocket.draw")
-  * [`NodeTreeInterfaceSocketBool.draw`](../N/bpy.types.NodeTreeInterfaceSocketBool.md#bpy.types.NodeTreeInterfaceSocketBool.draw "bpy.types.NodeTreeInterfaceSocketBool.draw")
-  * [`NodeTreeInterfaceSocketBundle.draw`](../N/bpy.types.NodeTreeInterfaceSocketBundle.md#bpy.types.NodeTreeInterfaceSocketBundle.draw "bpy.types.NodeTreeInterfaceSocketBundle.draw")
-  * [`NodeTreeInterfaceSocketClosure.draw`](../N/bpy.types.NodeTreeInterfaceSocketClosure.md#bpy.types.NodeTreeInterfaceSocketClosure.draw "bpy.types.NodeTreeInterfaceSocketClosure.draw")
-  * [`NodeTreeInterfaceSocketCollection.draw`](../N/bpy.types.NodeTreeInterfaceSocketCollection.md#bpy.types.NodeTreeInterfaceSocketCollection.draw "bpy.types.NodeTreeInterfaceSocketCollection.draw")
-  * [`NodeTreeInterfaceSocketColor.draw`](../N/bpy.types.NodeTreeInterfaceSocketColor.md#bpy.types.NodeTreeInterfaceSocketColor.draw "bpy.types.NodeTreeInterfaceSocketColor.draw")
-  * [`NodeTreeInterfaceSocketFloat.draw`](../N/bpy.types.NodeTreeInterfaceSocketFloat.md#bpy.types.NodeTreeInterfaceSocketFloat.draw "bpy.types.NodeTreeInterfaceSocketFloat.draw")
-  * [`NodeTreeInterfaceSocketFloatAngle.draw`](../N/bpy.types.NodeTreeInterfaceSocketFloatAngle.md#bpy.types.NodeTreeInterfaceSocketFloatAngle.draw "bpy.types.NodeTreeInterfaceSocketFloatAngle.draw")
-  * [`NodeTreeInterfaceSocketFloatColorTemperature.draw`](../N/bpy.types.NodeTreeInterfaceSocketFloatColorTemperature.md#bpy.types.NodeTreeInterfaceSocketFloatColorTemperature.draw "bpy.types.NodeTreeInterfaceSocketFloatColorTemperature.draw")
-  * [`NodeTreeInterfaceSocketFloatDistance.draw`](../N/bpy.types.NodeTreeInterfaceSocketFloatDistance.md#bpy.types.NodeTreeInterfaceSocketFloatDistance.draw "bpy.types.NodeTreeInterfaceSocketFloatDistance.draw")
-  * [`NodeTreeInterfaceSocketFloatFactor.draw`](../N/bpy.types.NodeTreeInterfaceSocketFloatFactor.md#bpy.types.NodeTreeInterfaceSocketFloatFactor.draw "bpy.types.NodeTreeInterfaceSocketFloatFactor.draw")
-  * [`NodeTreeInterfaceSocketFloatFrequency.draw`](../N/bpy.types.NodeTreeInterfaceSocketFloatFrequency.md#bpy.types.NodeTreeInterfaceSocketFloatFrequency.draw "bpy.types.NodeTreeInterfaceSocketFloatFrequency.draw")
-  * [`NodeTreeInterfaceSocketFloatPercentage.draw`](../N/bpy.types.NodeTreeInterfaceSocketFloatPercentage.md#bpy.types.NodeTreeInterfaceSocketFloatPercentage.draw "bpy.types.NodeTreeInterfaceSocketFloatPercentage.draw")
-  * [`NodeTreeInterfaceSocketFloatTime.draw`](../N/bpy.types.NodeTreeInterfaceSocketFloatTime.md#bpy.types.NodeTreeInterfaceSocketFloatTime.draw "bpy.types.NodeTreeInterfaceSocketFloatTime.draw")
-  * [`NodeTreeInterfaceSocketFloatTimeAbsolute.draw`](../N/bpy.types.NodeTreeInterfaceSocketFloatTimeAbsolute.md#bpy.types.NodeTreeInterfaceSocketFloatTimeAbsolute.draw "bpy.types.NodeTreeInterfaceSocketFloatTimeAbsolute.draw")
-  * [`NodeTreeInterfaceSocketFloatUnsigned.draw`](../N/bpy.types.NodeTreeInterfaceSocketFloatUnsigned.md#bpy.types.NodeTreeInterfaceSocketFloatUnsigned.draw "bpy.types.NodeTreeInterfaceSocketFloatUnsigned.draw")
-  * [`NodeTreeInterfaceSocketFloatWavelength.draw`](../N/bpy.types.NodeTreeInterfaceSocketFloatWavelength.md#bpy.types.NodeTreeInterfaceSocketFloatWavelength.draw "bpy.types.NodeTreeInterfaceSocketFloatWavelength.draw")
-  * [`NodeTreeInterfaceSocketGeometry.draw`](../N/bpy.types.NodeTreeInterfaceSocketGeometry.md#bpy.types.NodeTreeInterfaceSocketGeometry.draw "bpy.types.NodeTreeInterfaceSocketGeometry.draw")
-  * [`NodeTreeInterfaceSocketImage.draw`](../N/bpy.types.NodeTreeInterfaceSocketImage.md#bpy.types.NodeTreeInterfaceSocketImage.draw "bpy.types.NodeTreeInterfaceSocketImage.draw")
-  * [`NodeTreeInterfaceSocketInt.draw`](../N/bpy.types.NodeTreeInterfaceSocketInt.md#bpy.types.NodeTreeInterfaceSocketInt.draw "bpy.types.NodeTreeInterfaceSocketInt.draw")
-  * [`NodeTreeInterfaceSocketIntFactor.draw`](../N/bpy.types.NodeTreeInterfaceSocketIntFactor.md#bpy.types.NodeTreeInterfaceSocketIntFactor.draw "bpy.types.NodeTreeInterfaceSocketIntFactor.draw")
-  * [`NodeTreeInterfaceSocketIntPercentage.draw`](../N/bpy.types.NodeTreeInterfaceSocketIntPercentage.md#bpy.types.NodeTreeInterfaceSocketIntPercentage.draw "bpy.types.NodeTreeInterfaceSocketIntPercentage.draw")
-  * [`NodeTreeInterfaceSocketIntUnsigned.draw`](../N/bpy.types.NodeTreeInterfaceSocketIntUnsigned.md#bpy.types.NodeTreeInterfaceSocketIntUnsigned.draw "bpy.types.NodeTreeInterfaceSocketIntUnsigned.draw")
-  * [`NodeTreeInterfaceSocketMaterial.draw`](../N/bpy.types.NodeTreeInterfaceSocketMaterial.md#bpy.types.NodeTreeInterfaceSocketMaterial.draw "bpy.types.NodeTreeInterfaceSocketMaterial.draw")
-  * [`NodeTreeInterfaceSocketMatrix.draw`](../N/bpy.types.NodeTreeInterfaceSocketMatrix.md#bpy.types.NodeTreeInterfaceSocketMatrix.draw "bpy.types.NodeTreeInterfaceSocketMatrix.draw")
-  * [`NodeTreeInterfaceSocketMenu.draw`](../N/bpy.types.NodeTreeInterfaceSocketMenu.md#bpy.types.NodeTreeInterfaceSocketMenu.draw "bpy.types.NodeTreeInterfaceSocketMenu.draw")
-  * [`NodeTreeInterfaceSocketObject.draw`](../N/bpy.types.NodeTreeInterfaceSocketObject.md#bpy.types.NodeTreeInterfaceSocketObject.draw "bpy.types.NodeTreeInterfaceSocketObject.draw")
-  * [`NodeTreeInterfaceSocketRotation.draw`](../N/bpy.types.NodeTreeInterfaceSocketRotation.md#bpy.types.NodeTreeInterfaceSocketRotation.draw "bpy.types.NodeTreeInterfaceSocketRotation.draw")
-  * [`NodeTreeInterfaceSocketShader.draw`](../N/bpy.types.NodeTreeInterfaceSocketShader.md#bpy.types.NodeTreeInterfaceSocketShader.draw "bpy.types.NodeTreeInterfaceSocketShader.draw")
-  * [`NodeTreeInterfaceSocketString.draw`](../N/bpy.types.NodeTreeInterfaceSocketString.md#bpy.types.NodeTreeInterfaceSocketString.draw "bpy.types.NodeTreeInterfaceSocketString.draw")
-  * [`NodeTreeInterfaceSocketStringFilePath.draw`](../N/bpy.types.NodeTreeInterfaceSocketStringFilePath.md#bpy.types.NodeTreeInterfaceSocketStringFilePath.draw "bpy.types.NodeTreeInterfaceSocketStringFilePath.draw")
-  * [`NodeTreeInterfaceSocketTexture.draw`](../N/bpy.types.NodeTreeInterfaceSocketTexture.md#bpy.types.NodeTreeInterfaceSocketTexture.draw "bpy.types.NodeTreeInterfaceSocketTexture.draw")
-  * [`NodeTreeInterfaceSocketVector.draw`](../N/bpy.types.NodeTreeInterfaceSocketVector.md#bpy.types.NodeTreeInterfaceSocketVector.draw "bpy.types.NodeTreeInterfaceSocketVector.draw")
-  * [`NodeTreeInterfaceSocketVector2D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVector2D.md#bpy.types.NodeTreeInterfaceSocketVector2D.draw "bpy.types.NodeTreeInterfaceSocketVector2D.draw")
-  * [`NodeTreeInterfaceSocketVector4D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVector4D.md#bpy.types.NodeTreeInterfaceSocketVector4D.draw "bpy.types.NodeTreeInterfaceSocketVector4D.draw")
+  * [[AssetShelf.draw_context_menu]]
+  * [[Header.layout]]
+  * [[Menu.layout]]
+  * [[Node.draw_buttons]]
+  * [[Node.draw_buttons_ext]]
+  * [[NodeInternal.draw_buttons]]
+  * [[NodeInternal.draw_buttons_ext]]
+  * [[NodeSocket.draw]]
+  * [[NodeSocketStandard.draw]]
+  * [[NodeTreeInterfaceSocket.draw]]
+  * [[NodeTreeInterfaceSocketBool.draw]]
+  * [[NodeTreeInterfaceSocketBundle.draw]]
+  * [[NodeTreeInterfaceSocketClosure.draw]]
+  * [[NodeTreeInterfaceSocketCollection.draw]]
+  * [[NodeTreeInterfaceSocketColor.draw]]
+  * [[NodeTreeInterfaceSocketFloat.draw]]
+  * [[NodeTreeInterfaceSocketFloatAngle.draw]]
+  * [[NodeTreeInterfaceSocketFloatColorTemperature.draw]]
+  * [[NodeTreeInterfaceSocketFloatDistance.draw]]
+  * [[NodeTreeInterfaceSocketFloatFactor.draw]]
+  * [[NodeTreeInterfaceSocketFloatFrequency.draw]]
+  * [[NodeTreeInterfaceSocketFloatPercentage.draw]]
+  * [[NodeTreeInterfaceSocketFloatTime.draw]]
+  * [[NodeTreeInterfaceSocketFloatTimeAbsolute.draw]]
+  * [[NodeTreeInterfaceSocketFloatUnsigned.draw]]
+  * [[NodeTreeInterfaceSocketFloatWavelength.draw]]
+  * [[NodeTreeInterfaceSocketGeometry.draw]]
+  * [[NodeTreeInterfaceSocketImage.draw]]
+  * [[NodeTreeInterfaceSocketInt.draw]]
+  * [[NodeTreeInterfaceSocketIntFactor.draw]]
+  * [[NodeTreeInterfaceSocketIntPercentage.draw]]
+  * [[NodeTreeInterfaceSocketIntUnsigned.draw]]
+  * [[NodeTreeInterfaceSocketMaterial.draw]]
+  * [[NodeTreeInterfaceSocketMatrix.draw]]
+  * [[NodeTreeInterfaceSocketMenu.draw]]
+  * [[NodeTreeInterfaceSocketObject.draw]]
+  * [[NodeTreeInterfaceSocketRotation.draw]]
+  * [[NodeTreeInterfaceSocketShader.draw]]
+  * [[NodeTreeInterfaceSocketString.draw]]
+  * [[NodeTreeInterfaceSocketStringFilePath.draw]]
+  * [[NodeTreeInterfaceSocketTexture.draw]]
+  * [[NodeTreeInterfaceSocketVector.draw]]
+  * [[NodeTreeInterfaceSocketVector2D.draw]]
+  * [[NodeTreeInterfaceSocketVector4D.draw]]
 
 | 
 
-  * [`NodeTreeInterfaceSocketVectorAcceleration.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorAcceleration.md#bpy.types.NodeTreeInterfaceSocketVectorAcceleration.draw "bpy.types.NodeTreeInterfaceSocketVectorAcceleration.draw")
-  * [`NodeTreeInterfaceSocketVectorAcceleration2D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorAcceleration2D.md#bpy.types.NodeTreeInterfaceSocketVectorAcceleration2D.draw "bpy.types.NodeTreeInterfaceSocketVectorAcceleration2D.draw")
-  * [`NodeTreeInterfaceSocketVectorAcceleration4D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorAcceleration4D.md#bpy.types.NodeTreeInterfaceSocketVectorAcceleration4D.draw "bpy.types.NodeTreeInterfaceSocketVectorAcceleration4D.draw")
-  * [`NodeTreeInterfaceSocketVectorDirection.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorDirection.md#bpy.types.NodeTreeInterfaceSocketVectorDirection.draw "bpy.types.NodeTreeInterfaceSocketVectorDirection.draw")
-  * [`NodeTreeInterfaceSocketVectorDirection2D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorDirection2D.md#bpy.types.NodeTreeInterfaceSocketVectorDirection2D.draw "bpy.types.NodeTreeInterfaceSocketVectorDirection2D.draw")
-  * [`NodeTreeInterfaceSocketVectorDirection4D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorDirection4D.md#bpy.types.NodeTreeInterfaceSocketVectorDirection4D.draw "bpy.types.NodeTreeInterfaceSocketVectorDirection4D.draw")
-  * [`NodeTreeInterfaceSocketVectorEuler.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorEuler.md#bpy.types.NodeTreeInterfaceSocketVectorEuler.draw "bpy.types.NodeTreeInterfaceSocketVectorEuler.draw")
-  * [`NodeTreeInterfaceSocketVectorEuler2D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorEuler2D.md#bpy.types.NodeTreeInterfaceSocketVectorEuler2D.draw "bpy.types.NodeTreeInterfaceSocketVectorEuler2D.draw")
-  * [`NodeTreeInterfaceSocketVectorEuler4D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorEuler4D.md#bpy.types.NodeTreeInterfaceSocketVectorEuler4D.draw "bpy.types.NodeTreeInterfaceSocketVectorEuler4D.draw")
-  * [`NodeTreeInterfaceSocketVectorFactor.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorFactor.md#bpy.types.NodeTreeInterfaceSocketVectorFactor.draw "bpy.types.NodeTreeInterfaceSocketVectorFactor.draw")
-  * [`NodeTreeInterfaceSocketVectorFactor2D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorFactor2D.md#bpy.types.NodeTreeInterfaceSocketVectorFactor2D.draw "bpy.types.NodeTreeInterfaceSocketVectorFactor2D.draw")
-  * [`NodeTreeInterfaceSocketVectorFactor4D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorFactor4D.md#bpy.types.NodeTreeInterfaceSocketVectorFactor4D.draw "bpy.types.NodeTreeInterfaceSocketVectorFactor4D.draw")
-  * [`NodeTreeInterfaceSocketVectorPercentage.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorPercentage.md#bpy.types.NodeTreeInterfaceSocketVectorPercentage.draw "bpy.types.NodeTreeInterfaceSocketVectorPercentage.draw")
-  * [`NodeTreeInterfaceSocketVectorPercentage2D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorPercentage2D.md#bpy.types.NodeTreeInterfaceSocketVectorPercentage2D.draw "bpy.types.NodeTreeInterfaceSocketVectorPercentage2D.draw")
-  * [`NodeTreeInterfaceSocketVectorPercentage4D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorPercentage4D.md#bpy.types.NodeTreeInterfaceSocketVectorPercentage4D.draw "bpy.types.NodeTreeInterfaceSocketVectorPercentage4D.draw")
-  * [`NodeTreeInterfaceSocketVectorTranslation.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorTranslation.md#bpy.types.NodeTreeInterfaceSocketVectorTranslation.draw "bpy.types.NodeTreeInterfaceSocketVectorTranslation.draw")
-  * [`NodeTreeInterfaceSocketVectorTranslation2D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorTranslation2D.md#bpy.types.NodeTreeInterfaceSocketVectorTranslation2D.draw "bpy.types.NodeTreeInterfaceSocketVectorTranslation2D.draw")
-  * [`NodeTreeInterfaceSocketVectorTranslation4D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorTranslation4D.md#bpy.types.NodeTreeInterfaceSocketVectorTranslation4D.draw "bpy.types.NodeTreeInterfaceSocketVectorTranslation4D.draw")
-  * [`NodeTreeInterfaceSocketVectorVelocity.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorVelocity.md#bpy.types.NodeTreeInterfaceSocketVectorVelocity.draw "bpy.types.NodeTreeInterfaceSocketVectorVelocity.draw")
-  * [`NodeTreeInterfaceSocketVectorVelocity2D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorVelocity2D.md#bpy.types.NodeTreeInterfaceSocketVectorVelocity2D.draw "bpy.types.NodeTreeInterfaceSocketVectorVelocity2D.draw")
-  * [`NodeTreeInterfaceSocketVectorVelocity4D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorVelocity4D.md#bpy.types.NodeTreeInterfaceSocketVectorVelocity4D.draw "bpy.types.NodeTreeInterfaceSocketVectorVelocity4D.draw")
-  * [`NodeTreeInterfaceSocketVectorXYZ.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorXYZ.md#bpy.types.NodeTreeInterfaceSocketVectorXYZ.draw "bpy.types.NodeTreeInterfaceSocketVectorXYZ.draw")
-  * [`NodeTreeInterfaceSocketVectorXYZ2D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorXYZ2D.md#bpy.types.NodeTreeInterfaceSocketVectorXYZ2D.draw "bpy.types.NodeTreeInterfaceSocketVectorXYZ2D.draw")
-  * [`NodeTreeInterfaceSocketVectorXYZ4D.draw`](../N/bpy.types.NodeTreeInterfaceSocketVectorXYZ4D.md#bpy.types.NodeTreeInterfaceSocketVectorXYZ4D.draw "bpy.types.NodeTreeInterfaceSocketVectorXYZ4D.draw")
-  * [`Operator.layout`](../O/bpy.types.Operator.md#bpy.types.Operator.layout "bpy.types.Operator.layout")
-  * [`Panel.layout`](../P/bpy.types.Panel.md#bpy.types.Panel.layout "bpy.types.Panel.layout")
+  * [[NodeTreeInterfaceSocketVectorAcceleration.draw]]
+  * [[NodeTreeInterfaceSocketVectorAcceleration2D.draw]]
+  * [[NodeTreeInterfaceSocketVectorAcceleration4D.draw]]
+  * [[NodeTreeInterfaceSocketVectorDirection.draw]]
+  * [[NodeTreeInterfaceSocketVectorDirection2D.draw]]
+  * [[NodeTreeInterfaceSocketVectorDirection4D.draw]]
+  * [[NodeTreeInterfaceSocketVectorEuler.draw]]
+  * [[NodeTreeInterfaceSocketVectorEuler2D.draw]]
+  * [[NodeTreeInterfaceSocketVectorEuler4D.draw]]
+  * [[NodeTreeInterfaceSocketVectorFactor.draw]]
+  * [[NodeTreeInterfaceSocketVectorFactor2D.draw]]
+  * [[NodeTreeInterfaceSocketVectorFactor4D.draw]]
+  * [[NodeTreeInterfaceSocketVectorPercentage.draw]]
+  * [[NodeTreeInterfaceSocketVectorPercentage2D.draw]]
+  * [[NodeTreeInterfaceSocketVectorPercentage4D.draw]]
+  * [[NodeTreeInterfaceSocketVectorTranslation.draw]]
+  * [[NodeTreeInterfaceSocketVectorTranslation2D.draw]]
+  * [[NodeTreeInterfaceSocketVectorTranslation4D.draw]]
+  * [[NodeTreeInterfaceSocketVectorVelocity.draw]]
+  * [[NodeTreeInterfaceSocketVectorVelocity2D.draw]]
+  * [[NodeTreeInterfaceSocketVectorVelocity4D.draw]]
+  * [[NodeTreeInterfaceSocketVectorXYZ.draw]]
+  * [[NodeTreeInterfaceSocketVectorXYZ2D.draw]]
+  * [[NodeTreeInterfaceSocketVectorXYZ4D.draw]]
+  * [[Operator.layout]]
+  * [[Panel.layout]]
   * `UILayout.box`
   * `UILayout.column`
   * `UILayout.column_flow`
@@ -2065,11 +2065,11 @@ list[dict[str, Any]]
   * `UILayout.row`
   * `UILayout.split`
   * `UILayout.template_light_linking_collection`
-  * [`UIList.draw_filter`](bpy.types.UIList.md#bpy.types.UIList.draw_filter "bpy.types.UIList.draw_filter")
-  * [`UIList.draw_item`](bpy.types.UIList.md#bpy.types.UIList.draw_item "bpy.types.UIList.draw_item")
-  * [`UIPieMenu.layout`](bpy.types.UIPieMenu.md#bpy.types.UIPieMenu.layout "bpy.types.UIPieMenu.layout")
-  * [`UIPopover.layout`](bpy.types.UIPopover.md#bpy.types.UIPopover.layout "bpy.types.UIPopover.layout")
-  * [`UIPopupMenu.layout`](bpy.types.UIPopupMenu.md#bpy.types.UIPopupMenu.layout "bpy.types.UIPopupMenu.layout")
+  * [[UIList.draw_filter]]
+  * [[UIList.draw_item]]
+  * [[UIPieMenu.layout]]
+  * [[UIPopover.layout]]
+  * [[UIPopupMenu.layout]]
 
   
 ---|---

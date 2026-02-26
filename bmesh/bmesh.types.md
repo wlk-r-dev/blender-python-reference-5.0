@@ -77,7 +77,7 @@ Initialize this bmesh from existing mesh data-block.
 Parameters:
     
 
-  * **mesh** ([`bpy.types.Mesh`](../bpy.types/M/bpy.types.Mesh.md#bpy.types.Mesh "bpy.types.Mesh")) – The mesh data to load.
+  * **mesh** ([[bpy.types.Mesh]]) – The mesh data to load.
 
   * **use_shape_key** (_bool_) – Use the locations from a shape key.
 
@@ -98,7 +98,7 @@ Initialize this bmesh from existing object data-block (only meshes are currently
 Parameters:
     
 
-  * **object** ([`bpy.types.Object`](../bpy.types/O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")) – The object data to load.
+  * **object** ([[bpy.types.Object]]) – The object data to load.
 
   * **cage** (_bool_) – Get the mesh as a deformed cage.
 
@@ -144,7 +144,7 @@ Writes this BMesh data into an existing Mesh data-block.
 Parameters:
     
 
-**mesh** ([`bpy.types.Mesh`](../bpy.types/M/bpy.types.Mesh.md#bpy.types.Mesh "bpy.types.Mesh")) – The mesh data to write into.
+**mesh** ([[bpy.types.Mesh]]) – The mesh data to write into.
 
 transform(_matrix_ , _*_ , _filter =None_)
     
@@ -154,7 +154,7 @@ Transform the mesh (optionally filtering flagged data only).
 Parameters:
     
 
-  * **matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – 4x4x transform matrix.
+  * **matrix** ([[mathutils.Matrix]]) – 4x4x transform matrix.
 
   * **filter** (_set_ _[__Literal_ _[__'SELECT'__,__'HIDE'__,__'SEAM'__,__'SMOOTH'__,__'TAG'__]__]_) – Flag to filter vertices..
 
@@ -217,7 +217,7 @@ Parameters:
 
   * **faces** (Iterable[`bmesh.types.BMFace`]) – Faces to operate on.
 
-  * **sticky_select_mode** (Literal[‘SHARED_LOCATION’, ‘DISABLED’, ‘SHARED_VERTEX’]) – See ([`bpy.types.ToolSettings.uv_sticky_select_mode`](../bpy.types/T/bpy.types.ToolSettings.md#bpy.types.ToolSettings.uv_sticky_select_mode "bpy.types.ToolSettings.uv_sticky_select_mode") which may be passed in directly)..
+  * **sticky_select_mode** (Literal[‘SHARED_LOCATION’, ‘DISABLED’, ‘SHARED_VERTEX’]) – See ([[bpy.types.ToolSettings.uv_sticky_select_mode]] which may be passed in directly)..
 
 
 Note
@@ -245,7 +245,7 @@ Parameters:
 
   * **faces** (Iterable[`bmesh.types.BMFace`]) – Faces to operate on.
 
-  * **sticky_select_mode** (Literal[‘SHARED_LOCATION’, ‘DISABLED’, ‘SHARED_VERTEX’]) – See ([`bpy.types.ToolSettings.uv_sticky_select_mode`](../bpy.types/T/bpy.types.ToolSettings.md#bpy.types.ToolSettings.uv_sticky_select_mode "bpy.types.ToolSettings.uv_sticky_select_mode") which may be passed in directly)..
+  * **sticky_select_mode** (Literal[‘SHARED_LOCATION’, ‘DISABLED’, ‘SHARED_VERTEX’]) – See ([[bpy.types.ToolSettings.uv_sticky_select_mode]] which may be passed in directly)..
 
 
 uv_select_sync_from_mesh(_*_ , _sticky_select_mode ='SHARED_LOCATION'_)
@@ -256,7 +256,7 @@ Sync selection from mesh to UVs.
 Parameters:
     
 
-**sticky_select_mode** (Literal[‘SHARED_LOCATION’, ‘DISABLED’, ‘SHARED_VERTEX’]) – Behavior when flushing from the mesh to UV selection ([`bpy.types.ToolSettings.uv_sticky_select_mode`](../bpy.types/T/bpy.types.ToolSettings.md#bpy.types.ToolSettings.uv_sticky_select_mode "bpy.types.ToolSettings.uv_sticky_select_mode") which may be passed in directly).. This should only be used when preparing to create a UV selection.
+**sticky_select_mode** (Literal[‘SHARED_LOCATION’, ‘DISABLED’, ‘SHARED_VERTEX’]) – Behavior when flushing from the mesh to UV selection ([[bpy.types.ToolSettings.uv_sticky_select_mode]] which may be passed in directly).. This should only be used when preparing to create a UV selection.
 
 Note
 
@@ -465,7 +465,7 @@ The coordinates for this vertex as a 3D, wrapped vector.
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 hide
     
@@ -573,7 +573,7 @@ The normal for this vertex as a 3D, wrapped vector.
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 select
     
@@ -667,7 +667,7 @@ a normalized vector.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 copy_from(_other_)
     
@@ -918,7 +918,7 @@ a 3D vector.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 calc_center_median()
     
@@ -933,7 +933,7 @@ a 3D vector.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 calc_center_median_weighted()
     
@@ -948,7 +948,7 @@ a 3D vector.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 calc_perimeter()
     
@@ -978,7 +978,7 @@ a normalized vector.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 calc_tangent_edge_diagonal()
     
@@ -993,7 +993,7 @@ a normalized vector.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 calc_tangent_edge_pair()
     
@@ -1015,7 +1015,7 @@ a normalized vector.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 calc_tangent_vert_diagonal()
     
@@ -1030,7 +1030,7 @@ a normalized vector.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 copy(_*_ , _verts =True_, _edges =True_)
     
@@ -1197,7 +1197,7 @@ The normal for this face as a 3D, wrapped vector.
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 select
     
@@ -1282,7 +1282,7 @@ a normalized vector.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 calc_tangent()
     
@@ -1297,7 +1297,7 @@ a normalized vector.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 copy_from(_other_)
     
@@ -1919,7 +1919,7 @@ Generic RGBA color with 8-bit precision custom-data layer.
 Type:
     
 
-`bmesh.types.BMLayerCollection` of [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+`bmesh.types.BMLayerCollection` of [[mathutils.Vector]]
 
 deform
     
@@ -1949,7 +1949,7 @@ Generic RGBA color with float precision custom-data layer.
 Type:
     
 
-`bmesh.types.BMLayerCollection` of [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+`bmesh.types.BMLayerCollection` of [[mathutils.Vector]]
 
 float_vector
     
@@ -1959,7 +1959,7 @@ Generic 3D vector with float precision custom-data layer.
 Type:
     
 
-`bmesh.types.BMLayerCollection` of [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+`bmesh.types.BMLayerCollection` of [[mathutils.Vector]]
 
 int
     
@@ -1979,7 +1979,7 @@ Vertex shape-key absolute location (as a 3D Vector).
 Type:
     
 
-`bmesh.types.BMLayerCollection` of [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+`bmesh.types.BMLayerCollection` of [[mathutils.Vector]]
 
 skin
     
@@ -2024,7 +2024,7 @@ Generic RGBA color with 8-bit precision custom-data layer.
 Type:
     
 
-`bmesh.types.BMLayerCollection` of [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+`bmesh.types.BMLayerCollection` of [[mathutils.Vector]]
 
 float
     
@@ -2044,7 +2044,7 @@ Generic RGBA color with float precision custom-data layer.
 Type:
     
 
-`bmesh.types.BMLayerCollection` of [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+`bmesh.types.BMLayerCollection` of [[mathutils.Vector]]
 
 float_vector
     
@@ -2054,7 +2054,7 @@ Generic 3D vector with float precision custom-data layer.
 Type:
     
 
-`bmesh.types.BMLayerCollection` of [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+`bmesh.types.BMLayerCollection` of [[mathutils.Vector]]
 
 int
     
@@ -2099,7 +2099,7 @@ Generic RGBA color with 8-bit precision custom-data layer.
 Type:
     
 
-`bmesh.types.BMLayerCollection` of [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+`bmesh.types.BMLayerCollection` of [[mathutils.Vector]]
 
 float
     
@@ -2119,7 +2119,7 @@ Generic RGBA color with float precision custom-data layer.
 Type:
     
 
-`bmesh.types.BMLayerCollection` of [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+`bmesh.types.BMLayerCollection` of [[mathutils.Vector]]
 
 float_vector
     
@@ -2129,7 +2129,7 @@ Generic 3D vector with float precision custom-data layer.
 Type:
     
 
-`bmesh.types.BMLayerCollection` of [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+`bmesh.types.BMLayerCollection` of [[mathutils.Vector]]
 
 int
     
@@ -2174,7 +2174,7 @@ Generic RGBA color with 8-bit precision custom-data layer.
 Type:
     
 
-`bmesh.types.BMLayerCollection` of [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+`bmesh.types.BMLayerCollection` of [[mathutils.Vector]]
 
 float
     
@@ -2194,7 +2194,7 @@ Generic RGBA color with float precision custom-data layer.
 Type:
     
 
-`bmesh.types.BMLayerCollection` of [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+`bmesh.types.BMLayerCollection` of [[mathutils.Vector]]
 
 float_vector
     
@@ -2204,7 +2204,7 @@ Generic 3D vector with float precision custom-data layer.
 Type:
     
 
-`bmesh.types.BMLayerCollection` of [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+`bmesh.types.BMLayerCollection` of [[mathutils.Vector]]
 
 int
     
@@ -2412,7 +2412,7 @@ Loops UV (as a 2D Vector).
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 _class _bmesh.types.BMDeformVert
     

@@ -123,7 +123,7 @@ Note
 
   * keys must be `str` type.
 
-  * values will be [`bpy.types.ImagePreview`](../bpy.types/I/bpy.types.ImagePreview.md#bpy.types.ImagePreview "bpy.types.ImagePreview")
+  * values will be [[bpy.types.ImagePreview]]
 
 
 clear()
@@ -161,7 +161,7 @@ The Preview matching given name, or a new empty one.
 Return type:
     
 
-[`bpy.types.ImagePreview`](../bpy.types/I/bpy.types.ImagePreview.md#bpy.types.ImagePreview "bpy.types.ImagePreview")
+[[bpy.types.ImagePreview]]
 
 Raises:
     
@@ -186,7 +186,7 @@ The Preview matching given name, or a new empty one.
 Return type:
     
 
-[`bpy.types.ImagePreview`](../bpy.types/I/bpy.types.ImagePreview.md#bpy.types.ImagePreview "bpy.types.ImagePreview")
+[[bpy.types.ImagePreview]]
 
 Raises:
     

@@ -85,7 +85,7 @@ Returns:
 Return type:
     
 
-list[tuple[str, [`bpy.types.bpy_struct`](bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")]]
+list[tuple[str, [[bpy.types.bpy_struct]]]]
 
 keys()
     
@@ -115,4 +115,4 @@ The members of this collection.
 Return type:
     
 
-list[[`bpy.types.bpy_struct`](bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct") | None]
+list[[[bpy.types.bpy_struct]] | None]

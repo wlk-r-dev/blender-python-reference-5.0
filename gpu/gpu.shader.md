@@ -6,7 +6,7 @@ Built-in shaders
 
 All built-in shaders have the `mat4 ModelViewProjectionMatrix` uniform.
 
-Its value must be modified using the [`gpu.matrix`](gpu.matrix.md#module-gpu.matrix "gpu.matrix") module.
+Its value must be modified using the [[gpu.matrix]] module.
 
 Important
 
@@ -186,7 +186,7 @@ Create shader from a GPUShaderCreateInfo.
 Parameters:
     
 
-**shader_info** ([`gpu.types.GPUShaderCreateInfo`](gpu.types.md#gpu.types.GPUShaderCreateInfo "gpu.types.GPUShaderCreateInfo")) – GPUShaderCreateInfo
+**shader_info** ([[gpu.types.GPUShaderCreateInfo]]) – GPUShaderCreateInfo
 
 Returns:
     
@@ -201,7 +201,7 @@ Return type:
 gpu.shader.from_builtin(_shader_name_ , _*_ , _config ='DEFAULT'_)
     
 
-Shaders that are embedded in the blender internal code (see Built-in shaders). They all read the uniform `mat4 ModelViewProjectionMatrix`, which can be edited by the [`gpu.matrix`](gpu.matrix.md#module-gpu.matrix "gpu.matrix") module.
+Shaders that are embedded in the blender internal code (see Built-in shaders). They all read the uniform `mat4 ModelViewProjectionMatrix`, which can be edited by the [[gpu.matrix]] module.
 
 You can also choose a shader configuration that uses clip_planes by setting the `CLIPPED` value to the config parameter. Note that in this case you also need to manually set the value of `mat4 ModelMatrix`.
 

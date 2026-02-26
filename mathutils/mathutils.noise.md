@@ -10,7 +10,7 @@ Returns cell noise value at the specified position.
 Parameters:
     
 
-**position** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")) – The position to evaluate the selected noise function.
+**position** ([[mathutils.Vector]]) – The position to evaluate the selected noise function.
 
 Returns:
     
@@ -30,7 +30,7 @@ Returns cell noise vector at the specified position.
 Parameters:
     
 
-**position** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")) – The position to evaluate the selected noise function.
+**position** ([[mathutils.Vector]]) – The position to evaluate the selected noise function.
 
 Returns:
     
@@ -40,7 +40,7 @@ The cell noise vector.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 mathutils.noise.fractal(_position_ , _H_ , _lacunarity_ , _octaves_ , _/_ , _*_ , _noise_basis ='PERLIN_ORIGINAL'_)
     
@@ -50,7 +50,7 @@ Returns the fractal Brownian motion (fBm) noise value from the noise basis at th
 Parameters:
     
 
-  * **position** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")) – The position to evaluate the selected noise function.
+  * **position** ([[mathutils.Vector]]) – The position to evaluate the selected noise function.
 
   * **H** (_float_) – The fractal increment factor.
 
@@ -79,7 +79,7 @@ Returns the heterogeneous terrain value from the noise basis at the specified po
 Parameters:
     
 
-  * **position** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")) – The position to evaluate the selected noise function.
+  * **position** ([[mathutils.Vector]]) – The position to evaluate the selected noise function.
 
   * **H** (_float_) – The fractal dimension of the roughest areas.
 
@@ -110,7 +110,7 @@ Returns hybrid multifractal value from the noise basis at the specified position
 Parameters:
     
 
-  * **position** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")) – The position to evaluate the selected noise function.
+  * **position** ([[mathutils.Vector]]) – The position to evaluate the selected noise function.
 
   * **H** (_float_) – The fractal dimension of the roughest areas.
 
@@ -143,7 +143,7 @@ Returns multifractal noise value from the noise basis at the specified position.
 Parameters:
     
 
-  * **position** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")) – The position to evaluate the selected noise function.
+  * **position** ([[mathutils.Vector]]) – The position to evaluate the selected noise function.
 
   * **H** (_float_) – The fractal increment factor.
 
@@ -172,7 +172,7 @@ Returns noise value from the noise basis at the position specified.
 Parameters:
     
 
-  * **position** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")) – The position to evaluate the selected noise function.
+  * **position** ([[mathutils.Vector]]) – The position to evaluate the selected noise function.
 
   * **noise_basis** (_Literal_ _[__'BLENDER'__,__'PERLIN_ORIGINAL'__,__'PERLIN_NEW'__,__'VORONOI_F1'__,__'VORONOI_F2'__,__'VORONOI_F3'__,__'VORONOI_F4'__,__'VORONOI_F2F1'__,__'VORONOI_CRACKLE'__,__'CELLNOISE'__]__._) – A noise basis string.
 
@@ -195,7 +195,7 @@ Returns the noise vector from the noise basis at the specified position.
 Parameters:
     
 
-  * **position** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")) – The position to evaluate the selected noise function.
+  * **position** ([[mathutils.Vector]]) – The position to evaluate the selected noise function.
 
   * **noise_basis** (_Literal_ _[__'BLENDER'__,__'PERLIN_ORIGINAL'__,__'PERLIN_NEW'__,__'VORONOI_F1'__,__'VORONOI_F2'__,__'VORONOI_F3'__,__'VORONOI_F4'__,__'VORONOI_F2F1'__,__'VORONOI_CRACKLE'__,__'CELLNOISE'__]__._) – A noise basis string.
 
@@ -208,7 +208,7 @@ The noise vector.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 mathutils.noise.random()
     
@@ -243,7 +243,7 @@ The random unit vector.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 mathutils.noise.random_vector(_*_ , _size =3_)
     
@@ -263,7 +263,7 @@ The random vector.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 mathutils.noise.ridged_multi_fractal(_position_ , _H_ , _lacunarity_ , _octaves_ , _offset_ , _gain_ , _/_ , _*_ , _noise_basis ='PERLIN_ORIGINAL'_)
     
@@ -273,7 +273,7 @@ Returns ridged multifractal value from the noise basis at the specified position
 Parameters:
     
 
-  * **position** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")) – The position to evaluate the selected noise function.
+  * **position** ([[mathutils.Vector]]) – The position to evaluate the selected noise function.
 
   * **H** (_float_) – The fractal dimension of the roughest areas.
 
@@ -316,7 +316,7 @@ Returns the turbulence value from the noise basis at the specified position.
 Parameters:
     
 
-  * **position** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")) – The position to evaluate the selected noise function.
+  * **position** ([[mathutils.Vector]]) – The position to evaluate the selected noise function.
 
   * **octaves** (_int_) – The number of different noise frequencies used.
 
@@ -347,7 +347,7 @@ Returns the turbulence vector from the noise basis at the specified position.
 Parameters:
     
 
-  * **position** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")) – The position to evaluate the selected noise function.
+  * **position** ([[mathutils.Vector]]) – The position to evaluate the selected noise function.
 
   * **octaves** (_int_) – The number of different noise frequencies used.
 
@@ -368,7 +368,7 @@ The turbulence vector.
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 mathutils.noise.variable_lacunarity(_position_ , _distortion_ , _/_ , _*_ , _noise_type1 ='PERLIN_ORIGINAL'_, _noise_type2 ='PERLIN_ORIGINAL'_)
     
@@ -378,7 +378,7 @@ Returns variable lacunarity noise value, a distorted variety of noise, from nois
 Parameters:
     
 
-  * **position** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")) – The position to evaluate the selected noise function.
+  * **position** ([[mathutils.Vector]]) – The position to evaluate the selected noise function.
 
   * **distortion** (_float_) – The amount of distortion.
 
@@ -405,7 +405,7 @@ Returns a list of distances to the four closest features and their locations.
 Parameters:
     
 
-  * **position** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")) – The position to evaluate the selected noise function.
+  * **position** ([[mathutils.Vector]]) – The position to evaluate the selected noise function.
 
   * **distance_metric** (_Literal_ _[__'DISTANCE'__,__'DISTANCE_SQUARED'__,__'MANHATTAN'__,__'CHEBYCHEV'__,__'MINKOVSKY'__,__'MINKOVSKY_HALF'__,__'MINKOVSKY_FOUR'__]__._) – A distance metric string.
 
@@ -420,6 +420,6 @@ A list of distances to the four closest features and their locations.
 Return type:
     
 
-list[list[float] | list[[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")]]
+list[list[float] | list[[[mathutils.Vector]]]]
   *[/]: Positional-only parameter separator (PEP 570)
   *[*]: Keyword-only parameters separator (PEP 3102)

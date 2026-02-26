@@ -1,6 +1,6 @@
 # Scene(ID)
 
-base classes — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct"), [`ID`](../I/bpy.types.ID.md#bpy.types.ID "bpy.types.ID")
+base classes — [[bpy_struct]], [[ID]]
 
 _class _bpy.types.Scene(_ID_)
     
@@ -15,7 +15,7 @@ Active Movie Clip that can be used by motion tracking constraints or as a camera
 Type:
     
 
-[`MovieClip`](../M/bpy.types.MovieClip.md#bpy.types.MovieClip "bpy.types.MovieClip")
+[[MovieClip]]
 
 animation_data
     
@@ -25,7 +25,7 @@ Animation data for this data-block
 Type:
     
 
-[`AnimData`](../A/bpy.types.AnimData.md#bpy.types.AnimData "bpy.types.AnimData"), (readonly)
+[[AnimData]], (readonly)
 
 annotation
     
@@ -35,7 +35,7 @@ Data-block used for annotations in the 3D view
 Type:
     
 
-[`Annotation`](../A/bpy.types.Annotation.md#bpy.types.Annotation "bpy.types.Annotation")
+[[Annotation]]
 
 audio_distance_model
     
@@ -110,7 +110,7 @@ Active camera, used for rendering the scene
 Type:
     
 
-[`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")
+[[Object]]
 
 collection
     
@@ -120,7 +120,7 @@ Scene root collection that owns all the objects and other collections instantiat
 Type:
     
 
-[`Collection`](../C/bpy.types.Collection.md#bpy.types.Collection "bpy.types.Collection"), (readonly, never None)
+[[Collection]], (readonly, never None)
 
 compositing_node_group
     
@@ -130,7 +130,7 @@ Compositor Nodes
 Type:
     
 
-[`NodeTree`](../N/bpy.types.NodeTree.md#bpy.types.NodeTree "bpy.types.NodeTree")
+[[NodeTree]]
 
 cursor
     
@@ -138,7 +138,7 @@ cursor
 Type:
     
 
-[`View3DCursor`](../V/bpy.types.View3DCursor.md#bpy.types.View3DCursor "bpy.types.View3DCursor"), (readonly, never None)
+[[View3DCursor]], (readonly, never None)
 
 cycles
     
@@ -168,7 +168,7 @@ Scene display settings for 3D viewport
 Type:
     
 
-[`SceneDisplay`](bpy.types.SceneDisplay.md#bpy.types.SceneDisplay "bpy.types.SceneDisplay"), (readonly)
+[[SceneDisplay]], (readonly)
 
 display_settings
     
@@ -178,7 +178,7 @@ Settings of device saved image would be displayed on
 Type:
     
 
-[`ColorManagedDisplaySettings`](../C/bpy.types.ColorManagedDisplaySettings.md#bpy.types.ColorManagedDisplaySettings "bpy.types.ColorManagedDisplaySettings"), (readonly)
+[[ColorManagedDisplaySettings]], (readonly)
 
 eevee
     
@@ -188,7 +188,7 @@ EEVEE settings for the scene
 Type:
     
 
-[`SceneEEVEE`](bpy.types.SceneEEVEE.md#bpy.types.SceneEEVEE "bpy.types.SceneEEVEE"), (readonly)
+[[SceneEEVEE]], (readonly)
 
 frame_current
     
@@ -284,7 +284,7 @@ Constant acceleration in a given direction
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (0.0, 0.0, -9.81)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (0.0, 0.0, -9.81)
 
 grease_pencil_settings
     
@@ -294,7 +294,7 @@ Grease Pencil settings for the scene
 Type:
     
 
-[`SceneGpencil`](bpy.types.SceneGpencil.md#bpy.types.SceneGpencil "bpy.types.SceneGpencil"), (readonly)
+[[SceneGpencil]], (readonly)
 
 hydra
     
@@ -304,7 +304,7 @@ Hydra settings for the scene
 Type:
     
 
-[`SceneHydra`](bpy.types.SceneHydra.md#bpy.types.SceneHydra "bpy.types.SceneHydra"), (readonly)
+[[SceneHydra]], (readonly)
 
 is_nla_tweakmode
     
@@ -324,7 +324,7 @@ Absolute Keying Sets for this Scene
 Type:
     
 
-[`KeyingSets`](../K/bpy.types.KeyingSets.md#bpy.types.KeyingSets "bpy.types.KeyingSets") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`KeyingSet`](../K/bpy.types.KeyingSet.md#bpy.types.KeyingSet "bpy.types.KeyingSet"), (readonly)
+[[KeyingSets]] [[bpy_prop_collection]] of [[KeyingSet]], (readonly)
 
 keying_sets_all
     
@@ -334,7 +334,7 @@ All Keying Sets available for use (Builtins and Absolute Keying Sets for this Sc
 Type:
     
 
-[`KeyingSetsAll`](../K/bpy.types.KeyingSetsAll.md#bpy.types.KeyingSetsAll "bpy.types.KeyingSetsAll") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`KeyingSet`](../K/bpy.types.KeyingSet.md#bpy.types.KeyingSet "bpy.types.KeyingSet"), (readonly)
+[[KeyingSetsAll]] [[bpy_prop_collection]] of [[KeyingSet]], (readonly)
 
 lock_frame_selection_to_range
     
@@ -352,7 +352,7 @@ objects
 Type:
     
 
-[`SceneObjects`](bpy.types.SceneObjects.md#bpy.types.SceneObjects "bpy.types.SceneObjects") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object"), (readonly)
+[[SceneObjects]] [[bpy_prop_collection]] of [[Object]], (readonly)
 
 render
     
@@ -360,7 +360,7 @@ render
 Type:
     
 
-[`RenderSettings`](../R/bpy.types.RenderSettings.md#bpy.types.RenderSettings "bpy.types.RenderSettings"), (readonly, never None)
+[[RenderSettings]], (readonly, never None)
 
 rigidbody_world
     
@@ -368,7 +368,7 @@ rigidbody_world
 Type:
     
 
-[`RigidBodyWorld`](../R/bpy.types.RigidBodyWorld.md#bpy.types.RigidBodyWorld "bpy.types.RigidBodyWorld"), (readonly)
+[[RigidBodyWorld]], (readonly)
 
 safe_areas
     
@@ -376,7 +376,7 @@ safe_areas
 Type:
     
 
-[`DisplaySafeAreas`](../D/bpy.types.DisplaySafeAreas.md#bpy.types.DisplaySafeAreas "bpy.types.DisplaySafeAreas"), (readonly, never None)
+[[DisplaySafeAreas]], (readonly, never None)
 
 sequence_editor
     
@@ -384,7 +384,7 @@ sequence_editor
 Type:
     
 
-[`SequenceEditor`](bpy.types.SequenceEditor.md#bpy.types.SequenceEditor "bpy.types.SequenceEditor"), (readonly)
+[[SequenceEditor]], (readonly)
 
 sequencer_colorspace_settings
     
@@ -394,7 +394,7 @@ Settings of color space sequencer is working in
 Type:
     
 
-[`ColorManagedSequencerColorspaceSettings`](../C/bpy.types.ColorManagedSequencerColorspaceSettings.md#bpy.types.ColorManagedSequencerColorspaceSettings "bpy.types.ColorManagedSequencerColorspaceSettings"), (readonly)
+[[ColorManagedSequencerColorspaceSettings]], (readonly)
 
 show_keys_from_selected_only
     
@@ -486,7 +486,7 @@ Markers used in all timelines for the current scene
 Type:
     
 
-[`TimelineMarkers`](../T/bpy.types.TimelineMarkers.md#bpy.types.TimelineMarkers "bpy.types.TimelineMarkers") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`TimelineMarker`](../T/bpy.types.TimelineMarker.md#bpy.types.TimelineMarker "bpy.types.TimelineMarker"), (readonly)
+[[TimelineMarkers]] [[bpy_prop_collection]] of [[TimelineMarker]], (readonly)
 
 tool_settings
     
@@ -494,7 +494,7 @@ tool_settings
 Type:
     
 
-[`ToolSettings`](../T/bpy.types.ToolSettings.md#bpy.types.ToolSettings "bpy.types.ToolSettings"), (readonly, never None)
+[[ToolSettings]], (readonly, never None)
 
 transform_orientation_slots
     
@@ -502,7 +502,7 @@ transform_orientation_slots
 Type:
     
 
-[`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`TransformOrientationSlot`](../T/bpy.types.TransformOrientationSlot.md#bpy.types.TransformOrientationSlot "bpy.types.TransformOrientationSlot"), (readonly)
+[[bpy_prop_collection]] of [[TransformOrientationSlot]], (readonly)
 
 unit_settings
     
@@ -512,7 +512,7 @@ Unit editing settings
 Type:
     
 
-[`UnitSettings`](../U/bpy.types.UnitSettings.md#bpy.types.UnitSettings "bpy.types.UnitSettings"), (readonly, never None)
+[[UnitSettings]], (readonly, never None)
 
 use_audio
     
@@ -594,7 +594,7 @@ view_layers
 Type:
     
 
-[`ViewLayers`](../V/bpy.types.ViewLayers.md#bpy.types.ViewLayers "bpy.types.ViewLayers") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`ViewLayer`](../V/bpy.types.ViewLayer.md#bpy.types.ViewLayer "bpy.types.ViewLayer"), (readonly)
+[[ViewLayers]] [[bpy_prop_collection]] of [[ViewLayer]], (readonly)
 
 view_settings
     
@@ -604,7 +604,7 @@ Color management settings applied on image before saving
 Type:
     
 
-[`ColorManagedViewSettings`](../C/bpy.types.ColorManagedViewSettings.md#bpy.types.ColorManagedViewSettings "bpy.types.ColorManagedViewSettings"), (readonly)
+[[ColorManagedViewSettings]], (readonly)
 
 world
     
@@ -614,7 +614,7 @@ World used for rendering the scene
 Type:
     
 
-[`World`](../W/bpy.types.World.md#bpy.types.World "bpy.types.World")
+[[World]]
 
 _classmethod _update_render_engine()
     
@@ -629,7 +629,7 @@ statistics
 Parameters:
     
 
-**view_layer** ([`ViewLayer`](../V/bpy.types.ViewLayer.md#bpy.types.ViewLayer "bpy.types.ViewLayer"), (never None)) – View Layer
+**view_layer** ([[ViewLayer]], (never None)) – View Layer
 
 Returns:
     
@@ -662,7 +662,7 @@ Get uv aspect for current object
 Parameters:
     
 
-**object** ([`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object"), (never None)) – Object
+**object** ([[Object]], (never None)) – Object
 
 Returns:
     
@@ -672,7 +672,7 @@ aspect
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [0, inf]
+[[mathutils.Vector]] of 2 items in [0, inf]
 
 ray_cast(_depsgraph_ , _origin_ , _direction_ , _*_ , _distance =1.70141e+38_)
     
@@ -682,7 +682,7 @@ Cast a ray onto evaluated geometry in world-space
 Parameters:
     
 
-  * **depsgraph** ([`Depsgraph`](../D/bpy.types.Depsgraph.md#bpy.types.Depsgraph "bpy.types.Depsgraph"), (never None)) – The current dependency graph
+  * **depsgraph** ([[Depsgraph]], (never None)) – The current dependency graph
 
   * **distance** (_float in_ _[__0_ _,__inf_ _]__,__(__optional_ _)_) – Maximum distance
 
@@ -692,20 +692,20 @@ Returns:
 
 `result`, boolean
 
-`location`, The hit location of this ray cast, [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]
+`location`, The hit location of this ray cast, [[mathutils.Vector]] of 3 items in [-inf, inf]
 
-`normal`, The face normal at the ray cast hit location, [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]
+`normal`, The face normal at the ray cast hit location, [[mathutils.Vector]] of 3 items in [-inf, inf]
 
 `index`, The face index, -1 when original data isn’t available, int in [-inf, inf]
 
-`object`, Ray cast object, [`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")
+`object`, Ray cast object, [[Object]]
 
-`matrix`, Matrix, [`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 4 * 4 items in [-inf, inf]
+`matrix`, Matrix, [[mathutils.Matrix]] of 4 * 4 items in [-inf, inf]
 
 Return type:
     
 
-(boolean, [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], [`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], int in [-inf, inf], [`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object"), [`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 4 * 4 items in [-inf, inf])
+(boolean, [[mathutils.Vector]] of 3 items in [-inf, inf], [[mathutils.Vector]] of 3 items in [-inf, inf], int in [-inf, inf], [[Object]], [[mathutils.Matrix]] of 4 * 4 items in [-inf, inf])
 
 sequence_editor_create()
     
@@ -720,7 +720,7 @@ New sequence editor data or nullptr
 Return type:
     
 
-[`SequenceEditor`](bpy.types.SequenceEditor.md#bpy.types.SequenceEditor "bpy.types.SequenceEditor")
+[[SequenceEditor]]
 
 sequence_editor_clear()
     
@@ -743,7 +743,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -765,121 +765,121 @@ type
 
 ## Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
-  * [`ID.name`](../I/bpy.types.ID.md#bpy.types.ID.name "bpy.types.ID.name")
-  * [`ID.name_full`](../I/bpy.types.ID.md#bpy.types.ID.name_full "bpy.types.ID.name_full")
-  * [`ID.id_type`](../I/bpy.types.ID.md#bpy.types.ID.id_type "bpy.types.ID.id_type")
-  * [`ID.session_uid`](../I/bpy.types.ID.md#bpy.types.ID.session_uid "bpy.types.ID.session_uid")
-  * [`ID.is_evaluated`](../I/bpy.types.ID.md#bpy.types.ID.is_evaluated "bpy.types.ID.is_evaluated")
-  * [`ID.original`](../I/bpy.types.ID.md#bpy.types.ID.original "bpy.types.ID.original")
-  * [`ID.users`](../I/bpy.types.ID.md#bpy.types.ID.users "bpy.types.ID.users")
-  * [`ID.use_fake_user`](../I/bpy.types.ID.md#bpy.types.ID.use_fake_user "bpy.types.ID.use_fake_user")
-  * [`ID.use_extra_user`](../I/bpy.types.ID.md#bpy.types.ID.use_extra_user "bpy.types.ID.use_extra_user")
-  * [`ID.is_embedded_data`](../I/bpy.types.ID.md#bpy.types.ID.is_embedded_data "bpy.types.ID.is_embedded_data")
+  * [[bpy_struct.id_data]]
+  * [[ID.name]]
+  * [[ID.name_full]]
+  * [[ID.id_type]]
+  * [[ID.session_uid]]
+  * [[ID.is_evaluated]]
+  * [[ID.original]]
+  * [[ID.users]]
+  * [[ID.use_fake_user]]
+  * [[ID.use_extra_user]]
+  * [[ID.is_embedded_data]]
 
 | 
 
-  * [`ID.is_linked_packed`](../I/bpy.types.ID.md#bpy.types.ID.is_linked_packed "bpy.types.ID.is_linked_packed")
-  * [`ID.is_missing`](../I/bpy.types.ID.md#bpy.types.ID.is_missing "bpy.types.ID.is_missing")
-  * [`ID.is_runtime_data`](../I/bpy.types.ID.md#bpy.types.ID.is_runtime_data "bpy.types.ID.is_runtime_data")
-  * [`ID.is_editable`](../I/bpy.types.ID.md#bpy.types.ID.is_editable "bpy.types.ID.is_editable")
-  * [`ID.tag`](../I/bpy.types.ID.md#bpy.types.ID.tag "bpy.types.ID.tag")
-  * [`ID.is_library_indirect`](../I/bpy.types.ID.md#bpy.types.ID.is_library_indirect "bpy.types.ID.is_library_indirect")
-  * [`ID.library`](../I/bpy.types.ID.md#bpy.types.ID.library "bpy.types.ID.library")
-  * [`ID.library_weak_reference`](../I/bpy.types.ID.md#bpy.types.ID.library_weak_reference "bpy.types.ID.library_weak_reference")
-  * [`ID.asset_data`](../I/bpy.types.ID.md#bpy.types.ID.asset_data "bpy.types.ID.asset_data")
-  * [`ID.override_library`](../I/bpy.types.ID.md#bpy.types.ID.override_library "bpy.types.ID.override_library")
-  * [`ID.preview`](../I/bpy.types.ID.md#bpy.types.ID.preview "bpy.types.ID.preview")
+  * [[ID.is_linked_packed]]
+  * [[ID.is_missing]]
+  * [[ID.is_runtime_data]]
+  * [[ID.is_editable]]
+  * [[ID.tag]]
+  * [[ID.is_library_indirect]]
+  * [[ID.library]]
+  * [[ID.library_weak_reference]]
+  * [[ID.asset_data]]
+  * [[ID.override_library]]
+  * [[ID.preview]]
 
   
 ---|---  
   
 ## Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
 
 | 
 
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
-  * [`ID.bl_system_properties_get`](../I/bpy.types.ID.md#bpy.types.ID.bl_system_properties_get "bpy.types.ID.bl_system_properties_get")
-  * [`ID.rename`](../I/bpy.types.ID.md#bpy.types.ID.rename "bpy.types.ID.rename")
-  * [`ID.evaluated_get`](../I/bpy.types.ID.md#bpy.types.ID.evaluated_get "bpy.types.ID.evaluated_get")
-  * [`ID.copy`](../I/bpy.types.ID.md#bpy.types.ID.copy "bpy.types.ID.copy")
-  * [`ID.asset_mark`](../I/bpy.types.ID.md#bpy.types.ID.asset_mark "bpy.types.ID.asset_mark")
-  * [`ID.asset_clear`](../I/bpy.types.ID.md#bpy.types.ID.asset_clear "bpy.types.ID.asset_clear")
-  * [`ID.asset_generate_preview`](../I/bpy.types.ID.md#bpy.types.ID.asset_generate_preview "bpy.types.ID.asset_generate_preview")
-  * [`ID.override_create`](../I/bpy.types.ID.md#bpy.types.ID.override_create "bpy.types.ID.override_create")
-  * [`ID.override_hierarchy_create`](../I/bpy.types.ID.md#bpy.types.ID.override_hierarchy_create "bpy.types.ID.override_hierarchy_create")
-  * [`ID.user_clear`](../I/bpy.types.ID.md#bpy.types.ID.user_clear "bpy.types.ID.user_clear")
-  * [`ID.user_remap`](../I/bpy.types.ID.md#bpy.types.ID.user_remap "bpy.types.ID.user_remap")
-  * [`ID.make_local`](../I/bpy.types.ID.md#bpy.types.ID.make_local "bpy.types.ID.make_local")
-  * [`ID.user_of_id`](../I/bpy.types.ID.md#bpy.types.ID.user_of_id "bpy.types.ID.user_of_id")
-  * [`ID.animation_data_create`](../I/bpy.types.ID.md#bpy.types.ID.animation_data_create "bpy.types.ID.animation_data_create")
-  * [`ID.animation_data_clear`](../I/bpy.types.ID.md#bpy.types.ID.animation_data_clear "bpy.types.ID.animation_data_clear")
-  * [`ID.update_tag`](../I/bpy.types.ID.md#bpy.types.ID.update_tag "bpy.types.ID.update_tag")
-  * [`ID.preview_ensure`](../I/bpy.types.ID.md#bpy.types.ID.preview_ensure "bpy.types.ID.preview_ensure")
-  * [`ID.bl_rna_get_subclass`](../I/bpy.types.ID.md#bpy.types.ID.bl_rna_get_subclass "bpy.types.ID.bl_rna_get_subclass")
-  * [`ID.bl_rna_get_subclass_py`](../I/bpy.types.ID.md#bpy.types.ID.bl_rna_get_subclass_py "bpy.types.ID.bl_rna_get_subclass_py")
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
+  * [[ID.bl_system_properties_get]]
+  * [[ID.rename]]
+  * [[ID.evaluated_get]]
+  * [[ID.copy]]
+  * [[ID.asset_mark]]
+  * [[ID.asset_clear]]
+  * [[ID.asset_generate_preview]]
+  * [[ID.override_create]]
+  * [[ID.override_hierarchy_create]]
+  * [[ID.user_clear]]
+  * [[ID.user_remap]]
+  * [[ID.make_local]]
+  * [[ID.user_of_id]]
+  * [[ID.animation_data_create]]
+  * [[ID.animation_data_clear]]
+  * [[ID.update_tag]]
+  * [[ID.preview_ensure]]
+  * [[ID.bl_rna_get_subclass]]
+  * [[ID.bl_rna_get_subclass_py]]
 
   
 ---|---  
   
 ## References
 
-  * [`bpy.context.scene`](../../bpy.context.md#bpy.context.scene "bpy.context.scene")
-  * [`bpy.context.sequencer_scene`](../../bpy.context.md#bpy.context.sequencer_scene "bpy.context.sequencer_scene")
-  * [`BlendData.scenes`](../B/bpy.types.BlendData.md#bpy.types.BlendData.scenes "bpy.types.BlendData.scenes")
-  * [`BlendDataScenes.new`](../B/bpy.types.BlendDataScenes.md#bpy.types.BlendDataScenes.new "bpy.types.BlendDataScenes.new")
-  * [`BlendDataScenes.remove`](../B/bpy.types.BlendDataScenes.md#bpy.types.BlendDataScenes.remove "bpy.types.BlendDataScenes.remove")
-  * [`Camera.view_frame`](../C/bpy.types.Camera.md#bpy.types.Camera.view_frame "bpy.types.Camera.view_frame")
-  * [`CompositorNodeCryptomatteV2.scene`](../C/bpy.types.CompositorNodeCryptomatteV2.md#bpy.types.CompositorNodeCryptomatteV2.scene "bpy.types.CompositorNodeCryptomatteV2.scene")
-  * [`CompositorNodeDefocus.scene`](../C/bpy.types.CompositorNodeDefocus.md#bpy.types.CompositorNodeDefocus.scene "bpy.types.CompositorNodeDefocus.scene")
-  * [`CompositorNodeRLayers.scene`](../C/bpy.types.CompositorNodeRLayers.md#bpy.types.CompositorNodeRLayers.scene "bpy.types.CompositorNodeRLayers.scene")
-  * [`Context.scene`](../C/bpy.types.Context.md#bpy.types.Context.scene "bpy.types.Context.scene")
-  * [`Depsgraph.scene`](../D/bpy.types.Depsgraph.md#bpy.types.Depsgraph.scene "bpy.types.Depsgraph.scene")
-  * [`Depsgraph.scene_eval`](../D/bpy.types.Depsgraph.md#bpy.types.Depsgraph.scene_eval "bpy.types.Depsgraph.scene_eval")
-  * [`ID.override_hierarchy_create`](../I/bpy.types.ID.md#bpy.types.ID.override_hierarchy_create "bpy.types.ID.override_hierarchy_create")
-  * [`IDOverrideLibrary.resync`](../I/bpy.types.IDOverrideLibrary.md#bpy.types.IDOverrideLibrary.resync "bpy.types.IDOverrideLibrary.resync")
-  * [`Image.save_render`](../I/bpy.types.Image.md#bpy.types.Image.save_render "bpy.types.Image.save_render")
+  * [[bpy.context.scene]]
+  * [[bpy.context.sequencer_scene]]
+  * [[BlendData.scenes]]
+  * [[BlendDataScenes.new]]
+  * [[BlendDataScenes.remove]]
+  * [[Camera.view_frame]]
+  * [[CompositorNodeCryptomatteV2.scene]]
+  * [[CompositorNodeDefocus.scene]]
+  * [[CompositorNodeRLayers.scene]]
+  * [[Context.scene]]
+  * [[Depsgraph.scene]]
+  * [[Depsgraph.scene_eval]]
+  * [[ID.override_hierarchy_create]]
+  * [[IDOverrideLibrary.resync]]
+  * [[Image.save_render]]
 
 | 
 
-  * [`Object.crazyspace_eval`](../O/bpy.types.Object.md#bpy.types.Object.crazyspace_eval "bpy.types.Object.crazyspace_eval")
-  * [`Object.is_deform_modified`](../O/bpy.types.Object.md#bpy.types.Object.is_deform_modified "bpy.types.Object.is_deform_modified")
-  * [`Object.is_modified`](../O/bpy.types.Object.md#bpy.types.Object.is_modified "bpy.types.Object.is_modified")
-  * [`RenderEngine.bind_display_space_shader`](../R/bpy.types.RenderEngine.md#bpy.types.RenderEngine.bind_display_space_shader "bpy.types.RenderEngine.bind_display_space_shader")
-  * [`RenderEngine.get_preview_pixel_size`](../R/bpy.types.RenderEngine.md#bpy.types.RenderEngine.get_preview_pixel_size "bpy.types.RenderEngine.get_preview_pixel_size")
-  * [`RenderEngine.register_pass`](../R/bpy.types.RenderEngine.md#bpy.types.RenderEngine.register_pass "bpy.types.RenderEngine.register_pass")
-  * [`RenderEngine.support_display_space_shader`](../R/bpy.types.RenderEngine.md#bpy.types.RenderEngine.support_display_space_shader "bpy.types.RenderEngine.support_display_space_shader")
-  * [`RenderEngine.update_render_passes`](../R/bpy.types.RenderEngine.md#bpy.types.RenderEngine.update_render_passes "bpy.types.RenderEngine.update_render_passes")
+  * [[Object.crazyspace_eval]]
+  * [[Object.is_deform_modified]]
+  * [[Object.is_modified]]
+  * [[RenderEngine.bind_display_space_shader]]
+  * [[RenderEngine.get_preview_pixel_size]]
+  * [[RenderEngine.register_pass]]
+  * [[RenderEngine.support_display_space_shader]]
+  * [[RenderEngine.update_render_passes]]
   * `Scene.background_set`
-  * [`SceneStrip.scene`](bpy.types.SceneStrip.md#bpy.types.SceneStrip.scene "bpy.types.SceneStrip.scene")
-  * [`StripsMeta.new_scene`](bpy.types.StripsMeta.md#bpy.types.StripsMeta.new_scene "bpy.types.StripsMeta.new_scene")
-  * [`StripsTopLevel.new_scene`](bpy.types.StripsTopLevel.md#bpy.types.StripsTopLevel.new_scene "bpy.types.StripsTopLevel.new_scene")
-  * [`Window.scene`](../W/bpy.types.Window.md#bpy.types.Window.scene "bpy.types.Window.scene")
-  * [`WorkSpace.sequencer_scene`](../W/bpy.types.WorkSpace.md#bpy.types.WorkSpace.sequencer_scene "bpy.types.WorkSpace.sequencer_scene")
+  * [[SceneStrip.scene]]
+  * [[StripsMeta.new_scene]]
+  * [[StripsTopLevel.new_scene]]
+  * [[Window.scene]]
+  * [[WorkSpace.sequencer_scene]]
 
   
 ---|---

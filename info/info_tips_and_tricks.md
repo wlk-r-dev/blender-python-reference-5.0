@@ -31,11 +31,11 @@ To find the path from an `ID` data-block to its setting isn’t always so simple
 
 Note
 
-This uses the same method for creating the animation path used by [`bpy.types.FCurve.data_path`](../bpy.types/F/bpy.types.FCurve.md#bpy.types.FCurve.data_path "bpy.types.FCurve.data_path") and [`bpy.types.DriverTarget.data_path`](../bpy.types/D/bpy.types.DriverTarget.md#bpy.types.DriverTarget.data_path "bpy.types.DriverTarget.data_path") drivers.
+This uses the same method for creating the animation path used by [[bpy.types.FCurve.data_path]] and [[bpy.types.DriverTarget.data_path]] drivers.
 
 ## Show All Operators
 
-While Blender logs operators in the Info editor, this only reports operators with the `REGISTER` option enabled so as not to flood the _Info_ view with calls to `bpy.ops.view3d.smoothview` and `bpy.ops.view3d.zoom`. Yet for testing it can be useful to see **every** operator called in a terminal, do this by enabling the debug option either by passing the `--debug-wm` argument when starting Blender or by setting [`bpy.app.debug_wm`](bpy.app.md#bpy.app.debug_wm "bpy.app.debug_wm") to `True` while Blender is running.
+While Blender logs operators in the Info editor, this only reports operators with the `REGISTER` option enabled so as not to flood the _Info_ view with calls to `bpy.ops.view3d.smoothview` and `bpy.ops.view3d.zoom`. Yet for testing it can be useful to see **every** operator called in a terminal, do this by enabling the debug option either by passing the `--debug-wm` argument when starting Blender or by setting [[bpy.app.debug_wm]] to `True` while Blender is running.
 
 ## Use an External Editor
 

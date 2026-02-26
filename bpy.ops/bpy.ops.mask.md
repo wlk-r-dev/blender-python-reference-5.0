@@ -8,7 +8,7 @@ Add vertex to feather
 Parameters:
     
 
-**location** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], (optional)) – Location, Location of vertex in normalized space
+**location** ([[mathutils.Vector]] of 2 items in [-inf, inf], (optional)) – Location, Location of vertex in normalized space
 
 bpy.ops.mask.add_feather_vertex_slide(_*_ , _MASK_OT_add_feather_vertex =None_, _MASK_OT_slide_point =None_)
     
@@ -31,7 +31,7 @@ Add vertex to active spline
 Parameters:
     
 
-**location** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], (optional)) – Location, Location of vertex in normalized space
+**location** ([[mathutils.Vector]] of 2 items in [-inf, inf], (optional)) – Location, Location of vertex in normalized space
 
 bpy.ops.mask.add_vertex_slide(_*_ , _MASK_OT_add_vertex =None_, _MASK_OT_slide_point =None_)
     
@@ -184,7 +184,7 @@ Parameters:
 
   * **size** (_float in_ _[__-inf_ _,__inf_ _]__,__(__optional_ _)_) – Size, Size of new circle
 
-  * **location** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], (optional)) – Location, Location of new circle
+  * **location** ([[mathutils.Vector]] of 2 items in [-inf, inf], (optional)) – Location, Location of new circle
 
 
 bpy.ops.mask.primitive_square_add(_*_ , _size =100.0_, _location =(0.0, 0.0)_)
@@ -197,7 +197,7 @@ Parameters:
 
   * **size** (_float in_ _[__-inf_ _,__inf_ _]__,__(__optional_ _)_) – Size, Size of new circle
 
-  * **location** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], (optional)) – Location, Location of new circle
+  * **location** ([[mathutils.Vector]] of 2 items in [-inf, inf], (optional)) – Location, Location of new circle
 
 
 bpy.ops.mask.select(_*_ , _extend =False_, _deselect =False_, _toggle =False_, _deselect_all =False_, _select_passthrough =False_, _location =(0.0, 0.0)_)
@@ -218,7 +218,7 @@ Parameters:
 
   * **select_passthrough** (_boolean_ _,__(__optional_ _)_) – Only Select Unselected, Ignore the select action when the element is already selected
 
-  * **location** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], (optional)) – Location, Location of vertex in normalized space
+  * **location** ([[mathutils.Vector]] of 2 items in [-inf, inf], (optional)) – Location, Location of vertex in normalized space
 
 
 bpy.ops.mask.select_all(_*_ , _action ='TOGGLE'_)

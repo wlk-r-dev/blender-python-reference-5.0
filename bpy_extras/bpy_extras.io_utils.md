@@ -8,17 +8,17 @@ A decorator for import/export classes, generating properties needed by the axis 
 bpy_extras.io_utils.axis_conversion(_from_forward ='Y'_, _from_up ='Z'_, _to_forward ='Y'_, _to_up ='Z'_)
     
 
-Each argument is an axis in [‘X’, ‘Y’, ‘Z’, ‘-X’, ‘-Y’, ‘-Z’] where the first 2 are a source and the second 2 are the target. :rtype: [`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")
+Each argument is an axis in [‘X’, ‘Y’, ‘Z’, ‘-X’, ‘-Y’, ‘-Z’] where the first 2 are a source and the second 2 are the target. :rtype: [[mathutils.Matrix]]
 
 bpy_extras.io_utils.axis_conversion_ensure(_operator_ , _forward_attr_ , _up_attr_)
     
 
-Function to ensure an operator has valid axis conversion settings, intended to be used from [`bpy.types.Operator.check`](../bpy.types/O/bpy.types.Operator.md#bpy.types.Operator.check "bpy.types.Operator.check").
+Function to ensure an operator has valid axis conversion settings, intended to be used from [[bpy.types.Operator.check]].
 
 Parameters:
     
 
-  * **operator** ([`bpy.types.Operator`](../bpy.types/O/bpy.types.Operator.md#bpy.types.Operator "bpy.types.Operator")) – the operator to access axis attributes from.
+  * **operator** ([[bpy.types.Operator]]) – the operator to access axis attributes from.
 
   * **forward_attr** (_str_) – attribute storing the forward axis
 
@@ -43,9 +43,9 @@ This function takes a sequence of objects, returning their instances.
 Parameters:
     
 
-  * **depsgraph** ([`bpy.types.Depsgraph`](../bpy.types/D/bpy.types.Depsgraph.md#bpy.types.Depsgraph "bpy.types.Depsgraph")) – The evaluated depsgraph.
+  * **depsgraph** ([[bpy.types.Depsgraph]]) – The evaluated depsgraph.
 
-  * **objects** (Sequence[[`bpy.types.Object`](../bpy.types/O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")]) – A sequencer of objects.
+  * **objects** (Sequence[[[bpy.types.Object]]]) – A sequencer of objects.
 
 
 Returns:
@@ -56,7 +56,7 @@ A dictionary where each key is an object from `objects`, values are lists of (ob
 Return type:
     
 
-dict[[`bpy.types.Object`](../bpy.types/O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object"), list[tuple[[`bpy.types.Object`](../bpy.types/O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object"), [`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")]]]
+dict[[[bpy.types.Object]], list[tuple[[[bpy.types.Object]], [[mathutils.Matrix]]]]]
 
 bpy_extras.io_utils.poll_file_object_drop(_context_)
     
@@ -89,7 +89,7 @@ Parameters:
 
   * **copy_set** (_set_ _[__tuple_ _[__str_ _,__str_ _]__]_) – collect from/to pairs when mode=’COPY’, pass to _path_reference_copy_ when exporting is done.
 
-  * **library** ([`bpy.types.Library`](../bpy.types/L/bpy.types.Library.md#bpy.types.Library "bpy.types.Library") | None) – The library this path is relative to.
+  * **library** ([[bpy.types.Library]] | None) – The library this path is relative to.
 
 
 Returns:

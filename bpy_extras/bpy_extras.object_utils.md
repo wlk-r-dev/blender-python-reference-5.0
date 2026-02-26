@@ -8,9 +8,9 @@ Return a matrix using the operator settings and view context.
 Parameters:
     
 
-  * **context** ([`bpy.types.Context`](../bpy.types/C/bpy.types.Context.md#bpy.types.Context "bpy.types.Context")) – The context to use.
+  * **context** ([[bpy.types.Context]]) – The context to use.
 
-  * **operator** ([`bpy.types.Operator`](../bpy.types/O/bpy.types.Operator.md#bpy.types.Operator "bpy.types.Operator")) – The operator, checked for location and rotation properties.
+  * **operator** ([[bpy.types.Operator]]) – The operator, checked for location and rotation properties.
 
 
 Returns:
@@ -21,7 +21,7 @@ the matrix from the context and settings.
 Return type:
     
 
-[`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")
+[[mathutils.Matrix]]
 
 bpy_extras.object_utils.object_data_add(_context_ , _obdata_ , _operator =None_, _name =None_)
     
@@ -31,11 +31,11 @@ Add an object using the view context and preference to initialize the location, 
 Parameters:
     
 
-  * **context** ([`bpy.types.Context`](../bpy.types/C/bpy.types.Context.md#bpy.types.Context "bpy.types.Context")) – The context to use.
+  * **context** ([[bpy.types.Context]]) – The context to use.
 
-  * **obdata** ([`bpy.types.ID`](../bpy.types/I/bpy.types.ID.md#bpy.types.ID "bpy.types.ID") | None) – Valid object data to used for the new object or None.
+  * **obdata** ([[bpy.types.ID]] | None) – Valid object data to used for the new object or None.
 
-  * **operator** ([`bpy.types.Operator`](../bpy.types/O/bpy.types.Operator.md#bpy.types.Operator "bpy.types.Operator")) – The operator, checked for location and rotation properties.
+  * **operator** ([[bpy.types.Operator]]) – The operator, checked for location and rotation properties.
 
   * **name** (_str_) – Optional name
 
@@ -48,7 +48,7 @@ the newly created object in the scene.
 Return type:
     
 
-[`bpy.types.Object`](../bpy.types/O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")
+[[bpy.types.Object]]
 
 bpy_extras.object_utils.object_add_grid_scale(_context_)
     
@@ -72,11 +72,11 @@ Takes shift-x/y, lens angle and sensor size into account as well as perspective/
 Parameters:
     
 
-  * **scene** ([`bpy.types.Scene`](../bpy.types/S/bpy.types.Scene.md#bpy.types.Scene "bpy.types.Scene")) – Scene to use for frame size.
+  * **scene** ([[bpy.types.Scene]]) – Scene to use for frame size.
 
-  * **obj** ([`bpy.types.Object`](../bpy.types/O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")) – Camera object.
+  * **obj** ([[bpy.types.Object]]) – Camera object.
 
-  * **coord** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")) – World space location.
+  * **coord** ([[mathutils.Vector]]) – World space location.
 
 
 Returns:
@@ -87,7 +87,7 @@ a vector where X and Y map to the view plane and Z is the depth on the view axis
 Return type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector")
+[[mathutils.Vector]]
 
 bpy_extras.object_utils.object_report_if_active_shape_key_is_locked(_obj_ , _operator_)
     
@@ -99,9 +99,9 @@ If the object has no shape keys, there is nothing to lock, and the function retu
 Parameters:
     
 
-  * **obj** ([`bpy.types.Object`](../bpy.types/O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")) – Object to check.
+  * **obj** ([[bpy.types.Object]]) – Object to check.
 
-  * **operator** ([`bpy.types.Operator`](../bpy.types/O/bpy.types.Operator.md#bpy.types.Operator "bpy.types.Operator")) – Currently running operator to report the error through. Use None to suppress emitting the message.
+  * **operator** ([[bpy.types.Operator]]) – Currently running operator to report the error through. Use None to suppress emitting the message.
 
 
 Returns:

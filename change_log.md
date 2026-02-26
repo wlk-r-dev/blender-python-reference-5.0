@@ -17,132 +17,132 @@ Changes in Blender’s Python API between releases.
 
 #### Function Arguments
 
-  * [`bpy.types.Action.fcurve_ensure_for_datablock`](bpy.types/A/bpy.types.Action.md#bpy.types.Action.fcurve_ensure_for_datablock "bpy.types.Action.fcurve_ensure_for_datablock") (datablock, data_path, index, group_name), _was (datablock, data_path, index)_
+  * [[bpy.types.Action.fcurve_ensure_for_datablock]] (datablock, data_path, index, group_name), _was (datablock, data_path, index)_
 
 
 ### bpy.types.ActionChannelbagFCurves
 
 #### Added
 
-  * [`bpy.types.ActionChannelbagFCurves.ensure`](bpy.types/A/bpy.types.ActionChannelbagFCurves.md#bpy.types.ActionChannelbagFCurves.ensure "bpy.types.ActionChannelbagFCurves.ensure")
+  * [[bpy.types.ActionChannelbagFCurves.ensure]]
 
-  * [`bpy.types.ActionChannelbagFCurves.new_from_fcurve`](bpy.types/A/bpy.types.ActionChannelbagFCurves.md#bpy.types.ActionChannelbagFCurves.new_from_fcurve "bpy.types.ActionChannelbagFCurves.new_from_fcurve")
+  * [[bpy.types.ActionChannelbagFCurves.new_from_fcurve]]
 
 
 #### Function Arguments
 
-  * [`bpy.types.ActionChannelbagFCurves.new`](bpy.types/A/bpy.types.ActionChannelbagFCurves.md#bpy.types.ActionChannelbagFCurves.new "bpy.types.ActionChannelbagFCurves.new") (data_path, index, group_name), _was (data_path, index)_
+  * [[bpy.types.ActionChannelbagFCurves.new]] (data_path, index, group_name), _was (data_path, index)_
 
 
 ### bpy.types.AddonPreferences
 
 #### Added
 
-  * [`bpy.types.AddonPreferences.bl_system_properties_get`](bpy.types/A/bpy.types.AddonPreferences.md#bpy.types.AddonPreferences.bl_system_properties_get "bpy.types.AddonPreferences.bl_system_properties_get")
+  * [[bpy.types.AddonPreferences.bl_system_properties_get]]
 
 
 ### bpy.types.AreaLight
 
 #### Added
 
-  * [`bpy.types.AreaLight.inline_shader_nodes`](bpy.types/A/bpy.types.AreaLight.md#bpy.types.AreaLight.inline_shader_nodes "bpy.types.AreaLight.inline_shader_nodes")
+  * [[bpy.types.AreaLight.inline_shader_nodes]]
 
 
 ### bpy.types.AssetShelf
 
 #### Added
 
-  * [`bpy.types.AssetShelf.bl_drag_operator`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.bl_drag_operator "bpy.types.AssetShelf.bl_drag_operator")
+  * [[bpy.types.AssetShelf.bl_drag_operator]]
 
-  * [`bpy.types.AssetShelf.filter_action`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_action "bpy.types.AssetShelf.filter_action")
+  * [[bpy.types.AssetShelf.filter_action]]
 
-  * [`bpy.types.AssetShelf.filter_annotations`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_annotations "bpy.types.AssetShelf.filter_annotations")
+  * [[bpy.types.AssetShelf.filter_annotations]]
 
-  * [`bpy.types.AssetShelf.filter_armature`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_armature "bpy.types.AssetShelf.filter_armature")
+  * [[bpy.types.AssetShelf.filter_armature]]
 
-  * [`bpy.types.AssetShelf.filter_brush`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_brush "bpy.types.AssetShelf.filter_brush")
+  * [[bpy.types.AssetShelf.filter_brush]]
 
-  * [`bpy.types.AssetShelf.filter_cachefile`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_cachefile "bpy.types.AssetShelf.filter_cachefile")
+  * [[bpy.types.AssetShelf.filter_cachefile]]
 
-  * [`bpy.types.AssetShelf.filter_camera`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_camera "bpy.types.AssetShelf.filter_camera")
+  * [[bpy.types.AssetShelf.filter_camera]]
 
-  * [`bpy.types.AssetShelf.filter_curve`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_curve "bpy.types.AssetShelf.filter_curve")
+  * [[bpy.types.AssetShelf.filter_curve]]
 
-  * [`bpy.types.AssetShelf.filter_curves`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_curves "bpy.types.AssetShelf.filter_curves")
+  * [[bpy.types.AssetShelf.filter_curves]]
 
-  * [`bpy.types.AssetShelf.filter_font`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_font "bpy.types.AssetShelf.filter_font")
+  * [[bpy.types.AssetShelf.filter_font]]
 
-  * [`bpy.types.AssetShelf.filter_grease_pencil`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_grease_pencil "bpy.types.AssetShelf.filter_grease_pencil")
+  * [[bpy.types.AssetShelf.filter_grease_pencil]]
 
-  * [`bpy.types.AssetShelf.filter_group`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_group "bpy.types.AssetShelf.filter_group")
+  * [[bpy.types.AssetShelf.filter_group]]
 
-  * [`bpy.types.AssetShelf.filter_image`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_image "bpy.types.AssetShelf.filter_image")
+  * [[bpy.types.AssetShelf.filter_image]]
 
-  * [`bpy.types.AssetShelf.filter_lattice`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_lattice "bpy.types.AssetShelf.filter_lattice")
+  * [[bpy.types.AssetShelf.filter_lattice]]
 
-  * [`bpy.types.AssetShelf.filter_light`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_light "bpy.types.AssetShelf.filter_light")
+  * [[bpy.types.AssetShelf.filter_light]]
 
-  * [`bpy.types.AssetShelf.filter_light_probe`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_light_probe "bpy.types.AssetShelf.filter_light_probe")
+  * [[bpy.types.AssetShelf.filter_light_probe]]
 
-  * [`bpy.types.AssetShelf.filter_linestyle`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_linestyle "bpy.types.AssetShelf.filter_linestyle")
+  * [[bpy.types.AssetShelf.filter_linestyle]]
 
-  * [`bpy.types.AssetShelf.filter_mask`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_mask "bpy.types.AssetShelf.filter_mask")
+  * [[bpy.types.AssetShelf.filter_mask]]
 
-  * [`bpy.types.AssetShelf.filter_material`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_material "bpy.types.AssetShelf.filter_material")
+  * [[bpy.types.AssetShelf.filter_material]]
 
-  * [`bpy.types.AssetShelf.filter_mesh`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_mesh "bpy.types.AssetShelf.filter_mesh")
+  * [[bpy.types.AssetShelf.filter_mesh]]
 
-  * [`bpy.types.AssetShelf.filter_metaball`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_metaball "bpy.types.AssetShelf.filter_metaball")
+  * [[bpy.types.AssetShelf.filter_metaball]]
 
-  * [`bpy.types.AssetShelf.filter_movie_clip`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_movie_clip "bpy.types.AssetShelf.filter_movie_clip")
+  * [[bpy.types.AssetShelf.filter_movie_clip]]
 
-  * [`bpy.types.AssetShelf.filter_node_tree`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_node_tree "bpy.types.AssetShelf.filter_node_tree")
+  * [[bpy.types.AssetShelf.filter_node_tree]]
 
-  * [`bpy.types.AssetShelf.filter_object`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_object "bpy.types.AssetShelf.filter_object")
+  * [[bpy.types.AssetShelf.filter_object]]
 
-  * [`bpy.types.AssetShelf.filter_paint_curve`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_paint_curve "bpy.types.AssetShelf.filter_paint_curve")
+  * [[bpy.types.AssetShelf.filter_paint_curve]]
 
-  * [`bpy.types.AssetShelf.filter_palette`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_palette "bpy.types.AssetShelf.filter_palette")
+  * [[bpy.types.AssetShelf.filter_palette]]
 
-  * [`bpy.types.AssetShelf.filter_particle_settings`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_particle_settings "bpy.types.AssetShelf.filter_particle_settings")
+  * [[bpy.types.AssetShelf.filter_particle_settings]]
 
-  * [`bpy.types.AssetShelf.filter_pointcloud`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_pointcloud "bpy.types.AssetShelf.filter_pointcloud")
+  * [[bpy.types.AssetShelf.filter_pointcloud]]
 
-  * [`bpy.types.AssetShelf.filter_scene`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_scene "bpy.types.AssetShelf.filter_scene")
+  * [[bpy.types.AssetShelf.filter_scene]]
 
-  * [`bpy.types.AssetShelf.filter_sound`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_sound "bpy.types.AssetShelf.filter_sound")
+  * [[bpy.types.AssetShelf.filter_sound]]
 
-  * [`bpy.types.AssetShelf.filter_speaker`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_speaker "bpy.types.AssetShelf.filter_speaker")
+  * [[bpy.types.AssetShelf.filter_speaker]]
 
-  * [`bpy.types.AssetShelf.filter_text`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_text "bpy.types.AssetShelf.filter_text")
+  * [[bpy.types.AssetShelf.filter_text]]
 
-  * [`bpy.types.AssetShelf.filter_texture`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_texture "bpy.types.AssetShelf.filter_texture")
+  * [[bpy.types.AssetShelf.filter_texture]]
 
-  * [`bpy.types.AssetShelf.filter_volume`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_volume "bpy.types.AssetShelf.filter_volume")
+  * [[bpy.types.AssetShelf.filter_volume]]
 
-  * [`bpy.types.AssetShelf.filter_work_space`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_work_space "bpy.types.AssetShelf.filter_work_space")
+  * [[bpy.types.AssetShelf.filter_work_space]]
 
-  * [`bpy.types.AssetShelf.filter_world`](bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf.filter_world "bpy.types.AssetShelf.filter_world")
+  * [[bpy.types.AssetShelf.filter_world]]
 
 
 ### bpy.types.Attribute
 
 #### Added
 
-  * [`bpy.types.Attribute.storage_type`](bpy.types/A/bpy.types.Attribute.md#bpy.types.Attribute.storage_type "bpy.types.Attribute.storage_type")
+  * [[bpy.types.Attribute.storage_type]]
 
 
 ### bpy.types.BakeSettings
 
 #### Added
 
-  * [`bpy.types.BakeSettings.displacement_space`](bpy.types/B/bpy.types.BakeSettings.md#bpy.types.BakeSettings.displacement_space "bpy.types.BakeSettings.displacement_space")
+  * [[bpy.types.BakeSettings.displacement_space]]
 
-  * [`bpy.types.BakeSettings.type`](bpy.types/B/bpy.types.BakeSettings.md#bpy.types.BakeSettings.type "bpy.types.BakeSettings.type")
+  * [[bpy.types.BakeSettings.type]]
 
-  * [`bpy.types.BakeSettings.use_lores_mesh`](bpy.types/B/bpy.types.BakeSettings.md#bpy.types.BakeSettings.use_lores_mesh "bpy.types.BakeSettings.use_lores_mesh")
+  * [[bpy.types.BakeSettings.use_lores_mesh]]
 
-  * [`bpy.types.BakeSettings.use_multires`](bpy.types/B/bpy.types.BakeSettings.md#bpy.types.BakeSettings.use_multires "bpy.types.BakeSettings.use_multires")
+  * [[bpy.types.BakeSettings.use_multires]]
 
 
 ### bpy.types.BlExtDummyGroup
@@ -158,21 +158,21 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.BlendData.colorspace`](bpy.types/B/bpy.types.BlendData.md#bpy.types.BlendData.colorspace "bpy.types.BlendData.colorspace")
+  * [[bpy.types.BlendData.colorspace]]
 
-  * [`bpy.types.BlendData.pack_linked_ids_hierarchy`](bpy.types/B/bpy.types.BlendData.md#bpy.types.BlendData.pack_linked_ids_hierarchy "bpy.types.BlendData.pack_linked_ids_hierarchy")
+  * [[bpy.types.BlendData.pack_linked_ids_hierarchy]]
 
 
 #### Renamed
 
-  * **grease_pencils_v3** -> [`bpy.types.BlendData.annotations`](bpy.types/B/bpy.types.BlendData.md#bpy.types.BlendData.annotations "bpy.types.BlendData.annotations")
+  * **grease_pencils_v3** -> [[bpy.types.BlendData.annotations]]
 
 
 ### bpy.types.Bone
 
 #### Added
 
-  * [`bpy.types.Bone.bl_system_properties_get`](bpy.types/B/bpy.types.Bone.md#bpy.types.Bone.bl_system_properties_get "bpy.types.Bone.bl_system_properties_get")
+  * [[bpy.types.Bone.bl_system_properties_get]]
 
 
 #### Removed
@@ -188,21 +188,21 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.BoneCollection.bl_system_properties_get`](bpy.types/B/bpy.types.BoneCollection.md#bpy.types.BoneCollection.bl_system_properties_get "bpy.types.BoneCollection.bl_system_properties_get")
+  * [[bpy.types.BoneCollection.bl_system_properties_get]]
 
 
 ### bpy.types.BrightContrastModifier
 
 #### Added
 
-  * [`bpy.types.BrightContrastModifier.open_mask_input_panel`](bpy.types/B/bpy.types.BrightContrastModifier.md#bpy.types.BrightContrastModifier.open_mask_input_panel "bpy.types.BrightContrastModifier.open_mask_input_panel")
+  * [[bpy.types.BrightContrastModifier.open_mask_input_panel]]
 
 
 ### bpy.types.Brush
 
 #### Added
 
-  * [`bpy.types.Brush.unprojected_size`](bpy.types/B/bpy.types.Brush.md#bpy.types.Brush.unprojected_size "bpy.types.Brush.unprojected_size")
+  * [[bpy.types.Brush.unprojected_size]]
 
 
 #### Removed
@@ -234,44 +234,44 @@ Changes in Blender’s Python API between releases.
 
 #### Renamed
 
-  * **curve** -> [`bpy.types.Brush.curve_distance_falloff`](bpy.types/B/bpy.types.Brush.md#bpy.types.Brush.curve_distance_falloff "bpy.types.Brush.curve_distance_falloff")
+  * **curve** -> [[bpy.types.Brush.curve_distance_falloff]]
 
-  * **curve** -> [`bpy.types.Brush.curve_jitter`](bpy.types/B/bpy.types.Brush.md#bpy.types.Brush.curve_jitter "bpy.types.Brush.curve_jitter")
+  * **curve** -> [[bpy.types.Brush.curve_jitter]]
 
-  * **curve** -> [`bpy.types.Brush.curve_size`](bpy.types/B/bpy.types.Brush.md#bpy.types.Brush.curve_size "bpy.types.Brush.curve_size")
+  * **curve** -> [[bpy.types.Brush.curve_size]]
 
-  * **curve** -> [`bpy.types.Brush.curve_strength`](bpy.types/B/bpy.types.Brush.md#bpy.types.Brush.curve_strength "bpy.types.Brush.curve_strength")
+  * **curve** -> [[bpy.types.Brush.curve_strength]]
 
-  * **gpencil_vertex_tool** -> [`bpy.types.Brush.curve_distance_falloff_preset`](bpy.types/B/bpy.types.Brush.md#bpy.types.Brush.curve_distance_falloff_preset "bpy.types.Brush.curve_distance_falloff_preset")
+  * **gpencil_vertex_tool** -> [[bpy.types.Brush.curve_distance_falloff_preset]]
 
-  * **gpencil_vertex_tool** -> [`bpy.types.Brush.curves_sculpt_brush_type`](bpy.types/B/bpy.types.Brush.md#bpy.types.Brush.curves_sculpt_brush_type "bpy.types.Brush.curves_sculpt_brush_type")
+  * **gpencil_vertex_tool** -> [[bpy.types.Brush.curves_sculpt_brush_type]]
 
-  * **gpencil_vertex_tool** -> [`bpy.types.Brush.gpencil_brush_type`](bpy.types/B/bpy.types.Brush.md#bpy.types.Brush.gpencil_brush_type "bpy.types.Brush.gpencil_brush_type")
+  * **gpencil_vertex_tool** -> [[bpy.types.Brush.gpencil_brush_type]]
 
-  * **gpencil_vertex_tool** -> [`bpy.types.Brush.gpencil_sculpt_brush_type`](bpy.types/B/bpy.types.Brush.md#bpy.types.Brush.gpencil_sculpt_brush_type "bpy.types.Brush.gpencil_sculpt_brush_type")
+  * **gpencil_vertex_tool** -> [[bpy.types.Brush.gpencil_sculpt_brush_type]]
 
-  * **gpencil_vertex_tool** -> [`bpy.types.Brush.gpencil_vertex_brush_type`](bpy.types/B/bpy.types.Brush.md#bpy.types.Brush.gpencil_vertex_brush_type "bpy.types.Brush.gpencil_vertex_brush_type")
+  * **gpencil_vertex_tool** -> [[bpy.types.Brush.gpencil_vertex_brush_type]]
 
-  * **gpencil_vertex_tool** -> [`bpy.types.Brush.gpencil_weight_brush_type`](bpy.types/B/bpy.types.Brush.md#bpy.types.Brush.gpencil_weight_brush_type "bpy.types.Brush.gpencil_weight_brush_type")
+  * **gpencil_vertex_tool** -> [[bpy.types.Brush.gpencil_weight_brush_type]]
 
-  * **gpencil_vertex_tool** -> [`bpy.types.Brush.image_brush_type`](bpy.types/B/bpy.types.Brush.md#bpy.types.Brush.image_brush_type "bpy.types.Brush.image_brush_type")
+  * **gpencil_vertex_tool** -> [[bpy.types.Brush.image_brush_type]]
 
-  * **gpencil_vertex_tool** -> [`bpy.types.Brush.sculpt_brush_type`](bpy.types/B/bpy.types.Brush.md#bpy.types.Brush.sculpt_brush_type "bpy.types.Brush.sculpt_brush_type")
+  * **gpencil_vertex_tool** -> [[bpy.types.Brush.sculpt_brush_type]]
 
-  * **gpencil_vertex_tool** -> [`bpy.types.Brush.vertex_brush_type`](bpy.types/B/bpy.types.Brush.md#bpy.types.Brush.vertex_brush_type "bpy.types.Brush.vertex_brush_type")
+  * **gpencil_vertex_tool** -> [[bpy.types.Brush.vertex_brush_type]]
 
-  * **gpencil_vertex_tool** -> [`bpy.types.Brush.weight_brush_type`](bpy.types/B/bpy.types.Brush.md#bpy.types.Brush.weight_brush_type "bpy.types.Brush.weight_brush_type")
+  * **gpencil_vertex_tool** -> [[bpy.types.Brush.weight_brush_type]]
 
 
 ### bpy.types.BrushCapabilitiesSculpt
 
 #### Added
 
-  * [`bpy.types.BrushCapabilitiesSculpt.has_auto_smooth_pressure`](bpy.types/B/bpy.types.BrushCapabilitiesSculpt.md#bpy.types.BrushCapabilitiesSculpt.has_auto_smooth_pressure "bpy.types.BrushCapabilitiesSculpt.has_auto_smooth_pressure")
+  * [[bpy.types.BrushCapabilitiesSculpt.has_auto_smooth_pressure]]
 
-  * [`bpy.types.BrushCapabilitiesSculpt.has_hardness_pressure`](bpy.types/B/bpy.types.BrushCapabilitiesSculpt.md#bpy.types.BrushCapabilitiesSculpt.has_hardness_pressure "bpy.types.BrushCapabilitiesSculpt.has_hardness_pressure")
+  * [[bpy.types.BrushCapabilitiesSculpt.has_hardness_pressure]]
 
-  * [`bpy.types.BrushCapabilitiesSculpt.has_size_pressure`](bpy.types/B/bpy.types.BrushCapabilitiesSculpt.md#bpy.types.BrushCapabilitiesSculpt.has_size_pressure "bpy.types.BrushCapabilitiesSculpt.has_size_pressure")
+  * [[bpy.types.BrushCapabilitiesSculpt.has_size_pressure]]
 
 
 ### bpy.types.CacheFile
@@ -289,30 +289,30 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.Camera.composition_guide_color`](bpy.types/C/bpy.types.Camera.md#bpy.types.Camera.composition_guide_color "bpy.types.Camera.composition_guide_color")
+  * [[bpy.types.Camera.composition_guide_color]]
 
 
 ### bpy.types.ColorBalanceModifier
 
 #### Added
 
-  * [`bpy.types.ColorBalanceModifier.open_mask_input_panel`](bpy.types/C/bpy.types.ColorBalanceModifier.md#bpy.types.ColorBalanceModifier.open_mask_input_panel "bpy.types.ColorBalanceModifier.open_mask_input_panel")
+  * [[bpy.types.ColorBalanceModifier.open_mask_input_panel]]
 
 
 ### bpy.types.ColorManagedDisplaySettings
 
 #### Added
 
-  * [`bpy.types.ColorManagedDisplaySettings.emulation`](bpy.types/C/bpy.types.ColorManagedDisplaySettings.md#bpy.types.ColorManagedDisplaySettings.emulation "bpy.types.ColorManagedDisplaySettings.emulation")
+  * [[bpy.types.ColorManagedDisplaySettings.emulation]]
 
 
 ### bpy.types.ColorManagedViewSettings
 
 #### Renamed
 
-  * **use_hdr_view** -> [`bpy.types.ColorManagedViewSettings.is_hdr`](bpy.types/C/bpy.types.ColorManagedViewSettings.md#bpy.types.ColorManagedViewSettings.is_hdr "bpy.types.ColorManagedViewSettings.is_hdr")
+  * **use_hdr_view** -> [[bpy.types.ColorManagedViewSettings.is_hdr]]
 
-  * **use_hdr_view** -> [`bpy.types.ColorManagedViewSettings.support_emulation`](bpy.types/C/bpy.types.ColorManagedViewSettings.md#bpy.types.ColorManagedViewSettings.support_emulation "bpy.types.ColorManagedViewSettings.support_emulation")
+  * **use_hdr_view** -> [[bpy.types.ColorManagedViewSettings.support_emulation]]
 
 
 ### bpy.types.CompositorNodeAlphaOver
@@ -906,7 +906,7 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.CompositorNodeOutputFile.active_item_index`](bpy.types/C/bpy.types.CompositorNodeOutputFile.md#bpy.types.CompositorNodeOutputFile.active_item_index "bpy.types.CompositorNodeOutputFile.active_item_index")
+  * [[bpy.types.CompositorNodeOutputFile.active_item_index]]
 
 
 #### Removed
@@ -918,11 +918,11 @@ Changes in Blender’s Python API between releases.
 
 #### Renamed
 
-  * **base_path** -> [`bpy.types.CompositorNodeOutputFile.directory`](bpy.types/C/bpy.types.CompositorNodeOutputFile.md#bpy.types.CompositorNodeOutputFile.directory "bpy.types.CompositorNodeOutputFile.directory")
+  * **base_path** -> [[bpy.types.CompositorNodeOutputFile.directory]]
 
-  * **base_path** -> [`bpy.types.CompositorNodeOutputFile.file_name`](bpy.types/C/bpy.types.CompositorNodeOutputFile.md#bpy.types.CompositorNodeOutputFile.file_name "bpy.types.CompositorNodeOutputFile.file_name")
+  * **base_path** -> [[bpy.types.CompositorNodeOutputFile.file_name]]
 
-  * **layer_slots** -> [`bpy.types.CompositorNodeOutputFile.file_output_items`](bpy.types/C/bpy.types.CompositorNodeOutputFile.md#bpy.types.CompositorNodeOutputFile.file_output_items "bpy.types.CompositorNodeOutputFile.file_output_items")
+  * **layer_slots** -> [[bpy.types.CompositorNodeOutputFile.file_output_items]]
 
 
 ### bpy.types.CompositorNodePixelate
@@ -1096,7 +1096,7 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.CurvesModifier.open_mask_input_panel`](bpy.types/C/bpy.types.CurvesModifier.md#bpy.types.CurvesModifier.open_mask_input_panel "bpy.types.CurvesModifier.open_mask_input_panel")
+  * [[bpy.types.CurvesModifier.open_mask_input_panel]]
 
 
 ### bpy.types.CyclesMaterialSettings
@@ -1151,16 +1151,16 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.EditBone.bl_system_properties_get`](bpy.types/E/bpy.types.EditBone.md#bpy.types.EditBone.bl_system_properties_get "bpy.types.EditBone.bl_system_properties_get")
+  * [[bpy.types.EditBone.bl_system_properties_get]]
 
 
 ### bpy.types.FileAssetSelectIDFilter
 
 #### Renamed
 
-  * **experimental_filter_scene** -> [`bpy.types.FileAssetSelectIDFilter.experimental_filter_annotations`](bpy.types/F/bpy.types.FileAssetSelectIDFilter.md#bpy.types.FileAssetSelectIDFilter.experimental_filter_annotations "bpy.types.FileAssetSelectIDFilter.experimental_filter_annotations")
+  * **experimental_filter_scene** -> [[bpy.types.FileAssetSelectIDFilter.experimental_filter_annotations]]
 
-  * **experimental_filter_scene** -> [`bpy.types.FileAssetSelectIDFilter.filter_scene`](bpy.types/F/bpy.types.FileAssetSelectIDFilter.md#bpy.types.FileAssetSelectIDFilter.filter_scene "bpy.types.FileAssetSelectIDFilter.filter_scene")
+  * **experimental_filter_scene** -> [[bpy.types.FileAssetSelectIDFilter.filter_scene]]
 
 
 ### bpy.types.FileBrowserFSMenuEntry
@@ -1174,7 +1174,7 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.FileSelectIDFilter.filter_annotations`](bpy.types/F/bpy.types.FileSelectIDFilter.md#bpy.types.FileSelectIDFilter.filter_annotations "bpy.types.FileSelectIDFilter.filter_annotations")
+  * [[bpy.types.FileSelectIDFilter.filter_annotations]]
 
 
 ### bpy.types.FunctionNodeMatchString
@@ -1188,7 +1188,7 @@ Changes in Blender’s Python API between releases.
 
 #### Function Arguments
 
-  * [`bpy.types.GPENCIL_UL_annotation_layer.draw_item`](bpy.types/G/bpy.types.GPENCIL_UL_annotation_layer.md#bpy.types.GPENCIL_UL_annotation_layer.draw_item "bpy.types.GPENCIL_UL_annotation_layer.draw_item") (self, _context, layout, _data, item, _icon, _active_data, _active_propname, _index), _was (self, _context, layout, _data, item, icon, _active_data, _active_propname, _index)_
+  * [[bpy.types.GPENCIL_UL_annotation_layer.draw_item]] (self, _context, layout, _data, item, _icon, _active_data, _active_propname, _index), _was (self, _context, layout, _data, item, icon, _active_data, _active_propname, _index)_
 
 
 ### bpy.types.GeometryNodeDistributePointsInVolume
@@ -1295,7 +1295,7 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.GeometryNodeTree.show_modifier_manage_panel`](bpy.types/G/bpy.types.GeometryNodeTree.md#bpy.types.GeometryNodeTree.show_modifier_manage_panel "bpy.types.GeometryNodeTree.show_modifier_manage_panel")
+  * [[bpy.types.GeometryNodeTree.show_modifier_manage_panel]]
 
 
 ### bpy.types.GeometryNodeTriangulate
@@ -1318,11 +1318,11 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.GeometryNodeViewer.active_index`](bpy.types/G/bpy.types.GeometryNodeViewer.md#bpy.types.GeometryNodeViewer.active_index "bpy.types.GeometryNodeViewer.active_index")
+  * [[bpy.types.GeometryNodeViewer.active_index]]
 
-  * [`bpy.types.GeometryNodeViewer.active_item`](bpy.types/G/bpy.types.GeometryNodeViewer.md#bpy.types.GeometryNodeViewer.active_item "bpy.types.GeometryNodeViewer.active_item")
+  * [[bpy.types.GeometryNodeViewer.active_item]]
 
-  * [`bpy.types.GeometryNodeViewer.viewer_items`](bpy.types/G/bpy.types.GeometryNodeViewer.md#bpy.types.GeometryNodeViewer.viewer_items "bpy.types.GeometryNodeViewer.viewer_items")
+  * [[bpy.types.GeometryNodeViewer.viewer_items]]
 
 
 #### Removed
@@ -1341,51 +1341,51 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.GizmoGroupProperties.bl_system_properties_get`](bpy.types/G/bpy.types.GizmoGroupProperties.md#bpy.types.GizmoGroupProperties.bl_system_properties_get "bpy.types.GizmoGroupProperties.bl_system_properties_get")
+  * [[bpy.types.GizmoGroupProperties.bl_system_properties_get]]
 
 
 ### bpy.types.GizmoProperties
 
 #### Added
 
-  * [`bpy.types.GizmoProperties.bl_system_properties_get`](bpy.types/G/bpy.types.GizmoProperties.md#bpy.types.GizmoProperties.bl_system_properties_get "bpy.types.GizmoProperties.bl_system_properties_get")
+  * [[bpy.types.GizmoProperties.bl_system_properties_get]]
 
 
 ### bpy.types.GreasePencil
 
 #### Added
 
-  * [`bpy.types.GreasePencil.after_color`](bpy.types/G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.after_color "bpy.types.GreasePencil.after_color")
+  * [[bpy.types.GreasePencil.after_color]]
 
-  * [`bpy.types.GreasePencil.attributes`](bpy.types/G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.attributes "bpy.types.GreasePencil.attributes")
+  * [[bpy.types.GreasePencil.attributes]]
 
-  * [`bpy.types.GreasePencil.before_color`](bpy.types/G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.before_color "bpy.types.GreasePencil.before_color")
+  * [[bpy.types.GreasePencil.before_color]]
 
-  * [`bpy.types.GreasePencil.color_attributes`](bpy.types/G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.color_attributes "bpy.types.GreasePencil.color_attributes")
+  * [[bpy.types.GreasePencil.color_attributes]]
 
-  * [`bpy.types.GreasePencil.ghost_after_range`](bpy.types/G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.ghost_after_range "bpy.types.GreasePencil.ghost_after_range")
+  * [[bpy.types.GreasePencil.ghost_after_range]]
 
-  * [`bpy.types.GreasePencil.ghost_before_range`](bpy.types/G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.ghost_before_range "bpy.types.GreasePencil.ghost_before_range")
+  * [[bpy.types.GreasePencil.ghost_before_range]]
 
-  * [`bpy.types.GreasePencil.layer_groups`](bpy.types/G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.layer_groups "bpy.types.GreasePencil.layer_groups")
+  * [[bpy.types.GreasePencil.layer_groups]]
 
-  * [`bpy.types.GreasePencil.materials`](bpy.types/G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.materials "bpy.types.GreasePencil.materials")
+  * [[bpy.types.GreasePencil.materials]]
 
-  * [`bpy.types.GreasePencil.onion_factor`](bpy.types/G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.onion_factor "bpy.types.GreasePencil.onion_factor")
+  * [[bpy.types.GreasePencil.onion_factor]]
 
-  * [`bpy.types.GreasePencil.onion_keyframe_type`](bpy.types/G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.onion_keyframe_type "bpy.types.GreasePencil.onion_keyframe_type")
+  * [[bpy.types.GreasePencil.onion_keyframe_type]]
 
-  * [`bpy.types.GreasePencil.onion_mode`](bpy.types/G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.onion_mode "bpy.types.GreasePencil.onion_mode")
+  * [[bpy.types.GreasePencil.onion_mode]]
 
-  * [`bpy.types.GreasePencil.stroke_depth_order`](bpy.types/G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.stroke_depth_order "bpy.types.GreasePencil.stroke_depth_order")
+  * [[bpy.types.GreasePencil.stroke_depth_order]]
 
-  * [`bpy.types.GreasePencil.use_autolock_layers`](bpy.types/G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.use_autolock_layers "bpy.types.GreasePencil.use_autolock_layers")
+  * [[bpy.types.GreasePencil.use_autolock_layers]]
 
-  * [`bpy.types.GreasePencil.use_ghost_custom_colors`](bpy.types/G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.use_ghost_custom_colors "bpy.types.GreasePencil.use_ghost_custom_colors")
+  * [[bpy.types.GreasePencil.use_ghost_custom_colors]]
 
-  * [`bpy.types.GreasePencil.use_onion_fade`](bpy.types/G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.use_onion_fade "bpy.types.GreasePencil.use_onion_fade")
+  * [[bpy.types.GreasePencil.use_onion_fade]]
 
-  * [`bpy.types.GreasePencil.use_onion_loop`](bpy.types/G/bpy.types.GreasePencil.md#bpy.types.GreasePencil.use_onion_loop "bpy.types.GreasePencil.use_onion_loop")
+  * [[bpy.types.GreasePencil.use_onion_loop]]
 
 
 ### bpy.types.GreasePencilLineartModifier
@@ -1399,23 +1399,23 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.HueCorrectModifier.open_mask_input_panel`](bpy.types/H/bpy.types.HueCorrectModifier.md#bpy.types.HueCorrectModifier.open_mask_input_panel "bpy.types.HueCorrectModifier.open_mask_input_panel")
+  * [[bpy.types.HueCorrectModifier.open_mask_input_panel]]
 
 
 ### bpy.types.ID
 
 #### Added
 
-  * [`bpy.types.ID.bl_system_properties_get`](bpy.types/I/bpy.types.ID.md#bpy.types.ID.bl_system_properties_get "bpy.types.ID.bl_system_properties_get")
+  * [[bpy.types.ID.bl_system_properties_get]]
 
-  * [`bpy.types.ID.is_linked_packed`](bpy.types/I/bpy.types.ID.md#bpy.types.ID.is_linked_packed "bpy.types.ID.is_linked_packed")
+  * [[bpy.types.ID.is_linked_packed]]
 
 
 ### bpy.types.IDPropertyWrapPtr
 
 #### Added
 
-  * [`bpy.types.IDPropertyWrapPtr.bl_system_properties_get`](bpy.types/I/bpy.types.IDPropertyWrapPtr.md#bpy.types.IDPropertyWrapPtr.bl_system_properties_get "bpy.types.IDPropertyWrapPtr.bl_system_properties_get")
+  * [[bpy.types.IDPropertyWrapPtr.bl_system_properties_get]]
 
 
 ### bpy.types.Image
@@ -1429,9 +1429,9 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.ImageFormatSettings.media_type`](bpy.types/I/bpy.types.ImageFormatSettings.md#bpy.types.ImageFormatSettings.media_type "bpy.types.ImageFormatSettings.media_type")
+  * [[bpy.types.ImageFormatSettings.media_type]]
 
-  * [`bpy.types.ImageFormatSettings.use_exr_interleave`](bpy.types/I/bpy.types.ImageFormatSettings.md#bpy.types.ImageFormatSettings.use_exr_interleave "bpy.types.ImageFormatSettings.use_exr_interleave")
+  * [[bpy.types.ImageFormatSettings.use_exr_interleave]]
 
 
 ### bpy.types.ImageTexture
@@ -1455,53 +1455,53 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.KeyConfigPreferences.bl_system_properties_get`](bpy.types/K/bpy.types.KeyConfigPreferences.md#bpy.types.KeyConfigPreferences.bl_system_properties_get "bpy.types.KeyConfigPreferences.bl_system_properties_get")
+  * [[bpy.types.KeyConfigPreferences.bl_system_properties_get]]
 
 
 ### bpy.types.Lattice
 
 #### Added
 
-  * [`bpy.types.Lattice.unit_test_compare`](bpy.types/L/bpy.types.Lattice.md#bpy.types.Lattice.unit_test_compare "bpy.types.Lattice.unit_test_compare")
+  * [[bpy.types.Lattice.unit_test_compare]]
 
 
 ### bpy.types.Library
 
 #### Added
 
-  * [`bpy.types.Library.archive_libraries`](bpy.types/L/bpy.types.Library.md#bpy.types.Library.archive_libraries "bpy.types.Library.archive_libraries")
+  * [[bpy.types.Library.archive_libraries]]
 
-  * [`bpy.types.Library.archive_parent_library`](bpy.types/L/bpy.types.Library.md#bpy.types.Library.archive_parent_library "bpy.types.Library.archive_parent_library")
+  * [[bpy.types.Library.archive_parent_library]]
 
-  * [`bpy.types.Library.is_archive`](bpy.types/L/bpy.types.Library.md#bpy.types.Library.is_archive "bpy.types.Library.is_archive")
+  * [[bpy.types.Library.is_archive]]
 
 
 ### bpy.types.Light
 
 #### Added
 
-  * [`bpy.types.Light.inline_shader_nodes`](bpy.types/L/bpy.types.Light.md#bpy.types.Light.inline_shader_nodes "bpy.types.Light.inline_shader_nodes")
+  * [[bpy.types.Light.inline_shader_nodes]]
 
 
 ### bpy.types.Material
 
 #### Added
 
-  * [`bpy.types.Material.inline_shader_nodes`](bpy.types/M/bpy.types.Material.md#bpy.types.Material.inline_shader_nodes "bpy.types.Material.inline_shader_nodes")
+  * [[bpy.types.Material.inline_shader_nodes]]
 
 
 ### bpy.types.Menu
 
 #### Function Arguments
 
-  * [`bpy.types.Menu.path_menu`](bpy.types/M/bpy.types.Menu.md#bpy.types.Menu.path_menu "bpy.types.Menu.path_menu") (self, searchpaths, operator, props_default, prop_filepath, filter_ext, filter_path, display_name, add_operator, add_operator_props, translate), _was (self, searchpaths, operator, props_default, prop_filepath, filter_ext, filter_path, display_name, add_operator, add_operator_props)_
+  * [[bpy.types.Menu.path_menu]] (self, searchpaths, operator, props_default, prop_filepath, filter_ext, filter_path, display_name, add_operator, add_operator_props, translate), _was (self, searchpaths, operator, props_default, prop_filepath, filter_ext, filter_path, display_name, add_operator, add_operator_props)_
 
 
 ### bpy.types.Mesh
 
 #### Added
 
-  * [`bpy.types.Mesh.radial_symmetry`](bpy.types/M/bpy.types.Mesh.md#bpy.types.Mesh.radial_symmetry "bpy.types.Mesh.radial_symmetry")
+  * [[bpy.types.Mesh.radial_symmetry]]
 
 
 ### bpy.types.MeshEdge
@@ -1531,7 +1531,7 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.MeshUVLoopLayer.pin_ensure`](bpy.types/M/bpy.types.MeshUVLoopLayer.md#bpy.types.MeshUVLoopLayer.pin_ensure "bpy.types.MeshUVLoopLayer.pin_ensure")
+  * [[bpy.types.MeshUVLoopLayer.pin_ensure]]
 
 
 #### Removed
@@ -1552,82 +1552,82 @@ Changes in Blender’s Python API between releases.
 
 #### Renamed
 
-  * **grease_pencil** -> [`bpy.types.MovieClip.annotation`](bpy.types/M/bpy.types.MovieClip.md#bpy.types.MovieClip.annotation "bpy.types.MovieClip.annotation")
+  * **grease_pencil** -> [[bpy.types.MovieClip.annotation]]
 
 
 ### bpy.types.MovieTrackingTrack
 
 #### Renamed
 
-  * **grease_pencil** -> [`bpy.types.MovieTrackingTrack.annotation`](bpy.types/M/bpy.types.MovieTrackingTrack.md#bpy.types.MovieTrackingTrack.annotation "bpy.types.MovieTrackingTrack.annotation")
+  * **grease_pencil** -> [[bpy.types.MovieTrackingTrack.annotation]]
 
 
 ### bpy.types.Node
 
 #### Added
 
-  * [`bpy.types.Node.bl_system_properties_get`](bpy.types/N/bpy.types.Node.md#bpy.types.Node.bl_system_properties_get "bpy.types.Node.bl_system_properties_get")
+  * [[bpy.types.Node.bl_system_properties_get]]
 
 
 ### bpy.types.NodeSocket
 
 #### Added
 
-  * [`bpy.types.NodeSocket.bl_system_properties_get`](bpy.types/N/bpy.types.NodeSocket.md#bpy.types.NodeSocket.bl_system_properties_get "bpy.types.NodeSocket.bl_system_properties_get")
+  * [[bpy.types.NodeSocket.bl_system_properties_get]]
 
-  * [`bpy.types.NodeSocket.inferred_structure_type`](bpy.types/N/bpy.types.NodeSocket.md#bpy.types.NodeSocket.inferred_structure_type "bpy.types.NodeSocket.inferred_structure_type")
+  * [[bpy.types.NodeSocket.inferred_structure_type]]
 
 
 ### bpy.types.NodeTree
 
 #### Renamed
 
-  * **grease_pencil** -> [`bpy.types.NodeTree.annotation`](bpy.types/N/bpy.types.NodeTree.md#bpy.types.NodeTree.annotation "bpy.types.NodeTree.annotation")
+  * **grease_pencil** -> [[bpy.types.NodeTree.annotation]]
 
 
 ### bpy.types.NodeTreeInterfaceSocket
 
 #### Added
 
-  * [`bpy.types.NodeTreeInterfaceSocket.bl_system_properties_get`](bpy.types/N/bpy.types.NodeTreeInterfaceSocket.md#bpy.types.NodeTreeInterfaceSocket.bl_system_properties_get "bpy.types.NodeTreeInterfaceSocket.bl_system_properties_get")
+  * [[bpy.types.NodeTreeInterfaceSocket.bl_system_properties_get]]
 
-  * [`bpy.types.NodeTreeInterfaceSocket.optional_label`](bpy.types/N/bpy.types.NodeTreeInterfaceSocket.md#bpy.types.NodeTreeInterfaceSocket.optional_label "bpy.types.NodeTreeInterfaceSocket.optional_label")
+  * [[bpy.types.NodeTreeInterfaceSocket.optional_label]]
 
 
 ### bpy.types.NodesModifier
 
 #### Added
 
-  * [`bpy.types.NodesModifier.bl_system_properties_get`](bpy.types/N/bpy.types.NodesModifier.md#bpy.types.NodesModifier.bl_system_properties_get "bpy.types.NodesModifier.bl_system_properties_get")
+  * [[bpy.types.NodesModifier.bl_system_properties_get]]
 
-  * [`bpy.types.NodesModifier.show_manage_panel`](bpy.types/N/bpy.types.NodesModifier.md#bpy.types.NodesModifier.show_manage_panel "bpy.types.NodesModifier.show_manage_panel")
+  * [[bpy.types.NodesModifier.show_manage_panel]]
 
 
 ### bpy.types.Object
 
 #### Added
 
-  * [`bpy.types.Object.hide_surface_pick`](bpy.types/O/bpy.types.Object.md#bpy.types.Object.hide_surface_pick "bpy.types.Object.hide_surface_pick")
+  * [[bpy.types.Object.hide_surface_pick]]
 
 
 ### bpy.types.OperatorProperties
 
 #### Added
 
-  * [`bpy.types.OperatorProperties.bl_system_properties_get`](bpy.types/O/bpy.types.OperatorProperties.md#bpy.types.OperatorProperties.bl_system_properties_get "bpy.types.OperatorProperties.bl_system_properties_get")
+  * [[bpy.types.OperatorProperties.bl_system_properties_get]]
 
 
 ### bpy.types.Paint
 
 #### Added
 
-  * [`bpy.types.Paint.show_jitter_curve`](bpy.types/P/bpy.types.Paint.md#bpy.types.Paint.show_jitter_curve "bpy.types.Paint.show_jitter_curve")
+  * [[bpy.types.Paint.show_jitter_curve]]
 
-  * [`bpy.types.Paint.show_size_curve`](bpy.types/P/bpy.types.Paint.md#bpy.types.Paint.show_size_curve "bpy.types.Paint.show_size_curve")
+  * [[bpy.types.Paint.show_size_curve]]
 
-  * [`bpy.types.Paint.show_strength_curve`](bpy.types/P/bpy.types.Paint.md#bpy.types.Paint.show_strength_curve "bpy.types.Paint.show_strength_curve")
+  * [[bpy.types.Paint.show_strength_curve]]
 
-  * [`bpy.types.Paint.unified_paint_settings`](bpy.types/P/bpy.types.Paint.md#bpy.types.Paint.unified_paint_settings "bpy.types.Paint.unified_paint_settings")
+  * [[bpy.types.Paint.unified_paint_settings]]
 
 
 ### bpy.types.PointCache
@@ -1648,22 +1648,22 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.PointLight.inline_shader_nodes`](bpy.types/P/bpy.types.PointLight.md#bpy.types.PointLight.inline_shader_nodes "bpy.types.PointLight.inline_shader_nodes")
+  * [[bpy.types.PointLight.inline_shader_nodes]]
 
 
 ### bpy.types.PoseBone
 
 #### Added
 
-  * [`bpy.types.PoseBone.bl_system_properties_get`](bpy.types/P/bpy.types.PoseBone.md#bpy.types.PoseBone.bl_system_properties_get "bpy.types.PoseBone.bl_system_properties_get")
+  * [[bpy.types.PoseBone.bl_system_properties_get]]
 
-  * [`bpy.types.PoseBone.hide`](bpy.types/P/bpy.types.PoseBone.md#bpy.types.PoseBone.hide "bpy.types.PoseBone.hide")
+  * [[bpy.types.PoseBone.hide]]
 
-  * [`bpy.types.PoseBone.select`](bpy.types/P/bpy.types.PoseBone.md#bpy.types.PoseBone.select "bpy.types.PoseBone.select")
+  * [[bpy.types.PoseBone.select]]
 
-  * [`bpy.types.PoseBone.use_transform_around_custom_shape`](bpy.types/P/bpy.types.PoseBone.md#bpy.types.PoseBone.use_transform_around_custom_shape "bpy.types.PoseBone.use_transform_around_custom_shape")
+  * [[bpy.types.PoseBone.use_transform_around_custom_shape]]
 
-  * [`bpy.types.PoseBone.use_transform_at_custom_shape`](bpy.types/P/bpy.types.PoseBone.md#bpy.types.PoseBone.use_transform_at_custom_shape "bpy.types.PoseBone.use_transform_at_custom_shape")
+  * [[bpy.types.PoseBone.use_transform_at_custom_shape]]
 
 
 ### bpy.types.PreferencesEdit
@@ -1688,20 +1688,20 @@ Changes in Blender’s Python API between releases.
 
 #### Renamed
 
-  * **use_socket_structure_type** -> [`bpy.types.PreferencesExperimental.no_data_block_packing`](bpy.types/P/bpy.types.PreferencesExperimental.md#bpy.types.PreferencesExperimental.no_data_block_packing "bpy.types.PreferencesExperimental.no_data_block_packing")
+  * **use_socket_structure_type** -> [[bpy.types.PreferencesExperimental.no_data_block_packing]]
 
-  * **use_socket_structure_type** -> [`bpy.types.PreferencesExperimental.use_geometry_nodes_lists`](bpy.types/P/bpy.types.PreferencesExperimental.md#bpy.types.PreferencesExperimental.use_geometry_nodes_lists "bpy.types.PreferencesExperimental.use_geometry_nodes_lists")
+  * **use_socket_structure_type** -> [[bpy.types.PreferencesExperimental.use_geometry_nodes_lists]]
 
-  * **use_socket_structure_type** -> [`bpy.types.PreferencesExperimental.write_legacy_blend_file_format`](bpy.types/P/bpy.types.PreferencesExperimental.md#bpy.types.PreferencesExperimental.write_legacy_blend_file_format "bpy.types.PreferencesExperimental.write_legacy_blend_file_format")
+  * **use_socket_structure_type** -> [[bpy.types.PreferencesExperimental.write_legacy_blend_file_format]]
 
 
 ### bpy.types.PreferencesInput
 
 #### Added
 
-  * [`bpy.types.PreferencesInput.ndof_fly_speed_auto`](bpy.types/P/bpy.types.PreferencesInput.md#bpy.types.PreferencesInput.ndof_fly_speed_auto "bpy.types.PreferencesInput.ndof_fly_speed_auto")
+  * [[bpy.types.PreferencesInput.ndof_fly_speed_auto]]
 
-  * [`bpy.types.PreferencesInput.xr_navigation`](bpy.types/P/bpy.types.PreferencesInput.md#bpy.types.PreferencesInput.xr_navigation "bpy.types.PreferencesInput.xr_navigation")
+  * [[bpy.types.PreferencesInput.xr_navigation]]
 
 
 #### Removed
@@ -1711,9 +1711,9 @@ Changes in Blender’s Python API between releases.
 
 #### Renamed
 
-  * **ndof_sensitivity** -> [`bpy.types.PreferencesInput.ndof_rotation_sensitivity`](bpy.types/P/bpy.types.PreferencesInput.md#bpy.types.PreferencesInput.ndof_rotation_sensitivity "bpy.types.PreferencesInput.ndof_rotation_sensitivity")
+  * **ndof_sensitivity** -> [[bpy.types.PreferencesInput.ndof_rotation_sensitivity]]
 
-  * **ndof_sensitivity** -> [`bpy.types.PreferencesInput.ndof_translation_sensitivity`](bpy.types/P/bpy.types.PreferencesInput.md#bpy.types.PreferencesInput.ndof_translation_sensitivity "bpy.types.PreferencesInput.ndof_translation_sensitivity")
+  * **ndof_sensitivity** -> [[bpy.types.PreferencesInput.ndof_translation_sensitivity]]
 
 
 ### bpy.types.PreferencesSystem
@@ -1727,35 +1727,35 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.PreferencesView.menu_close_leave`](bpy.types/P/bpy.types.PreferencesView.md#bpy.types.PreferencesView.menu_close_leave "bpy.types.PreferencesView.menu_close_leave")
+  * [[bpy.types.PreferencesView.menu_close_leave]]
 
-  * [`bpy.types.PreferencesView.preferences_display_type`](bpy.types/P/bpy.types.PreferencesView.md#bpy.types.PreferencesView.preferences_display_type "bpy.types.PreferencesView.preferences_display_type")
+  * [[bpy.types.PreferencesView.preferences_display_type]]
 
-  * [`bpy.types.PreferencesView.show_area_handle`](bpy.types/P/bpy.types.PreferencesView.md#bpy.types.PreferencesView.show_area_handle "bpy.types.PreferencesView.show_area_handle")
+  * [[bpy.types.PreferencesView.show_area_handle]]
 
-  * [`bpy.types.PreferencesView.show_number_arrows`](bpy.types/P/bpy.types.PreferencesView.md#bpy.types.PreferencesView.show_number_arrows "bpy.types.PreferencesView.show_number_arrows")
+  * [[bpy.types.PreferencesView.show_number_arrows]]
 
-  * [`bpy.types.PreferencesView.use_reduce_motion`](bpy.types/P/bpy.types.PreferencesView.md#bpy.types.PreferencesView.use_reduce_motion "bpy.types.PreferencesView.use_reduce_motion")
+  * [[bpy.types.PreferencesView.use_reduce_motion]]
 
 
 ### bpy.types.Property
 
 #### Added
 
-  * [`bpy.types.Property.deprecated_note`](bpy.types/P/bpy.types.Property.md#bpy.types.Property.deprecated_note "bpy.types.Property.deprecated_note")
+  * [[bpy.types.Property.deprecated_note]]
 
-  * [`bpy.types.Property.deprecated_removal_version`](bpy.types/P/bpy.types.Property.md#bpy.types.Property.deprecated_removal_version "bpy.types.Property.deprecated_removal_version")
+  * [[bpy.types.Property.deprecated_removal_version]]
 
-  * [`bpy.types.Property.deprecated_version`](bpy.types/P/bpy.types.Property.md#bpy.types.Property.deprecated_version "bpy.types.Property.deprecated_version")
+  * [[bpy.types.Property.deprecated_version]]
 
-  * [`bpy.types.Property.is_deprecated`](bpy.types/P/bpy.types.Property.md#bpy.types.Property.is_deprecated "bpy.types.Property.is_deprecated")
+  * [[bpy.types.Property.is_deprecated]]
 
 
 ### bpy.types.PropertyGroup
 
 #### Added
 
-  * [`bpy.types.PropertyGroup.bl_system_properties_get`](bpy.types/P/bpy.types.PropertyGroup.md#bpy.types.PropertyGroup.bl_system_properties_get "bpy.types.PropertyGroup.bl_system_properties_get")
+  * [[bpy.types.PropertyGroup.bl_system_properties_get]]
 
 
 ### bpy.types.RenderEngine
@@ -1803,9 +1803,9 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.Scene.time_jump_delta`](bpy.types/S/bpy.types.Scene.md#bpy.types.Scene.time_jump_delta "bpy.types.Scene.time_jump_delta")
+  * [[bpy.types.Scene.time_jump_delta]]
 
-  * [`bpy.types.Scene.time_jump_unit`](bpy.types/S/bpy.types.Scene.md#bpy.types.Scene.time_jump_unit "bpy.types.Scene.time_jump_unit")
+  * [[bpy.types.Scene.time_jump_unit]]
 
 
 #### Removed
@@ -1817,9 +1817,9 @@ Changes in Blender’s Python API between releases.
 
 #### Renamed
 
-  * **node_tree** -> [`bpy.types.Scene.annotation`](bpy.types/S/bpy.types.Scene.md#bpy.types.Scene.annotation "bpy.types.Scene.annotation")
+  * **node_tree** -> [[bpy.types.Scene.annotation]]
 
-  * **node_tree** -> [`bpy.types.Scene.compositing_node_group`](bpy.types/S/bpy.types.Scene.md#bpy.types.Scene.compositing_node_group "bpy.types.Scene.compositing_node_group")
+  * **node_tree** -> [[bpy.types.Scene.compositing_node_group]]
 
 
 ### bpy.types.SceneEEVEE
@@ -1837,7 +1837,7 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.SceneGpencil.motion_blur_steps`](bpy.types/S/bpy.types.SceneGpencil.md#bpy.types.SceneGpencil.motion_blur_steps "bpy.types.SceneGpencil.motion_blur_steps")
+  * [[bpy.types.SceneGpencil.motion_blur_steps]]
 
 
 ### bpy.types.Sculpt
@@ -1860,14 +1860,14 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.SequencerTonemapModifierData.open_mask_input_panel`](bpy.types/S/bpy.types.SequencerTonemapModifierData.md#bpy.types.SequencerTonemapModifierData.open_mask_input_panel "bpy.types.SequencerTonemapModifierData.open_mask_input_panel")
+  * [[bpy.types.SequencerTonemapModifierData.open_mask_input_panel]]
 
 
 ### bpy.types.ShaderNodeTexSky
 
 #### Added
 
-  * [`bpy.types.ShaderNodeTexSky.aerosol_density`](bpy.types/S/bpy.types.ShaderNodeTexSky.md#bpy.types.ShaderNodeTexSky.aerosol_density "bpy.types.ShaderNodeTexSky.aerosol_density")
+  * [[bpy.types.ShaderNodeTexSky.aerosol_density]]
 
 
 #### Removed
@@ -1879,165 +1879,165 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.SoundStrip.pitch_correction`](bpy.types/S/bpy.types.SoundStrip.md#bpy.types.SoundStrip.pitch_correction "bpy.types.SoundStrip.pitch_correction")
+  * [[bpy.types.SoundStrip.pitch_correction]]
 
 
 ### bpy.types.SpaceClipEditor
 
 #### Added
 
-  * [`bpy.types.SpaceClipEditor.overlay`](bpy.types/S/bpy.types.SpaceClipEditor.md#bpy.types.SpaceClipEditor.overlay "bpy.types.SpaceClipEditor.overlay")
+  * [[bpy.types.SpaceClipEditor.overlay]]
 
 
 ### bpy.types.SpaceDopeSheetEditor
 
 #### Added
 
-  * [`bpy.types.SpaceDopeSheetEditor.show_region_footer`](bpy.types/S/bpy.types.SpaceDopeSheetEditor.md#bpy.types.SpaceDopeSheetEditor.show_region_footer "bpy.types.SpaceDopeSheetEditor.show_region_footer")
+  * [[bpy.types.SpaceDopeSheetEditor.show_region_footer]]
 
 
 #### Renamed
 
-  * **action** -> [`bpy.types.SpaceDopeSheetEditor.overlays`](bpy.types/S/bpy.types.SpaceDopeSheetEditor.md#bpy.types.SpaceDopeSheetEditor.overlays "bpy.types.SpaceDopeSheetEditor.overlays")
+  * **action** -> [[bpy.types.SpaceDopeSheetEditor.overlays]]
 
 
 ### bpy.types.SpaceGraphEditor
 
 #### Added
 
-  * [`bpy.types.SpaceGraphEditor.show_region_footer`](bpy.types/S/bpy.types.SpaceGraphEditor.md#bpy.types.SpaceGraphEditor.show_region_footer "bpy.types.SpaceGraphEditor.show_region_footer")
+  * [[bpy.types.SpaceGraphEditor.show_region_footer]]
 
 
 ### bpy.types.SpaceImageEditor
 
 #### Added
 
-  * [`bpy.types.SpaceImageEditor.show_sequencer_scene`](bpy.types/S/bpy.types.SpaceImageEditor.md#bpy.types.SpaceImageEditor.show_sequencer_scene "bpy.types.SpaceImageEditor.show_sequencer_scene")
+  * [[bpy.types.SpaceImageEditor.show_sequencer_scene]]
 
 
 #### Renamed
 
-  * **grease_pencil** -> [`bpy.types.SpaceImageEditor.annotation`](bpy.types/S/bpy.types.SpaceImageEditor.md#bpy.types.SpaceImageEditor.annotation "bpy.types.SpaceImageEditor.annotation")
+  * **grease_pencil** -> [[bpy.types.SpaceImageEditor.annotation]]
 
 
 ### bpy.types.SpaceNLA
 
 #### Added
 
-  * [`bpy.types.SpaceNLA.show_region_footer`](bpy.types/S/bpy.types.SpaceNLA.md#bpy.types.SpaceNLA.show_region_footer "bpy.types.SpaceNLA.show_region_footer")
+  * [[bpy.types.SpaceNLA.show_region_footer]]
 
 
 ### bpy.types.SpaceNodeEditor
 
 #### Added
 
-  * [`bpy.types.SpaceNodeEditor.show_region_asset_shelf`](bpy.types/S/bpy.types.SpaceNodeEditor.md#bpy.types.SpaceNodeEditor.show_region_asset_shelf "bpy.types.SpaceNodeEditor.show_region_asset_shelf")
+  * [[bpy.types.SpaceNodeEditor.show_region_asset_shelf]]
 
 
 #### Renamed
 
-  * **geometry_nodes_tool_tree** -> [`bpy.types.SpaceNodeEditor.selected_node_group`](bpy.types/S/bpy.types.SpaceNodeEditor.md#bpy.types.SpaceNodeEditor.selected_node_group "bpy.types.SpaceNodeEditor.selected_node_group")
+  * **geometry_nodes_tool_tree** -> [[bpy.types.SpaceNodeEditor.selected_node_group]]
 
-  * **geometry_nodes_type** -> [`bpy.types.SpaceNodeEditor.node_tree_sub_type`](bpy.types/S/bpy.types.SpaceNodeEditor.md#bpy.types.SpaceNodeEditor.node_tree_sub_type "bpy.types.SpaceNodeEditor.node_tree_sub_type")
+  * **geometry_nodes_type** -> [[bpy.types.SpaceNodeEditor.node_tree_sub_type]]
 
 
 ### bpy.types.SpacePreferences
 
 #### Added
 
-  * [`bpy.types.SpacePreferences.show_region_ui`](bpy.types/S/bpy.types.SpacePreferences.md#bpy.types.SpacePreferences.show_region_ui "bpy.types.SpacePreferences.show_region_ui")
+  * [[bpy.types.SpacePreferences.show_region_ui]]
 
 
 ### bpy.types.SpaceProperties
 
 #### Added
 
-  * [`bpy.types.SpaceProperties.show_properties_strip`](bpy.types/S/bpy.types.SpaceProperties.md#bpy.types.SpaceProperties.show_properties_strip "bpy.types.SpaceProperties.show_properties_strip")
+  * [[bpy.types.SpaceProperties.show_properties_strip]]
 
-  * [`bpy.types.SpaceProperties.show_properties_strip_modifier`](bpy.types/S/bpy.types.SpaceProperties.md#bpy.types.SpaceProperties.show_properties_strip_modifier "bpy.types.SpaceProperties.show_properties_strip_modifier")
+  * [[bpy.types.SpaceProperties.show_properties_strip_modifier]]
 
 
 ### bpy.types.SpaceSequenceEditor
 
 #### Added
 
-  * [`bpy.types.SpaceSequenceEditor.show_region_footer`](bpy.types/S/bpy.types.SpaceSequenceEditor.md#bpy.types.SpaceSequenceEditor.show_region_footer "bpy.types.SpaceSequenceEditor.show_region_footer")
+  * [[bpy.types.SpaceSequenceEditor.show_region_footer]]
 
 
 #### Renamed
 
-  * **grease_pencil** -> [`bpy.types.SpaceSequenceEditor.annotation`](bpy.types/S/bpy.types.SpaceSequenceEditor.md#bpy.types.SpaceSequenceEditor.annotation "bpy.types.SpaceSequenceEditor.annotation")
+  * **grease_pencil** -> [[bpy.types.SpaceSequenceEditor.annotation]]
 
 
 ### bpy.types.SpotLight
 
 #### Added
 
-  * [`bpy.types.SpotLight.inline_shader_nodes`](bpy.types/S/bpy.types.SpotLight.md#bpy.types.SpotLight.inline_shader_nodes "bpy.types.SpotLight.inline_shader_nodes")
+  * [[bpy.types.SpotLight.inline_shader_nodes]]
 
 
 ### bpy.types.SpreadsheetRowFilter
 
 #### Added
 
-  * [`bpy.types.SpreadsheetRowFilter.value_int3`](bpy.types/S/bpy.types.SpreadsheetRowFilter.md#bpy.types.SpreadsheetRowFilter.value_int3 "bpy.types.SpreadsheetRowFilter.value_int3")
+  * [[bpy.types.SpreadsheetRowFilter.value_int3]]
 
 
 ### bpy.types.Strip
 
 #### Added
 
-  * [`bpy.types.Strip.bl_system_properties_get`](bpy.types/S/bpy.types.Strip.md#bpy.types.Strip.bl_system_properties_get "bpy.types.Strip.bl_system_properties_get")
+  * [[bpy.types.Strip.bl_system_properties_get]]
 
 
 ### bpy.types.StripModifier
 
 #### Added
 
-  * [`bpy.types.StripModifier.enable`](bpy.types/S/bpy.types.StripModifier.md#bpy.types.StripModifier.enable "bpy.types.StripModifier.enable")
+  * [[bpy.types.StripModifier.enable]]
 
-  * [`bpy.types.StripModifier.is_active`](bpy.types/S/bpy.types.StripModifier.md#bpy.types.StripModifier.is_active "bpy.types.StripModifier.is_active")
+  * [[bpy.types.StripModifier.is_active]]
 
 
 ### bpy.types.StripModifiers
 
 #### Added
 
-  * [`bpy.types.StripModifiers.active`](bpy.types/S/bpy.types.StripModifiers.md#bpy.types.StripModifiers.active "bpy.types.StripModifiers.active")
+  * [[bpy.types.StripModifiers.active]]
 
 
 ### bpy.types.StripsMeta
 
 #### Function Arguments
 
-  * [`bpy.types.StripsMeta.new_effect`](bpy.types/S/bpy.types.StripsMeta.md#bpy.types.StripsMeta.new_effect "bpy.types.StripsMeta.new_effect") (name, type, channel, frame_start, length, input1, input2), _was (name, type, channel, frame_start, frame_end, input1, input2)_
+  * [[bpy.types.StripsMeta.new_effect]] (name, type, channel, frame_start, length, input1, input2), _was (name, type, channel, frame_start, frame_end, input1, input2)_
 
 
 ### bpy.types.StripsTopLevel
 
 #### Function Arguments
 
-  * [`bpy.types.StripsTopLevel.new_effect`](bpy.types/S/bpy.types.StripsTopLevel.md#bpy.types.StripsTopLevel.new_effect "bpy.types.StripsTopLevel.new_effect") (name, type, channel, frame_start, length, input1, input2), _was (name, type, channel, frame_start, frame_end, input1, input2)_
+  * [[bpy.types.StripsTopLevel.new_effect]] (name, type, channel, frame_start, length, input1, input2), _was (name, type, channel, frame_start, frame_end, input1, input2)_
 
 
 ### bpy.types.SubsurfModifier
 
 #### Added
 
-  * [`bpy.types.SubsurfModifier.adaptive_object_edge_length`](bpy.types/S/bpy.types.SubsurfModifier.md#bpy.types.SubsurfModifier.adaptive_object_edge_length "bpy.types.SubsurfModifier.adaptive_object_edge_length")
+  * [[bpy.types.SubsurfModifier.adaptive_object_edge_length]]
 
-  * [`bpy.types.SubsurfModifier.adaptive_pixel_size`](bpy.types/S/bpy.types.SubsurfModifier.md#bpy.types.SubsurfModifier.adaptive_pixel_size "bpy.types.SubsurfModifier.adaptive_pixel_size")
+  * [[bpy.types.SubsurfModifier.adaptive_pixel_size]]
 
-  * [`bpy.types.SubsurfModifier.adaptive_space`](bpy.types/S/bpy.types.SubsurfModifier.md#bpy.types.SubsurfModifier.adaptive_space "bpy.types.SubsurfModifier.adaptive_space")
+  * [[bpy.types.SubsurfModifier.adaptive_space]]
 
-  * [`bpy.types.SubsurfModifier.use_adaptive_subdivision`](bpy.types/S/bpy.types.SubsurfModifier.md#bpy.types.SubsurfModifier.use_adaptive_subdivision "bpy.types.SubsurfModifier.use_adaptive_subdivision")
+  * [[bpy.types.SubsurfModifier.use_adaptive_subdivision]]
 
 
 ### bpy.types.SunLight
 
 #### Added
 
-  * [`bpy.types.SunLight.inline_shader_nodes`](bpy.types/S/bpy.types.SunLight.md#bpy.types.SunLight.inline_shader_nodes "bpy.types.SunLight.inline_shader_nodes")
+  * [[bpy.types.SunLight.inline_shader_nodes]]
 
 
 ### bpy.types.TextureNodeCurveTime
@@ -2053,9 +2053,9 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.Theme.common`](bpy.types/T/bpy.types.Theme.md#bpy.types.Theme.common "bpy.types.Theme.common")
+  * [[bpy.types.Theme.common]]
 
-  * [`bpy.types.Theme.regions`](bpy.types/T/bpy.types.Theme.md#bpy.types.Theme.regions "bpy.types.Theme.regions")
+  * [[bpy.types.Theme.regions]]
 
 
 ### bpy.types.ThemeClipEditor
@@ -2301,7 +2301,7 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.ThemeNodeEditor.node_outline`](bpy.types/T/bpy.types.ThemeNodeEditor.md#bpy.types.ThemeNodeEditor.node_outline "bpy.types.ThemeNodeEditor.node_outline")
+  * [[bpy.types.ThemeNodeEditor.node_outline]]
 
 
 #### Removed
@@ -2424,23 +2424,23 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.ThemeUserInterface.axis_w`](bpy.types/T/bpy.types.ThemeUserInterface.md#bpy.types.ThemeUserInterface.axis_w "bpy.types.ThemeUserInterface.axis_w")
+  * [[bpy.types.ThemeUserInterface.axis_w]]
 
-  * [`bpy.types.ThemeUserInterface.panel_active`](bpy.types/T/bpy.types.ThemeUserInterface.md#bpy.types.ThemeUserInterface.panel_active "bpy.types.ThemeUserInterface.panel_active")
+  * [[bpy.types.ThemeUserInterface.panel_active]]
 
-  * [`bpy.types.ThemeUserInterface.panel_back`](bpy.types/T/bpy.types.ThemeUserInterface.md#bpy.types.ThemeUserInterface.panel_back "bpy.types.ThemeUserInterface.panel_back")
+  * [[bpy.types.ThemeUserInterface.panel_back]]
 
-  * [`bpy.types.ThemeUserInterface.panel_header`](bpy.types/T/bpy.types.ThemeUserInterface.md#bpy.types.ThemeUserInterface.panel_header "bpy.types.ThemeUserInterface.panel_header")
+  * [[bpy.types.ThemeUserInterface.panel_header]]
 
-  * [`bpy.types.ThemeUserInterface.panel_outline`](bpy.types/T/bpy.types.ThemeUserInterface.md#bpy.types.ThemeUserInterface.panel_outline "bpy.types.ThemeUserInterface.panel_outline")
+  * [[bpy.types.ThemeUserInterface.panel_outline]]
 
-  * [`bpy.types.ThemeUserInterface.panel_sub_back`](bpy.types/T/bpy.types.ThemeUserInterface.md#bpy.types.ThemeUserInterface.panel_sub_back "bpy.types.ThemeUserInterface.panel_sub_back")
+  * [[bpy.types.ThemeUserInterface.panel_sub_back]]
 
-  * [`bpy.types.ThemeUserInterface.panel_text`](bpy.types/T/bpy.types.ThemeUserInterface.md#bpy.types.ThemeUserInterface.panel_text "bpy.types.ThemeUserInterface.panel_text")
+  * [[bpy.types.ThemeUserInterface.panel_text]]
 
-  * [`bpy.types.ThemeUserInterface.panel_title`](bpy.types/T/bpy.types.ThemeUserInterface.md#bpy.types.ThemeUserInterface.panel_title "bpy.types.ThemeUserInterface.panel_title")
+  * [[bpy.types.ThemeUserInterface.panel_title]]
 
-  * [`bpy.types.ThemeUserInterface.wcol_curve`](bpy.types/T/bpy.types.ThemeUserInterface.md#bpy.types.ThemeUserInterface.wcol_curve "bpy.types.ThemeUserInterface.wcol_curve")
+  * [[bpy.types.ThemeUserInterface.wcol_curve]]
 
 
 ### bpy.types.ThemeView3D
@@ -2494,62 +2494,62 @@ Changes in Blender’s Python API between releases.
 
 #### Renamed
 
-  * **handle_sel_align** -> [`bpy.types.ThemeView3D.bevel`](bpy.types/T/bpy.types.ThemeView3D.md#bpy.types.ThemeView3D.bevel "bpy.types.ThemeView3D.bevel")
+  * **handle_sel_align** -> [[bpy.types.ThemeView3D.bevel]]
 
-  * **handle_sel_align** -> [`bpy.types.ThemeView3D.crease`](bpy.types/T/bpy.types.ThemeView3D.md#bpy.types.ThemeView3D.crease "bpy.types.ThemeView3D.crease")
+  * **handle_sel_align** -> [[bpy.types.ThemeView3D.crease]]
 
-  * **handle_sel_align** -> [`bpy.types.ThemeView3D.seam`](bpy.types/T/bpy.types.ThemeView3D.md#bpy.types.ThemeView3D.seam "bpy.types.ThemeView3D.seam")
+  * **handle_sel_align** -> [[bpy.types.ThemeView3D.seam]]
 
-  * **handle_sel_align** -> [`bpy.types.ThemeView3D.sharp`](bpy.types/T/bpy.types.ThemeView3D.md#bpy.types.ThemeView3D.sharp "bpy.types.ThemeView3D.sharp")
+  * **handle_sel_align** -> [[bpy.types.ThemeView3D.sharp]]
 
-  * **paint_curve_pivot** -> [`bpy.types.ThemeView3D.freestyle`](bpy.types/T/bpy.types.ThemeView3D.md#bpy.types.ThemeView3D.freestyle "bpy.types.ThemeView3D.freestyle")
+  * **paint_curve_pivot** -> [[bpy.types.ThemeView3D.freestyle]]
 
 
 ### bpy.types.ThemeWidgetColors
 
 #### Added
 
-  * [`bpy.types.ThemeWidgetColors.outline_sel`](bpy.types/T/bpy.types.ThemeWidgetColors.md#bpy.types.ThemeWidgetColors.outline_sel "bpy.types.ThemeWidgetColors.outline_sel")
+  * [[bpy.types.ThemeWidgetColors.outline_sel]]
 
 
 ### bpy.types.TimelineMarker
 
 #### Added
 
-  * [`bpy.types.TimelineMarker.bl_system_properties_get`](bpy.types/T/bpy.types.TimelineMarker.md#bpy.types.TimelineMarker.bl_system_properties_get "bpy.types.TimelineMarker.bl_system_properties_get")
+  * [[bpy.types.TimelineMarker.bl_system_properties_get]]
 
 
 ### bpy.types.ToolSettings
 
 #### Added
 
-  * [`bpy.types.ToolSettings.anim_fix_to_cam_use_loc`](bpy.types/T/bpy.types.ToolSettings.md#bpy.types.ToolSettings.anim_fix_to_cam_use_loc "bpy.types.ToolSettings.anim_fix_to_cam_use_loc")
+  * [[bpy.types.ToolSettings.anim_fix_to_cam_use_loc]]
 
-  * [`bpy.types.ToolSettings.anim_fix_to_cam_use_rot`](bpy.types/T/bpy.types.ToolSettings.md#bpy.types.ToolSettings.anim_fix_to_cam_use_rot "bpy.types.ToolSettings.anim_fix_to_cam_use_rot")
+  * [[bpy.types.ToolSettings.anim_fix_to_cam_use_rot]]
 
-  * [`bpy.types.ToolSettings.anim_fix_to_cam_use_scale`](bpy.types/T/bpy.types.ToolSettings.md#bpy.types.ToolSettings.anim_fix_to_cam_use_scale "bpy.types.ToolSettings.anim_fix_to_cam_use_scale")
+  * [[bpy.types.ToolSettings.anim_fix_to_cam_use_scale]]
 
-  * [`bpy.types.ToolSettings.anim_mirror_bone`](bpy.types/T/bpy.types.ToolSettings.md#bpy.types.ToolSettings.anim_mirror_bone "bpy.types.ToolSettings.anim_mirror_bone")
+  * [[bpy.types.ToolSettings.anim_mirror_bone]]
 
-  * [`bpy.types.ToolSettings.use_uv_custom_region`](bpy.types/T/bpy.types.ToolSettings.md#bpy.types.ToolSettings.use_uv_custom_region "bpy.types.ToolSettings.use_uv_custom_region")
+  * [[bpy.types.ToolSettings.use_uv_custom_region]]
 
-  * [`bpy.types.ToolSettings.use_uv_select_island`](bpy.types/T/bpy.types.ToolSettings.md#bpy.types.ToolSettings.use_uv_select_island "bpy.types.ToolSettings.use_uv_select_island")
+  * [[bpy.types.ToolSettings.use_uv_select_island]]
 
 
 #### Renamed
 
-  * **unified_paint_settings** -> [`bpy.types.ToolSettings.anim_mirror_object`](bpy.types/T/bpy.types.ToolSettings.md#bpy.types.ToolSettings.anim_mirror_object "bpy.types.ToolSettings.anim_mirror_object")
+  * **unified_paint_settings** -> [[bpy.types.ToolSettings.anim_mirror_object]]
 
-  * **unified_paint_settings** -> [`bpy.types.ToolSettings.anim_relative_object`](bpy.types/T/bpy.types.ToolSettings.md#bpy.types.ToolSettings.anim_relative_object "bpy.types.ToolSettings.anim_relative_object")
+  * **unified_paint_settings** -> [[bpy.types.ToolSettings.anim_relative_object]]
 
 
 ### bpy.types.UILayout
 
 #### Added
 
-  * [`bpy.types.UILayout.template_shape_key_tree`](bpy.types/U/bpy.types.UILayout.md#bpy.types.UILayout.template_shape_key_tree "bpy.types.UILayout.template_shape_key_tree")
+  * [[bpy.types.UILayout.template_shape_key_tree]]
 
-  * [`bpy.types.UILayout.template_strip_modifiers`](bpy.types/U/bpy.types.UILayout.md#bpy.types.UILayout.template_strip_modifiers "bpy.types.UILayout.template_strip_modifiers")
+  * [[bpy.types.UILayout.template_strip_modifiers]]
 
 
 #### Removed
@@ -2559,32 +2559,32 @@ Changes in Blender’s Python API between releases.
 
 #### Renamed
 
-  * **template_cache_file_procedural** -> [`bpy.types.UILayout.template_matrix`](bpy.types/U/bpy.types.UILayout.md#bpy.types.UILayout.template_matrix "bpy.types.UILayout.template_matrix")
+  * **template_cache_file_procedural** -> [[bpy.types.UILayout.template_matrix]]
 
 
 #### Function Arguments
 
-  * [`bpy.types.UILayout.prop_search`](bpy.types/U/bpy.types.UILayout.md#bpy.types.UILayout.prop_search "bpy.types.UILayout.prop_search") (data, property, search_data, search_property, text, text_ctxt, translate, icon, results_are_suggestions, item_search_property), _was (data, property, search_data, search_property, text, text_ctxt, translate, icon, results_are_suggestions)_
+  * [[bpy.types.UILayout.prop_search]] (data, property, search_data, search_property, text, text_ctxt, translate, icon, results_are_suggestions, item_search_property), _was (data, property, search_data, search_property, text, text_ctxt, translate, icon, results_are_suggestions)_
 
-  * [`bpy.types.UILayout.template_curve_mapping`](bpy.types/U/bpy.types.UILayout.md#bpy.types.UILayout.template_curve_mapping "bpy.types.UILayout.template_curve_mapping") (data, property, type, levels, brush, use_negative_slope, show_tone, show_presets), _was (data, property, type, levels, brush, use_negative_slope, show_tone)_
+  * [[bpy.types.UILayout.template_curve_mapping]] (data, property, type, levels, brush, use_negative_slope, show_tone, show_presets), _was (data, property, type, levels, brush, use_negative_slope, show_tone)_
 
-  * [`bpy.types.UILayout.template_modifier_asset_menu_items`](bpy.types/U/bpy.types.UILayout.md#bpy.types.UILayout.template_modifier_asset_menu_items "bpy.types.UILayout.template_modifier_asset_menu_items") (catalog_path, skip_essentials), _was (catalog_path)_
+  * [[bpy.types.UILayout.template_modifier_asset_menu_items]] (catalog_path, skip_essentials), _was (catalog_path)_
 
-  * [`bpy.types.UILayout.template_node_asset_menu_items`](bpy.types/U/bpy.types.UILayout.md#bpy.types.UILayout.template_node_asset_menu_items "bpy.types.UILayout.template_node_asset_menu_items") (catalog_path, operator), _was (catalog_path)_
+  * [[bpy.types.UILayout.template_node_asset_menu_items]] (catalog_path, operator), _was (catalog_path)_
 
 
 ### bpy.types.UIList
 
 #### Added
 
-  * [`bpy.types.UIList.bl_system_properties_get`](bpy.types/U/bpy.types.UIList.md#bpy.types.UIList.bl_system_properties_get "bpy.types.UIList.bl_system_properties_get")
+  * [[bpy.types.UIList.bl_system_properties_get]]
 
 
 ### bpy.types.UnifiedPaintSettings
 
 #### Added
 
-  * [`bpy.types.UnifiedPaintSettings.unprojected_size`](bpy.types/U/bpy.types.UnifiedPaintSettings.md#bpy.types.UnifiedPaintSettings.unprojected_size "bpy.types.UnifiedPaintSettings.unprojected_size")
+  * [[bpy.types.UnifiedPaintSettings.unprojected_size]]
 
 
 #### Removed
@@ -2596,9 +2596,9 @@ Changes in Blender’s Python API between releases.
 
 #### Renamed
 
-  * **curve_preset** -> [`bpy.types.UvSculpt.curve_distance_falloff_preset`](bpy.types/U/bpy.types.UvSculpt.md#bpy.types.UvSculpt.curve_distance_falloff_preset "bpy.types.UvSculpt.curve_distance_falloff_preset")
+  * **curve_preset** -> [[bpy.types.UvSculpt.curve_distance_falloff_preset]]
 
-  * **strength_curve** -> [`bpy.types.UvSculpt.curve_distance_falloff`](bpy.types/U/bpy.types.UvSculpt.md#bpy.types.UvSculpt.curve_distance_falloff "bpy.types.UvSculpt.curve_distance_falloff")
+  * **strength_curve** -> [[bpy.types.UvSculpt.curve_distance_falloff]]
 
 
 ### bpy.types.VertexPaint
@@ -2612,55 +2612,55 @@ Changes in Blender’s Python API between releases.
 
 #### Added
 
-  * [`bpy.types.View3DShading.bl_system_properties_get`](bpy.types/V/bpy.types.View3DShading.md#bpy.types.View3DShading.bl_system_properties_get "bpy.types.View3DShading.bl_system_properties_get")
+  * [[bpy.types.View3DShading.bl_system_properties_get]]
 
 
 ### bpy.types.ViewLayer
 
 #### Added
 
-  * [`bpy.types.ViewLayer.bl_system_properties_get`](bpy.types/V/bpy.types.ViewLayer.md#bpy.types.ViewLayer.bl_system_properties_get "bpy.types.ViewLayer.bl_system_properties_get")
+  * [[bpy.types.ViewLayer.bl_system_properties_get]]
 
 
 ### bpy.types.ViewLayerEEVEE
 
 #### Added
 
-  * [`bpy.types.ViewLayerEEVEE.ambient_occlusion_distance`](bpy.types/V/bpy.types.ViewLayerEEVEE.md#bpy.types.ViewLayerEEVEE.ambient_occlusion_distance "bpy.types.ViewLayerEEVEE.ambient_occlusion_distance")
+  * [[bpy.types.ViewLayerEEVEE.ambient_occlusion_distance]]
 
 
 ### bpy.types.WhiteBalanceModifier
 
 #### Added
 
-  * [`bpy.types.WhiteBalanceModifier.open_mask_input_panel`](bpy.types/W/bpy.types.WhiteBalanceModifier.md#bpy.types.WhiteBalanceModifier.open_mask_input_panel "bpy.types.WhiteBalanceModifier.open_mask_input_panel")
+  * [[bpy.types.WhiteBalanceModifier.open_mask_input_panel]]
 
 
 ### bpy.types.Window
 
 #### Added
 
-  * [`bpy.types.Window.support_hdr_color`](bpy.types/W/bpy.types.Window.md#bpy.types.Window.support_hdr_color "bpy.types.Window.support_hdr_color")
+  * [[bpy.types.Window.support_hdr_color]]
 
 
 ### bpy.types.WorkSpace
 
 #### Added
 
-  * [`bpy.types.WorkSpace.sequencer_scene`](bpy.types/W/bpy.types.WorkSpace.md#bpy.types.WorkSpace.sequencer_scene "bpy.types.WorkSpace.sequencer_scene")
+  * [[bpy.types.WorkSpace.sequencer_scene]]
 
-  * [`bpy.types.WorkSpace.use_scene_time_sync`](bpy.types/W/bpy.types.WorkSpace.md#bpy.types.WorkSpace.use_scene_time_sync "bpy.types.WorkSpace.use_scene_time_sync")
+  * [[bpy.types.WorkSpace.use_scene_time_sync]]
 
 
 ### bpy.types.World
 
 #### Added
 
-  * [`bpy.types.World.inline_shader_nodes`](bpy.types/W/bpy.types.World.md#bpy.types.World.inline_shader_nodes "bpy.types.World.inline_shader_nodes")
+  * [[bpy.types.World.inline_shader_nodes]]
 
 
 ### bpy.types.XrSessionSettings
 
 #### Added
 
-  * [`bpy.types.XrSessionSettings.fly_speed`](bpy.types/X/bpy.types.XrSessionSettings.md#bpy.types.XrSessionSettings.fly_speed "bpy.types.XrSessionSettings.fly_speed")
+  * [[bpy.types.XrSessionSettings.fly_speed]]

@@ -4,7 +4,7 @@ This module provides access to image buffer types.
 
 Note
 
-Image buffer is also the structure used by [`bpy.types.Image`](../bpy.types/I/bpy.types.Image.md#bpy.types.Image "bpy.types.Image") ID type to store and manipulate image data at runtime.
+Image buffer is also the structure used by [[bpy.types.Image]] ID type to store and manipulate image data at runtime.
 
 _class _imbuf.types.ImBuf
     

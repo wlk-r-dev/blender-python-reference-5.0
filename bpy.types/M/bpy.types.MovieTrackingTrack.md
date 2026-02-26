@@ -1,6 +1,6 @@
 # MovieTrackingTrack(bpy_struct)
 
-base class — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")
+base class — [[bpy_struct]]
 
 _class _bpy.types.MovieTrackingTrack(_bpy_struct_)
     
@@ -15,7 +15,7 @@ Annotation data for this track
 Type:
     
 
-[`Annotation`](../A/bpy.types.Annotation.md#bpy.types.Annotation "bpy.types.Annotation")
+[[Annotation]]
 
 average_error
     
@@ -35,7 +35,7 @@ Position of bundle reconstructed from this track
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (0.0, 0.0, 0.0), (readonly)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (0.0, 0.0, 0.0), (readonly)
 
 color
     
@@ -45,7 +45,7 @@ Color of the track in the Movie Clip Editor and the 3D viewport after a solve
 Type:
     
 
-[`mathutils.Color`](mathutils.md#mathutils.Color "mathutils.Color") of 3 items in [0, 1], default (0.0, 0.0, 0.0)
+[[mathutils.Color]] of 3 items in [0, 1], default (0.0, 0.0, 0.0)
 
 correlation_min
     
@@ -115,7 +115,7 @@ Collection of markers in track
 Type:
     
 
-[`MovieTrackingMarkers`](bpy.types.MovieTrackingMarkers.md#bpy.types.MovieTrackingMarkers "bpy.types.MovieTrackingMarkers") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`MovieTrackingMarker`](bpy.types.MovieTrackingMarker.md#bpy.types.MovieTrackingMarker "bpy.types.MovieTrackingMarker"), (readonly)
+[[MovieTrackingMarkers]] [[bpy_prop_collection]] of [[MovieTrackingMarker]], (readonly)
 
 motion_model
     
@@ -158,7 +158,7 @@ Offset of track from the parenting point
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], default (0.0, 0.0)
+[[mathutils.Vector]] of 2 items in [-inf, inf], default (0.0, 0.0)
 
 pattern_match
     
@@ -341,7 +341,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -363,7 +363,7 @@ type
 
 ## Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [[bpy_struct.id_data]]
 
 | 
 
@@ -373,53 +373,53 @@ type
   
 ## Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
 
 | 
 
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
 
   
 ---|---  
   
 ## References
 
-  * [`bpy.context.selected_movieclip_tracks`](../../bpy.context.md#bpy.context.selected_movieclip_tracks "bpy.context.selected_movieclip_tracks")
-  * [`MovieTracking.tracks`](bpy.types.MovieTracking.md#bpy.types.MovieTracking.tracks "bpy.types.MovieTracking.tracks")
-  * [`MovieTrackingObject.tracks`](bpy.types.MovieTrackingObject.md#bpy.types.MovieTrackingObject.tracks "bpy.types.MovieTrackingObject.tracks")
-  * [`MovieTrackingObjectPlaneTracks.active`](bpy.types.MovieTrackingObjectPlaneTracks.md#bpy.types.MovieTrackingObjectPlaneTracks.active "bpy.types.MovieTrackingObjectPlaneTracks.active")
-  * [`MovieTrackingObjectTracks.active`](bpy.types.MovieTrackingObjectTracks.md#bpy.types.MovieTrackingObjectTracks.active "bpy.types.MovieTrackingObjectTracks.active")
-  * [`MovieTrackingObjectTracks.new`](bpy.types.MovieTrackingObjectTracks.md#bpy.types.MovieTrackingObjectTracks.new "bpy.types.MovieTrackingObjectTracks.new")
+  * [[bpy.context.selected_movieclip_tracks]]
+  * [[MovieTracking.tracks]]
+  * [[MovieTrackingObject.tracks]]
+  * [[MovieTrackingObjectPlaneTracks.active]]
+  * [[MovieTrackingObjectTracks.active]]
+  * [[MovieTrackingObjectTracks.new]]
 
 | 
 
-  * [`MovieTrackingStabilization.rotation_tracks`](bpy.types.MovieTrackingStabilization.md#bpy.types.MovieTrackingStabilization.rotation_tracks "bpy.types.MovieTrackingStabilization.rotation_tracks")
-  * [`MovieTrackingStabilization.tracks`](bpy.types.MovieTrackingStabilization.md#bpy.types.MovieTrackingStabilization.tracks "bpy.types.MovieTrackingStabilization.tracks")
-  * [`MovieTrackingTracks.active`](bpy.types.MovieTrackingTracks.md#bpy.types.MovieTrackingTracks.active "bpy.types.MovieTrackingTracks.active")
-  * [`MovieTrackingTracks.new`](bpy.types.MovieTrackingTracks.md#bpy.types.MovieTrackingTracks.new "bpy.types.MovieTrackingTracks.new")
-  * [`UILayout.template_marker`](../U/bpy.types.UILayout.md#bpy.types.UILayout.template_marker "bpy.types.UILayout.template_marker")
+  * [[MovieTrackingStabilization.rotation_tracks]]
+  * [[MovieTrackingStabilization.tracks]]
+  * [[MovieTrackingTracks.active]]
+  * [[MovieTrackingTracks.new]]
+  * [[UILayout.template_marker]]
 
   
 ---|---

@@ -4,9 +4,9 @@ Blender has many interlinking data types which have an auto-generated reference 
 
 ## Reference API Scope
 
-The reference API covers [`bpy.types`](bpy.types.md#module-bpy.types "bpy.types"), which stores types accessed via [`bpy.context`](../bpy.context.md#module-bpy.context "bpy.context") – _the user context_ or [`bpy.data`](../bpy.data.md#module-bpy.data "bpy.data") – _blend-file data_.
+The reference API covers [[bpy.types]], which stores types accessed via [[bpy.context]] – _the user context_ or [[bpy.data]] – _blend-file data_.
 
-Other modules such as [`bmesh`](bmesh.md#module-bmesh "bmesh") and [`aud`](../aud.md#module-aud "aud") are not using Blender’s data API so this document doesn’t apply to those modules.
+Other modules such as [[bmesh]] and [[aud]] are not using Blender’s data API so this document doesn’t apply to those modules.
 
 ## Data Access
 
@@ -14,7 +14,7 @@ The most common case for using the reference API is to find out how to access da
 
 ### ID Data
 
-ID data-blocks are used in Blender as top-level data containers. From the user interface this isn’t so obvious, but when developing you need to know about ID data-blocks. ID data types include Scene, Group, Object, Mesh, Workspace, World, Armature, Image and Texture. For a full list see the subclasses of [`bpy.types.ID`](../bpy.types/I/bpy.types.ID.md#bpy.types.ID "bpy.types.ID").
+ID data-blocks are used in Blender as top-level data containers. From the user interface this isn’t so obvious, but when developing you need to know about ID data-blocks. ID data types include Scene, Group, Object, Mesh, Workspace, World, Armature, Image and Texture. For a full list see the subclasses of [[bpy.types.ID]].
 
 Here are some characteristics ID data-blocks share:
 
@@ -39,9 +39,9 @@ Here are some characteristics ID data-blocks share:
 
 In this simple case a Python script is used to adjust the object’s location. Start by collecting the information where the data is located.
 
-First find this setting in the interface `Properties editor -> Object -> Transform -> Location`. From the button context menu select _Online Python Reference_ , this will link you to: [`bpy.types.Object.location`](../bpy.types/O/bpy.types.Object.md#bpy.types.Object.location "bpy.types.Object.location"). Being an API reference, this link often gives little more information than the tooltip, though some of the pages include examples (normally at the top of the page). But you now know that you have to use `.location` and that it’s an array of three floats.
+First find this setting in the interface `Properties editor -> Object -> Transform -> Location`. From the button context menu select _Online Python Reference_ , this will link you to: [[bpy.types.Object.location]]. Being an API reference, this link often gives little more information than the tooltip, though some of the pages include examples (normally at the top of the page). But you now know that you have to use `.location` and that it’s an array of three floats.
 
-So the next step is to find out where to access objects, go down to the bottom of the page to the references section, for objects there are many references, but one of the most common places to access objects is via the context. It’s easy to be overwhelmed at this point since there `Object` get referenced in so many places: modifiers, functions, textures and constraints. But if you want to access any data the user has selected you typically only need to check the [`bpy.context`](../bpy.context.md#module-bpy.context "bpy.context") references.
+So the next step is to find out where to access objects, go down to the bottom of the page to the references section, for objects there are many references, but one of the most common places to access objects is via the context. It’s easy to be overwhelmed at this point since there `Object` get referenced in so many places: modifiers, functions, textures and constraints. But if you want to access any data the user has selected you typically only need to check the [[bpy.context]] references.
 
 Even then, in this case there are quite a few though if you read over these you’ll notice that most are mode specific. If you happen to be writing a tool that only runs in Weight Paint Mode, then using `weight_paint_object` would be appropriate. However, to access an item the user last selected, look for the `active` members, Having access to a single active member the user selects is a convention in Blender: e.g. `active_bone`, `active_pose_bone`, `active_node`, etc. and in this case you can use `active_object`.
 
@@ -51,11 +51,11 @@ So now you have enough information to find the location of the active object.
     bpy.context.active_object.location
     
 
-You can type this into the Python console to see the result. The other common place to access objects in the reference is [`bpy.types.BlendData.objects`](../bpy.types/B/bpy.types.BlendData.md#bpy.types.BlendData.objects "bpy.types.BlendData.objects").
+You can type this into the Python console to see the result. The other common place to access objects in the reference is [[bpy.types.BlendData.objects]].
 
 Note
 
-This is **not** listed as `bpy.data.objects`, this is because [`bpy.data`](../bpy.data.md#module-bpy.data "bpy.data") is an instance of the [`bpy.types.BlendData`](../bpy.types/B/bpy.types.BlendData.md#bpy.types.BlendData "bpy.types.BlendData") class, so the documentation points there.
+This is **not** listed as `bpy.data.objects`, this is because [[bpy.data]] is an instance of the [[bpy.types.BlendData]] class, so the documentation points there.
 
 With `bpy.data.objects`, this is a collection of objects so you need to access one of its members:
     
@@ -93,13 +93,13 @@ When starting out scripting you will often run into the problem where you’re n
 
 ### Copy Data Path
 
-Blender can compute the Python string to a property which is shown in the tooltip, on the line below `Python: ...`. This saves having to open the API references to find where data is accessed from. In the context menu is a copy data-path tool which gives the path from an [`bpy.types.ID`](../bpy.types/I/bpy.types.ID.md#bpy.types.ID "bpy.types.ID") data-block, to its property.
+Blender can compute the Python string to a property which is shown in the tooltip, on the line below `Python: ...`. This saves having to open the API references to find where data is accessed from. In the context menu is a copy data-path tool which gives the path from an [[bpy.types.ID]] data-block, to its property.
 
-To see how this works you’ll get the path to the Subdivision Surface modifiers _Levels_ setting. Start with the default scene and select the Modifiers tab, then add a Subdivision Surface modifier to the cube. Now hover your mouse over the button labeled _Levels Viewport_ , The tooltip includes [`bpy.types.SubsurfModifier.levels`](../bpy.types/S/bpy.types.SubsurfModifier.md#bpy.types.SubsurfModifier.levels "bpy.types.SubsurfModifier.levels") but you want the path from the object to this property.
+To see how this works you’ll get the path to the Subdivision Surface modifiers _Levels_ setting. Start with the default scene and select the Modifiers tab, then add a Subdivision Surface modifier to the cube. Now hover your mouse over the button labeled _Levels Viewport_ , The tooltip includes [[bpy.types.SubsurfModifier.levels]] but you want the path from the object to this property.
 
-Note that the text copied won’t include the `bpy.data.collection["name"].` component since its assumed that you won’t be doing collection look-ups on every access and typically you’ll want to use the context rather than access each [`bpy.types.ID`](../bpy.types/I/bpy.types.ID.md#bpy.types.ID "bpy.types.ID") instance by name.
+Note that the text copied won’t include the `bpy.data.collection["name"].` component since its assumed that you won’t be doing collection look-ups on every access and typically you’ll want to use the context rather than access each [[bpy.types.ID]] instance by name.
 
-Type in the ID path into a Python console [`bpy.context.active_object`](../bpy.context.md#bpy.context.active_object "bpy.context.active_object"). Include the trailing dot and don’t execute the code, yet.
+Type in the ID path into a Python console [[bpy.context.active_object]]. Include the trailing dot and don’t execute the code, yet.
 
 Now in the button’s context menu select _Copy Data Path_ , then paste the result into the console:
     
@@ -146,11 +146,11 @@ Or access the brush directly:
     bpy.data.textures["Texture"].contrast
     
 
-If you are writing a user tool normally you want to use the [`bpy.context`](../bpy.context.md#module-bpy.context "bpy.context") since the user normally expects the tool to operate on what they have selected. For automation you are more likely to use [`bpy.data`](../bpy.data.md#module-bpy.data "bpy.data") since you want to be able to access specific data and manipulate it, no matter what the user currently has the view set at.
+If you are writing a user tool normally you want to use the [[bpy.context]] since the user normally expects the tool to operate on what they have selected. For automation you are more likely to use [[bpy.data]] since you want to be able to access specific data and manipulate it, no matter what the user currently has the view set at.
 
 ## Operators
 
-Most hotkeys and buttons in Blender call an operator which is also exposed to Python via [`bpy.ops`](bpy.ops.md#module-bpy.ops "bpy.ops").
+Most hotkeys and buttons in Blender call an operator which is also exposed to Python via [[bpy.ops]].
 
 To see the Python equivalent hover your mouse over the button and see the tooltip, e.g `Python: bpy.ops.render.render()`, If there is no tooltip or the `Python:` line is missing then this button is not using an operator and can’t be accessed from Python.
 

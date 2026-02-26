@@ -6,7 +6,7 @@ The purpose of this document is to explain how Python and Blender fit together, 
 
 Blender has an embedded Python interpreter which is loaded when Blender is started and stays active while Blender is running. This interpreter runs scripts to draw the user interface and is used for some of Blender’s internal tools as well.
 
-Blender’s embedded interpreter provides a typical Python environment, so code from tutorials on how to write Python scripts can also be run with Blender’s interpreter. Blender provides its Python modules, such as `bpy` and [`mathutils`](mathutils.md#module-mathutils "mathutils"), to the embedded interpreter so they can be imported into a script and give access to Blender’s data, classes, and functions. Scripts that deal with Blender data will need to import the modules to work.
+Blender’s embedded interpreter provides a typical Python environment, so code from tutorials on how to write Python scripts can also be run with Blender’s interpreter. Blender provides its Python modules, such as `bpy` and [[mathutils]], to the embedded interpreter so they can be imported into a script and give access to Blender’s data, classes, and functions. Scripts that deal with Blender data will need to import the modules to work.
 
 Here is a simple example which moves a vertex attached to an object named “Cube”:
     
@@ -66,17 +66,17 @@ Running Python scripts in the text editor is useful for testing but you’ll wan
 
 The Blender Python API allows integration for:
 
-  * [`bpy.types.Panel`](../bpy.types/P/bpy.types.Panel.md#bpy.types.Panel "bpy.types.Panel")
+  * [[bpy.types.Panel]]
 
-  * [`bpy.types.Menu`](../bpy.types/M/bpy.types.Menu.md#bpy.types.Menu "bpy.types.Menu")
+  * [[bpy.types.Menu]]
 
-  * [`bpy.types.Operator`](../bpy.types/O/bpy.types.Operator.md#bpy.types.Operator "bpy.types.Operator")
+  * [[bpy.types.Operator]]
 
-  * [`bpy.types.PropertyGroup`](../bpy.types/P/bpy.types.PropertyGroup.md#bpy.types.PropertyGroup "bpy.types.PropertyGroup")
+  * [[bpy.types.PropertyGroup]]
 
-  * [`bpy.types.KeyingSet`](../bpy.types/K/bpy.types.KeyingSet.md#bpy.types.KeyingSet "bpy.types.KeyingSet")
+  * [[bpy.types.KeyingSet]]
 
-  * [`bpy.types.RenderEngine`](../bpy.types/R/bpy.types.RenderEngine.md#bpy.types.RenderEngine "bpy.types.RenderEngine")
+  * [[bpy.types.RenderEngine]]
 
 
 This is intentionally limited. Currently, for more advanced features such as mesh modifiers, object types, or shader nodes, C/C++ must be used.
@@ -98,7 +98,7 @@ For example:
     bpy.utils.register_class(SimpleOperator)
     
 
-First note that it defines a subclass as a member of [`bpy.types`](bpy.types.md#module-bpy.types "bpy.types"), this is common for all classes which can be integrated with Blender and is used to distinguish an Operator from a Panel when registering.
+First note that it defines a subclass as a member of [[bpy.types]], this is common for all classes which can be integrated with Blender and is used to distinguish an Operator from a Panel when registering.
 
 Both class properties start with a `bl_` prefix. This is a convention used to distinguish Blender properties from those you add yourself. Next see the execute function, which takes an instance of the operator and the current context. A common prefix is not used for functions. Lastly the register function is called, this takes the class and loads it into Blender. See Class Registration.
 
@@ -137,9 +137,9 @@ User interface classes are given a context in which to draw, buttons, window, fi
 
 In the examples above, the classes don’t define an `__init__(self)` function. In general, defining custom constructors or destructors should not be needed, and is not recommended.
 
-The lifetime of class instances is usually very short (also see the [dedicated section](info_gotchas_internal_data_and_python_objects.md#blender-py-objects-life-time)), a panel for example will have a new instance for every redraw. Some other types, like [`bpy.types.Operator`](../bpy.types/O/bpy.types.Operator.md#bpy.types.Operator "bpy.types.Operator"), have an even more complex internal handling, which can lead to several instantiations for a single operator execution.
+The lifetime of class instances is usually very short (also see the [dedicated section](info_gotchas_internal_data_and_python_objects.md#blender-py-objects-life-time)), a panel for example will have a new instance for every redraw. Some other types, like [[bpy.types.Operator]], have an even more complex internal handling, which can lead to several instantiations for a single operator execution.
 
-There are a few cases where defining `__init__()` does make sense, e.g. when sub-classing a [`bpy.types.RenderEngine`](../bpy.types/R/bpy.types.RenderEngine.md#bpy.types.RenderEngine "bpy.types.RenderEngine"). When doing so, the parent matching function must always be called, otherwise Blender’s internal initialization won’t happen properly:
+There are a few cases where defining `__init__()` does make sense, e.g. when sub-classing a [[bpy.types.RenderEngine]]. When doing so, the parent matching function must always be called, otherwise Blender’s internal initialization won’t happen properly:
     
     
     import bpy
@@ -227,11 +227,11 @@ This allows the script to be run directly in the text editor to test changes. Th
 
 ### Class Registration
 
-Registering a class with Blender results in the class definition being loaded into Blender, where it becomes available alongside existing functionality. Once this class is loaded you can access it from [`bpy.types`](bpy.types.md#module-bpy.types "bpy.types"), using the `bl_idname` rather than the classes original name.
+Registering a class with Blender results in the class definition being loaded into Blender, where it becomes available alongside existing functionality. Once this class is loaded you can access it from [[bpy.types]], using the `bl_idname` rather than the classes original name.
 
 Note
 
-There are some exceptions to this for class names which aren’t guarantee to be unique. In this case use: [`bpy.types.Struct.bl_rna_get_subclass_py()`](../bpy.types/S/bpy.types.Struct.md#bpy.types.Struct.bl_rna_get_subclass_py "bpy.types.Struct.bl_rna_get_subclass_py").
+There are some exceptions to this for class names which aren’t guarantee to be unique. In this case use: [[bpy.types.Struct.bl_rna_get_subclass_py()]].
 
 When loading a class, Blender performs sanity checks making sure all required properties and functions are found, that properties have the correct type, and that functions have the right number of arguments.
 

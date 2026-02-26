@@ -1,6 +1,6 @@
 # ViewLayer(bpy_struct)
 
-base class — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")
+base class — [[bpy_struct]]
 
 _class _bpy.types.ViewLayer(_bpy_struct_)
     
@@ -15,7 +15,7 @@ Active AOV
 Type:
     
 
-[`AOV`](../A/bpy.types.AOV.md#bpy.types.AOV "bpy.types.AOV"), (readonly)
+[[AOV]], (readonly)
 
 active_aov_index
     
@@ -35,7 +35,7 @@ Active layer collection in this view layer’s hierarchy
 Type:
     
 
-[`LayerCollection`](../L/bpy.types.LayerCollection.md#bpy.types.LayerCollection "bpy.types.LayerCollection"), (never None)
+[[LayerCollection]], (never None)
 
 active_lightgroup
     
@@ -45,7 +45,7 @@ Active Lightgroup
 Type:
     
 
-[`Lightgroup`](../L/bpy.types.Lightgroup.md#bpy.types.Lightgroup "bpy.types.Lightgroup"), (readonly)
+[[Lightgroup]], (readonly)
 
 active_lightgroup_index
     
@@ -63,7 +63,7 @@ aovs
 Type:
     
 
-[`AOVs`](../A/bpy.types.AOVs.md#bpy.types.AOVs "bpy.types.AOVs") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`AOV`](../A/bpy.types.AOV.md#bpy.types.AOV "bpy.types.AOV"), (readonly)
+[[AOVs]] [[bpy_prop_collection]] of [[AOV]], (readonly)
 
 cycles
     
@@ -83,7 +83,7 @@ Dependencies in the scene data
 Type:
     
 
-[`Depsgraph`](../D/bpy.types.Depsgraph.md#bpy.types.Depsgraph "bpy.types.Depsgraph"), (readonly)
+[[Depsgraph]], (readonly)
 
 eevee
     
@@ -93,7 +93,7 @@ View layer settings for EEVEE
 Type:
     
 
-[`ViewLayerEEVEE`](bpy.types.ViewLayerEEVEE.md#bpy.types.ViewLayerEEVEE "bpy.types.ViewLayerEEVEE"), (readonly, never None)
+[[ViewLayerEEVEE]], (readonly, never None)
 
 freestyle_settings
     
@@ -101,7 +101,7 @@ freestyle_settings
 Type:
     
 
-[`FreestyleSettings`](../F/bpy.types.FreestyleSettings.md#bpy.types.FreestyleSettings "bpy.types.FreestyleSettings"), (readonly, never None)
+[[FreestyleSettings]], (readonly, never None)
 
 has_export_collections
     
@@ -121,7 +121,7 @@ Root of collections hierarchy of this view layer, its ‘collection’ pointer p
 Type:
     
 
-[`LayerCollection`](../L/bpy.types.LayerCollection.md#bpy.types.LayerCollection "bpy.types.LayerCollection"), (readonly, never None)
+[[LayerCollection]], (readonly, never None)
 
 lightgroups
     
@@ -129,7 +129,7 @@ lightgroups
 Type:
     
 
-[`Lightgroups`](../L/bpy.types.Lightgroups.md#bpy.types.Lightgroups "bpy.types.Lightgroups") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`Lightgroup`](../L/bpy.types.Lightgroup.md#bpy.types.Lightgroup "bpy.types.Lightgroup"), (readonly)
+[[Lightgroups]] [[bpy_prop_collection]] of [[Lightgroup]], (readonly)
 
 material_override
     
@@ -139,7 +139,7 @@ Material to override all other materials in this view layer
 Type:
     
 
-[`Material`](../M/bpy.types.Material.md#bpy.types.Material "bpy.types.Material")
+[[Material]]
 
 name
     
@@ -159,7 +159,7 @@ All the objects in this layer
 Type:
     
 
-[`LayerObjects`](../L/bpy.types.LayerObjects.md#bpy.types.LayerObjects "bpy.types.LayerObjects") [`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object"), (readonly)
+[[LayerObjects]] [[bpy_prop_collection]] of [[Object]], (readonly)
 
 pass_alpha_threshold
     
@@ -589,7 +589,7 @@ Override world in this view layer
 Type:
     
 
-[`World`](../W/bpy.types.World.md#bpy.types.World "bpy.types.World")
+[[World]]
 
 bl_system_properties_get(_*_ , _do_create =False_)
     
@@ -609,7 +609,7 @@ The system properties root container, or None if there are no system properties 
 Return type:
     
 
-[`PropertyGroup`](../P/bpy.types.PropertyGroup.md#bpy.types.PropertyGroup "bpy.types.PropertyGroup")
+[[PropertyGroup]]
 
 _classmethod _update_render_passes()
     
@@ -637,7 +637,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -659,7 +659,7 @@ type
 
 ## Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [[bpy_struct.id_data]]
 
 | 
 
@@ -669,63 +669,63 @@ type
   
 ## Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
 
 | 
 
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
 
   
 ---|---  
   
 ## References
 
-  * [`bpy.context.view_layer`](../../bpy.context.md#bpy.context.view_layer "bpy.context.view_layer")
-  * [`Context.view_layer`](../C/bpy.types.Context.md#bpy.types.Context.view_layer "bpy.types.Context.view_layer")
-  * [`Depsgraph.view_layer`](../D/bpy.types.Depsgraph.md#bpy.types.Depsgraph.view_layer "bpy.types.Depsgraph.view_layer")
-  * [`Depsgraph.view_layer_eval`](../D/bpy.types.Depsgraph.md#bpy.types.Depsgraph.view_layer_eval "bpy.types.Depsgraph.view_layer_eval")
-  * [`ID.override_hierarchy_create`](../I/bpy.types.ID.md#bpy.types.ID.override_hierarchy_create "bpy.types.ID.override_hierarchy_create")
-  * [`IDOverrideLibrary.resync`](../I/bpy.types.IDOverrideLibrary.md#bpy.types.IDOverrideLibrary.resync "bpy.types.IDOverrideLibrary.resync")
-  * [`LayerCollection.has_selected_objects`](../L/bpy.types.LayerCollection.md#bpy.types.LayerCollection.has_selected_objects "bpy.types.LayerCollection.has_selected_objects")
-  * [`Object.hide_get`](../O/bpy.types.Object.md#bpy.types.Object.hide_get "bpy.types.Object.hide_get")
-  * [`Object.hide_set`](../O/bpy.types.Object.md#bpy.types.Object.hide_set "bpy.types.Object.hide_set")
-  * [`Object.holdout_get`](../O/bpy.types.Object.md#bpy.types.Object.holdout_get "bpy.types.Object.holdout_get")
-  * [`Object.indirect_only_get`](../O/bpy.types.Object.md#bpy.types.Object.indirect_only_get "bpy.types.Object.indirect_only_get")
+  * [[bpy.context.view_layer]]
+  * [[Context.view_layer]]
+  * [[Depsgraph.view_layer]]
+  * [[Depsgraph.view_layer_eval]]
+  * [[ID.override_hierarchy_create]]
+  * [[IDOverrideLibrary.resync]]
+  * [[LayerCollection.has_selected_objects]]
+  * [[Object.hide_get]]
+  * [[Object.hide_set]]
+  * [[Object.holdout_get]]
+  * [[Object.indirect_only_get]]
 
 | 
 
-  * [`Object.select_get`](../O/bpy.types.Object.md#bpy.types.Object.select_get "bpy.types.Object.select_get")
-  * [`Object.select_set`](../O/bpy.types.Object.md#bpy.types.Object.select_set "bpy.types.Object.select_set")
-  * [`Object.visible_get`](../O/bpy.types.Object.md#bpy.types.Object.visible_get "bpy.types.Object.visible_get")
-  * [`RenderEngine.register_pass`](../R/bpy.types.RenderEngine.md#bpy.types.RenderEngine.register_pass "bpy.types.RenderEngine.register_pass")
-  * [`RenderEngine.update_render_passes`](../R/bpy.types.RenderEngine.md#bpy.types.RenderEngine.update_render_passes "bpy.types.RenderEngine.update_render_passes")
-  * [`Scene.statistics`](../S/bpy.types.Scene.md#bpy.types.Scene.statistics "bpy.types.Scene.statistics")
-  * [`Scene.view_layers`](../S/bpy.types.Scene.md#bpy.types.Scene.view_layers "bpy.types.Scene.view_layers")
-  * [`ViewLayers.new`](bpy.types.ViewLayers.md#bpy.types.ViewLayers.new "bpy.types.ViewLayers.new")
-  * [`ViewLayers.remove`](bpy.types.ViewLayers.md#bpy.types.ViewLayers.remove "bpy.types.ViewLayers.remove")
-  * [`Window.view_layer`](../W/bpy.types.Window.md#bpy.types.Window.view_layer "bpy.types.Window.view_layer")
+  * [[Object.select_get]]
+  * [[Object.select_set]]
+  * [[Object.visible_get]]
+  * [[RenderEngine.register_pass]]
+  * [[RenderEngine.update_render_passes]]
+  * [[Scene.statistics]]
+  * [[Scene.view_layers]]
+  * [[ViewLayers.new]]
+  * [[ViewLayers.remove]]
+  * [[Window.view_layer]]
 
   
 ---|---

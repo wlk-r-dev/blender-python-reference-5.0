@@ -1,6 +1,6 @@
 # ToolSettings(bpy_struct)
 
-base class — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")
+base class — [[bpy_struct]]
 
 _class _bpy.types.ToolSettings(_bpy_struct_)
     
@@ -53,7 +53,7 @@ Object to mirror over. Leave empty and name a bone to always mirror over that bo
 Type:
     
 
-[`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")
+[[Object]]
 
 anim_relative_object
     
@@ -63,7 +63,7 @@ Object to which matrices are made relative
 Type:
     
 
-[`Object`](../O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")
+[[Object]]
 
 annotation_stroke_placement_view2d
     
@@ -121,7 +121,7 @@ curve_paint_settings
 Type:
     
 
-[`CurvePaintSettings`](../C/bpy.types.CurvePaintSettings.md#bpy.types.CurvePaintSettings "bpy.types.CurvePaintSettings"), (readonly, never None)
+[[CurvePaintSettings]], (readonly, never None)
 
 curves_sculpt
     
@@ -129,7 +129,7 @@ curves_sculpt
 Type:
     
 
-[`CurvesSculpt`](../C/bpy.types.CurvesSculpt.md#bpy.types.CurvesSculpt "bpy.types.CurvesSculpt"), (readonly)
+[[CurvesSculpt]], (readonly)
 
 custom_bevel_profile_preset
     
@@ -139,7 +139,7 @@ Used for defining a profile’s path
 Type:
     
 
-[`CurveProfile`](../C/bpy.types.CurveProfile.md#bpy.types.CurveProfile "bpy.types.CurveProfile"), (readonly)
+[[CurveProfile]], (readonly)
 
 double_threshold
     
@@ -159,7 +159,7 @@ Settings for Grease Pencil interpolation tools
 Type:
     
 
-[`GPencilInterpolateSettings`](../G/bpy.types.GPencilInterpolateSettings.md#bpy.types.GPencilInterpolateSettings "bpy.types.GPencilInterpolateSettings"), (readonly)
+[[GPencilInterpolateSettings]], (readonly)
 
 gpencil_paint
     
@@ -167,7 +167,7 @@ gpencil_paint
 Type:
     
 
-[`GpPaint`](../G/bpy.types.GpPaint.md#bpy.types.GpPaint "bpy.types.GpPaint"), (readonly)
+[[GpPaint]], (readonly)
 
 gpencil_sculpt
     
@@ -177,7 +177,7 @@ Settings for stroke sculpting tools and brushes
 Type:
     
 
-[`GPencilSculptSettings`](../G/bpy.types.GPencilSculptSettings.md#bpy.types.GPencilSculptSettings "bpy.types.GPencilSculptSettings"), (readonly)
+[[GPencilSculptSettings]], (readonly)
 
 gpencil_sculpt_paint
     
@@ -185,7 +185,7 @@ gpencil_sculpt_paint
 Type:
     
 
-[`GpSculptPaint`](../G/bpy.types.GpSculptPaint.md#bpy.types.GpSculptPaint "bpy.types.GpSculptPaint"), (readonly)
+[[GpSculptPaint]], (readonly)
 
 gpencil_selectmode_edit
     
@@ -243,7 +243,7 @@ gpencil_vertex_paint
 Type:
     
 
-[`GpVertexPaint`](../G/bpy.types.GpVertexPaint.md#bpy.types.GpVertexPaint "bpy.types.GpVertexPaint"), (readonly)
+[[GpVertexPaint]], (readonly)
 
 gpencil_weight_paint
     
@@ -251,7 +251,7 @@ gpencil_weight_paint
 Type:
     
 
-[`GpWeightPaint`](../G/bpy.types.GpWeightPaint.md#bpy.types.GpWeightPaint "bpy.types.GpWeightPaint"), (readonly)
+[[GpWeightPaint]], (readonly)
 
 image_paint
     
@@ -259,7 +259,7 @@ image_paint
 Type:
     
 
-[`ImagePaint`](../I/bpy.types.ImagePaint.md#bpy.types.ImagePaint "bpy.types.ImagePaint"), (readonly)
+[[ImagePaint]], (readonly)
 
 keyframe_type
     
@@ -309,7 +309,7 @@ Normal vector used to copy, add or multiply
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
 
 paint_mode
     
@@ -317,7 +317,7 @@ paint_mode
 Type:
     
 
-[`PaintModeSettings`](../P/bpy.types.PaintModeSettings.md#bpy.types.PaintModeSettings "bpy.types.PaintModeSettings"), (readonly)
+[[PaintModeSettings]], (readonly)
 
 particle_edit
     
@@ -325,7 +325,7 @@ particle_edit
 Type:
     
 
-[`ParticleEdit`](../P/bpy.types.ParticleEdit.md#bpy.types.ParticleEdit "bpy.types.ParticleEdit"), (readonly)
+[[ParticleEdit]], (readonly)
 
 plane_axis
     
@@ -425,7 +425,7 @@ sculpt
 Type:
     
 
-[`Sculpt`](../S/bpy.types.Sculpt.md#bpy.types.Sculpt "bpy.types.Sculpt"), (readonly)
+[[Sculpt]], (readonly)
 
 sequencer_tool_settings
     
@@ -433,7 +433,7 @@ sequencer_tool_settings
 Type:
     
 
-[`SequencerToolSettings`](../S/bpy.types.SequencerToolSettings.md#bpy.types.SequencerToolSettings "bpy.types.SequencerToolSettings"), (readonly, never None)
+[[SequencerToolSettings]], (readonly, never None)
 
 show_uv_local_view
     
@@ -646,7 +646,7 @@ statvis
 Type:
     
 
-[`MeshStatVis`](../M/bpy.types.MeshStatVis.md#bpy.types.MeshStatVis "bpy.types.MeshStatVis"), (readonly, never None)
+[[MeshStatVis]], (readonly, never None)
 
 transform_pivot_point
     
@@ -1285,7 +1285,7 @@ uv_sculpt
 Type:
     
 
-[`UvSculpt`](../U/bpy.types.UvSculpt.md#bpy.types.UvSculpt "bpy.types.UvSculpt"), (readonly)
+[[UvSculpt]], (readonly)
 
 uv_sculpt_all_islands
     
@@ -1384,7 +1384,7 @@ vertex_paint
 Type:
     
 
-[`VertexPaint`](../V/bpy.types.VertexPaint.md#bpy.types.VertexPaint "bpy.types.VertexPaint"), (readonly)
+[[VertexPaint]], (readonly)
 
 weight_paint
     
@@ -1392,7 +1392,7 @@ weight_paint
 Type:
     
 
-[`VertexPaint`](../V/bpy.types.VertexPaint.md#bpy.types.VertexPaint "bpy.types.VertexPaint"), (readonly)
+[[VertexPaint]], (readonly)
 
 workspace_tool_type
     
@@ -1420,7 +1420,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -1442,7 +1442,7 @@ type
 
 ## Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [[bpy_struct.id_data]]
 
 | 
 
@@ -1452,45 +1452,45 @@ type
   
 ## Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
 
 | 
 
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
 
   
 ---|---  
   
 ## References
 
-  * [`bpy.context.tool_settings`](../../bpy.context.md#bpy.context.tool_settings "bpy.context.tool_settings")
-  * [`Context.tool_settings`](../C/bpy.types.Context.md#bpy.types.Context.tool_settings "bpy.types.Context.tool_settings")
+  * [[bpy.context.tool_settings]]
+  * [[Context.tool_settings]]
 
 | 
 
-  * [`Scene.tool_settings`](../S/bpy.types.Scene.md#bpy.types.Scene.tool_settings "bpy.types.Scene.tool_settings")
+  * [[Scene.tool_settings]]
 
   
 ---|---

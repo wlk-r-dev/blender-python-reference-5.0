@@ -1,6 +1,6 @@
 # EditBone(bpy_struct)
 
-base class — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")
+base class — [[bpy_struct]]
 
 _class _bpy.types.EditBone(_bpy_struct_)
     
@@ -208,7 +208,7 @@ Scale factors for the start of the B-Bone, adjusts thickness (for tapering effec
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (1.0, 1.0, 1.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (1.0, 1.0, 1.0)
 
 bbone_scaleout
     
@@ -218,7 +218,7 @@ Scale factors for the end of the B-Bone, adjusts thickness (for tapering effects
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (1.0, 1.0, 1.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (1.0, 1.0, 1.0)
 
 bbone_segments
     
@@ -258,7 +258,7 @@ Bone Collections that contain this bone
 Type:
     
 
-[`bpy_prop_collection`](../_other/bpy.types.bpy_prop_collection.md#bpy.types.bpy_prop_collection "bpy.types.bpy_prop_collection") of [`BoneCollection`](../B/bpy.types.BoneCollection.md#bpy.types.BoneCollection "bpy.types.BoneCollection"), (readonly)
+[[bpy_prop_collection]] of [[BoneCollection]], (readonly)
 
 color
     
@@ -266,7 +266,7 @@ color
 Type:
     
 
-[`BoneColor`](../B/bpy.types.BoneColor.md#bpy.types.BoneColor "bpy.types.BoneColor"), (readonly)
+[[BoneColor]], (readonly)
 
 display_type
     
@@ -317,7 +317,7 @@ Location of head end of the bone
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
 
 head_radius
     
@@ -400,7 +400,7 @@ Matrix combining location and rotation of the bone (head position, direction and
 Type:
     
 
-[`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix") of 4 * 4 items in [-inf, inf], default ((0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0))
+[[mathutils.Matrix]] of 4 * 4 items in [-inf, inf], default ((0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0))
 
 name
     
@@ -472,7 +472,7 @@ Location of tail end of the bone
 Type:
     
 
-[`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
+[[mathutils.Vector]] of 3 items in [-inf, inf], default (0.0, 0.0, 0.0)
 
 tail_radius
     
@@ -674,7 +674,7 @@ The system properties root container, or None if there are no system properties 
 Return type:
     
 
-[`PropertyGroup`](../P/bpy.types.PropertyGroup.md#bpy.types.PropertyGroup "bpy.types.PropertyGroup")
+[[PropertyGroup]]
 
 align_roll(_vector_)
     
@@ -684,7 +684,7 @@ Align the bone to a local-space roll so the Z axis points in the direction of th
 Parameters:
     
 
-**vector** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 3 items in [-inf, inf]) – Vector
+**vector** ([[mathutils.Vector]] of 3 items in [-inf, inf]) – Vector
 
 align_orientation(_other_)
     
@@ -704,7 +704,7 @@ Transform the bones head, tail, roll and envelope (when the matrix has a scale c
 Parameters:
     
 
-  * **matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – 3x3 or 4x4 transformation matrix.
+  * **matrix** ([[mathutils.Matrix]]) – 3x3 or 4x4 transformation matrix.
 
   * **scale** (_bool_) – Scale the bone envelope by the matrix.
 
@@ -732,7 +732,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -754,7 +754,7 @@ type
 
 ## Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [[bpy_struct.id_data]]
 
 | 
 
@@ -764,52 +764,52 @@ type
   
 ## Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
 
 | 
 
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
 
   
 ---|---  
   
 ## References
 
-  * [`bpy.context.active_bone`](../../bpy.context.md#bpy.context.active_bone "bpy.context.active_bone")
-  * [`bpy.context.edit_bone`](../../bpy.context.md#bpy.context.edit_bone "bpy.context.edit_bone")
-  * [`bpy.context.editable_bones`](../../bpy.context.md#bpy.context.editable_bones "bpy.context.editable_bones")
-  * [`bpy.context.selected_bones`](../../bpy.context.md#bpy.context.selected_bones "bpy.context.selected_bones")
-  * [`bpy.context.selected_editable_bones`](../../bpy.context.md#bpy.context.selected_editable_bones "bpy.context.selected_editable_bones")
-  * [`bpy.context.visible_bones`](../../bpy.context.md#bpy.context.visible_bones "bpy.context.visible_bones")
-  * [`Armature.edit_bones`](../A/bpy.types.Armature.md#bpy.types.Armature.edit_bones "bpy.types.Armature.edit_bones")
+  * [[bpy.context.active_bone]]
+  * [[bpy.context.edit_bone]]
+  * [[bpy.context.editable_bones]]
+  * [[bpy.context.selected_bones]]
+  * [[bpy.context.selected_editable_bones]]
+  * [[bpy.context.visible_bones]]
+  * [[Armature.edit_bones]]
 
 | 
 
-  * [`ArmatureEditBones.active`](../A/bpy.types.ArmatureEditBones.md#bpy.types.ArmatureEditBones.active "bpy.types.ArmatureEditBones.active")
-  * [`ArmatureEditBones.new`](../A/bpy.types.ArmatureEditBones.md#bpy.types.ArmatureEditBones.new "bpy.types.ArmatureEditBones.new")
-  * [`ArmatureEditBones.remove`](../A/bpy.types.ArmatureEditBones.md#bpy.types.ArmatureEditBones.remove "bpy.types.ArmatureEditBones.remove")
+  * [[ArmatureEditBones.active]]
+  * [[ArmatureEditBones.new]]
+  * [[ArmatureEditBones.remove]]
   * `EditBone.bbone_custom_handle_end`
   * `EditBone.bbone_custom_handle_start`
   * `EditBone.parent`

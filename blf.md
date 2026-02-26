@@ -4,7 +4,7 @@ This module provides access to Blender’s text drawing functions.
 
 ## Hello World Text Example
 
-Example of using the blf module. For this module to work we need to use the GPU module [`gpu`](gpu.md#module-gpu "gpu") as well.
+Example of using the blf module. For this module to work we need to use the GPU module [[gpu]] as well.
     
     
     # Import stand alone modules.
@@ -49,7 +49,7 @@ Example of using the blf module. For this module to work we need to use the GPU 
 
 ## Drawing Text to an Image
 
-Example showing how text can be draw into an image. This can be done by binding an image buffer ([`imbuf`](imbuf.md#module-imbuf "imbuf")) to the font’s ID.
+Example showing how text can be draw into an image. This can be done by binding an image buffer ([[imbuf]]) to the font’s ID.
     
     
     import blf

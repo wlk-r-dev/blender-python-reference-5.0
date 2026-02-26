@@ -15,7 +15,7 @@ A 4x4 view matrix.
 Return type:
     
 
-[`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")
+[[mathutils.Matrix]]
 
 gpu.matrix.get_normal_matrix()
     
@@ -30,7 +30,7 @@ A 3x3 normal matrix.
 Return type:
     
 
-[`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")
+[[mathutils.Matrix]]
 
 gpu.matrix.get_projection_matrix()
     
@@ -45,7 +45,7 @@ A 4x4 projection matrix.
 Return type:
     
 
-[`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")
+[[mathutils.Matrix]]
 
 gpu.matrix.load_identity()
     
@@ -60,7 +60,7 @@ Load a matrix into the stack.
 Parameters:
     
 
-**matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – A 4x4 matrix.
+**matrix** ([[mathutils.Matrix]]) – A 4x4 matrix.
 
 gpu.matrix.load_projection_matrix(_matrix_)
     
@@ -70,7 +70,7 @@ Load a projection matrix into the stack.
 Parameters:
     
 
-**matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – A 4x4 matrix.
+**matrix** ([[mathutils.Matrix]]) – A 4x4 matrix.
 
 gpu.matrix.multiply_matrix(_matrix_)
     
@@ -80,7 +80,7 @@ Multiply the current stack matrix.
 Parameters:
     
 
-**matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – A 4x4 matrix.
+**matrix** ([[mathutils.Matrix]]) – A 4x4 matrix.
 
 gpu.matrix.pop()
     

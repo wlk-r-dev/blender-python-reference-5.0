@@ -295,9 +295,9 @@ This script is an extended version of the `UIList` subclass used to show vertex 
         register()
     
 
-base class — [`bpy_struct`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")
+base class — [[bpy_struct]]
 
-subclasses — [`ASSETBROWSER_UL_metadata_tags`](../A/bpy.types.ASSETBROWSER_UL_metadata_tags.md#bpy.types.ASSETBROWSER_UL_metadata_tags "bpy.types.ASSETBROWSER_UL_metadata_tags"), [`CLIP_UL_tracking_objects`](../C/bpy.types.CLIP_UL_tracking_objects.md#bpy.types.CLIP_UL_tracking_objects "bpy.types.CLIP_UL_tracking_objects"), [`CURVES_UL_attributes`](../C/bpy.types.CURVES_UL_attributes.md#bpy.types.CURVES_UL_attributes "bpy.types.CURVES_UL_attributes"), [`DATA_UL_bone_collections`](../D/bpy.types.DATA_UL_bone_collections.md#bpy.types.DATA_UL_bone_collections "bpy.types.DATA_UL_bone_collections"), [`FILEBROWSER_UL_dir`](../F/bpy.types.FILEBROWSER_UL_dir.md#bpy.types.FILEBROWSER_UL_dir "bpy.types.FILEBROWSER_UL_dir"), [`GPENCIL_UL_annotation_layer`](../G/bpy.types.GPENCIL_UL_annotation_layer.md#bpy.types.GPENCIL_UL_annotation_layer "bpy.types.GPENCIL_UL_annotation_layer"), [`GPENCIL_UL_matslots`](../G/bpy.types.GPENCIL_UL_matslots.md#bpy.types.GPENCIL_UL_matslots "bpy.types.GPENCIL_UL_matslots"), [`GREASE_PENCIL_UL_attributes`](../G/bpy.types.GREASE_PENCIL_UL_attributes.md#bpy.types.GREASE_PENCIL_UL_attributes "bpy.types.GREASE_PENCIL_UL_attributes"), [`GREASE_PENCIL_UL_masks`](../G/bpy.types.GREASE_PENCIL_UL_masks.md#bpy.types.GREASE_PENCIL_UL_masks "bpy.types.GREASE_PENCIL_UL_masks"), [`IMAGE_UL_render_slots`](../I/bpy.types.IMAGE_UL_render_slots.md#bpy.types.IMAGE_UL_render_slots "bpy.types.IMAGE_UL_render_slots"), [`IMAGE_UL_udim_tiles`](../I/bpy.types.IMAGE_UL_udim_tiles.md#bpy.types.IMAGE_UL_udim_tiles "bpy.types.IMAGE_UL_udim_tiles"), [`MASK_UL_layers`](../M/bpy.types.MASK_UL_layers.md#bpy.types.MASK_UL_layers "bpy.types.MASK_UL_layers"), [`MATERIAL_UL_matslots`](../M/bpy.types.MATERIAL_UL_matslots.md#bpy.types.MATERIAL_UL_matslots "bpy.types.MATERIAL_UL_matslots"), [`MESH_UL_attributes`](../M/bpy.types.MESH_UL_attributes.md#bpy.types.MESH_UL_attributes "bpy.types.MESH_UL_attributes"), [`MESH_UL_color_attributes`](../M/bpy.types.MESH_UL_color_attributes.md#bpy.types.MESH_UL_color_attributes "bpy.types.MESH_UL_color_attributes"), [`MESH_UL_color_attributes_selector`](../M/bpy.types.MESH_UL_color_attributes_selector.md#bpy.types.MESH_UL_color_attributes_selector "bpy.types.MESH_UL_color_attributes_selector"), [`MESH_UL_uvmaps`](../M/bpy.types.MESH_UL_uvmaps.md#bpy.types.MESH_UL_uvmaps "bpy.types.MESH_UL_uvmaps"), [`MESH_UL_vgroups`](../M/bpy.types.MESH_UL_vgroups.md#bpy.types.MESH_UL_vgroups "bpy.types.MESH_UL_vgroups"), [`PARTICLE_UL_particle_systems`](../P/bpy.types.PARTICLE_UL_particle_systems.md#bpy.types.PARTICLE_UL_particle_systems "bpy.types.PARTICLE_UL_particle_systems"), [`PHYSICS_UL_dynapaint_surfaces`](../P/bpy.types.PHYSICS_UL_dynapaint_surfaces.md#bpy.types.PHYSICS_UL_dynapaint_surfaces "bpy.types.PHYSICS_UL_dynapaint_surfaces"), [`POINTCLOUD_UL_attributes`](../P/bpy.types.POINTCLOUD_UL_attributes.md#bpy.types.POINTCLOUD_UL_attributes "bpy.types.POINTCLOUD_UL_attributes"), [`POSE_UL_selection_set`](../P/bpy.types.POSE_UL_selection_set.md#bpy.types.POSE_UL_selection_set "bpy.types.POSE_UL_selection_set"), [`RENDER_UL_renderviews`](../R/bpy.types.RENDER_UL_renderviews.md#bpy.types.RENDER_UL_renderviews "bpy.types.RENDER_UL_renderviews"), [`SCENE_UL_gltf2_filter_action`](../S/bpy.types.SCENE_UL_gltf2_filter_action.md#bpy.types.SCENE_UL_gltf2_filter_action "bpy.types.SCENE_UL_gltf2_filter_action"), [`SCENE_UL_keying_set_paths`](../S/bpy.types.SCENE_UL_keying_set_paths.md#bpy.types.SCENE_UL_keying_set_paths "bpy.types.SCENE_UL_keying_set_paths"), [`TEXTURE_UL_texpaintslots`](../T/bpy.types.TEXTURE_UL_texpaintslots.md#bpy.types.TEXTURE_UL_texpaintslots "bpy.types.TEXTURE_UL_texpaintslots"), [`TEXTURE_UL_texslots`](../T/bpy.types.TEXTURE_UL_texslots.md#bpy.types.TEXTURE_UL_texslots "bpy.types.TEXTURE_UL_texslots"), [`UI_UL_list`](bpy.types.UI_UL_list.md#bpy.types.UI_UL_list "bpy.types.UI_UL_list"), [`USERPREF_UL_asset_libraries`](bpy.types.USERPREF_UL_asset_libraries.md#bpy.types.USERPREF_UL_asset_libraries "bpy.types.USERPREF_UL_asset_libraries"), [`USERPREF_UL_extension_repos`](bpy.types.USERPREF_UL_extension_repos.md#bpy.types.USERPREF_UL_extension_repos "bpy.types.USERPREF_UL_extension_repos"), [`VIEWLAYER_UL_aov`](../V/bpy.types.VIEWLAYER_UL_aov.md#bpy.types.VIEWLAYER_UL_aov "bpy.types.VIEWLAYER_UL_aov"), [`VIEWLAYER_UL_linesets`](../V/bpy.types.VIEWLAYER_UL_linesets.md#bpy.types.VIEWLAYER_UL_linesets "bpy.types.VIEWLAYER_UL_linesets"), [`VOLUME_UL_grids`](../V/bpy.types.VOLUME_UL_grids.md#bpy.types.VOLUME_UL_grids "bpy.types.VOLUME_UL_grids"), [`WORKSPACE_UL_addons_items`](../W/bpy.types.WORKSPACE_UL_addons_items.md#bpy.types.WORKSPACE_UL_addons_items "bpy.types.WORKSPACE_UL_addons_items")
+subclasses — [[ASSETBROWSER_UL_metadata_tags]], [[CLIP_UL_tracking_objects]], [[CURVES_UL_attributes]], [[DATA_UL_bone_collections]], [[FILEBROWSER_UL_dir]], [[GPENCIL_UL_annotation_layer]], [[GPENCIL_UL_matslots]], [[GREASE_PENCIL_UL_attributes]], [[GREASE_PENCIL_UL_masks]], [[IMAGE_UL_render_slots]], [[IMAGE_UL_udim_tiles]], [[MASK_UL_layers]], [[MATERIAL_UL_matslots]], [[MESH_UL_attributes]], [[MESH_UL_color_attributes]], [[MESH_UL_color_attributes_selector]], [[MESH_UL_uvmaps]], [[MESH_UL_vgroups]], [[PARTICLE_UL_particle_systems]], [[PHYSICS_UL_dynapaint_surfaces]], [[POINTCLOUD_UL_attributes]], [[POSE_UL_selection_set]], [[RENDER_UL_renderviews]], [[SCENE_UL_gltf2_filter_action]], [[SCENE_UL_keying_set_paths]], [[TEXTURE_UL_texpaintslots]], [[TEXTURE_UL_texslots]], [[UI_UL_list]], [[USERPREF_UL_asset_libraries]], [[USERPREF_UL_extension_repos]], [[VIEWLAYER_UL_aov]], [[VIEWLAYER_UL_linesets]], [[VOLUME_UL_grids]], [[WORKSPACE_UL_addons_items]]
 
 _class _bpy.types.UIList(_bpy_struct_)
     
@@ -430,7 +430,7 @@ The system properties root container, or None if there are no system properties 
 Return type:
     
 
-[`PropertyGroup`](../P/bpy.types.PropertyGroup.md#bpy.types.PropertyGroup "bpy.types.PropertyGroup")
+[[PropertyGroup]]
 
 draw_item(_context_ , _layout_ , _data_ , _item_ , _icon_ , _active_data_ , _active_property_ , _index_ , _flt_flag_)
     
@@ -440,15 +440,15 @@ Draw an item in the list (NOTE: when you define your own draw_item function, you
 Parameters:
     
 
-  * **layout** ([`UILayout`](bpy.types.UILayout.md#bpy.types.UILayout "bpy.types.UILayout"), (never None)) – Layout to draw the item
+  * **layout** ([[UILayout]], (never None)) – Layout to draw the item
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType")) – Data from which to take Collection property
+  * **data** ([[AnyType]]) – Data from which to take Collection property
 
-  * **item** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType")) – Item of the collection property
+  * **item** ([[AnyType]]) – Item of the collection property
 
   * **icon** (_int in_ _[__0_ _,__inf_ _]_) – Icon of the item in the collection
 
-  * **active_data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType"), (never None)) – Data from which to take property for the active element
+  * **active_data** ([[AnyType]], (never None)) – Data from which to take property for the active element
 
   * **active_property** (_string_ _,__(__optional for registration_ _,__never None_ _)_) – Identifier of property in active_data, for the active element
 
@@ -465,7 +465,7 @@ Draw filtering options
 Parameters:
     
 
-**layout** ([`UILayout`](bpy.types.UILayout.md#bpy.types.UILayout "bpy.types.UILayout"), (never None)) – Layout to draw the item
+**layout** ([[UILayout]], (never None)) – Layout to draw the item
 
 filter_items(_context_ , _data_ , _property_)
     
@@ -475,7 +475,7 @@ Filter and/or re-order items of the collection (output filter results in filter_
 Parameters:
     
 
-  * **data** ([`AnyType`](../A/bpy.types.AnyType.md#bpy.types.AnyType "bpy.types.AnyType")) – Data from which to take Collection property
+  * **data** ([[AnyType]]) – Data from which to take Collection property
 
   * **property** (_string_ _,__(__never None_ _)_) – Identifier of property in data, for the collection
 
@@ -526,7 +526,7 @@ The RNA type or default when not found.
 Return type:
     
 
-[`bpy.types.Struct`](../S/bpy.types.Struct.md#bpy.types.Struct "bpy.types.Struct") subclass
+[[bpy.types.Struct]] subclass
 
 _classmethod _bl_rna_get_subclass_py(_id_ , _default =None_, _/_)
     
@@ -548,7 +548,7 @@ type
 
 ### Inherited Properties
 
-  * [`bpy_struct.id_data`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_data "bpy.types.bpy_struct.id_data")
+  * [[bpy_struct.id_data]]
 
 | 
 
@@ -558,33 +558,33 @@ type
   
 ### Inherited Functions
 
-  * [`bpy_struct.as_pointer`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.as_pointer "bpy.types.bpy_struct.as_pointer")
-  * [`bpy_struct.driver_add`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_add "bpy.types.bpy_struct.driver_add")
-  * [`bpy_struct.driver_remove`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.driver_remove "bpy.types.bpy_struct.driver_remove")
-  * [`bpy_struct.get`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.get "bpy.types.bpy_struct.get")
-  * [`bpy_struct.id_properties_clear`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_clear "bpy.types.bpy_struct.id_properties_clear")
-  * [`bpy_struct.id_properties_ensure`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ensure "bpy.types.bpy_struct.id_properties_ensure")
-  * [`bpy_struct.id_properties_ui`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.id_properties_ui "bpy.types.bpy_struct.id_properties_ui")
-  * [`bpy_struct.is_property_hidden`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_hidden "bpy.types.bpy_struct.is_property_hidden")
-  * [`bpy_struct.is_property_overridable_library`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_overridable_library "bpy.types.bpy_struct.is_property_overridable_library")
-  * [`bpy_struct.is_property_readonly`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_readonly "bpy.types.bpy_struct.is_property_readonly")
-  * [`bpy_struct.is_property_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.is_property_set "bpy.types.bpy_struct.is_property_set")
-  * [`bpy_struct.items`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.items "bpy.types.bpy_struct.items")
+  * [[bpy_struct.as_pointer]]
+  * [[bpy_struct.driver_add]]
+  * [[bpy_struct.driver_remove]]
+  * [[bpy_struct.get]]
+  * [[bpy_struct.id_properties_clear]]
+  * [[bpy_struct.id_properties_ensure]]
+  * [[bpy_struct.id_properties_ui]]
+  * [[bpy_struct.is_property_hidden]]
+  * [[bpy_struct.is_property_overridable_library]]
+  * [[bpy_struct.is_property_readonly]]
+  * [[bpy_struct.is_property_set]]
+  * [[bpy_struct.items]]
 
 | 
 
-  * [`bpy_struct.keyframe_delete`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_delete "bpy.types.bpy_struct.keyframe_delete")
-  * [`bpy_struct.keyframe_insert`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keyframe_insert "bpy.types.bpy_struct.keyframe_insert")
-  * [`bpy_struct.keys`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.keys "bpy.types.bpy_struct.keys")
-  * [`bpy_struct.path_from_id`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_id "bpy.types.bpy_struct.path_from_id")
-  * [`bpy_struct.path_from_module`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_from_module "bpy.types.bpy_struct.path_from_module")
-  * [`bpy_struct.path_resolve`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.path_resolve "bpy.types.bpy_struct.path_resolve")
-  * [`bpy_struct.pop`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.pop "bpy.types.bpy_struct.pop")
-  * [`bpy_struct.property_overridable_library_set`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_overridable_library_set "bpy.types.bpy_struct.property_overridable_library_set")
-  * [`bpy_struct.property_unset`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.property_unset "bpy.types.bpy_struct.property_unset")
-  * [`bpy_struct.rna_ancestors`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.rna_ancestors "bpy.types.bpy_struct.rna_ancestors")
-  * [`bpy_struct.type_recast`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.type_recast "bpy.types.bpy_struct.type_recast")
-  * [`bpy_struct.values`](../_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct.values "bpy.types.bpy_struct.values")
+  * [[bpy_struct.keyframe_delete]]
+  * [[bpy_struct.keyframe_insert]]
+  * [[bpy_struct.keys]]
+  * [[bpy_struct.path_from_id]]
+  * [[bpy_struct.path_from_module]]
+  * [[bpy_struct.path_resolve]]
+  * [[bpy_struct.pop]]
+  * [[bpy_struct.property_overridable_library_set]]
+  * [[bpy_struct.property_unset]]
+  * [[bpy_struct.rna_ancestors]]
+  * [[bpy_struct.type_recast]]
+  * [[bpy_struct.values]]
 
   
 ---|---

@@ -367,7 +367,7 @@ Parameters:
 
   * **geom** (list of (`bmesh.types.BMVert`, `bmesh.types.BMEdge`, `bmesh.types.BMFace`)) – Input geometry.
 
-  * **matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – Matrix defining the mirror transformation.
+  * **matrix** ([[mathutils.Matrix]]) – Matrix defining the mirror transformation.
 
   * **merge_dist** (_float_) – Maximum distance for merging. does no merging if 0.
 
@@ -513,7 +513,7 @@ Parameters:
 
   * **verts** (list of (`bmesh.types.BMVert`)) – Input vertices (all verts will be merged into the first).
 
-  * **merge_co** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") or any sequence of 3 floats) – Position to merge at.
+  * **merge_co** ([[mathutils.Vector]] or any sequence of 3 floats) – Position to merge at.
 
 
 bmesh.ops.collapse_uvs(_bm_ , _edges =[]_)
@@ -560,7 +560,7 @@ Parameters:
 
   * **bm** (`bmesh.types.BMesh`) – The bmesh to operate on.
 
-  * **co** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") or any sequence of 3 floats) – The coordinate of the new vert.
+  * **co** ([[mathutils.Vector]] or any sequence of 3 floats) – The coordinate of the new vert.
 
 
 Returns:
@@ -911,13 +911,13 @@ Parameters:
 
   * **bm** (`bmesh.types.BMesh`) – The bmesh to operate on.
 
-  * **cent** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") or any sequence of 3 floats) – Center of rotation.
+  * **cent** ([[mathutils.Vector]] or any sequence of 3 floats) – Center of rotation.
 
-  * **matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – Matrix defining rotation.
+  * **matrix** ([[mathutils.Matrix]]) – Matrix defining rotation.
 
   * **verts** (list of (`bmesh.types.BMVert`)) – Input vertices.
 
-  * **space** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – Matrix to define the space (typically object matrix).
+  * **space** ([[mathutils.Matrix]]) – Matrix to define the space (typically object matrix).
 
   * **use_shapekey** (_bool_) – Transform shape keys too.
 
@@ -934,9 +934,9 @@ Parameters:
 
   * **bm** (`bmesh.types.BMesh`) – The bmesh to operate on.
 
-  * **vec** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") or any sequence of 3 floats) – Translation offset.
+  * **vec** ([[mathutils.Vector]] or any sequence of 3 floats) – Translation offset.
 
-  * **space** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – Matrix to define the space (typically object matrix).
+  * **space** ([[mathutils.Matrix]]) – Matrix to define the space (typically object matrix).
 
   * **verts** (list of (`bmesh.types.BMVert`)) – Input vertices.
 
@@ -955,9 +955,9 @@ Parameters:
 
   * **bm** (`bmesh.types.BMesh`) – The bmesh to operate on.
 
-  * **vec** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") or any sequence of 3 floats) – Scale factor.
+  * **vec** ([[mathutils.Vector]] or any sequence of 3 floats) – Scale factor.
 
-  * **space** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – Matrix to define the space (typically object matrix).
+  * **space** ([[mathutils.Matrix]]) – Matrix to define the space (typically object matrix).
 
   * **verts** (list of (`bmesh.types.BMVert`)) – Input vertices.
 
@@ -976,9 +976,9 @@ Parameters:
 
   * **bm** (`bmesh.types.BMesh`) – The bmesh to operate on.
 
-  * **matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – Transform matrix.
+  * **matrix** ([[mathutils.Matrix]]) – Transform matrix.
 
-  * **space** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – Matrix to define the space (typically object matrix).
+  * **space** ([[mathutils.Matrix]]) – Matrix to define the space (typically object matrix).
 
   * **verts** (list of (`bmesh.types.BMVert`)) – Input vertices.
 
@@ -997,9 +997,9 @@ Parameters:
 
   * **bm** (`bmesh.types.BMesh`) – The bmesh to operate on.
 
-  * **scene** ([`bpy.types.Scene`](../bpy.types/S/bpy.types.Scene.md#bpy.types.Scene "bpy.types.Scene")) – Pointer to an scene structure.
+  * **scene** ([[bpy.types.Scene]]) – Pointer to an scene structure.
 
-  * **object** ([`bpy.types.Object`](../bpy.types/O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")) – Pointer to an object structure.
+  * **object** ([[bpy.types.Object]]) – Pointer to an object structure.
 
 
 bmesh.ops.bmesh_to_mesh(_bm_ , _mesh_ , _object_)
@@ -1014,9 +1014,9 @@ Parameters:
 
   * **bm** (`bmesh.types.BMesh`) – The bmesh to operate on.
 
-  * **mesh** ([`bpy.types.Mesh`](../bpy.types/M/bpy.types.Mesh.md#bpy.types.Mesh "bpy.types.Mesh")) – Pointer to a mesh structure to fill in.
+  * **mesh** ([[bpy.types.Mesh]]) – Pointer to a mesh structure to fill in.
 
-  * **object** ([`bpy.types.Object`](../bpy.types/O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")) – Pointer to an object structure.
+  * **object** ([[bpy.types.Object]]) – Pointer to an object structure.
 
 
 bmesh.ops.mesh_to_bmesh(_bm_ , _mesh_ , _object_ , _use_shapekey =False_)
@@ -1031,9 +1031,9 @@ Parameters:
 
   * **bm** (`bmesh.types.BMesh`) – The bmesh to operate on.
 
-  * **mesh** ([`bpy.types.Mesh`](../bpy.types/M/bpy.types.Mesh.md#bpy.types.Mesh "bpy.types.Mesh")) – Pointer to a Mesh structure.
+  * **mesh** ([[bpy.types.Mesh]]) – Pointer to a Mesh structure.
 
-  * **object** ([`bpy.types.Object`](../bpy.types/O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")) – Pointer to an Object structure.
+  * **object** ([[bpy.types.Object]]) – Pointer to an Object structure.
 
   * **use_shapekey** (_bool_) – Load active shapekey coordinates into verts.
 
@@ -1615,9 +1615,9 @@ Parameters:
 
   * **dist** (_float_) – Minimum distance when testing if a vert is exactly on the plane.
 
-  * **plane_co** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") or any sequence of 3 floats) – Point on the plane.
+  * **plane_co** ([[mathutils.Vector]] or any sequence of 3 floats) – Point on the plane.
 
-  * **plane_no** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") or any sequence of 3 floats) – Direction of the plane.
+  * **plane_no** ([[mathutils.Vector]] or any sequence of 3 floats) – Direction of the plane.
 
   * **use_snap_center** (_bool_) – Snap axis aligned verts to the center.
 
@@ -1774,15 +1774,15 @@ Parameters:
 
   * **geom** (list of (`bmesh.types.BMVert`, `bmesh.types.BMEdge`, `bmesh.types.BMFace`)) – Input geometry.
 
-  * **cent** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") or any sequence of 3 floats) – Rotation center.
+  * **cent** ([[mathutils.Vector]] or any sequence of 3 floats) – Rotation center.
 
-  * **axis** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") or any sequence of 3 floats) – Rotation axis.
+  * **axis** ([[mathutils.Vector]] or any sequence of 3 floats) – Rotation axis.
 
-  * **dvec** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") or any sequence of 3 floats) – Translation delta per step.
+  * **dvec** ([[mathutils.Vector]] or any sequence of 3 floats) – Translation delta per step.
 
   * **angle** (_float_) – Total rotation angle (radians).
 
-  * **space** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – Matrix to define the space (typically object matrix).
+  * **space** ([[mathutils.Matrix]]) – Matrix to define the space (typically object matrix).
 
   * **steps** (_int_) – Number of steps.
 
@@ -1924,7 +1924,7 @@ Parameters:
 
   * **size** (_float_) – Size of the grid.
 
-  * **matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – Matrix to multiply the new geometry with.
+  * **matrix** ([[mathutils.Matrix]]) – Matrix to multiply the new geometry with.
 
   * **calc_uvs** (_bool_) – Calculate default UVs.
 
@@ -1960,7 +1960,7 @@ Parameters:
 
   * **radius** (_float_) – Radius.
 
-  * **matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – Matrix to multiply the new geometry with.
+  * **matrix** ([[mathutils.Matrix]]) – Matrix to multiply the new geometry with.
 
   * **calc_uvs** (_bool_) – Calculate default UVs.
 
@@ -1994,7 +1994,7 @@ Parameters:
 
   * **radius** (_float_) – Radius.
 
-  * **matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – Matrix to multiply the new geometry with.
+  * **matrix** ([[mathutils.Matrix]]) – Matrix to multiply the new geometry with.
 
   * **calc_uvs** (_bool_) – Calculate default UVs.
 
@@ -2024,7 +2024,7 @@ Parameters:
 
   * **bm** (`bmesh.types.BMesh`) – The bmesh to operate on.
 
-  * **matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – Matrix to multiply the new geometry with.
+  * **matrix** ([[mathutils.Matrix]]) – Matrix to multiply the new geometry with.
 
   * **calc_uvs** (_bool_) – Calculate default UVs.
 
@@ -2066,7 +2066,7 @@ Parameters:
 
   * **depth** (_float_) – Distance between ends.
 
-  * **matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – Matrix to multiply the new geometry with.
+  * **matrix** ([[mathutils.Matrix]]) – Matrix to multiply the new geometry with.
 
   * **calc_uvs** (_bool_) – Calculate default UVs.
 
@@ -2102,7 +2102,7 @@ Parameters:
 
   * **radius** (_float_) – Radius of the circle.
 
-  * **matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – Matrix to multiply the new geometry with.
+  * **matrix** ([[mathutils.Matrix]]) – Matrix to multiply the new geometry with.
 
   * **calc_uvs** (_bool_) – Calculate default UVs.
 
@@ -2134,7 +2134,7 @@ Parameters:
 
   * **size** (_float_) – Size of the cube.
 
-  * **matrix** ([`mathutils.Matrix`](mathutils.md#mathutils.Matrix "mathutils.Matrix")) – Matrix to multiply the new geometry with.
+  * **matrix** ([[mathutils.Matrix]]) – Matrix to multiply the new geometry with.
 
   * **calc_uvs** (_bool_) – Calculate default UVs.
 
@@ -2198,7 +2198,7 @@ Parameters:
 
   * **spread** (_float_) – Amount to offset beveled edge.
 
-  * **custom_profile** ([`bpy.types.bpy_struct`](../bpy.types/_other/bpy.types.bpy_struct.md#bpy.types.bpy_struct "bpy.types.bpy_struct")) – CurveProfile, if None ignored
+  * **custom_profile** ([[bpy.types.bpy_struct]]) – CurveProfile, if None ignored
 
   * **vmesh_method** (_enum in_ _[__'ADJ'__,__'CUTOFF'__]__,__default 'ADJ'_) – The method to use to create meshes at intersections.
 
@@ -2276,7 +2276,7 @@ Parameters:
 
   * **edges** (list of (`bmesh.types.BMEdge`)) – Input edges.
 
-  * **normal** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") or any sequence of 3 floats) – Optionally pass the fill normal to use.
+  * **normal** ([[mathutils.Vector]] or any sequence of 3 floats) – Optionally pass the fill normal to use.
 
 
 Returns:

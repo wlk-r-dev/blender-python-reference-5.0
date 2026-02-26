@@ -8,7 +8,7 @@ Place new marker at specified location
 Parameters:
     
 
-**location** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], (optional)) – Location, Location of marker on frame
+**location** ([[mathutils.Vector]] of 2 items in [-inf, inf], (optional)) – Location, Location of marker on frame
 
 bpy.ops.clip.add_marker_at_click()
     
@@ -180,7 +180,7 @@ Set 2D cursor location
 Parameters:
     
 
-**location** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], (optional)) – Location, Cursor location in normalized clip coordinates
+**location** ([[mathutils.Vector]] of 2 items in [-inf, inf], (optional)) – Location, Cursor location in normalized clip coordinates
 
 bpy.ops.clip.delete_marker(_*_ , _confirm =True_)
     
@@ -264,7 +264,7 @@ Select movie tracking channel
 Parameters:
     
 
-  * **location** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], (optional)) – Location, Mouse location to select channel
+  * **location** ([[mathutils.Vector]] of 2 items in [-inf, inf], (optional)) – Location, Mouse location to select channel
 
   * **extend** (_boolean_ _,__(__optional_ _)_) – Extend, Extend selection rather than clearing the existing selection
 
@@ -357,7 +357,7 @@ Select graph curves
 Parameters:
     
 
-  * **location** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], (optional)) – Location, Mouse location to select nearest entity
+  * **location** ([[mathutils.Vector]] of 2 items in [-inf, inf], (optional)) – Location, Mouse location to select nearest entity
 
   * **extend** (_boolean_ _,__(__optional_ _)_) – Extend, Extend selection rather than clearing the existing selection
 
@@ -607,7 +607,7 @@ Parameters:
 
   * **deselect_all** (_boolean_ _,__(__optional_ _)_) – Deselect On Nothing, Deselect all when nothing under the cursor
 
-  * **location** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], (optional)) – Location, Mouse location in normalized coordinates, 0.0 to 1.0 is within the image bounds
+  * **location** ([[mathutils.Vector]] of 2 items in [-inf, inf], (optional)) – Location, Mouse location in normalized coordinates, 0.0 to 1.0 is within the image bounds
 
 
 bpy.ops.clip.select_all(_*_ , _action ='TOGGLE'_)
@@ -858,7 +858,7 @@ Slide marker areas
 Parameters:
     
 
-**offset** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], (optional)) – Offset, Offset in floating-point units, 1.0 is the width and height of the image
+**offset** ([[mathutils.Vector]] of 2 items in [-inf, inf], (optional)) – Offset, Offset in floating-point units, 1.0 is the width and height of the image
 
 bpy.ops.clip.slide_plane_marker()
     
@@ -1031,7 +1031,7 @@ Pan the view
 Parameters:
     
 
-**offset** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], (optional)) – Offset, Offset in floating-point units, 1.0 is the width and height of the image
+**offset** ([[mathutils.Vector]] of 2 items in [-inf, inf], (optional)) – Offset, Offset in floating-point units, 1.0 is the width and height of the image
 
 bpy.ops.clip.view_selected()
     
@@ -1059,7 +1059,7 @@ Zoom in the view
 Parameters:
     
 
-**location** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], (optional)) – Location, Cursor location in screen coordinates
+**location** ([[mathutils.Vector]] of 2 items in [-inf, inf], (optional)) – Location, Cursor location in screen coordinates
 
 bpy.ops.clip.view_zoom_out(_*_ , _location =(0.0, 0.0)_)
     
@@ -1069,7 +1069,7 @@ Zoom out the view
 Parameters:
     
 
-**location** ([`mathutils.Vector`](mathutils.md#mathutils.Vector "mathutils.Vector") of 2 items in [-inf, inf], (optional)) – Location, Cursor location in normalized (0.0 to 1.0) coordinates
+**location** ([[mathutils.Vector]] of 2 items in [-inf, inf], (optional)) – Location, Cursor location in normalized (0.0 to 1.0) coordinates
 
 bpy.ops.clip.view_zoom_ratio(_*_ , _ratio =0.0_)
     

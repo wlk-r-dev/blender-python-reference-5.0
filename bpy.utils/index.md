@@ -104,7 +104,7 @@ Register a subclass of a Blender type class.
 Parameters:
     
 
-**cls** (type[[`bpy.types.Panel`](../bpy.types/P/bpy.types.Panel.md#bpy.types.Panel "bpy.types.Panel") | [`bpy.types.UIList`](../bpy.types/U/bpy.types.UIList.md#bpy.types.UIList "bpy.types.UIList") | [`bpy.types.Menu`](../bpy.types/M/bpy.types.Menu.md#bpy.types.Menu "bpy.types.Menu") | [`bpy.types.Header`](../bpy.types/H/bpy.types.Header.md#bpy.types.Header "bpy.types.Header") | [`bpy.types.Operator`](../bpy.types/O/bpy.types.Operator.md#bpy.types.Operator "bpy.types.Operator") | [`bpy.types.KeyingSetInfo`](../bpy.types/K/bpy.types.KeyingSetInfo.md#bpy.types.KeyingSetInfo "bpy.types.KeyingSetInfo") | [`bpy.types.RenderEngine`](../bpy.types/R/bpy.types.RenderEngine.md#bpy.types.RenderEngine "bpy.types.RenderEngine") | [`bpy.types.AssetShelf`](../bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf "bpy.types.AssetShelf") | [`bpy.types.FileHandler`](../bpy.types/F/bpy.types.FileHandler.md#bpy.types.FileHandler "bpy.types.FileHandler") | [`bpy.types.PropertyGroup`](../bpy.types/P/bpy.types.PropertyGroup.md#bpy.types.PropertyGroup "bpy.types.PropertyGroup") | [`bpy.types.AddonPreferences`](../bpy.types/A/bpy.types.AddonPreferences.md#bpy.types.AddonPreferences "bpy.types.AddonPreferences") | [`bpy.types.NodeTree`](../bpy.types/N/bpy.types.NodeTree.md#bpy.types.NodeTree "bpy.types.NodeTree") | [`bpy.types.Node`](../bpy.types/N/bpy.types.Node.md#bpy.types.Node "bpy.types.Node") | [`bpy.types.NodeSocket`](../bpy.types/N/bpy.types.NodeSocket.md#bpy.types.NodeSocket "bpy.types.NodeSocket")]) – Registerable Blender class type.
+**cls** (type[[[bpy.types.Panel]] | [[bpy.types.UIList]] | [[bpy.types.Menu]] | [[bpy.types.Header]] | [[bpy.types.Operator]] | [[bpy.types.KeyingSetInfo]] | [[bpy.types.RenderEngine]] | [[bpy.types.AssetShelf]] | [[bpy.types.FileHandler]] | [[bpy.types.PropertyGroup]] | [[bpy.types.AddonPreferences]] | [[bpy.types.NodeTree]] | [[bpy.types.Node]] | [[bpy.types.NodeSocket]]]) – Registerable Blender class type.
 
 Raises:
     
@@ -351,7 +351,7 @@ Unload the Python class from blender.
 Parameters:
     
 
-**cls** (type[[`bpy.types.Panel`](../bpy.types/P/bpy.types.Panel.md#bpy.types.Panel "bpy.types.Panel") | [`bpy.types.UIList`](../bpy.types/U/bpy.types.UIList.md#bpy.types.UIList "bpy.types.UIList") | [`bpy.types.Menu`](../bpy.types/M/bpy.types.Menu.md#bpy.types.Menu "bpy.types.Menu") | [`bpy.types.Header`](../bpy.types/H/bpy.types.Header.md#bpy.types.Header "bpy.types.Header") | [`bpy.types.Operator`](../bpy.types/O/bpy.types.Operator.md#bpy.types.Operator "bpy.types.Operator") | [`bpy.types.KeyingSetInfo`](../bpy.types/K/bpy.types.KeyingSetInfo.md#bpy.types.KeyingSetInfo "bpy.types.KeyingSetInfo") | [`bpy.types.RenderEngine`](../bpy.types/R/bpy.types.RenderEngine.md#bpy.types.RenderEngine "bpy.types.RenderEngine") | [`bpy.types.AssetShelf`](../bpy.types/A/bpy.types.AssetShelf.md#bpy.types.AssetShelf "bpy.types.AssetShelf") | [`bpy.types.FileHandler`](../bpy.types/F/bpy.types.FileHandler.md#bpy.types.FileHandler "bpy.types.FileHandler") | [`bpy.types.PropertyGroup`](../bpy.types/P/bpy.types.PropertyGroup.md#bpy.types.PropertyGroup "bpy.types.PropertyGroup") | [`bpy.types.AddonPreferences`](../bpy.types/A/bpy.types.AddonPreferences.md#bpy.types.AddonPreferences "bpy.types.AddonPreferences") | [`bpy.types.NodeTree`](../bpy.types/N/bpy.types.NodeTree.md#bpy.types.NodeTree "bpy.types.NodeTree") | [`bpy.types.Node`](../bpy.types/N/bpy.types.Node.md#bpy.types.Node "bpy.types.Node") | [`bpy.types.NodeSocket`](../bpy.types/N/bpy.types.NodeSocket.md#bpy.types.NodeSocket "bpy.types.NodeSocket")]) – Blender type class, see `bpy.utils.register_class` for classes which can be registered.
+**cls** (type[[[bpy.types.Panel]] | [[bpy.types.UIList]] | [[bpy.types.Menu]] | [[bpy.types.Header]] | [[bpy.types.Operator]] | [[bpy.types.KeyingSetInfo]] | [[bpy.types.RenderEngine]] | [[bpy.types.AssetShelf]] | [[bpy.types.FileHandler]] | [[bpy.types.PropertyGroup]] | [[bpy.types.AddonPreferences]] | [[bpy.types.NodeTree]] | [[bpy.types.Node]] | [[bpy.types.NodeSocket]]]) – Blender type class, see `bpy.utils.register_class` for classes which can be registered.
 
 Note
 
@@ -567,7 +567,7 @@ Register a tool in the toolbar.
 Parameters:
     
 
-  * **tool_cls** (type[[`bpy.types.WorkSpaceTool`](../bpy.types/W/bpy.types.WorkSpaceTool.md#bpy.types.WorkSpaceTool "bpy.types.WorkSpaceTool")]) – A tool subclass.
+  * **tool_cls** (type[[[bpy.types.WorkSpaceTool]]]) – A tool subclass.
 
   * **after** (_Sequence_ _[__str_ _]__|__set_ _[__str_ _]__|__None_) – Optional identifiers this tool will be added after.
 

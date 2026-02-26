@@ -6,9 +6,9 @@ bpy_extras.anim_utils.bake_action(_obj_ , _*_ , _action_ , _frames_ , _bake_opti
 Parameters:
     
 
-  * **obj** ([`bpy.types.Object`](../bpy.types/O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")) – Object to bake.
+  * **obj** ([[bpy.types.Object]]) – Object to bake.
 
-  * **action** ([`bpy.types.Action`](../bpy.types/A/bpy.types.Action.md#bpy.types.Action "bpy.types.Action") | None) – An action to bake the data into, or None for a new action to be created.
+  * **action** ([[bpy.types.Action]] | None) – An action to bake the data into, or None for a new action to be created.
 
   * **frames** (_int_) – Frames to bake.
 
@@ -23,7 +23,7 @@ Action or None.
 Return type:
     
 
-[`bpy.types.Action`](../bpy.types/A/bpy.types.Action.md#bpy.types.Action "bpy.types.Action") | None
+[[bpy.types.Action]] | None
 
 bpy_extras.anim_utils.bake_action_objects(_object_action_pairs_ , _*_ , _frames_ , _bake_options_)
     
@@ -46,7 +46,7 @@ A sequence of Action or None types (aligned with `object_action_pairs`)
 Return type:
     
 
-Sequence[[`bpy.types.Action`](../bpy.types/A/bpy.types.Action.md#bpy.types.Action "bpy.types.Action")]
+Sequence[[[bpy.types.Action]]]
 
 bpy_extras.anim_utils.bake_action_iter(_obj_ , _*_ , _action_ , _bake_options_)
     
@@ -56,9 +56,9 @@ An coroutine that bakes action for a single object.
 Parameters:
     
 
-  * **obj** ([`bpy.types.Object`](../bpy.types/O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object")) – Object to bake.
+  * **obj** ([[bpy.types.Object]]) – Object to bake.
 
-  * **action** ([`bpy.types.Action`](../bpy.types/A/bpy.types.Action.md#bpy.types.Action "bpy.types.Action") | None) – An action to bake the data into, or None for a new action to be created.
+  * **action** ([[bpy.types.Action]] | None) – An action to bake the data into, or None for a new action to be created.
 
   * **bake_options** (`anim_utils.BakeOptions`) – Boolean options of what to include into the action bake.
 
@@ -71,7 +71,7 @@ an action or None
 Return type:
     
 
-[`bpy.types.Action`](../bpy.types/A/bpy.types.Action.md#bpy.types.Action "bpy.types.Action")
+[[bpy.types.Action]]
 
 bpy_extras.anim_utils.bake_action_objects_iter(_object_action_pairs_ , _bake_options_)
     
@@ -81,7 +81,7 @@ An coroutine that bakes actions for multiple objects.
 Parameters:
     
 
-  * **object_action_pairs** (Sequence of ([`bpy.types.Object`](../bpy.types/O/bpy.types.Object.md#bpy.types.Object "bpy.types.Object"), [`bpy.types.Action`](../bpy.types/A/bpy.types.Action.md#bpy.types.Action "bpy.types.Action"))) – Sequence of object action tuples, action is the destination for the baked data. When None a new action will be created.
+  * **object_action_pairs** (Sequence of ([[bpy.types.Object]], [[bpy.types.Action]])) – Sequence of object action tuples, action is the destination for the baked data. When None a new action will be created.
 
   * **bake_options** (`anim_utils.BakeOptions`) – Options for baking.
 
