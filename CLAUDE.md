@@ -1,8 +1,6 @@
 # Blender 5.0 Python API Reference
 
-Local copy of the Blender Python API docs for offline reference and tool development.
-
-## What This Is
+> **⚠️ This repo is READ-ONLY reference material.** Do not commit generated code, scripts, or project files here. Use this solely as a lookup resource when building bpy tools.
 
 Markdown documentation (converted from HTML) for `bpy` — Blender's Python API (version 5.0). Use this to look up classes, operators, properties, and types when building Blender scripts, addons, or automation tools.
 
